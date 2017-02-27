@@ -12,7 +12,7 @@ $zunny: $keyZ/ 2 ;
           border-radius: $radius;
 }
 
-.box { @include border-radius(10px); }
+.boxttttttt { @include border-radius(10px); }
 
 
 @mixin mypreserve3d ($preserve3d) {
@@ -81,7 +81,6 @@ $zunny: $keyZ/ 2 ;
     display: block;
     margin: 0;
     position: absolute;
-    border: 1px solid #000;
     opacity: 1; 
   }
   
