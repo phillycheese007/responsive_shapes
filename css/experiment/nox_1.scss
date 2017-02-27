@@ -24,20 +24,14 @@ $class-depthy: depth_ !default;
     width: $width_retard + vw;
     }
 
-  .#{$class-heighty}#{$i} {
+  .#{$class-heigthy}#{$i} {
     $height_retard: $i ;
-      .slab_tester {
-        $height: $height_retard;
-        height: $height_retard + vw;
-      }
+    height: $height_retard + vw;
     }
 
   .#{$class-depthy}#{$i} {
     $depth_retard: $i ;
-      .slab_tester {
-        $depth: $depth_retard;
-        height: $depth_retard + vw;
-      }
+    width: $depth_retard + vw;
     }
 
 }
