@@ -38,7 +38,14 @@ $widthclass17: w_17;
 
 .#{$widthclass17} {
   background:pink;
+  $width_mode_17vw:17vw !global ;
+  
+    .slab_test_dropthisbit{
+      $width: $width_mode_17vw;
+  }
 }
+
+
 
 
 .bunny {
