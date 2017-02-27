@@ -21,18 +21,27 @@ $class-depthy: depth_ !default;
 @for $i from 1 through 4{
   .#{$class-widthy}#{$i} {
     $width_retard: $i ;
-    width: $width_retard + vw;
+      .slab_tester {
+        $width: $width_retard;
+        width: $width_retard + vw;
+      }
     }
-  .#{$class-heigthy}#{$i} {
+
+  .#{$class-heighty}#{$i} {
     $height_retard: $i ;
+    $height: $height_retard;
     height: $height_retard + vw;
     }
+
   .#{$class-depthy}#{$i} {
     $depth_retard: $i ;
-    width: $depth_retard + vw;
+      .slab_tester {
+        $depth: $depth_retard;
+        height: $depth_retard + vw;
+      }
     }
-}
 
+}
 
 
 
