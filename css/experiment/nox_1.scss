@@ -6,34 +6,13 @@ $zunny: $keyZ/ 2 ;
 
 
 
-
-$colors : (red, blue, green); // array of colors
-
-@each $color in $colors {     
-    .#{$color} {  
-       color: $color;
-    }
+.width_53 {
+  $width:53vw;
 }
 
-@for $i from 1 through 9 {
-  .font-#{$i} {
-    font-size: #{$i}px;
-      $rub: #{$i}vw;
-      $rub: $smell;
-
-  }
-}
-
-
-@mixin button-style {
-
-    div[class*="448"] {
-    background: green !global;
-    $width:448;
-        $width: $beans;
-}
-
-    
+.success {
+  @extend .message;
+  border-color: green;
 }
  
 
