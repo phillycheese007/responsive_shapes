@@ -49,7 +49,7 @@ $widthclass17: w_17;
 
 
 
-$colors-list: #111 #222 #333 #444 #555;
+$colors-list: #11 #22 #33 #44 #55;
 @each $current-color in $colors-list {
     $i: index($colors-list, $current-color);
     .stuff-#{$i} { 
