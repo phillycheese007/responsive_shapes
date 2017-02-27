@@ -12,26 +12,17 @@ $widthclass17: w_17;
 /*--------*/
 
 
-$class-slug: fort_ !default;
+
+$class-slug: for !default;
 
 @for $i from 1 through 4{
   .#{$class-slug}-#{$i} {
     $width_retard: $i ;
-    $height_retard: $1;
-    $depth_retard: $1;
-    .slab_test_hobo_leave_this_out {
+      .slab_test_hobo_leave_this_out {
         $width: $width_retard;
+        height: $width_retard + vw;
         width: $width_retard + vw;
       }
-    .slab_test_hobo_leave_this_out {
-        $height: $height_retard;
-        height: $width_retard + vw;
-      }
-    .slab_test_hobo_leave_this_out {
-        $depth: $depth_retard;
-        height: $depth_retard + vw;
-      }
-    
     }
 }
 
