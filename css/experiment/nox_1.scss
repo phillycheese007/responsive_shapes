@@ -66,6 +66,20 @@ $columns: 12;
 
 
 
+$list: adam john wynn mason kuroir
+
+=author-images
+  @each $author in $list
+    .photo-#{$author}
+      background: image-url("avatars/#{$author}.png") no-repeat
+
+.author-bio
+  +author-images
+
+
+
+
+
 
 
 .bunny {
