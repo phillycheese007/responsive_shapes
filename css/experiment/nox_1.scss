@@ -4,7 +4,7 @@
 $keyZ:10vw;
 $zunny: $keyZ/ 2 ;
 $widthclass9: 9;
-
+$widthclass9999: rubbed;
 
 
 .message {
@@ -34,6 +34,11 @@ $widthclass9: 9;
   border: $width solid black;
 }
 
+
+
+.#{$widthclass9999} {
+  background:pink;
+}
 
 
 .#$widthclass9 {
