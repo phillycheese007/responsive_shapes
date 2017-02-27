@@ -1,204 +1,28 @@
+
 <html>
 <head>
-<TITLE>using two perspective floors to fix z translate jump small screens,,</TITLE>
-
-  <link href="/responsive_shapes/css/experiment/buddy_1.css" rel="stylesheet" />
-
-
-
+<TITLE>Your Title Here</TITLE>
 <style>
-
-
-
-#foz{
-  background:white;height:auto;position:absolute; margin-top:100px;margin-bottom:100px;z-index:9999;width:98%;left:1%;}
-
 .bigbox{
-  width:80%;left:10%;height:500px;margin-top:10px;margin-bottom:70px;
-  overflow:hidden;border:2px solid red; position:relative;
-}
-
-.billybox{
-  width:100%;height:50%;bottom:2vw;background:none;margin:0 auto;
-  z-index:9999;
-}
-
-.billybox .me{
-  width:100%;height:160%;background:green;
-     transform-style: preserve-3d; position:absolute;
-}
-
-.relfloorbox {  width:100%;height:60%;bottom:2vw;background:none;margin:0 auto;
- }
-
-.relfloorbox .me{
-  width:100%;left:0;
-  height:160%;
-  opacity:1;z-index:9;
-  transform-style: preserve-3d; 
-  position:absolute;
-  background:pink;
-}
-
-
-
-#table__master{transform-style: preserve-3d;}
-
-
-
-
-
-
-
-.bigbox{
-  perspective: 31em;
-}
-
-.billybox{
-  perspective: 31em; 
-}
-
-.billybox .me{
-  transform:rotateX(90deg);
-}
-
-.relfloorbox {  
-  perspective: 12em;  }
-
-.relfloorbox .me{
-  transform:rotateX(90deg); 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.slab_test{
-  left:32vw;top:7vw;
-  position:absolute;margin:0;padding:0;
-  transform-style: preserve-3d;
-  transform:rotate(0deg) rotateY(0deg);
-  
-  
-   animation: rot 27s linear infinite;
-
-  
-  
-  }
-
-
-
-
-#chair1 {
-  left:32vw;top:4vw;width:2vw;position:absolute;margin:0;padding:0;
-  transform-style: preserve-3d;
-  transform:rotate(127deg) rotateY(0deg);
-
-
-
-/*
-
- animation: rot 27s linear infinite;
-
-*/
-
 
 }
+.lilbox{
 
-
-@keyframes rot {
-  to {
-    transform: rotateX(0turn) rotateY(2turn);
-  }
 }
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
 </style>
 </head>
 <body>
-<div id="foz">
+
+
   <div class="bigbox">
-    <div class="billybox">
-     <div class="me">
-       <div id="table__master">
-
-  
-         <section id="chair1" class="container complete_chair_20_20_40 pos_ab_marg_0">
-
-             <div class="slab_10_1_1 chair_seat my__rectangle" >
-               <figure class="front "></figure><figure class="back"></figure><figure class="right"></figure>
-               <figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure>
-             </div>
-  </section>
-
-</div> 
-
-     </div>
-   </div>
-    <div class="relfloorbox">
-      
-      
-       <section id="chair2" class="container complete_chair_20_20_40 pos_ab_marg_0">
-         <div class="slab_10_1_1 chair_seat my__rectangle" >
-            <figure class="front "></figure><figure class="back"></figure><figure class="right"></figure>
-             <figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure>
-          </div>
-       </section>
-      
-      
-      
-      
-        <div class="me"> <!-- put shapes in here .me -->
-          
-       <section id="chair2" class="container complete_chair_20_20_40 pos_ab_marg_0">
-         <div class="slab_10_1_1 chair_seat my__rectangle" >
-            <figure class="front "></figure><figure class="back"></figure><figure class="right"></figure>
-             <figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure>
-          </div>
-       </section>      
-          
-          
-          
- 
-           <div class="slab_test chair_seat my__rectangle" >
-            <figure class="front "></figure><figure class="back"></figure><figure class="right"></figure>
-             <figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure>
-          </div>
-          
-          
-          
-          
-            
-          
-        </div> <!-- put shapes in here .me  -->
+    <div class="lilbox">
+    
     </div>
   </div>
 
 
 
 
-
-</div> 
 </body>
 </html>
  
