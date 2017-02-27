@@ -29,9 +29,6 @@ $e_depth: $l_depth;
 .box { @include mypreserve3d(preserve-3d); }
 
 
-
-
-
 .message {
   border: 1px solid #ccc;
   padding: 10px;
@@ -42,8 +39,6 @@ $e_depth: $l_depth;
   @extend .message;
   border-color: green;
 }
-
-
 
 
 
@@ -64,105 +59,6 @@ $e_depth: $l_depth;
   $keyZ__2: 88px;
   width: calc(100% - #{$keyZ__2});
 }
-
-
-
-
-
-div[class*="width_5"] {
-    $lwidth: 97vw;
-}
-
-
-
-@mixin button-style {
-    $btn-bg-color: lightblue !global;
-    color: $btn-bg-color;
-}
-     
-button {
-    @include button-style;
-}
-     
-.wrap {
-    background: $btn-bg-color;
-}
-
-
-
-button {
-    color: lightblue;
-}
-     
-.wrap {
-    background: lightblue;
-}
-
-
-
-
-
-$width_5:5 ;
-
-div[class*= $width_5] {
-    $lwidth: 97vw;
-}
-
-
-$width: ;
-
-div[class*= $width] {
-    $lwidth: 97vw;
-}
-
-
-
-
-@mixin button-style {
-    $b_width: $l_width !global;
-    color: $btn-bg-color;
-}
-     
-#rubber {
-    @include button-style;
-    $l_width:
-}
-     
-.wrap {
-    background: $btn-bg-color;
-}
-
-
-
-button {
-    color: lightblue;
-}
-     
-.wrap {
-    background: lightblue;
-}
-
-
-
-
-
-
-@mixin button-style {
-    $ewidth: $lovewidth;
-   $lovewidth: 
-    $lwidth: 97vw;
-}
-     
-}
-     
-button {
-    @include button-style;
-}
-     
-.wrap {
-    background: $btn-bg-color;
-}
-
 
 
 
