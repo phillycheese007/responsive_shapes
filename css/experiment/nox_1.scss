@@ -23,17 +23,14 @@ $class-depthy: depth_ !default;
     $width_retard: $i ;
     width: $width_retard + vw;
     }
-
   .#{$class-heigthy}#{$i} {
     $height_retard: $i ;
     height: $height_retard + vw;
     }
-
   .#{$class-depthy}#{$i} {
     $depth_retard: $i ;
     width: $depth_retard + vw;
     }
-
 }
 
 
