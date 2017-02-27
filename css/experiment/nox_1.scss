@@ -9,66 +9,6 @@ $widthclass17: w_17;
 
 
 
-
-.message {
-  border: 1px solid #ccc;
-  padding: 10px;
-  color: #333;
-  $krumpit:48vw !global;
-  
-  $nine:98vw !global;
-  $five:58vw !global;
-
-}
-
-.success {
-  @extend .message;
-  $zit : $five;
-  border-color: green;
-  width: $zit ;
-}
-
-.w_nine7 {
-  @extend .message;
-  $zit : $nine;
-  border-color: green;
-  width: $zit ;
-  $width: $zit;
-  border: $width solid black;
-}
-
-
-
-.#{$widthclass17} {
-  background:pink;
-  $width_mode_17vw:17vw !global ;
-  
-    .slab_test_dropthisbit, .cough.boogie {
-      $width: $width_mode_17vw;
-      width:$width;
-  }
-}
-
-
-
-
-$colors-list: 1 2 3 4 5 6 7 8 9 10;
-@each $suzy_width in $colors-list {
-    $i: index($colors-list, $suzy_width);
-    .width_#{$i} { 
-      $width_retard: $i ;
-      $width: $width_retard ;
-      
-      .slab_test_hobo_leave_this_out {
-        $width: $width_retard;
-        height: $width_retard + vw;
-        width: $width_retard + vw;
-      }
-      
-    }
-}
-
-
 /*--------*/
 
 
