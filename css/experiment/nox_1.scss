@@ -20,10 +20,8 @@ $class-depthy: depth_ !default;
 @for $i from 1 through 4{
   .#{$class-widthy}#{$i} {
     $width_retard: $i ;
-      .slab_tester {
-        $width: $width_retard;
-        width: $width_retard + vw;
-      }
+    width: $width_retard;
+    height: $width_retard;
     }
 
   .#{$class-heighty}#{$i} {
