@@ -49,33 +49,13 @@ $widthclass17: w_17;
 
 
 
-$columns: 12;
-
-%float-styles {
-  float: left;
+$colors-list: #111 #222 #333 #444 #555;
+@each $current-color in $colors-list {
+    $i: index($colors-list, $current-color);
+    .stuff-#{$i} { 
+        color: $current-color;
+    }
 }
-
-@mixin col-x-list {
-  @for $i from 1 through $columns {
-      .col-#{$i}-m { @extend %float-styles; }
-  }
-}
-
-@include col-x-list;
-
-
-
-
-$list: adam john wynn mason kuroir
-
-=author-images
-  @each $author in $list
-    .photo-#{$author}
-      background: image-url("avatars/#{$author}.png") no-repeat
-
-.author-bio
-  +author-images
-
 
 
 
