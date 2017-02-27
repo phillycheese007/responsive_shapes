@@ -18,7 +18,7 @@ $class-heighty: height !default;
 $class-depthy: depth_ !default;
 
 @for $i from 1 through 4{
-  .#{$class-widthy}-#{$i} {
+  .#{$class-widthy} #{$i} {
     $width_retard: $i ;
       .slab_test_hobo_leave_this_out {
         $width: $width_retard;
@@ -27,7 +27,7 @@ $class-depthy: depth_ !default;
       }
     }
 
-  .#{$class-heighty}-#{$i} {
+  .#{$class-heighty} #{$i} {
     $height_retard: $i ;
       .slab_test_hobo_leave_this_out {
         $width: $height_retard;
@@ -36,7 +36,7 @@ $class-depthy: depth_ !default;
       }
     }
 
-  .#{$class-depthy}-#{$i} {
+  .#{$class-depthy} #{$i} {
     $depth_retard: $i ;
       .slab_test_hobo_leave_this_out {
         $width: $depth_retard;
