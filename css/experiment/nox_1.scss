@@ -3,7 +3,7 @@
 ---
 $keyZ:10vw;
 $zunny: $keyZ/ 2 ;
-
+$widthclass9: 9;
 
 
 
@@ -36,14 +36,11 @@ $zunny: $keyZ/ 2 ;
 
 
 
+.$widthclass9{
+  $width:9vw;
 
+.slab_test {  
 
-.slab_test {
-  
-
-
-    
-$width:9vw;
   $height: 7vw;
   $depth: 14vw;
   width: 100%;
@@ -92,3 +89,4 @@ $width:9vw;
   
 } /*--end slab --*/
 
+}
