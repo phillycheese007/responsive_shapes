@@ -13,34 +13,20 @@ $widthclass17: w_17;
 
 
 
-$class-widthy: width_ !default;
-$class-heighty: height_ !default;
-$class-depthy: depth_ !default;
+
+$class-slug: for !default;
 
 @for $i from 1 through 4{
-  .#{$class-widthy}#{$i} {
+  .#{$class-slug}-#{$i} {
     $width_retard: $i ;
-      .slab_tester {
+      .slab_test_hobo_leave_this_out {
         $width: $width_retard;
+        height: $width_retard + vw;
         width: $width_retard + vw;
       }
     }
+}
 
-  .#{$class-heighty}#{$i} {
-    $height_retard: $i ;
-      .slab_tester {
-        $height: $height_retard;
-        height: $height_retard + vw;
-      }
-    }
-
-  .#{$class-depthy}#{$i} {
-    $depth_retard: $i ;
-      .slab_tester {
-        $depth: $depth_retard;
-        height: $depth_retard + vw;
-      }
-    }
 
 
 
