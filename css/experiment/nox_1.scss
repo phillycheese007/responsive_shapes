@@ -9,7 +9,7 @@ $e_height: $l_height;
 $e_depth: $l_depth;
 
 
-@mixin border-radius($radius) {
+@mixin mywidth($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
@@ -74,6 +74,94 @@ div[class*="width_5"] {
 }
 
 
+
+@mixin button-style {
+    $btn-bg-color: lightblue !global;
+    color: $btn-bg-color;
+}
+     
+button {
+    @include button-style;
+}
+     
+.wrap {
+    background: $btn-bg-color;
+}
+
+
+
+button {
+    color: lightblue;
+}
+     
+.wrap {
+    background: lightblue;
+}
+
+
+
+
+
+$width_5:5 ;
+
+div[class*= $width_5] {
+    $lwidth: 97vw;
+}
+
+
+$width: ;
+
+div[class*= $width] {
+    $lwidth: 97vw;
+}
+
+
+
+
+@mixin button-style {
+    $b_width: $l_width !global;
+    color: $btn-bg-color;
+}
+     
+#rubber {
+    @include button-style;
+    $l_width:
+}
+     
+.wrap {
+    background: $btn-bg-color;
+}
+
+
+
+button {
+    color: lightblue;
+}
+     
+.wrap {
+    background: lightblue;
+}
+
+
+
+
+
+
+@mixin button-style {
+    $ewidth: $lovewidth;
+   $lovewidth: 
+    $lwidth: 97vw;
+}
+     
+}
+     
+button {
+    @include button-style;
+}
+     
+.wrap {
+    background: $btn-bg-color;
+}
 
 
 
