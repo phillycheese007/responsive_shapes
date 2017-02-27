@@ -33,8 +33,8 @@ $zunny: $keyZ/ 2 ;
   border: 1px solid #ccc;
   padding: 10px;
   color: #333;
-
-
+  $98_width:98vw;
+  $58_width:58vw;
 
 }
 
@@ -42,9 +42,9 @@ $zunny: $keyZ/ 2 ;
 
 
 .slab_test.98 {
-
-  $98_width:98vw;
-  $width: $98_width;
+ @extend .widths;
+  
+ $width: $98_width;
 
 }
 
