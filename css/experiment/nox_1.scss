@@ -50,10 +50,10 @@ $widthclass17: w_17;
 
 
 $colors-list: 111 221 333 444 555;
-@each $current-color in $colors-list {
-    $i: index($colors-list, $current-color);
+@each $suzy_width in $colors-list {
+    $i: index($colors-list, $suzy_width);
     .stuff_width-#{$i} { 
-        width: $current-color;
+        width: $suzy_width;
     }
 }
 
