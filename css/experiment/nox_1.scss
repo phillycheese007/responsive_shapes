@@ -76,15 +76,11 @@ $class-slug: width_ !default;
 
 @for $i from 1 through 14{
   .#{$class-slug}#{$i} {
-    
-
      width: 60px + $i;
      height: $1 + vw;
-    
       .slab_test_taco_take_this_out {
-
+       height: $1 + vw;
       }
-    
     }
 }
 
