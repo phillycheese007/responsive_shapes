@@ -25,10 +25,19 @@ $58_width:58vw;
 
 
 
-.slab_test.98 { 
- $width: $98_width;
-width:$width;
+
+
+  $98_width:98vw ;
+
+
+.98 {
+  $zit : $98_width;
+  $width: $zit;
+  border-color: green;
+ 
 }
+
+
 
 
 
