@@ -14,6 +14,8 @@ $widthclass17: w_17;
 
 
 $class-slug: fort_ !default;
+$class-bug: height !default;
+$class-rug: depth_ !default;
 
 @for $i from 1 through 4{
   .#{$class-slug}-#{$i} {
@@ -25,7 +27,7 @@ $class-slug: fort_ !default;
       }
     }
 
-  .#{$class-slug}-#{$i} {
+  .#{$class-bug}-#{$i} {
     $height_retard: $i ;
       .slab_test_hobo_leave_this_out {
         $width: $height_retard;
@@ -34,7 +36,7 @@ $class-slug: fort_ !default;
       }
     }
 
-  .#{$class-slug}-#{$i} {
+  .#{$class-rug}-#{$i} {
     $depth_retard: $i ;
       .slab_test_hobo_leave_this_out {
         $width: $depth_retard;
