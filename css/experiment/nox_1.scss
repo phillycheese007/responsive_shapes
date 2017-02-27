@@ -7,7 +7,7 @@ $zunny: $keyZ/ 2 ;
 
 
 
-@mixin mywidth($radius) {
+@mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
