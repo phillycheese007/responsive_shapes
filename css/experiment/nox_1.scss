@@ -28,37 +28,46 @@ $zunny: $keyZ/ 2 ;
   border: 1px solid #ccc;
   padding: 10px;
   color: #333;
+  $width: $98_width !global;
+  $width: $77_width !global;
+  
   $48_width:48vw !global;
   $57_width:57vw !global;
   $29_width: $t9width;
 
 }
 
-.runner {
+.width_98 {
   @extend .widths;
-  $zit : $48_width;
   border-color: green;
-  width: $zit ;
+  $98_width: 98vw;
+  width: $width ;
 }
+
+
+
 .width_57 {
   @extend .widths;
   border-color: green;
   
-  $width: $57_width ;
+ $testing_width: $57_width ;
+  
 }
 
 
-.yoyo {
-  @extend .runner;
-  border-color: blue;
-}
 
 
 
 .slab_test {
-  $rummy:99;
+ @extend .widths;
+  
+ $width: $98_width;
+ $width: $67_width;
+  
+ width:$width;
+
     
-  $width: 43vw;
+
   $height: 7vw;
   $depth: 14vw;
   width: 100%;
