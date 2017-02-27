@@ -23,12 +23,26 @@ $class-slug: fort_ !default;
         height: $width_retard + vw;
         width: $width_retard + vw;
       }
-          .slab_test_hobo_leave_this_out66 {
-        $width: $width_retard;
-        height: $width_retard + vw;
-        width: $width_retard + vw;
+    }
+
+  .#{$class-slug}-#{$i} {
+    $height_retard: $i ;
+      .slab_test_hobo_leave_this_out {
+        $width: $height_retard;
+        height: $height_retard + vw;
+        width: $height_retard + vw;
       }
     }
+
+  .#{$class-slug}-#{$i} {
+    $depth_retard: $i ;
+      .slab_test_hobo_leave_this_out {
+        $width: $depth_retard;
+        height: $depth_retard + vw;
+        width: $depth_retard + vw;
+      }
+    }
+
 }
 
 
