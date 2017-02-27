@@ -77,15 +77,12 @@ $class-slug: width_ !default;
 @for $i from 1 through 14{
   .#{$class-slug}#{$i} {
     
-     $width_retard: $i ;
-     $width: $width_retard ;
+
      width: 60px + $i;
      height: $1 + vw;
     
       .slab_test_taco_take_this_out {
-        $width: $width_retard;
-        height: $width_retard + vw;
-        width: $width_retard + vw;
+
       }
     
     }
