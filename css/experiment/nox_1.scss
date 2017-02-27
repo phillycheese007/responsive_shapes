@@ -25,7 +25,7 @@ $widthclass9: 9;
   width: $zit ;
 }
 
-.w_nine {
+.w_nine7 {
   @extend .message;
   $zit : $nine;
   border-color: green;
@@ -36,7 +36,7 @@ $widthclass9: 9;
 
 
 
-.$widthclass9{
+.#{$widthclass9} {
   $width:9vw;
 
     .slab_test {  
