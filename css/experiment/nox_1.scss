@@ -46,9 +46,6 @@ $class-depthy: depth_ !default;
 
 
 
-.bunny {
-  $width:9vw;
-
     .slab_test {  
 
     $height: 7vw;
@@ -98,7 +95,6 @@ $class-depthy: depth_ !default;
   .bottom { transform: rotateX( -90deg ) translateZ( $height/2 ); background:red; }
 } /*--end slab --*/
 
-}/*--end bunny --*/
 
 
 
