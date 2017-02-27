@@ -53,7 +53,7 @@ $colors-list: 1 2 3 4 5 6 7 8 9 10;
 @each $suzy_width in $colors-list {
     $i: index($colors-list, $suzy_width);
     .stuff_width-#{$i} { 
-      $width_retard: #{$i}vw ;
+      $width_retard: $i vw ;
       
       width: $width_retard;
       height $width_retard;
