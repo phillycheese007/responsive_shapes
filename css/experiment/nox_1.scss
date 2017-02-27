@@ -7,14 +7,16 @@ $zunny: $keyZ/ 2 ;
 
 
 
-.width_53 {
-  $width:53vw;
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
 }
 
 .success {
-  @extend .width_53 ;
+  @extend .message;
   border-color: green;
-} 
+}
 
 
 
