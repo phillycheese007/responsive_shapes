@@ -5,6 +5,34 @@ $keyZ:10vw;
 $zunny: $keyZ/ 2 ;
 
 
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(10px); }
+
+
+
+
+@mixin mypreserve3d ($preserve3d) {
+  -webkit-transform-style:$preserve3d;
+  -moz-transform-style: $preserve3d;
+  -o-transform-style: $preserve3d;
+  transform-style:$preserve3d;
+}
+
+.box { @include mypreserve3d(preserve-3d); }
+
+
+
+
+
+
+
 #main {
   width: 97%;
 
