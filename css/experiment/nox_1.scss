@@ -24,14 +24,19 @@ $zunny: $keyZ/ 2 ;
 
 
 
+
+
+
+
+
 .widths {
   border: 1px solid #ccc;
   padding: 10px;
   color: #333;
 
   
-  $48_width:48vw !global;
-  $57_width:57vw !global;
+  $98_width:98vw !global;
+  $67_width:67vw !global;
 
 }
 
@@ -41,8 +46,7 @@ $zunny: $keyZ/ 2 ;
 
 
 
-
-.slab_test {
+.slab_test.W_20 {
  @extend .widths;
   
  $width: $98_width;
