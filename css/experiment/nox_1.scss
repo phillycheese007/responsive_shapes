@@ -109,10 +109,10 @@ $zunny: $keyZ/ 2 ;
   
 .front  { transform: rotateY(   0deg ) translateZ( $depth/2 ); background:red; }
 .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 ); background:red; }
-.right  { transform: rotateY(  90deg ) translateZ( $width/2 ); background:green; }
-.left   { transform: rotateY( -90deg ) translateZ( $width/2 ); background:green; }
-.top    { transform: rotateX(  90deg ) translateZ( $height/2 ); background:blue; }
-.bottom { transform: rotateX( -90deg ) translateZ( $height/2 ); background:blue; }
+.right  { transform: rotateY(  90deg ) translateZ( $width/2 ); background:red; }
+.left   { transform: rotateY( -90deg ) translateZ( $width/2 ); background:red; }
+.top    { transform: rotateX(  90deg ) translateZ( $height/2 ); background:red; }
+.bottom { transform: rotateX( -90deg ) translateZ( $height/2 ); background:red; }
   
 } /*--end slab --*/
 
