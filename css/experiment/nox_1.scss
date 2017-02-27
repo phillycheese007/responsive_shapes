@@ -26,12 +26,12 @@ $zunny: $keyZ/ 2 ;
   border: 1px solid #ccc;
   padding: 10px;
   color: #333;
-  $krumpit:48vw !global;
+  $e_width:48vw !global;
 }
 
 .runner {
   @extend .w_48;
-  $zit : $krumpit;
+  $zit : $e_width;
   border-color: green;
   width: $zit ;
 }
