@@ -22,20 +22,36 @@ $zunny: $keyZ/ 2 ;
 }
 
 
-.w_48 {
+
+
+.widths {
   border: 1px solid #ccc;
   padding: 10px;
   color: #333;
-  $e_width:48vw !global;
+  $48_width:48vw !global;
+  $57_width:57vw !global;
+  $29_width: $t9width;
+
 }
 
 .runner {
-  @extend .w_48;
-  $zit : $e_width;
+  @extend .widths;
+  $zit : $48_width;
   border-color: green;
   width: $zit ;
 }
+.width_57 {
+  @extend .widths;
+  border-color: green;
+  
+  $width: $57_width ;
+}
 
+
+.yoyo {
+  @extend .runner;
+  border-color: blue;
+}
 
 
 
