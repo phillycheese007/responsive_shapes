@@ -30,11 +30,13 @@ $zunny: $keyZ/ 2 ;
 
 
 .widths {
+  $98_width:98vw !global;
+  $58_width:58vw !global;
+  
   border: 1px solid #ccc;
   padding: 10px;
   color: #333;
-  $98_width:98vw !global;
-  $58_width:58vw !global;
+
 
 }
 
@@ -45,6 +47,7 @@ $zunny: $keyZ/ 2 ;
  @extend .widths;
   
  $width: $98_width;
+  
 
 }
 
