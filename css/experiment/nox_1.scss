@@ -15,9 +15,18 @@ $colors : (red, blue, green); // array of colors
     }
 }
 
+@for $i from 1 through 9 {
+  .font-#{$i} {
+    font-size: #{$i}px;
+      $rub: #{$i}vw;
+  }
+}
+
 
 
 .slab_test {
+  $rummy:
+    
   $width: 5vw;
   $height: 7vw;
   $depth: 14vw;
