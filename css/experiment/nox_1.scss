@@ -4,8 +4,6 @@
 $keyZ:10vw;
 $zunny: $keyZ/ 2 ;
 
-$nine:98vw;
-$five:58vw;
 
 
 
@@ -14,6 +12,10 @@ $five:58vw;
   padding: 10px;
   color: #333;
   $krumpit:48vw !global;
+  
+  $nine:98vw !global;
+  $five:58vw !global;
+
 }
 
 .success {
@@ -30,6 +32,7 @@ $five:58vw;
 
 
 .98 {
+  @extend .message;
   $zit : $nine;
   $width: $zit;
   border-color: green;
@@ -41,7 +44,6 @@ $five:58vw;
 
 
 .slab_test {
- @extend .widths;
   
 
 
