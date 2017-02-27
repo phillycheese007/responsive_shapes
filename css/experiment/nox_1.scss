@@ -13,31 +13,28 @@ $widthclass17: w_17;
 
 
 
-$class-widthybean: widthhh_ !default;
+$class-widthy: width_ !default;
 $class-heighty: height_ !default;
 $class-depthy: depth_ !default;
 
 @for $i from 1 through 4{
-  .#{$class-widthybean}#{$i} {
+  .#{$class-widthy}#{$i} {
     $width_retard: $i ;
     width: $width_retard;
-    height: $width_retard;
     }
 
   .#{$class-heighty}#{$i} {
     $height_retard: $i ;
-      .slab_tester {
-        $height: $height_retard;
-        height: $height_retard + vw;
-      }
+  .#{$class-heigthy}#{$i} {
+    $height_retard: $i ;
+    width: $height_retard;
     }
 
   .#{$class-depthy}#{$i} {
     $depth_retard: $i ;
-      .slab_tester {
-        $depth: $depth_retard;
-        height: $depth_retard + vw;
-      }
+  .#{$class-depthy}#{$i} {
+    $depth_retard: $i ;
+    width: $depth_retard;
     }
 
 }
