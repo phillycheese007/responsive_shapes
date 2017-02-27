@@ -22,15 +22,15 @@ $zunny: $keyZ/ 2 ;
 }
 
 
-.butter {
+.w_48 {
   border: 1px solid #ccc;
   padding: 10px;
   color: #333;
   $krumpit:48vw !global;
 }
 
-.success {
-  @extend .butter;
+.runner {
+  @extend .w_48;
   $zit : $krumpit;
   border-color: green;
   width: $zit ;
