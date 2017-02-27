@@ -25,7 +25,14 @@ $zunny: $keyZ/ 2 ;
   width: $zit ;
 }
 
-
+.nine {
+  @extend .message;
+  $zit : $nine;
+  border-color: green;
+  width: $zit ;
+  $width: $zit;
+  border: $width solid black;
+}
 
 
 
