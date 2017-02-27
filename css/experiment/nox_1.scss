@@ -25,15 +25,11 @@ $class-depthy: depth_ !default;
 
   .#{$class-heighty}#{$i} {
     $height_retard: $i ;
-  .#{$class-heigthy}#{$i} {
-    $height_retard: $i ;
-    width: $height_retard;
+    height: $height_retard;
     }
 
   .#{$class-depthy}#{$i} {
-    $depth_retard: $i ;
-  .#{$class-depthy}#{$i} {
-    $depth_retard: $i ;
+    $depth_retard: $i ;;
     width: $depth_retard;
     }
 
