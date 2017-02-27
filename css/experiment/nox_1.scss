@@ -13,12 +13,12 @@ $widthclass17: w_17;
 
 
 
-$class-slug: fort_ !default;
-$class-bug: height !default;
-$class-rug: depth_ !default;
+$class-widthy: width_ !default;
+$class-heighty: height !default;
+$class-depthy: depth_ !default;
 
 @for $i from 1 through 4{
-  .#{$class-slug}-#{$i} {
+  .#{$class-widthy}-#{$i} {
     $width_retard: $i ;
       .slab_test_hobo_leave_this_out {
         $width: $width_retard;
@@ -27,7 +27,7 @@ $class-rug: depth_ !default;
       }
     }
 
-  .#{$class-bug}-#{$i} {
+  .#{$class-heighty}-#{$i} {
     $height_retard: $i ;
       .slab_test_hobo_leave_this_out {
         $width: $height_retard;
@@ -36,7 +36,7 @@ $class-rug: depth_ !default;
       }
     }
 
-  .#{$class-rug}-#{$i} {
+  .#{$class-depthy}-#{$i} {
     $depth_retard: $i ;
       .slab_test_hobo_leave_this_out {
         $width: $depth_retard;
