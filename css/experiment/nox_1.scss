@@ -6,10 +6,10 @@ $zunny: $keyZ/ 2 ;
 $widthclass9: 9;
 $widthclass17: w_17;
 
-$class-slug: forK !default;
+$class-slug: forK_ !default;
 
 @for $i from 1 through 4{
-  .#{$class-slug_}#{$i} {
+  .#{$class-slug}#{$i} {
     width: 60px + $i
     }
 }
