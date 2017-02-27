@@ -52,7 +52,7 @@ $widthclass17: w_17;
 $colors-list: 111 221 333 444 555;
 @each $current-color in $colors-list {
     $i: index($colors-list, $current-color);
-    .stuff-#{$i} { 
+    .stuff_width-#{$i} { 
         width: $current-color;
     }
 }
