@@ -19,15 +19,31 @@ $colors : (red, blue, green); // array of colors
   .font-#{$i} {
     font-size: #{$i}px;
       $rub: #{$i}vw;
+      $rub: $smell;
+
   }
 }
+
+
+@mixin button-style {
+
+    div[class*="448"] {
+    background: green !global;
+    $width:448;
+        $width: $beans;
+}
+
+    
+}
+ 
+
 
 
 
 .slab_test {
   $rummy:99;
     
-  $width: 5vw;
+  $width:$beans;
   $height: 7vw;
   $depth: 14vw;
   width: 100%;
