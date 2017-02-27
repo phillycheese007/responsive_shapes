@@ -7,7 +7,7 @@ $zunny: $keyZ/ 2 ;
 
 
 
-.message {
+.W_48 {
   border: 1px solid #ccc;
   padding: 10px;
   color: #333;
@@ -15,7 +15,7 @@ $zunny: $keyZ/ 2 ;
 }
 
 .success {
-  @extend .message;
+  @extend .W_48;
   $zit : $krumpit;
   border-color: green;
   width: $zit ;
