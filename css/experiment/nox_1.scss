@@ -43,16 +43,18 @@ $zunny: $keyZ/ 2 ;
 
 
 
+.slab_test.5 {
+
+  $98_width:98vw;
+  $67_width:67vw;
+}
 
 
 
-.slab_test.W_20 {
+.slab_test {
  @extend .widths;
   
- $width: $98_width;
- $width: $67_width;
-  
- width:$width;
+
 
     
 
