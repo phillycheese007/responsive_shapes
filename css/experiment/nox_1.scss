@@ -7,7 +7,7 @@ $widthclass9: 9;
 $widthclass17: w_17;
 
 /*--------*/
-$heightfreedom:5;
+
 /*--begin--generate list of classes to set width height and depth on .my_slab --*/
 
 $class-widthy: width_ !default;
@@ -19,6 +19,8 @@ $class-depthy: depth_ !default;
   .#{$class-widthy}#{$i} {
     $width_retard: $i ;
     $width: $width_retard;
+    
+    $heightfreedom:5;
     
     $height_retard: $height_freedom ;
     $height: $height_freedom;
