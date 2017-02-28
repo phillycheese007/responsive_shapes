@@ -31,26 +31,32 @@ $class-depthy: depth_ !default;
     .slab_test {
       $height: $height_retard;
       $width: $width_retard;
-            
+      $depth: $depth_retard;            
       .front, .back { 
       $width: $width_retard;
-       width: $width;
+      $height: $height_retard;
+      width: $width;
+      height: $height;
       }
       
       .right, .left { 
        $width: $width_retard;
        $height: $height_retard;
        $depth: $depth_retard;
-
-        width: $depth;
-        height: $height;
-        left: ($width - $depth)/2 ;
+       width: $width;
+       height: $height;
+       left: ($width - $depth)/2 ;
       }
+      
       .top, .bottom {
-        width: $width;
-        height: $depth;
-        top: ($height - $depth)/2 ;
+       $width: $width_retard;
+       $height: $height_retard;
+       $depth: $depth_retard;
+       width: $width;
+       height: $depth;
+       top: ($height - $depth)/2 ;
       }
+      
       .front  { transform: rotateY(   0deg ) translateZ( $depth/2 ); background:red; }
       .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 ); background:red; }
       .right  { transform: rotateY(  90deg ) translateZ( $width/2 ); background:red; }
