@@ -4,9 +4,11 @@
 
 
 
-@mixin content($color-default, $color-main) {
+@mixin content($color-default, $color-main, $width_belly) {
   background: $color-default;
   color: $color-main;
+  $width: $width_belly;
+  
 }
 
 $color-1: #444;
@@ -15,8 +17,20 @@ $color-3: #666;
 $color-4: #777;
 $color-5: #999;
 
+$width_1414: 1414;
+$width_2: 2;
+$width_3: 3;
+$width_4: 4;
+
+$height_1: 1;
+$height_2: 2;
+$height_3: 3;
+$height_4: 4;
+
+
 body.class-1 {
-  @include content($color-1, $color-2);
+  @include content($color-1, $color-2, $width_1414);
+  height: $width;
 }
 
 body.class-2 {
