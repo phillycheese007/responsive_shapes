@@ -13,7 +13,18 @@
 */
   }
 
-
+.my__rectangle_2{
+  left:12vw;top:-10vw;
+  position:absolute;margin:0;padding:0;
+  transform-style: preserve-3d;
+  transform:rotate(0deg) rotateY(0deg);
+  }
+.my__rectangle_3{
+  left:12vw;top:-10vw;
+  position:absolute;margin:0;padding:0;
+  transform-style: preserve-3d;
+  transform:rotate(0deg) rotateY(0deg);
+  }
 
 #table__master .leg_1{left:0vw;top:0;}
 #table__master .leg_2{left:5vw;top:0;}
