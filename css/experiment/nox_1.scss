@@ -4,10 +4,7 @@
 $keyZ:10vw;
 $zunny: $keyZ/ 2 ;
 
-
-
-
-
+/* --begin controllers --*/
 
 @mixin backface-visibility ($arguments) {
   -webkit-backface-visibility: $arguments;
@@ -17,15 +14,22 @@ $zunny: $keyZ/ 2 ;
           backface-visibility: $arguments;
 }
 
- .panels-backface-invisible figure { @include backface_visibility(hidden)}
+/* --end controllers --*/
 
 
+/*begin general shapebuilding rules --*/
 
-.weirdo {
-  $keyZ__2: 88px;
-  width: calc(100% - #{$keyZ__2});
-}
+ .slab_test .panels-backface-invisible figure { @include backface_visibility(hidden)}
 
+ .slab_test figure {
+    display: block;
+    margin: 0;
+    position: absolute;
+    border: 1px solid #000;
+    opacity: .7; 
+  }
+
+/*end general shapebuilding rules --*/
 
 
 .slab_test {
@@ -40,20 +44,6 @@ $zunny: $keyZ/ 2 ;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
  
-  figure {
-    display: block;
-    margin: 0;
-    position: absolute;
-    border: 1px solid #000;
-    opacity: .7; 
-  }
-  
-  .panels-backface-invisible figure {
-    -webkit-backface-visibility: hidden;
-    -moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-    backface-visibility: hidden; 
-  }
   
   .front, .back { 
     width: $width;
