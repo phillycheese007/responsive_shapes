@@ -24,7 +24,6 @@ $slab_color: orange;
 }
 /* --end constants --*/
 
-
 /*begin general shapebuilding rules --*/
 
  .my_slab .panels-backface-invisible figure { @include backface_visibility(hidden)}
@@ -44,9 +43,6 @@ $slab_color: orange;
   }
 
 /*end general shapebuilding rules --*/
-
-
-
 
 
 
@@ -115,10 +111,6 @@ $slab_color: orange;
   .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
   .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
 }
-
-
-
-
 
 
 
