@@ -7,7 +7,7 @@
 @mixin content($color-default, $color-main, $width_belly) {
   background: $color-default;
   color: $color-main;
-  $width: $width_belly;
+$width_belly: $width;
   
 }
 
