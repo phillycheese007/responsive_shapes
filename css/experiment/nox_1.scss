@@ -34,7 +34,7 @@ $class-depthy: depth_ !default;
             
       .front, .back { 
       $width: $width_retard;
-        width: $1;
+        width: $width;
         height: $height;
         border: $width;
       }
