@@ -58,8 +58,8 @@ $slab_color: brown;
   .bottom { transform: rotateX( -90deg ) translateZ( $height/2 ); background:$slab_color; }
 }
 
-.w_25_h_20_d_1 {
-  $width: 1vw;$height: 1vw;$depth: 10vw; /*set dimensions here */ 
+.w_28_h_20_d_1 {
+  $width: 28vw;$height: 20vw;$depth: 1vw; /*set dimensions here */ 
   
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
