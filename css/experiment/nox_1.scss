@@ -1,43 +1,21 @@
 ---
 #love
 ---
-$keyZ:10vw;
-$zunny: $keyZ/ 2 ;
-$widthclass9: 9;
-$widthclass17: w_17;
 
-/*--------*/
 
-/*--begin--generate list of classes to set width height and depth on .my_slab --*/
 
-$class-widthy: width_ !default;
-$class-heighty: height_ !default;
-$class-depthy: depth_ !default;
+$color-1: #444;
+$color-2: #555;
+$color-3: #666;
+$color-4: #777;
 
-@for $i from 1 through 7{
-  
-  .#{$class-widthy}#{$i} {
-    $width_retard: $i ;
-    $width: $width_retard; 
-    width:$width-retard + px;
-    }
-
-  .#{$class-heighty}#{$i} {
-    $height_retard: $i ;
-    $height: $height_retard;
-    height: $height_retard + vw;
-    }
-
-  .#{$class-depthy}#{$i} {
-    $depth_retard: $i ;
-    $depth: $depth_retard;
-    height: $depth_retard + vw;
-    }
-
+body.class-1 {
+  @include content($color-1, $color-2);
 }
 
-/*--end --generate list of classes to set width height and depth on .my_slab --*/
-
+body.class-2 {
+  @include content($color-3, $color-4);
+}
 
 
 
