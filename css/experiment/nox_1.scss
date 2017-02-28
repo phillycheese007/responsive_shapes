@@ -19,7 +19,7 @@ $class-widthy: width_ !default;
 $class-heighty: height_ !default;
 $class-depthy: depth_ !default;
 
-@for $i from 1 through 4{
+@for $i from 1 through 100{
   .#{$class-widthy}#{$i} {
     $width_retard: $i ;
     $width: $width_retard;
