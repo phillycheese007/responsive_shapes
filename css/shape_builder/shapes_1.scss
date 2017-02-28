@@ -89,10 +89,10 @@ $slab_color: orange;
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
   .front  { transform: rotateY(   0deg ) translateZ( $depth );}
   .back   { transform: rotateX( 180deg ) translateZ(  $depth );}
-  .right  { transform: rotateY(  90deg ) translateZ( $width );}
-  .left   { transform: rotateY( -90deg ) translateZ( $width );}
-  .top    { transform: rotateX(  90deg ) translateZ( $height );}
-  .bottom { transform: rotateX( -90deg ) translateZ( $height );}
+  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
+  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
 }
 
 
