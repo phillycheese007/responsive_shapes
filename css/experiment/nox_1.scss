@@ -39,16 +39,6 @@ $class-depthy: depth_ !default;
 /*--end --generate list of classes to set width height and depth on .my_slab --*/
 
 
-.slab_tester .front  { 
-
-  transform: rotateY(   0deg ) translateZ( $depth/2 ); background:red; 
-
-}
-.slab_tester .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 ); background:red; }
-.slab_tester .right  { transform: rotateY(  90deg ) translateZ( $width/2 ); background:red; }
-.slab_tester .left   { transform: rotateY( -90deg ) translateZ( $width/2 ); background:red; }
-.slab_tester .top    { transform: rotateX(  90deg ) translateZ( $height/2 ); background:red; }
-.slab_tester .bottom { transform: rotateX( -90deg ) translateZ( $height/2 ); background:red; }
 
 
 
