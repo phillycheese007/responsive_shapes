@@ -13,13 +13,14 @@ $color-1: #444;
 $color-2: #555;
 $color-3: #666;
 $color-4: #777;
+$color-5: #999;
 
 body.class-1 {
   @include content($color-1, $color-2);
 }
 
 body.class-2 {
-  @include content($color-3, $color-4);
+  @include content($color-5, $color-5);
 }
 
 
