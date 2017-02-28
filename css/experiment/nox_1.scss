@@ -30,7 +30,7 @@ $height_4: 4;
 
 body.class-1 {
   @include content($color-1, $color-2, $width_1414);
-  height: $width;
+  height: $width_belly;
 }
 
 body.class-2 {
