@@ -20,12 +20,15 @@ $class-heighty: height_ !default;
 $class-depthy: depth_ !default;
 
 @for $i from 1 through 100{
+  
   .#{$class-widthy}#{$i} {
     $width_retard: $i ;
     $width: $width_retard;
+    
     .slab_test {
       $width: $width_retard;
       width: $width_retard + vw;
+      
       .front, .back { 
          width: $width;
         height: $height;
@@ -40,14 +43,14 @@ $class-depthy: depth_ !default;
         height: $depth;
         top: ($height - $depth)/2 ;
       }
-    .front  { transform: rotateY(   0deg ) translateZ( $depth/2 ); background:red; }
-    .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 ); background:red; }
-    .right  { transform: rotateY(  90deg ) translateZ( $width/2 ); background:red; }
-    .left   { transform: rotateY( -90deg ) translateZ( $width/2 ); background:red; }
-    .top    { transform: rotateX(  90deg ) translateZ( $height/2 ); background:red; }
-    .bottom { transform: rotateX( -90deg ) translateZ( $height/2 ); background:red; }
+      .front  { transform: rotateY(   0deg ) translateZ( $depth/2 ); background:red; }
+      .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 ); background:red; }
+      .right  { transform: rotateY(  90deg ) translateZ( $width/2 ); background:red; }
+      .left   { transform: rotateY( -90deg ) translateZ( $width/2 ); background:red; }
+      .top    { transform: rotateX(  90deg ) translateZ( $height/2 ); background:red; }
+      .bottom { transform: rotateX( -90deg ) translateZ( $height/2 ); background:red; }
       
-    }
+    }/* end slab test */
 
     }
 
