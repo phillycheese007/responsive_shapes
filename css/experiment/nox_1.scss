@@ -34,11 +34,14 @@ $class-depthy: depth_ !default;
             
       .front, .back { 
       $width: $width_retard;
-        width: $width;
-        height: $height;
-        border: $width;
+       width: $width;
       }
+      
       .right, .left { 
+       $width: $width_retard;
+       $height: $height_retard;
+       $depth: $depth_retard;
+
         width: $depth;
         height: $height;
         left: ($width - $depth)/2 ;
