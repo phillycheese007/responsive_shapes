@@ -42,12 +42,7 @@ $slab_color: brown;
     border: 1px solid #000;
     opacity: .7; 
   }
-.slab_test .front { transform: rotateY( 0deg );}
-.slab_test .back { transform: rotateX( 180deg );}
-.slab_test .right { transform: rotateY( 90deg );}
-.slab_test .left { transform: rotateY( -90deg );}
-.slab_test .top { transform: rotateX( 90deg );}
-.slab_test .bottom { transform: rotateX( -90deg );}
+
 
 
 /*end general shapebuilding rules --*/
@@ -62,28 +57,17 @@ $slab_color: brown;
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
-  .front  { transform: translateZ( $depth/2 );}
-  .back   { transform: translateZ( $depth/2 );}
-  .right  { transform: translateZ( $width/2 );}
-  .left   { transform: translateZ( $width/2 );}
-  .top    { transform: translateZ( $height/2 );}
-  .bottom { transform: translateZ( $height/2 );}
+  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
+  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
+  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
 } /*--end .slab_test --*/
+b_test --*/
 
 
-#chair_4 .slab_test {
-  $width: 10vw;$height: 5vw;$depth: 14vw; /*set dimensions here */ 
-  
-  .front, .back { width: $width;height: $height;}
-  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
-  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
-  .front  { transform: translateZ( $depth/2 );}
-  .back   { transform: translateZ( $depth/2 );}
-  .right  { transform: translateZ( $width/2 );}
-  .left   { transform: translateZ( $width/2 );}
-  .top    { transform: translateZ( $height/2 );}
-  .bottom { transform: translateZ( $height/2 );}
-} /*--end .slab_test --*/
+
 
 
 
