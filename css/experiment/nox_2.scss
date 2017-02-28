@@ -26,7 +26,12 @@ $slab_color: brown;
 
  .slab_test .panels-backface-invisible figure { @include backface_visibility(hidden)}
 
- .slab_test { @include preserve_3d(preserve-3d)}
+ .slab_test { 
+   @include preserve_3d(preserve-3d);
+   width: 100%;
+   height: 100%; 
+   position:absolute;
+}
      
    
  .slab_test figure {
@@ -40,38 +45,22 @@ $slab_color: brown;
 /*end general shapebuilding rules --*/
 
 
-.slab_test {
-  $width: 10vw;
-  $height: 5vw;
-  $depth: 14vw;
-  width: 100%;
-  height: 100%; 
-  position:absolute;
+/*begin building Individual Shapes --*/
 
-  .front, .back { 
-    width: $width;
-    height: $height;
-  }
-  .right, .left { 
-    width: $depth;
-    height: $height;
-    left: ($width - $depth)/2 ;
-  }
-  .top, .bottom {
-    width: $width;
-    height: $depth;
-    top: ($height - $depth)/2 ;
-  }
-  
-.front  { transform: rotateY(   0deg ) translateZ( $depth/2 ); background:$slab_color; }
-.back   { transform: rotateX( 180deg ) translateZ(  $depth/2 ); background:$slab_color; }
-.right  { transform: rotateY(  90deg ) translateZ( $width/2 ); background:$slab_color; }
-.left   { transform: rotateY( -90deg ) translateZ( $width/2 ); background:$slab_color; }
-.top    { transform: rotateX(  90deg ) translateZ( $height/2 ); background:$slab_color; }
-.bottom { transform: rotateX( -90deg ) translateZ( $height/2 ); background:$slab_color; }
-  
-} /*--end slab --*/
+
+.slab_test.chair_seat {$width: 10vw;$height: 5vw;$depth: 14vw; /*set dimensions here */ 
+  .front, .back { width: $width;height: $height;}
+  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 ); background:$slab_color; }
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 ); background:$slab_color; }
+  .right  { transform: rotateY(  90deg ) translateZ( $width/2 ); background:$slab_color; }
+  .left   { transform: rotateY( -90deg ) translateZ( $width/2 ); background:$slab_color; }
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 ); background:$slab_color; }
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 ); background:$slab_color; }
+} /*--end .slab_test --*/
 
 
 
 
+/*end building Individual Shapes --*/
