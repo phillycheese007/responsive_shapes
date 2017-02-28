@@ -35,12 +35,20 @@ $slab_color: brown;
      
    
  .slab_test figure {
+    background:$slab_color;
     display: block;
     margin: 0;
     position: absolute;
     border: 1px solid #000;
     opacity: .7; 
   }
+figure .front { transform: rotateY( 0deg );}
+figure .back { transform: rotateX( 180deg );}
+figure .right { transform: rotateY( 90deg );}
+figure .left { transform: rotateY( -90deg );}
+figure .top { transform: rotateX( 90deg );}
+figure .bottom { transform: rotateX( -90deg );}
+
 
 /*end general shapebuilding rules --*/
 
@@ -54,12 +62,12 @@ $slab_color: brown;
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
-  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 ); background:$slab_color; }
-  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 ); background:$slab_color; }
-  .right  { transform: rotateY(  90deg ) translateZ( $width/2 ); background:$slab_color; }
-  .left   { transform: rotateY( -90deg ) translateZ( $width/2 ); background:$slab_color; }
-  .top    { transform: rotateX(  90deg ) translateZ( $height/2 ); background:$slab_color; }
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 ); background:$slab_color; }
+  .front  { transform: translateZ( $depth/2 );}
+  .back   { transform: translateZ( $depth/2 );}
+  .right  { transform: translateZ( $width/2 );}
+  .left   { transform: translateZ( $width/2 );}
+  .top    { transform: translateZ( $height/2 );}
+  .bottom { transform: translateZ( $height/2 );}
 } /*--end .slab_test --*/
 
 
@@ -69,12 +77,12 @@ $slab_color: brown;
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
-  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 ); background:$slab_color; }
-  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 ); background:$slab_color; }
-  .right  { transform: rotateY(  90deg ) translateZ( $width/2 ); background:$slab_color; }
-  .left   { transform: rotateY( -90deg ) translateZ( $width/2 ); background:$slab_color; }
-  .top    { transform: rotateX(  90deg ) translateZ( $height/2 ); background:$slab_color; }
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 ); background:$slab_color; }
+  .front  { transform: translateZ( $depth/2 );}
+  .back   { transform: translateZ( $depth/2 );}
+  .right  { transform: translateZ( $width/2 );}
+  .left   { transform: translateZ( $width/2 );}
+  .top    { transform: translateZ( $height/2 );}
+  .bottom { transform: translateZ( $height/2 );}
 } /*--end .slab_test --*/
 
 
