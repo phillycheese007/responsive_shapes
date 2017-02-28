@@ -29,7 +29,7 @@ $class-depthy: depth_ !default;
     $depth_retard: $i ;
     $depth: $depth_retard;
     .slab_test {
-      $height_retard: $i ;
+      $height: $height_retard;
       $width: $width_retard;
             
       .front, .back { 
