@@ -18,40 +18,8 @@ $class-depthy: depth_ !default;
   
   .#{$class-widthy}#{$i} {
     $width_retard: $i ;
-    $width: $width_retard;
-    
-    .slab_test {
-      $width: $width_retard;
-      $width: $width_retard;
-        
-      .front, .back { 
-      $width: $width_retard;
-
-        
-      width: $width;
-      height: $height;
-      }
-      
-      .right, .left { 
-       $width: $width_retard;
-
-        
-       width: $width;
-       height: $height;
-       left: ($width - $depth)/2 ;
-      }
-      
-      .top, .bottom {
-       $width: $width_retard;
-
-       width: $width;
-       height: $depth;
-       top: ($height - $depth)/2 ;
-      }
-      
-      
-    }/* end slab test */
-
+    $width: $width_retard; 
+    width:$width-retard;
     }
 
   .#{$class-heighty}#{$i} {
@@ -71,7 +39,11 @@ $class-depthy: depth_ !default;
 /*--end --generate list of classes to set width height and depth on .my_slab --*/
 
 
-.slab_tester .front  { transform: rotateY(   0deg ) translateZ( $depth/2 ); background:red; }
+.slab_tester .front  { 
+
+  transform: rotateY(   0deg ) translateZ( $depth/2 ); background:red; 
+
+}
 .slab_tester .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 ); background:red; }
 .slab_tester .right  { transform: rotateY(  90deg ) translateZ( $width/2 ); background:red; }
 .slab_tester .left   { transform: rotateY( -90deg ) translateZ( $width/2 ); background:red; }
