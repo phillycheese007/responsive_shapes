@@ -20,28 +20,22 @@ $class-depthy: depth_ !default;
     $width_retard: $i ;
     $width: $width_retard;
     
-    $heightfreedom:5;
-    
-    $height_retard: $height_freedom ;
-    $height: $height_freedom;
-    $depth_retard: $height_freedom ;
-    $depth: $depth_freedom;
     .slab_test {
       $width: $width_retard;
-      $height: $height_retard;
       $width: $width_retard;
-      $depth: $depth_retard;            
+        
       .front, .back { 
       $width: $width_retard;
-      $height: $height_retard;
+
+        
       width: $width;
       height: $height;
       }
       
       .right, .left { 
        $width: $width_retard;
-       $height: $height_retard;
-       $depth: $depth_retard;
+
+        
        width: $width;
        height: $height;
        left: ($width - $depth)/2 ;
@@ -49,19 +43,12 @@ $class-depthy: depth_ !default;
       
       .top, .bottom {
        $width: $width_retard;
-       $height: $height_retard;
-       $depth: $depth_retard;
+
        width: $width;
        height: $depth;
        top: ($height - $depth)/2 ;
       }
       
-      .front  { transform: rotateY(   0deg ) translateZ( $depth/2 ); background:red; }
-      .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 ); background:red; }
-      .right  { transform: rotateY(  90deg ) translateZ( $width/2 ); background:red; }
-      .left   { transform: rotateY( -90deg ) translateZ( $width/2 ); background:red; }
-      .top    { transform: rotateX(  90deg ) translateZ( $height/2 ); background:red; }
-      .bottom { transform: rotateX( -90deg ) translateZ( $height/2 ); background:red; }
       
     }/* end slab test */
 
@@ -82,6 +69,15 @@ $class-depthy: depth_ !default;
 }
 
 /*--end --generate list of classes to set width height and depth on .my_slab --*/
+
+
+.slab_tester .front  { transform: rotateY(   0deg ) translateZ( $depth/2 ); background:red; }
+.slab_tester .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 ); background:red; }
+.slab_tester .right  { transform: rotateY(  90deg ) translateZ( $width/2 ); background:red; }
+.slab_tester .left   { transform: rotateY( -90deg ) translateZ( $width/2 ); background:red; }
+.slab_tester .top    { transform: rotateX(  90deg ) translateZ( $height/2 ); background:red; }
+.slab_tester .bottom { transform: rotateX( -90deg ) translateZ( $height/2 ); background:red; }
+
 
 
 /*------------------------------begin slab 10vw x 1vw x 1vw --------------------------------
