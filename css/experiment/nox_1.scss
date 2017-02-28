@@ -19,7 +19,7 @@ $class-depthy: depth_ !default;
   .#{$class-widthy}#{$i} {
     $width_retard: $i ;
     $width: $width_retard; 
-    width:$width-retard;
+    width:$width-retard + px;
     }
 
   .#{$class-heighty}#{$i} {
