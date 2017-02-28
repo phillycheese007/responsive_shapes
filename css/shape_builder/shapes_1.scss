@@ -79,7 +79,7 @@ $slab_color: brown;
 } /*--end .slab_test --*/
 
 .w_1_h_1_d_10 {
-  $width: 10vw;$height: 5vw;$depth: 14vw; /*set dimensions here */ 
+  $width: 1vw;$height: 1vw;$depth: 10vw; /*set dimensions here */ 
   
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
