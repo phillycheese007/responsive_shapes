@@ -4,19 +4,18 @@
 
 
 
-$color-1: #444;
-$color-2: #555;
-$color-3: #666;
-$color-4: #777;
+@mixin content($color-default, $color-main) {
+  background: $color-default;
+  color: $color-main;
+}
 
 body.class-1 {
-  @include content($color-1, $color-2);
+  @include content(#444, #555);
 }
 
 body.class-2 {
-  @include content($color-3, $color-4);
+  @include content(#666, #777);
 }
-
 
 
 
