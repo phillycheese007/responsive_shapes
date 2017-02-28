@@ -42,12 +42,12 @@ $slab_color: brown;
     border: 1px solid #000;
     opacity: .7; 
   }
-figure .front { transform: rotateY( 0deg );}
-figure .back { transform: rotateX( 180deg );}
-figure .right { transform: rotateY( 90deg );}
-figure .left { transform: rotateY( -90deg );}
-figure .top { transform: rotateX( 90deg );}
-figure .bottom { transform: rotateX( -90deg );}
+.slab_test .front { transform: rotateY( 0deg );}
+.slab_test .back { transform: rotateX( 180deg );}
+.slab_test .right { transform: rotateY( 90deg );}
+.slab_test .left { transform: rotateY( -90deg );}
+.slab_test .top { transform: rotateX( 90deg );}
+.slab_test .bottom { transform: rotateX( -90deg );}
 
 
 /*end general shapebuilding rules --*/
