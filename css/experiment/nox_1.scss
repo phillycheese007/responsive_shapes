@@ -22,7 +22,7 @@ $class-depthy: depth_ !default;
   .#{$class-widthy}#{$i} {
     $width_retard: $i ;
     $width: $width_retard;
-   /* width: $width_retard + vw; */
+    width: $width_retard + vw; 
     }
 
   .#{$class-heighty}#{$i} {
