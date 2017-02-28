@@ -27,7 +27,7 @@ $zunny: $keyZ/ 2 ;
 
  .slab_test .panels-backface-invisible figure { @include backface_visibility(hidden)}
 
- .slab_test figure { @include preserve_3d(preserve-3d)}
+ .slab_test { @include preserve_3d(preserve-3d)}
    
    
    
