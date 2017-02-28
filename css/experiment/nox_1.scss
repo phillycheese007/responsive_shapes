@@ -14,11 +14,11 @@
 }
 
 body.class-1 {
-  @include content(#444, #555);
+  @include content($color-1, $color-2);
 }
 
 body.class-2 {
-  @include content(#666, #777);
+  @include content($color-3, $color-4);
 }
 
 
