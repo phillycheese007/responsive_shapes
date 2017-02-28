@@ -84,8 +84,8 @@ $slab_color: orange;
   .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
 }
 
-.w_77_h_77_d_77 {
-  $width: 77vw;$height: 77vw;$depth: 77vw; /*set dimensions here */ 
+.w_12_h_17_d_37 {
+  $width: 12vw;$height: 17vw;$depth: 37vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
 
   .front, .back { width: $width;height: $height;}
