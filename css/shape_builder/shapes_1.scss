@@ -70,7 +70,7 @@ $slab_color: orange;
 .w_28_h_20_d_1 {
 
   $width: 28vw;$height: 20vw;$depth: 1vw; /*set dimensions here */ 
-    transform:translateZ(4vw);
+  transform:translateZ($depth);
   
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
@@ -89,7 +89,7 @@ $slab_color: orange;
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
-  .front  { transform: rotateY(   0deg ) translateZ( $depth );}
+  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
   .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
   .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
