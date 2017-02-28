@@ -58,21 +58,12 @@
   position: absolute;z-index:1;
 }
 
-.bigbox{
+.bigbox, .billybox, .relfloorbox{
   perspective: 41em;
 }
 
-.billybox{
-  perspective: 41em; 
+.relfloorbox .me, .billybox .me{
+  transform:rotateX(70deg);
 }
 
-.billybox .me{
-  transform:rotateX(90deg);
-}
 
-.relfloorbox {  
-  perspective: 41em;  }
-
-.relfloorbox .me{
-  transform:rotateX(90deg); 
-}
