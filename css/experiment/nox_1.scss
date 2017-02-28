@@ -11,11 +11,11 @@
   $color-2: #555;
   $color-3: #666;
   $color-4: #777;
-  $color-5: #999;
+  $color-6: #999;
 }
 
 body.class-1 {
-  @include content($color-5, $color-2);
+  @include content($color-6, $color-2);
 }
 
 body.class-2 {
