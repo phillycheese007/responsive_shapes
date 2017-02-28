@@ -5,23 +5,6 @@ $keyZ:10vw;
 $zunny: $keyZ/ 2 ;
 
 
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-          border-radius: $radius;
-}
-
-.box { @include border-radius(10px); }
-
-@mixin my_panel_backface_visibility($arguments) {
-  -webkit-border-radius: hidden;
-     -moz-border-radius: hidden;
-      -ms-border-radius: hidden;
-          border-radius: hidden;
-}
-
- .panels-backface-invisible figure { @include my_panel_backface_visibility(hidden); }
 
 
 
