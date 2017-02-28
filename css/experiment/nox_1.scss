@@ -34,7 +34,7 @@ $zunny: $keyZ/ 2 ;
           backface-visibility: $arguments;
 }
 
- .panels-backface-invisible figure { @include backface_visibility("hidden"}
+ .panels-backface-invisible figure { @include backface_visibility("hidden")}
 
 
 
