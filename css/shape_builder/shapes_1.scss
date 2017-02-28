@@ -2,9 +2,9 @@
 #slabs
 ---
 $slab_color: orange;
-.preserve3d{transform-style: preserve-3d;}
 
-/* --begin controllers --*/
+
+/* --begin constants --*/
 
 @mixin backface_visibility ($arguments) {
   -webkit-backface-visibility: $arguments;
@@ -19,9 +19,10 @@ $slab_color: orange;
   -o-transform-style: $arguments;
   transform-style: $arguments;
 }
-/* --end controllers --*/
-
-
+.preserve3d{
+  @include preserve_3d(preserve-3d);
+}
+/* --end constants --*/
 
 
 /*begin general shapebuilding rules --*/
