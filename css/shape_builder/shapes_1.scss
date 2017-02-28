@@ -81,5 +81,25 @@ $slab_color: orange;
   .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
 }
 
+.w_77_h_77_d_77 {
+  $width: 77vw;$height: 77vw;$depth: 77vw; /*set dimensions here */ 
+  
+  .front, .back { width: $width;height: $height;}
+  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .front  { transform: rotateY(   0deg ) translateZ( $depth );}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth );}
+  .right  { transform: rotateY(  90deg ) translateZ( $width );}
+  .left   { transform: rotateY( -90deg ) translateZ( $width );}
+  .top    { transform: rotateX(  90deg ) translateZ( $height );}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height );}
+}
+
+
+
+
+
+
+
 /*end building Individual Shapes --*/
 
