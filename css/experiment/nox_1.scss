@@ -31,11 +31,11 @@ $class-depthy: depth_ !default;
     .slab_test {
       $height_retard: $i ;
       $width: $width_retard;
-      
-      width: $width_retard + vw;
-      
+      width: $1 + vw;
+            
       .front, .back { 
-         width: $width;
+        $width: $1 +rrr
+        width: $1;
         height: $height;
       }
       .right, .left { 
