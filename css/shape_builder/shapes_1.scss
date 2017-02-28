@@ -12,7 +12,6 @@ $slab_color: orange;
        -o-backface-visibility: $arguments;
           backface-visibility: $arguments;
 }
-
 @mixin preserve_3d ($arguments) {
   -webkit-transform-style: $arguments;
   -moz-transform-style: $arguments;
@@ -20,6 +19,9 @@ $slab_color: orange;
   transform-style: $arguments;
 }
 /* --end controllers --*/
+
+
+
 
 /*begin general shapebuilding rules --*/
 
@@ -40,6 +42,12 @@ $slab_color: orange;
   }
 
 /*end general shapebuilding rules --*/
+
+
+
+
+
+
 
 
 /*begin building Individual Shapes --*/
