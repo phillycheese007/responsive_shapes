@@ -152,8 +152,8 @@ function onDemoNav(e) {
 			break;
 		case 'crane':
 			hideCoverflow();
-			showCrane();
-			renderCurrent = renderCrane;
+			showPlane();
+			renderCurrent = renderPlane;
 			break;
 	}
 
