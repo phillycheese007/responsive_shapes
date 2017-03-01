@@ -50,7 +50,7 @@ $(document).ready(function() {
 	cubeFaces = [];
 	diamondFaces = [];
 	currentCover = 0;
-	renderCurrent = renderCrane;
+	renderCurrent = renderPlane;
 	$toggleBtn = $('.toggle-btn');
 	$toggleOn = $('.toggle .label-on');
 	$toggleOff = $('.toggle .label-off');
