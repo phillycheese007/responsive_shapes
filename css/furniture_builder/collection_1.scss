@@ -49,10 +49,12 @@
     $no_rotation:0deg;
     .vertical_1{transform:translateZ(12vw) rotateY($back_rotation);}
     .rung_1{
+      left:$rung_indent_size;
       top:$rung_indent_size;
       transform:translateZ(12vw) rotateY($no_rotation);
     }
     .rung_2{
+      left:$rung_indent_size;
       top:$base_width - ($rung_width + $rung_indent_size); 
       transform:translateZ(12vw) rotateY($no_rotation);
     }
