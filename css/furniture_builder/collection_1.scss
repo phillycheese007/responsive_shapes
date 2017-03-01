@@ -32,8 +32,8 @@
     transform:translateZ($horizontal_2_height_from_base);
   }
   .leg_1{
-    left:$leg_indent_size + $leg_width;
-    top:$leg_indent_size + $leg_width;
+    left:$leg_indent_size + 22;
+    top:$leg_indent_size + 22;
   }
   .leg_2{
     left:($base_width) - ($leg_width + $leg_indent_size);
