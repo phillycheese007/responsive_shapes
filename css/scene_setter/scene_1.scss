@@ -7,14 +7,43 @@
   left:8vw;top:10vw;
   transform: rotate(23deg);
 }
-
 #table_2 {
   position:absolute;
   left:35vw;top:3vw;
   transform: rotate(115deg);
-  animation: infinite-spinning 20s linear;
-  
+  animation: infinite-spinning 20s linear; 
 }
+
+
+#chair_1 {
+  position:absolute;
+  left:18vw;top:6vw;
+  transform: rotate(73deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @keyframes infinite-spinning {
