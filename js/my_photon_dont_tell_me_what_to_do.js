@@ -66,8 +66,8 @@ $(document).ready(function() {
 	} else {
 		$('.map-thumb').click();
 		showMap();
-		$('.crane').hide();
-		$('.crane-thumb').hide();
+		$('.airplane').hide();
+		$('.airplane-thumb').hide();
 	}
 });
 
@@ -143,11 +143,11 @@ function onDemoNav(e) {
 			showCoverflow();
 			renderCurrent = renderCoverflow;
 			break;
-		case 'crane':
+		case 'airplane':
 			hideCoverflow();
 			hideMap();
 			showAirplane();
-			renderCurrent = renderCrane;
+			renderCurrent = renderairplane;
 			break;
 		case 'map':
 			hideCoverflow();
@@ -173,21 +173,21 @@ function onDemoNav(e) {
 
 /*---------------------------------
 
-	Crane
+	airplane
 
 ---------------------------------*/
 
 function setupAirplanee() {
-	$crane = $('.airplane');
-	crane = new Photon.FaceGroup($('.airplane')[0], $('.airplane .face'), .6, .1, true);
+	$airplane = $('.airplane');
+	airplane = new Photon.FaceGroup($('.airplane')[0], $('.airplane .face'), .6, .1, true);
 	renderAirplane();
 }
 
-function renderCrane() {
+function renderairplane() {
 	airplane.render(light, true);
 }
 
-function showCrane() {
+function showairplane() {
 	$body.bind('mousemove', rotateAirplane);
 	$airplane.show();
 }
@@ -200,7 +200,7 @@ function hideAirplane() {
 function rotateAirplane(e) {
 	var xPer = e.pageX / $body.width();
 
-	$(crane.element).css(cssTransformProperty, 'rotateX(-15deg) rotateY(' + (-180 + (xPer * 360)) + 'deg)');
+	$(airplane.element).css(cssTransformProperty, 'rotateX(-15deg) rotateY(' + (-180 + (xPer * 360)) + 'deg)');
 	renderAirplane();
 }
 
