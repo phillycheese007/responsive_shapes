@@ -29,8 +29,10 @@
   $base_width:10vw; /* X cordinate */
   $base_height:10vw; /* Y cordinate */
   $base_depth:7vw; /* Z cordinate */
-  $leg_indent_size:.5vw;
   $leg_width:.5vw; /*at the moment this variable must be updated manually */
+  $leg_indent_size:.5vw;
+  $rung_width:.5vw; /*at the moment this variable must be updated manually */
+  $rung_indent_size:.5vw;
   $horizontal_1_height_from_base: ($base_depth / 2) + 1;
   $horizontal_2_height_from_base: ($base_depth);
   .four_leg_base{
@@ -43,16 +45,15 @@
     .horizontal_1{transform:translateZ($horizontal_1_height_from_base);}
   }
   .chair_back{
-    $rung_indent:.5vw;
     $back_rotation:-45deg;
     $no_rotation:0deg;
     .vertical_1{transform:translateZ(12vw) rotateY($back_rotation);}
     .rung_1{
-      top:5vw;
+      top:$rung_indent_size;
       transform:translateZ(12vw) rotateY($no_rotation);
     }
     .rung_2{
-      top:$base_width - $rung_indent; 
+      top:$base_width - ($rung_width + $rung_indent_size); 
       transform:translateZ(12vw) rotateY($no_rotation);
     }
   }
