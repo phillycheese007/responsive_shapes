@@ -13,15 +13,17 @@
 }
 /* --end table (30 x 20 x 8.5)(.5 x .5 x 8 legs) --*/
 
-chairback_1
-chairseat_1
-leg_1
 
-#basic_chair_1 {
-  .chairseat_1{transform:translateZ(5vw);}
-  .chairback_1{transform:translateZ(7.5vw);}
-  .leg_1{left:1vw;top:1vw;}
+
+
+.squarebase{
+  $square_size:22vw;
+  $indent_size:2vw;
+  
+  .leg_1{right:0vw;top:0vw;}
   .leg_2{left:27vw;top:2vw;}
   .leg_3{left:2vw;top:19vw;}
-  .leg_4{left:27vw;top:17vw;}
+  .leg_4{right:27vw;top:17vw;}
 }
+
+
