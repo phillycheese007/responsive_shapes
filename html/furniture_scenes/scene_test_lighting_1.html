@@ -39,13 +39,13 @@ div {
   position: absolute;
 }
 
-.cube {
+.airplane {
   top: 50%;
   left: 50%;
   transform-style: preserve-3d;
   animation: rot 7s linear infinite;
 }
-.cube__face {
+.airplane__face {
   margin: -10vw;
   width: 20vw;
   height: 20vw;
@@ -54,51 +54,51 @@ div {
   opacity: .5;
   background: yellow;
 }
-.cube__face:nth-child(1) {
+.airplane__face:nth-child(1) {
   transform: rotateY(0deg) translateZ(10vw);
 }
-.cube__face:nth-child(2) {
+.airplane__face:nth-child(2) {
   transform: rotateY(90deg) translateZ(10vw);
 }
-.cube__face:nth-child(3) {
+.airplane__face:nth-child(3) {
   transform: rotateY(180deg) translateZ(10vw);
 }
-.cube__face:nth-child(4) {
+.airplane__face:nth-child(4) {
   transform: rotateY(270deg) translateZ(10vw);
 }
-.cube__face:nth-child(5) {
+.airplane__face:nth-child(5) {
   transform: rotateX(90deg) translateZ(10vw);
 }
-.cube__face:nth-child(6) {
+.airplane__face:nth-child(6) {
   transform: rotateX(-90deg) translateZ(10vw);
 }
 @media (orientation: portrait) {
-  .cube__face {
+  .airplane__face {
     margin: -10vh;
     width: 20vh;
     height: 20vh;
   }
-  .cube__face:nth-child(1) {
+  .airplane__face:nth-child(1) {
     transform: rotateY(0deg) translateZ(10vh);
   }
-  .cube__face:nth-child(2) {
+  .airplane__face:nth-child(2) {
     transform: rotateY(90deg) translateZ(10vh);
   }
-  .cube__face:nth-child(3) {
+  .airplane__face:nth-child(3) {
     transform: rotateY(180deg) translateZ(10vh);
   }
-  .cube__face:nth-child(4) {
+  .airplane__face:nth-child(4) {
     transform: rotateY(270deg) translateZ(10vh);
   }
-  .cube__face:nth-child(5) {
+  .airplane__face:nth-child(5) {
     transform: rotateX(90deg) translateZ(10vh);
   }
-  .cube__face:nth-child(6) {
+  .airplane__face:nth-child(6) {
     transform: rotateX(-90deg) translateZ(10vh);
   }
 }
 @media (max-width: 2125px), (max-height: 2125px) {
-  .cube__face {
+  .airplane__face {
     background-size: contain;
   }
 }
@@ -118,7 +118,7 @@ div {
      <div class="me">  
        
 
-<div class='cube'>
+<div class='airplane'>
   <div class='cube__face'></div>
   <div class='cube__face'></div>
   <div class='cube__face'></div>
