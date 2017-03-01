@@ -45,37 +45,21 @@
 	-webkit-transform: translate3d(0, -346px, -60px) rotateX(50deg) rotateY(-10deg);
 }
 
-.crane .wing-1c {
-	width: 132px;
-	height: 105px;
-	-webkit-mask: url(../images/crane/wing-c.svg) no-repeat;
-	-webkit-transform-origin: bottom left;
-	-webkit-transform: translate3d(-128px, -22px, -34px) rotateY(6deg) rotateX(9deg);
-}
-
-.crane .wing-1d {
-	width: 132px;
-	height: 105px;
-	-webkit-mask: url(../images/crane/wing-d.svg) no-repeat;
-	-webkit-transform-origin: bottom right;
-	-webkit-transform: translate3d(-1px, -22px, -34px) rotateY(-6deg) rotateX(9deg);
-}
-
 .crane .wing-2a {
-		width: 132px;
-	height: 105px;
-	-webkit-mask: url(../images/crane/wing-d.svg) no-repeat;
+	width: 132px;
+	height: 346px;
+	-webkit-mask: url(../images/crane/wing-a.svg) no-repeat;
 	-webkit-transform-origin: bottom right;
-	-webkit-transform: translate3d(-1px, -22px, -34px) rotateY(-6deg) rotateX(9deg);
+	-webkit-transform: translate3d(-131px, -346px, 60px) rotateX(-50deg) rotateY(-10deg);
 }
 
 .crane .wing-2b {
-		width: 132px;
-	height: 105px;
+	width: 132px;
+	height: 346px;
+	-webkit-mask: url(../images/crane/wing-b.svg) no-repeat;
 	-webkit-transform-origin: bottom left;
-	-webkit-transform: translate3d(-128px, -22px, -34px) rotateY(6deg) rotateX(9deg);
+	-webkit-transform: translate3d(0, -346px, 60px) rotateX(-50deg) rotateY(10deg);
 }
-
 
 
 /*---------------------------------
