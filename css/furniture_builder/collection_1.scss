@@ -16,12 +16,29 @@
 
 
 
-.squarebase{
+.furniture_base{
+  $base_width:20vw; /* X cordinate */
+  $base_height:10vw; /* Y cordinate */
+  $indent_size:2vw;
+  $leg_width:.5vw; /*at the moment this variable must be updated manually */
+  
   .tabletop_1{transform:translateZ(5vw);}
   .tabletop_2{transform:translateZ(7.5vw);}
-  .leg_1{left:2vw;top:2vw;}
-  .leg_2{left:7vw;top:2vw;}
-  .leg_3{left:2vw;top:9vw;}
-  .leg_4{left:7vw;top:7vw;}
+  .leg_1{
+    left:$indent_size;
+    top:$indent_size;
+  }
+  .leg_2{
+    left:($base_width) - ($legwidth + $indent_size);
+    top:$indent_size;
+  }
+  .leg_3{
+    left:$indent_size;
+    top:($base_height) - ($legwidth + $indent_size);
+  }
+  .leg_4{
+    left:($base_width) - ($legwidth + $indent_size);
+    top:($base_height) - ($legwidth + $indent_size);
+  }
 }
 
