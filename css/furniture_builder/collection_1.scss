@@ -30,7 +30,9 @@
 
 .chair_seat{
   @extend .four_leg_base;
-  .horizontal_1{transform:translateZ($horizontal_1_height_from_base);}
+  .horizontal_1{
+      @extend .four_leg_base;
+    transform:translateZ($horizontal_1_height_from_base);}
     
 }
   
