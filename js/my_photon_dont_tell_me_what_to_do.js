@@ -215,7 +215,7 @@ function rotateCrane(e) {
 ---------------------------------*/
 
 function setupPlane() {
-	$prane = $('.Plane');
+	$prane = $('.plane');
 	prane = new Photon.FaceGroup($('plane')[0], $('.plane .face'), .6, .1, true);
 	renderPlane();
 }
