@@ -12,8 +12,17 @@
   position:absolute;
   left:35vw;top:3vw;
   transform: rotate(115deg);
+  animation: infinite-spinning 10s linear;
+  
 }
 
 
-
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
