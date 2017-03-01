@@ -68,11 +68,21 @@ div {
 
 
 
-
-
 .crane {
-  $width: 28vw;$height: 20vw;$depth: 1vw; /*set dimensions here */ 
-  transform:translateZ($depth/2);
+    $width: 28vw;$height: 20vw;$depth: 1vw; /*set dimensions here */ 
+    transform:translateZ($depth/2);
+  
+  position: absolute;
+  top: 50%;
+	left: 50%;
+	margin-top: 50px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: rotateX(-15deg) rotateY(-42deg);
+  
+  .face {
+    position: absolute;
+	  background:lightgreen;
+  }
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
@@ -83,5 +93,9 @@ div {
   .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
   .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
 }
+
+
+
+
 
 
