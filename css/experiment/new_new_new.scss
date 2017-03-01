@@ -81,8 +81,9 @@ div {
   
   .face {
     position: absolute;
-	  background:lightgreen;
+    background:lightgreen;
   }
+	
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
