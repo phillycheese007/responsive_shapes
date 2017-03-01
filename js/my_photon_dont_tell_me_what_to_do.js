@@ -150,7 +150,7 @@ function onDemoNav(e) {
 			showCoverflow();
 			renderCurrent = renderCoverflow;
 			break;
-		case 'crane':
+		case 'plane':
 			hideCoverflow();
 			showPlane();
 			renderCurrent = renderPlane;
@@ -217,7 +217,7 @@ function rotateCrane(e) {
 function setupPlane() {
 	$prane = $('.Plane');
 	prane = new Photon.FaceGroup($('plane')[0], $('.plane .face'), .6, .1, true);
-	renderplane();
+	renderPlane();
 }
 
 function renderPlane() {
