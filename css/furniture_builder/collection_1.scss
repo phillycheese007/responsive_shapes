@@ -54,8 +54,8 @@
       transform:translateZ(12vw) rotateY($no_rotation);
     }
     .rung_2{
-      left:$rung_indent_size;
-      top:$base_width - ($rung_width + $rung_indent_size); 
+      top:$rung_indent_size;
+      left:$base_width - ($rung_width + $rung_indent_size); 
       transform:translateZ(12vw) rotateY($no_rotation);
     }
   }
