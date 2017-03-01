@@ -43,11 +43,17 @@
     .horizontal_1{transform:translateZ($horizontal_1_height_from_base);}
   }
   .chair_back{
+    $rung_indent:3vw;
     $back_rotation:-45deg;
     $no_rotation:0deg;
     .vertical_1{transform:translateZ(12vw) rotateY($back_rotation);}
-    .rung_1{transform:translateZ(12vw) rotateY($no_rotation);}
-    .rung_2{top:$base_width; transform:translateZ(12vw) rotateY($no_rotation);}
+    .rung_1{
+      left:$rung_indent;
+      transform:translateZ(12vw) rotateY($no_rotation);
+    }
+    .rung_2{
+      top:$base_width - $rung_indent; transform:translateZ(12vw) rotateY($no_rotation);
+    }
   }
 }
     
