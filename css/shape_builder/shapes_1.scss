@@ -148,7 +148,7 @@ $slab_color: yellow;
   .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
 }
 
-.crane {
+.craney {
   $width: 12vw;$height: 17vw;$depth: 37vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .front, .back { width: $width;height: $height;}
