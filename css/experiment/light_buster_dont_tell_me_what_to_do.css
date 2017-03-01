@@ -65,6 +65,8 @@
 }
 
 .crane .wing-2b {
+		width: 132px;
+	height: 105px;
 	-webkit-transform-origin: bottom left;
 	-webkit-transform: translate3d(-128px, -22px, -34px) rotateY(6deg) rotateX(9deg);
 }
