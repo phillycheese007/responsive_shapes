@@ -40,10 +40,13 @@
   .leg_4{left:($base_width) - ($leg_width + $leg_indent_size);top:($base_height) - ($leg_width + $leg_indent_size);}
   }
   .chair_seat{
-  .horizontal_1{transform:translateZ($horizontal_1_height_from_base);}
+    .horizontal_1{transform:translateZ($horizontal_1_height_from_base);}
   }
   .chair_back{
-    .vertical_1{transform:rotateY(-45deg) translateZ(12vw)}
+    transform: translateZ(12vw);
+    .vertical_1{transform:rotateY(-45deg);}
+    .rung_1{ left:0;}
+    .rung_2{ left:$base_width;}
   }
 }
     
