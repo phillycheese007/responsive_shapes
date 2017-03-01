@@ -14,16 +14,14 @@
 /* --end table (30 x 20 x 8.5)(.5 x .5 x 8 legs) --*/
 
 
-
-
-.squarebase{
-  $square_size:22vw;
-  $indent_size:2vw;
+#basic_chair_1{
+  .squarebase{
+    $square_size:22vw;
+    $indent_size:2vw;
   
-  .leg_1{right:0vw;top:0vw;}
-  .leg_2{left:37vw;top:2vw;}
-  .leg_3{left:2vw;top:19vw;}
-  .leg_4{right:27vw;top:17vw;}
+    .leg_1{right:0vw;top:0vw;}
+    .leg_2{left:37vw;top:2vw;}
+    .leg_3{left:2vw;top:19vw;}
+    .leg_4{right:27vw;top:17vw;}
+  }
 }
-
-
