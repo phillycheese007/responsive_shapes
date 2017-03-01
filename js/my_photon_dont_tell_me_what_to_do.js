@@ -1,11 +1,6 @@
 var $body,
 	$demos,
 	$crane,
-	$map,
-	$mapPanel1,
-	$mapPanel2,
-	$mapPanel3,
-	$mapCover,
 	$coverflow,
 	$toggleBtn,
 	$toggleOn,
@@ -62,7 +57,6 @@ $(document).ready(function() {
 	setupLightControls();
 	setupCoverflow();
 	setupCrane();
-	setupMap();
 
 	// demo menu
 	$('.example-menu a').bind('click', onDemoNav);
