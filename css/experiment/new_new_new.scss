@@ -48,14 +48,7 @@ div {
 /*end general shapebuilding rules --*/
 
 
-
-
 /*begin building Individual Shapes --*/
-
-
-
-
-
 
 
 .w_28_h_20_d_1 {
@@ -71,7 +64,6 @@ div {
   .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
   .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
 }
-
 
 /*---------------------------------
 	Crane
