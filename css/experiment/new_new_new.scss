@@ -69,8 +69,8 @@ div {
 
 
 .crane {
-    $width: 28vw;$height: 20vw;$depth: 1vw; /*set dimensions here */ 
-    transform:translateZ($depth/2);
+  $width: 28vw;$height: 20vw;$depth: 1vw; /*set dimensions here */ 
+  transform:translateZ($depth/2);
   
   position: absolute;
   top: 50%;
