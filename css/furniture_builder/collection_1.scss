@@ -48,7 +48,7 @@
     $no_rotation:0deg;
     .vertical_1{transform:translateZ(12vw) rotateY($back_rotation);}
     .rung_1{
-      left:5vw;
+      top:5vw;
       transform:translateZ(12vw) rotateY($no_rotation);
     }
     .rung_2{
