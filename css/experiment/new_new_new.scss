@@ -123,6 +123,15 @@ div {
   .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
 }
 
+
+
+
+
+
+
+
+
+
 .w_28_h_20_d_1 {
   $width: 28vw;$height: 20vw;$depth: 1vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
@@ -138,32 +147,26 @@ div {
 }
 
 
-
 /*---------------------------------
 	Crane
 ---------------------------------*/
 
-.crane {
-	position: absolute;
+.crane {position: absolute;
 	top: 50%;
 	left: 50%;
 	margin-top: 50px;
 	-webkit-transform-style: preserve-3d;
 	-webkit-transform: rotateX(-15deg) rotateY(-42deg);
 }
-
-.crane .face {
-	position: absolute;
+.crane .face {position: absolute;
 	background:lightgreen;
 }
-.crane .wing-1 {
-	width: 132px;
+.crane .wing-1 {width: 132px;
 	height: 346px;
 	-webkit-transform-origin: bottom right;
 	-webkit-transform: rotateX(-50deg) rotateY(-10deg);
 }
-.crane .wing-2 {
-	width: 132px;
+.crane .wing-2 {width: 132px;
 	height: 346px;
 	-webkit-transform-origin: bottom left;
 	-webkit-transform: rotateX(-50deg) rotateY(10deg);
