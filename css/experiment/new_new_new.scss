@@ -2,6 +2,9 @@
 #slabs
 ---
 $slab_color: yellow;
+div {
+  position: absolute;
+}
 
 
 /* --begin constants --*/
@@ -134,41 +137,7 @@ $slab_color: yellow;
   .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
 }
 
-.w_12_h_17_d_37 {
-  $width: 12vw;$height: 17vw;$depth: 37vw; /*set dimensions here */ 
-  transform:translateZ($depth/2);
-  .front, .back { width: $width;height: $height;}
-  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
-  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
-  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
-  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
-  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
-  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
-  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
-}
 
-.crane {
-  $width: 12vw;$height: 17vw;$depth: 37vw; /*set dimensions here */ 
-  transform:translateZ($depth/2);
-  .front, .back { width: $width;height: $height;}
-  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
-  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
-  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
-  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
-  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
-  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
-  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
-}
-
-
-/*end building Individual Shapes --*/
-
-
-div {
-  position: absolute;
-}
 
 /*---------------------------------
 	Crane
@@ -187,15 +156,13 @@ div {
 	position: absolute;
 	background:lightgreen;
 }
-
-.crane .wing-2a {
+.crane .wing-1 {
 	width: 132px;
 	height: 346px;
 	-webkit-transform-origin: bottom right;
 	-webkit-transform: rotateX(-50deg) rotateY(-10deg);
 }
-
-.crane .wing-2b {
+.crane .wing-2 {
 	width: 132px;
 	height: 346px;
 	-webkit-transform-origin: bottom left;
