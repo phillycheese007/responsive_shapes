@@ -1,12 +1,19 @@
 var $body,
 	$demos,
 	$crane,
+    
+        $plane,
+    
 	$coverflow,
 	$toggleBtn,
 	$toggleOn,
 	$toggleOff,
 	crane,
 	craneFaces,
+    
+	plane,
+	planeFaces,  
+    
 	cubeFaces,
 	diamondFaces,
 	coverflowFaces,
@@ -57,6 +64,7 @@ $(document).ready(function() {
 	setupLightControls();
 	setupCoverflow();
 	setupCrane();
+	setupPlane();
 
 	// demo menu
 	$('.example-menu a').bind('click', onDemoNav);
@@ -199,6 +207,39 @@ function rotateCrane(e) {
 
 
 
+
+/*---------------------------------
+
+	Crane
+
+---------------------------------*/
+
+function setupPlane() {
+	$prane = $('.Plane');
+	prane = new Photon.FaceGroup($('plane')[0], $('.plane .face'), .6, .1, true);
+	renderplane();
+}
+
+function renderPlane() {
+	plane.render(light, true);
+}
+
+function showPlane() {
+	$body.bind('mousemove', rotatePlane);
+	$plane.show();
+}
+
+function hidePlane() {
+	$body.unbind('mousemove', rotatePlane);
+	$plane.hide();
+}
+
+function rotatePlane(e) {
+	var xPer = e.pageX / $body.width();
+
+	$(Plane.element).css(cssTransformProperty, 'rotateX(-15deg) rotateY(' + (-180 + (xPer * 360)) + 'deg)');
+	renderPlane();
+}
 
 
 
