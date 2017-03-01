@@ -43,7 +43,7 @@
   .horizontal_1{transform:translateZ($horizontal_1_height_from_base);}
   }
   .chair_back{
-    .vertical_1{transform:rotateY(45deg) translateZ(12vw)}
+    .vertical_1{transform:rotateY(-45deg) translateZ(12vw)}
   }
 }
     
