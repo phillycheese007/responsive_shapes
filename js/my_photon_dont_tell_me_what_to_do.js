@@ -1,7 +1,6 @@
 var $body,
 	$demos,
 	$crane,
-	$map,
 	$toggleBtn,
 	$toggleOn,
 	$toggleOff,
