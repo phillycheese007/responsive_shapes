@@ -13,7 +13,7 @@
 
 ---------------------------------*/
 
-.crane {
+.airplane {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -23,12 +23,12 @@
 }
 
 
-.crane .face {
+.airplane .face {
 	position: absolute;
 	background: url(../images/texture-2.png) #ff0;
 }
 
-.crane .wing-2a {
+.airplane .wing-2a {
 	width: 132px;
 	height: 346px;
 	-webkit-mask: url(../images/crane/wing-a.svg) no-repeat;
@@ -36,7 +36,7 @@
 	-webkit-transform: translate3d(-131px, -346px, 60px) rotateX(-50deg) rotateY(-10deg);
 }
 
-.crane .wing-2b {
+.airplane .wing-2b {
 	width: 132px;
 	height: 346px;
 	-webkit-mask: url(../images/crane/wing-b.svg) no-repeat;
