@@ -212,65 +212,6 @@ function rotateCrane(e) {
 
 
 
-/*---------------------------------
-
-	Map
-
----------------------------------*/
-
-function setupMap() {
-	$map = $('.map');
-	$mapPanel1 = $('.panel-1');
-	$mapPanel2 = $('.panel-2');
-	$mapPanel3 = $('.panel-3');
-	$mapCover = $('.map-cover');
-	$map.bind('click', toggleMap);
-
-	map = new Photon.FaceGroup($('.map')[0], $('.map .face'), 1.5, .2, true);
-	renderMap();
-}
-
-function toggleMap() {
-	$map.toggleClass('is-open');
-
-	$map.unbind();
-	$map.bind(transitionEndEvent, stopRenderTimer);
-
-	if(!renderTimer) {
-		renderTimer = setInterval(renderMap, 34);
-	}
-}
-
-function renderMap() {
-	map.render(light, true, true);
-}
-
-function showMap() {
-	$body.bind('mousemove', rotateMap);
-	$map.show();
-}
-
-function hideMap() {
-	$body.unbind('mousemove', rotateMap);
-	$map.hide();
-}
-
-function rotateMap(e) {
-	var xPer = e.pageX / $body.width();
-	var yPer = e.pageY / $body.height();
-
-	$mapPanel1.css(cssTransformProperty, 'rotateY(' + (178 - (138 * xPer)) + 'deg)');
-	$mapCover.css(cssTransformProperty, 'rotateY(' + (178 - (138 * xPer)) + 'deg) translateZ(-2px) rotateY(180deg) translateX(240px)');
-	$mapPanel3.css(cssTransformProperty, 'rotateY(' + (178 - (138 * xPer)) + 'deg)');
-	$map.css(cssTransformProperty, 'rotateX(' + (40 - (yPer * 70)) + 'deg) rotateY(' + (20 - (xPer * 60)) + 'deg) rotateZ(0)');
-
-	renderMap();
-}
-
-
-
-
-
 
 
 
