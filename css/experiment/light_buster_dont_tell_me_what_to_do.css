@@ -4,9 +4,6 @@
 
 
 
-
-
-
 /*---------------------------------
 
 	Crane
@@ -25,7 +22,7 @@
 
 .crane .face {
 	position: absolute;
-	background: url(../images/texture-2.png) #ff0;
+	background:lightgreen;
 }
 
 .crane .wing-2a {
@@ -43,166 +40,5 @@
 	-webkit-transform-origin: bottom left;
 	-webkit-transform: translate3d(0, -346px, 60px) rotateX(-50deg) rotateY(10deg);
 }
-
-
-
-
-/*---------------------------------
-
-	Coverflow
-
----------------------------------*/
-
-.coverflow {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 0;
-	width: 100%;
-	height: 100%;
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	-ms-transform-style: preserve-3d;
-	-o-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-}
-
-.coverflow li {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	z-index: 100;
-	width: 400px;
-	height: 400px;
-	margin-left: -200px;
-	margin-top: -250px;
-	-webkit-transition: -webkit-transform .3s;
-	-moz-transition: -moz-transform .3s;
-	-ms-transition: -ms-transform .3s;
-	-o-transition: -o-transform .3s;
-	transition: transform .3s;
-	pointer-events: none;
-}
-
-
-
-
-
-
-
-
-
-/*---------------------------------
-
-	Map
-
----------------------------------*/
-
-.map {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	-ms-transform-style: preserve-3d;
-	-o-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-	-webkit-transform: rotateX(10deg) rotateY(30deg) rotateZ(0);
-	-moz-transform: rotateX(10deg) rotateY(30deg) rotateZ(0);
-	-ms-transform: rotateX(10deg) rotateY(30deg) rotateZ(0);
-	-o-transform: rotateX(10deg) rotateY(30deg) rotateZ(0);
-	transform: rotateX(10deg) rotateY(30deg) rotateZ(0);
-}
-
-.panel-1,
-.panel-2,
-.panel-3 {
-	position: absolute;
-	top: -230px;
-	width: 240px;
-	height: 400px;
-	background: url(../images/map.png) no-repeat;
-}
-
-.panel-1 {
-	left: -360px;
-	background-position: 0 0;
-	-webkit-transform-origin: right;
-	-moz-transform-origin: right;
-	-ms-transform-origin: right;
-	-o-transform-origin: right;
-	transform-origin: right;
-	-webkit-transform: rotateY(178deg);
-	-moz-transform: rotateY(178deg);
-	-ms-transform: rotateY(178deg);
-	-o-transform: rotateY(178deg);
-	transform: rotateY(178deg);
-}
-
-.map-cover {
-	position: absolute;
-	top: -230px;
-	left: -360px;
-	width: 240px;
-	height: 400px;
-	background: url(../images/map-cover.png) no-repeat;
-	-webkit-transform-origin: right;
-	-moz-transform-origin: right;
-	-ms-transform-origin: right;
-	-o-transform-origin: right;
-	transform-origin: right;
-	-webkit-transform: rotateY(178deg) translateZ(-2px) rotateY(180deg) translateX(240px);
-	-moz-transform: rotateY(178deg) translateZ(-2px) rotateY(180deg) translateX(240px);
-	-ms-transform: rotateY(178deg) translateZ(-2px) rotateY(180deg) translateX(240px);
-	-o-transform: rotateY(178deg) translateZ(-2px) rotateY(180deg) translateX(240px);
-	transform: rotateY(178deg) translateZ(-2px) rotateY(180deg) translateX(240px);
-}
-
-.map.is-open .panel-1 {
-	-webkit-transform: rotateY(60deg);
-	-moz-transform: rotateY(60deg);
-	-ms-transform: rotateY(60deg);
-	-o-transform: rotateY(60deg);
-	transform: rotateY(60deg);
-}
-
-.panel-2 {
-	left: -120px;
-	background-position: -240px 0;
-}
-
-.panel-3 {
-	left: 120px;
-	background-position: -480px 0;
-	-webkit-transform-origin: left;
-	-moz-transform-origin: left;
-	-ms-transform-origin: left;
-	-o-transform-origin: left;
-	transform-origin: left;
-	-webkit-transform: rotateY(178deg);
-	-moz-transform: rotateY(178deg);
-	-ms-transform: rotateY(178deg);
-	-o-transform: rotateY(178deg);
-	transform: rotateY(178deg);
-}
-
-.map.is-open .panel-3 {
-	-webkit-transform: rotateY(60deg);
-	-moz-transform: rotateY(60deg);
-	-ms-transform: rotateY(60deg);
-	-o-transform: rotateY(60deg);
-	transform: rotateY(60deg);
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
