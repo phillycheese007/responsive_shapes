@@ -1,12 +1,12 @@
 var $body,
 	$demos,
-	$crane,
+	$airplane,
 	$coverflow,
 	$toggleBtn,
 	$toggleOn,
 	$toggleOff,
-	crane,
-	craneFaces,
+	airplane,
+	airplaneFaces,
 	cubeFaces,
 	diamondFaces,
 	coverflowFaces,
@@ -43,7 +43,7 @@ $(document).ready(function() {
 	cubeFaces = [];
 	diamondFaces = [];
 	currentCover = 0;
-	renderCurrent = renderCrane;
+	renderCurrent = renderAirplane;
 	$toggleBtn = $('.toggle-btn');
 	$toggleOn = $('.toggle .label-on');
 	$toggleOff = $('.toggle .label-off');
@@ -56,13 +56,13 @@ $(document).ready(function() {
 
 	setupLightControls();
 	setupCoverflow();
-	setupCrane();
+	setupAirplane();
 
 	// demo menu
 	$('.example-menu a').bind('click', onDemoNav);
 
 	if(cssTransformProperty === '-webkit-transform' || cssTransformProperty === 'transform') {
-		showCrane();
+		showAirplane();
 	} else {
 		$('.map-thumb').click();
 		showMap();
@@ -138,7 +138,7 @@ function onDemoNav(e) {
 
 	switch(demo) {
 		case 'coverflow':
-			hideCrane();
+			hideAirplane();
 			hideMap();
 			showCoverflow();
 			renderCurrent = renderCoverflow;
@@ -146,12 +146,12 @@ function onDemoNav(e) {
 		case 'crane':
 			hideCoverflow();
 			hideMap();
-			showCrane();
+			showAirplane();
 			renderCurrent = renderCrane;
 			break;
 		case 'map':
 			hideCoverflow();
-			hideCrane();
+			hideAirplane();
 			showMap();
 			renderCurrent = renderMap;
 			break;
@@ -177,31 +177,31 @@ function onDemoNav(e) {
 
 ---------------------------------*/
 
-function setupCrane() {
-	$crane = $('.crane');
-	crane = new Photon.FaceGroup($('.crane')[0], $('.crane .face'), .6, .1, true);
-	renderCrane();
+function setupAirplanee() {
+	$crane = $('.airplane');
+	crane = new Photon.FaceGroup($('.airplane')[0], $('.airplane .face'), .6, .1, true);
+	renderAirplane();
 }
 
 function renderCrane() {
-	crane.render(light, true);
+	airplane.render(light, true);
 }
 
 function showCrane() {
-	$body.bind('mousemove', rotateCrane);
-	$crane.show();
+	$body.bind('mousemove', rotateAirplane);
+	$airplane.show();
 }
 
-function hideCrane() {
-	$body.unbind('mousemove', rotateCrane);
-	$crane.hide();
+function hideAirplane() {
+	$body.unbind('mousemove', rotateAirplane);
+	$airplane.hide();
 }
 
-function rotateCrane(e) {
+function rotateAirplane(e) {
 	var xPer = e.pageX / $body.width();
 
 	$(crane.element).css(cssTransformProperty, 'rotateX(-15deg) rotateY(' + (-180 + (xPer * 360)) + 'deg)');
-	renderCrane();
+	renderAirplane();
 }
 
 
