@@ -21,7 +21,7 @@
   $base_height:20vw; /* Y cordinate */
   $indent_size:1vw;
   $leg_width:.5vw; /*at the moment this variable must be updated manually */
-  $horizontal_1_height_from_base: ($base_height / 2) + 1 vw;
+  $horizontal_1_height_from_base: ($base_height / 2) + 1;
   $horizontal_2_height_from_base: ($base_height);
   
   .tabletop_1{
