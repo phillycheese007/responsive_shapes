@@ -28,3 +28,13 @@
   .leg_4{left:($base_width) - ($leg_width + $leg_indent_size);top:($base_height) - ($leg_width + $leg_indent_size);}
 }
 
+.chair_seat{
+  @extend .four_leg_base;
+  .horizontal_1{transform:translateZ($horizontal_1_height_from_base);}
+    
+}
+  
+  
+.chair_back{}
+  
+
