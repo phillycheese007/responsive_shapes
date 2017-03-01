@@ -40,14 +40,14 @@
  <!--table_1 -->
        <section id="table_1" class="mid_century_table_1 preserve3d">
          <div class="table_top">
-           <div class="w_28_h_20_d_1 my_slab horizontal_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
-           <div class="w_28_h_20_d_1 my_slab horizontal_2" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_28_h_20_d_1 my_slab horizontal_1" ><figure class="front face-1"></figure><figure class="back face-1"></figure><figure class="right face-1"></figure><figure class="left face-1"></figure><figure class="top face-1"></figure><figure class="bottom"></figure></div>
+           <div class="w_28_h_20_d_1 my_slab horizontal_2" ><figure class="front face-1"></figure><figure class="back face-1"></figure><figure class="right face-1"></figure><figure class="left face-1"></figure><figure class="top face-1"></figure><figure class="bottom"></figure></div>
          </div>  
          <div class="four_leg_base">
-           <div class="w_pnt5_h_pnt5_d_8 my_slab leg_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
-           <div class="w_pnt5_h_pnt5_d_8 my_slab leg_2" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
-           <div class="w_pnt5_h_pnt5_d_8 my_slab leg_3" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
-           <div class="w_pnt5_h_pnt5_d_8 my_slab leg_4" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slab leg_1" ><figure class="front face-1"></figure><figure class="back face-1"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top face-1"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slab leg_2" ><figure class="front face-1"></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slab leg_3" ><figure class="front face-1"></figure><figure class="back face-1"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slab leg_4" ><figure class="front "></figure><figure class="back face-1"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
          </div>  
         </section>  
 <!--table_1 -->
@@ -153,7 +153,11 @@
     </div>
   </div>
 
-
+<script>
+	var light = new Photon.Light();
+var face = new Photon.Face( $('.face-1')[0] );
+face.render(light, true);
+	</script>
 
 
 
