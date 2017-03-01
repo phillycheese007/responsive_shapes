@@ -11,7 +11,9 @@
 
 
 
-.four_leg_base{
+
+
+.simple_chair_1{
   $base_width:28vw; /* X cordinate */
   $base_height:20vw; /* Y cordinate */
   $base_depth:8vw; /* Z cordinate */
@@ -19,24 +21,21 @@
   $leg_width:.5vw; /*at the moment this variable must be updated manually */
   $horizontal_1_height_from_base: ($base_depth / 2) + 1;
   $horizontal_2_height_from_base: ($base_depth);
-  /*-----------------------------------------------------------------------*/
-  .tabletop_1{transform:translateZ($horizontal_1_height_from_base);}
-  .tabletop_2{transform:translateZ($horizontal_2_height_from_base);}
+  .four_leg_base{
   .leg_1{left:$leg_indent_size;top:$leg_indent_size;}
   .leg_2{left:($base_width) - ($leg_width + $leg_indent_size);top:$leg_indent_size;}
   .leg_3{left:$leg_indent_size;top:($base_height) - ($leg_width + $leg_indent_size);}
   .leg_4{left:($base_width) - ($leg_width + $leg_indent_size);top:($base_height) - ($leg_width + $leg_indent_size);}
+  }
+  .chair_seat{
+  .horizontal_1{transform:translateZ($horizontal_1_height_from_base);}
+  }
+  .chair_back{
+    .vertical_1{transform:translateZ($horizontal_1_height_from_base);}
+  }
 }
+    
 
-.cheese{
-  $beans:77;
-}
-.chair_seat{
- @extend .cheese;
-  height:$beans;
-}
-  
-  
-.chair_back{}
+
   
 
