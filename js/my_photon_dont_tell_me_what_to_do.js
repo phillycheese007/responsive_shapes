@@ -70,7 +70,7 @@ $(document).ready(function() {
 	$('.example-menu a').bind('click', onDemoNav);
 
 	if(cssTransformProperty === '-webkit-transform' || cssTransformProperty === 'transform') {
-		showCrane();
+		showPlane();
 	} else {
 		$('.map-thumb').click();
 		showMap();
