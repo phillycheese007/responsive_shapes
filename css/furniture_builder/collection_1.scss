@@ -28,12 +28,12 @@
   .leg_4{left:($base_width) - ($leg_width + $leg_indent_size);top:($base_height) - ($leg_width + $leg_indent_size);}
 }
 
+.cheese{
+  $beans:77;
+}
 .chair_seat{
-  @extend .four_leg_base;
-  .horizontal_1{
-      @extend .four_leg_base;
-    transform:translateZ($horizontal_1_height_from_base);}
-    
+ @extend .cheese;
+  height:$beans;
 }
   
   
