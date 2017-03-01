@@ -62,11 +62,6 @@
 }
 
 .crane .wing-2a {
-	width: 132px;
-	height: 346px;
-	-webkit-mask: url(../images/crane/wing-a.svg) no-repeat;
-	-webkit-transform-origin: bottom right;
-	-webkit-transform: translate3d(-131px, -346px, 60px);
 }
 
 .crane .wing-2b {
