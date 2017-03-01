@@ -1,0 +1,16 @@
+---
+#photon
+---
+.light_test_slab {
+  $width: 12vw;$height: 17vw;$depth: 37vw; /*set dimensions here */ 
+  transform:translateZ($depth/2);
+  .front, .back { width: $width;height: $height;}
+  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
+  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
+  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
+}
