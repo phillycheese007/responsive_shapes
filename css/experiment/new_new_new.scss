@@ -73,11 +73,11 @@ div {
   transform:translateZ($depth/2);
   
   position: absolute;
-  top: 50%;
-	left: 50%;
-	margin-top: 50px;
-	-webkit-transform-style: preserve-3d;
-	-webkit-transform: rotateX(-15deg) rotateY(-42deg);
+  top: 20%;
+  left: 20%;
+  margin-top: 50px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateX(-15deg) rotateY(-42deg);
   
   .face {
     position: absolute;
