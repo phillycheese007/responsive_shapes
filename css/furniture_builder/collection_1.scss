@@ -34,11 +34,11 @@
   }
   .leg_3{
     left:$indent_size;
-    top:($base_height) - ($legwidth + $indent_size);
+    top:($base_height) - ($leg_width + $indent_size);
   }
   .leg_4{
-    left:($base_width) - ($legwidth + $indent_size);
-    top:($base_height) - ($legwidth + $indent_size);
+    left:($base_width) - ($leg_width + $indent_size);
+    top:($base_height) - ($leg_width + $indent_size);
   }
 }
 
