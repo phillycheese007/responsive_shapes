@@ -17,9 +17,9 @@
 
 
 .furniture_base{
-  $base_width:20vw; /* X cordinate */
-  $base_height:10vw; /* Y cordinate */
-  $indent_size:2vw;
+  $base_width:28vw; /* X cordinate */
+  $base_height:20vw; /* Y cordinate */
+  $indent_size:1vw;
   $leg_width:.5vw; /*at the moment this variable must be updated manually */
   
   .tabletop_1{transform:translateZ(5vw);}
