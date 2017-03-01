@@ -1,13 +1,19 @@
 var $body,
 	$demos,
-	$airplane,
+	$crane,
+	$map,
+	$mapPanel1,
+	$mapPanel2,
+	$mapPanel3,
+	$mapCover,
 	$coverflow,
 	$toggleBtn,
 	$toggleOn,
 	$toggleOff,
-	airplane,
-	airplaneFaces,
+	crane,
+	craneFaces,
 	cubeFaces,
+	map,
 	diamondFaces,
 	coverflowFaces,
 	shadeAmount,
@@ -43,7 +49,7 @@ $(document).ready(function() {
 	cubeFaces = [];
 	diamondFaces = [];
 	currentCover = 0;
-	renderCurrent = renderAirplane;
+	renderCurrent = renderCrane;
 	$toggleBtn = $('.toggle-btn');
 	$toggleOn = $('.toggle .label-on');
 	$toggleOff = $('.toggle .label-off');
@@ -56,18 +62,19 @@ $(document).ready(function() {
 
 	setupLightControls();
 	setupCoverflow();
-	setupAirplane();
+	setupCrane();
+	setupMap();
 
 	// demo menu
 	$('.example-menu a').bind('click', onDemoNav);
 
 	if(cssTransformProperty === '-webkit-transform' || cssTransformProperty === 'transform') {
-		showAirplane();
+		showCrane();
 	} else {
 		$('.map-thumb').click();
 		showMap();
-		$('.airplane').hide();
-		$('.airplane-thumb').hide();
+		$('.crane').hide();
+		$('.crane-thumb').hide();
 	}
 });
 
@@ -138,20 +145,20 @@ function onDemoNav(e) {
 
 	switch(demo) {
 		case 'coverflow':
-			hideAirplane();
+			hideCrane();
 			hideMap();
 			showCoverflow();
 			renderCurrent = renderCoverflow;
 			break;
-		case 'airplane':
+		case 'crane':
 			hideCoverflow();
 			hideMap();
-			showAirplane();
-			renderCurrent = renderairplane;
+			showCrane();
+			renderCurrent = renderCrane;
 			break;
 		case 'map':
 			hideCoverflow();
-			hideAirplane();
+			hideCrane();
 			showMap();
 			renderCurrent = renderMap;
 			break;
@@ -173,40 +180,99 @@ function onDemoNav(e) {
 
 /*---------------------------------
 
-	airplane
+	Crane
 
 ---------------------------------*/
 
-function setupAirplanee() {
-	$airplane = $('.airplane');
-	airplane = new Photon.FaceGroup($('.airplane')[0], $('.airplane .face'), .6, .1, true);
-	renderAirplane();
+function setupCrane() {
+	$crane = $('.crane');
+	crane = new Photon.FaceGroup($('.crane')[0], $('.crane .face'), .6, .1, true);
+	renderCrane();
 }
 
-function renderairplane() {
-	airplane.render(light, true);
+function renderCrane() {
+	crane.render(light, true);
 }
 
-function showairplane() {
-	$body.bind('mousemove', rotateAirplane);
-	$airplane.show();
+function showCrane() {
+	$body.bind('mousemove', rotateCrane);
+	$crane.show();
 }
 
-function hideAirplane() {
-	$body.unbind('mousemove', rotateAirplane);
-	$airplane.hide();
+function hideCrane() {
+	$body.unbind('mousemove', rotateCrane);
+	$crane.hide();
 }
 
-function rotateAirplane(e) {
+function rotateCrane(e) {
 	var xPer = e.pageX / $body.width();
 
-	$(airplane.element).css(cssTransformProperty, 'rotateX(-15deg) rotateY(' + (-180 + (xPer * 360)) + 'deg)');
-	renderAirplane();
+	$(crane.element).css(cssTransformProperty, 'rotateX(-15deg) rotateY(' + (-180 + (xPer * 360)) + 'deg)');
+	renderCrane();
 }
 
 
 
 
+
+
+
+
+
+/*---------------------------------
+
+	Map
+
+---------------------------------*/
+
+function setupMap() {
+	$map = $('.map');
+	$mapPanel1 = $('.panel-1');
+	$mapPanel2 = $('.panel-2');
+	$mapPanel3 = $('.panel-3');
+	$mapCover = $('.map-cover');
+	$map.bind('click', toggleMap);
+
+	map = new Photon.FaceGroup($('.map')[0], $('.map .face'), 1.5, .2, true);
+	renderMap();
+}
+
+function toggleMap() {
+	$map.toggleClass('is-open');
+
+	$map.unbind();
+	$map.bind(transitionEndEvent, stopRenderTimer);
+
+	if(!renderTimer) {
+		renderTimer = setInterval(renderMap, 34);
+	}
+}
+
+function renderMap() {
+	map.render(light, true, true);
+}
+
+function showMap() {
+	$body.bind('mousemove', rotateMap);
+	$map.show();
+}
+
+function hideMap() {
+	$body.unbind('mousemove', rotateMap);
+	$map.hide();
+}
+
+function rotateMap(e) {
+	var xPer = e.pageX / $body.width();
+	var yPer = e.pageY / $body.height();
+
+	$mapPanel1.css(cssTransformProperty, 'rotateY(' + (178 - (138 * xPer)) + 'deg)');
+	$mapCover.css(cssTransformProperty, 'rotateY(' + (178 - (138 * xPer)) + 'deg) translateZ(-2px) rotateY(180deg) translateX(240px)');
+	$mapPanel3.css(cssTransformProperty, 'rotateY(' + (178 - (138 * xPer)) + 'deg)');
+	$map.css(cssTransformProperty, 'rotateX(' + (40 - (yPer * 70)) + 'deg) rotateY(' + (20 - (xPer * 60)) + 'deg) rotateZ(0)');
+
+	renderMap();
+}
 
 
 
