@@ -95,7 +95,7 @@ div {
 .crane .wing-4 {	background:blue;
 	width: 14vw;
 	height: 28vw;
-	-webkit-transform: rotateY(-90deg) translateZ(15vw);
+	-webkit-transform: rotateY(-90deg) translateZ(10vw);
 }
 .crane .wing-5 {	background:red;
 	width: 20vw;
@@ -110,5 +110,4 @@ div {
 
 
 
-@keyframes infinite-spinning { from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); } }
+
