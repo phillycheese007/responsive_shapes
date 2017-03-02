@@ -85,35 +85,26 @@ div {
 	position: absolute;    margin: 0;
 	background:green;
   }  
-  .wing-1 {
-	width: $width;
-	height: $height;
-
+  .front, .back { width: $width;height: $height;}
+  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+	
+  .front {
 	-webkit-transform: rotateY(   0deg ) translateZ( $depth/2 );
   }
-  .wing-2 {
-	width: $width;
-	height: $height;
+  .back {
 	-webkit-transform: rotateX( 180deg ) translateZ(  $depth/2 );
   }
-  .wing-3 {
-	width: $depth;
-	height: $height;
+  .right {
 	-webkit-transform: rotateY(  90deg ) translateZ( $width/2 );
   }
-  .wing-4 {
-	width: $depth;
-	height: $height;
+  .left {
 	-webkit-transform: rotateY(  -90deg ) translateZ( $width/2 );
   }
-  .wing-5 {
-	width: $width;
-	height: $depth;
+  .top {
 	-webkit-transform: rotateX(  90deg ) translateZ( $height/2 );
   }
-  .wing-6 {
-	width: $width;
-	height: $depth;
+  .bottom {
 	-webkit-transform: rotateX( -90deg ) translateZ( $height/2 );
   }
 }
