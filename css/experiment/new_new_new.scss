@@ -101,7 +101,9 @@ div {
 	-webkit-transform: translate3d(0, 0, ( $depth/2 )) rotateX(180deg)
   }
   .right {
-	-webkit-transform: translate3d(0, 0, ( $width/2 )) rotateY(90deg)
+	/* -webkit-transform: translate3d(0, 0, ( $width/2 )) rotateY(90deg); */
+	-webkit-transform: translate3d(-128px, -22px, -34px) rotateY(6deg) rotateX(9deg);
+
   }
   .left {
 	/*-webkit-transform: translate3d(0, 0, ( $width/2 )) rotateY(-90deg);*/  
