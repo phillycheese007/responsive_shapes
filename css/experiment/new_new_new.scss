@@ -104,7 +104,7 @@ div {
 	
   .front {
 	/*-webkit-transform: rotateY(   0deg ) translateZ( $depth/2 ); */
-	-webkit-transform: translate3d(0, 0, ( $depth/2 )) rotateY(0deg)
+	-webkit-transform: translate3d(0, ( $depth/2 ), 0) rotateY(0deg)
   }
   .back { 
 	/* -webkit-transform: rotateX( 180deg ) translateZ(  $depth/2 ); */
