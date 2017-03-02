@@ -79,7 +79,6 @@ div {
   -webkit-transform-style: preserve-3d;
 	-webkit-transform: rotateX(-15deg) rotateY(-42deg);
   .face {
-    background:green;
     position: absolute;    
     margin: 0;
   }
@@ -88,22 +87,28 @@ div {
   .wing-3, .wing-4 { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .wing-5, .wing-6 {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
 	  
-  .wing-1 {	
+  .wing-1 {	    background:green;
+
     -webkit-transform: rotateY(0deg) translateZ( $depth/2 );
   }
-  .wing-2 {	
+  .wing-2 {	    background:green;
+
     -webkit-transform: rotateX(180deg) translateZ( $depth/2 );
   }
-  .wing-3 {	
+  .wing-3 {	    background:green;
+
     -webkit-transform: rotateY(90deg) translateZ( $width/2 );
   }
-  .wing-4 {	
+  .wing-4 {	    background:green;
+
     -webkit-transform: rotateY(-90deg) translateZ( $width/2 );
   }
-  .wing-5 {	
+  .wing-5 {	    background:green;
+
     -webkit-transform: rotateX(90deg) translateZ( $height/2 );
   }
-  .wing-6 {	
+  .wing-6 {	    background:red;
+
     -webkit-transform: rotateX(-90deg) translateZ( $height/2 );
   }
 }
