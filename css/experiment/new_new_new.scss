@@ -73,7 +73,7 @@ div {
 ---------------------------------*/
 
 .crane {
-	$width: 28vw;$height: 20vw;$depth: 6vw; /*set dimensions here */ 
+	$width: 28vw;$height: 20vw;$depth: 9vw; /*set dimensions here */ 
 	position: absolute;
 	top: -10%;
 	left: 40%;
@@ -96,6 +96,7 @@ div {
 	-webkit-transform: rotateX( 180deg ) translateZ(  $depth/2 );
   }
   .right {
+	  	-webkit-transform-origin: bottom left;
 	-webkit-transform: rotateY(  90deg ) translateZ( $width/2 );
   }
   .left {
