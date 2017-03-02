@@ -92,7 +92,7 @@ div {
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
 	
-  .front {
+  .front { background:lightblue;
 	/*-webkit-transform: rotateY(   0deg ) translateZ( $depth/2 ); */
 	-webkit-transform: translate3d(0, 0, ( $depth/2 )) rotateY(0deg)
   }
