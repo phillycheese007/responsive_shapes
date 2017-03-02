@@ -323,7 +323,7 @@ h2:after {
 	-webkit-transform: translate3d(-131px, -346px, -60px) rotateX(50deg) rotateY(10deg);
 }
 
-.crane .wing-1b {
+.crane .wing-1b { background:orange;
 	width: 132px;
 	height: 346px;
 	-webkit-mask: url(../images/crane/wing-b.svg) no-repeat;
@@ -331,7 +331,7 @@ h2:after {
 	-webkit-transform: translate3d(0, -346px, -60px) rotateX(50deg) rotateY(-10deg);
 }
 
-.crane .wing-1c {
+.crane .wing-1c { background:red;
 	width: 132px;
 	height: 105px;
 	-webkit-mask: url(../images/crane/wing-c.svg) no-repeat;
