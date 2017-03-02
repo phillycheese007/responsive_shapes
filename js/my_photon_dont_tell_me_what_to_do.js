@@ -50,7 +50,7 @@ $(document).ready(function() {
 	cubeFaces = [];
 	diamondFaces = [];
 	currentCover = 0;
-	renderCurrent = renderPlane;
+	renderCurrent = renderCrane;
 	$toggleBtn = $('.toggle-btn');
 	$toggleOn = $('.toggle .label-on');
 	$toggleOff = $('.toggle .label-off');
@@ -64,7 +64,6 @@ $(document).ready(function() {
 	setupLightControls();
 	setupCoverflow();
 	setupCrane();
-	setupPlane();
 
 	// demo menu
 	$('.example-menu a').bind('click', onDemoNav);
@@ -206,40 +205,6 @@ function rotateCrane(e) {
 
 
 
-
-
-/*---------------------------------
-
-	Crane
-
----------------------------------*/
-
-function setupPlane() {
-	$plane = $('.plane');
-	plane = new Photon.FaceGroup($('.plane')[0], $('.plane .face'), .9, .1, true);
-	renderPlane();
-}
-
-function renderPlane() {
-	plane.render(light, true);
-}
-
-function showPlane() {
-	$body.bind('mousemove', rotatePlane);
-	$plane.show();
-}
-
-function hidePlane() {
-	$body.unbind('mousemove', rotatePlane);
-	$plane.hide();
-}
-
-function rotatePlane(e) {
-	var xPer = e.pageX / $body.width();
-
-	$(Plane.element).css(cssTransformProperty, 'rotateX(-15deg) rotateY(' + (-180 + (xPer * 360)) + 'deg)');
-	renderPlane();
-}
 
 
 
