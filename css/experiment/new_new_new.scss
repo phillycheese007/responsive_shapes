@@ -70,7 +70,7 @@ div {
 
 
 
-.crane {
+#hobby_horse .crane {
   $width: 28vw;$height: 20vw;$depth: 1vw; /*set dimensions here */ 
   position: absolute;
   top: -70%;
@@ -88,7 +88,6 @@ div {
   .wing-3, .wing-4 { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .wing-5, .wing-6 {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
 	  
-
   .wing-1 {	
     background:lightgreen;
     -webkit-transform: rotateY(0deg) translateZ( $depth/2 );
