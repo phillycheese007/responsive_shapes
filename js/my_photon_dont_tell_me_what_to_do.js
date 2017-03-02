@@ -42,7 +42,7 @@ var $body,
 $(document).ready(function() {
 	$body = $('body');
 	$demos = $('.demo');
-	light = new Photon.Light();
+	light = new Photon.Light( x = 22, y = 188, z = 10 );
 	shadeAmount = .5;
 	tintAmount = 0;
 	coverflowFaces = [];
