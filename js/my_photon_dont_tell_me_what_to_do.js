@@ -43,7 +43,7 @@ var $body,
 $(document).ready(function() {
 	$body = $('body');
 	$demos = $('.demo');
-	light = new Photon.Light( x = 0, y = 0, z = 100 )
+	light = new Photon.Light( x =55, y = 55, z = 100 )
 	shadeAmount = 55;
 	tintAmount = 9;
 	coverflowFaces = [];
