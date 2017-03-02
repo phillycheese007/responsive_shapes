@@ -71,6 +71,7 @@ div {
 
 
 .crane {
+  background:green;
   $width: 28vw;$height: 40vw;$depth: 21vw; /*set dimensions here */ 
   position: absolute;
   top: -70%;
@@ -89,27 +90,21 @@ div {
   .wing-5, .wing-6 {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
 	  
   .wing-1 {	
-    background:lightgreen;
     -webkit-transform: rotateY(0deg) translateZ( $depth/2 );
   }
   .wing-2 {	
-    background:lightgreen;
     -webkit-transform: rotateX(180deg) translateZ( $depth/2 );
   }
   .wing-3 {	
-    background:blue;
     -webkit-transform: rotateY(90deg) translateZ( $width/2 );
   }
   .wing-4 {	
-    background:blue;
     -webkit-transform: rotateY(-90deg) translateZ( $width/2 );
   }
   .wing-5 {	
-    background:red;
     -webkit-transform: rotateX(90deg) translateZ( $height/2 );
   }
   .wing-6 {	
-    background:red;
     -webkit-transform: rotateX(-90deg) translateZ( $height/2 );
   }
 }
