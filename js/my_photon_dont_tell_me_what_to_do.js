@@ -287,7 +287,7 @@ function setCoverTransforms(animate) {
 
 		var rotationY = i == currentCover ? 0 : (80 + (offset * -5)) * (i < currentCover ? 1 : -1);
 
-		$(element).css(cssTransformProperty, 'translateX(' + x +'vw) translateZ(' + z + 'vw) rotateY(' + rotationY + 'deg)');
+		$(element).css(cssTransformProperty, 'translateX(' + x +'px) translateZ(' + z + 'px) rotateY(' + rotationY + 'deg)');
 	}
 }
 
@@ -308,7 +308,7 @@ function rotateCoverflow(e) {
 
 		var rotationY = i == currentCover ? 0 : (80 + (offset * -5)) * (i < currentCover ? 1 : -1);
 
-		$(element).css(cssTransformProperty, 'translateX(' + x +'vw) translateZ(' + z + 'vw) rotateY(' + rotationY + 'deg)');
+		$(element).css(cssTransformProperty, 'translateX(' + x +'px) translateZ(' + z + 'px) rotateY(' + rotationY + 'deg)');
 	}
 }
 
