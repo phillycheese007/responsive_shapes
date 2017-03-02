@@ -77,11 +77,11 @@ div {
 ---------------------------------*/
 
 .crane {position: absolute;
-	top: 30%;
+	top: 10vw;
 	left: 30%;
 	margin-top: 50px;
 	-webkit-transform-style: preserve-3d;
-	-webkit-transform: rotateX(-15deg) rotateY(-42deg);
+	-webkit-transform: rotateX(-15deg) rotateY(0deg);
 }
 .crane .face {position: absolute;
 	background:lightgreen;
