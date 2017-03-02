@@ -91,9 +91,6 @@ $slab_color: yellow;
     box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
   }
   .back   { 
-   -webkit-box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
-   -moz-box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
-    box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
   }
   .right  { 
@@ -103,15 +100,9 @@ $slab_color: yellow;
     transform: rotateY( -90deg ) translateZ( $width/2 );
   }
   .top    { 
-   -webkit-box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
-   -moz-box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
-    box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
     transform: rotateX(  90deg ) translateZ( $height/2 );
   }
   .bottom { 
-   -webkit-box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
-   -moz-box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
-    box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
     transform: rotateX( -90deg ) translateZ( $height/2 );
   }
 }
