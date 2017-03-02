@@ -99,30 +99,22 @@ div {
   .wing-3 {
 	width: $depth;
 	height: $height;
-	-webkit-mask: url(../images/crane/wing-c.svg) no-repeat;
-	-webkit-transform-origin: bottom left;
-	-webkit-transform: translate3d(-128px, -22px, -34px) rotateY(6deg) rotateX(9deg);
+        transform: rotateY(  90deg ) translateZ( $width/2 );
   }
   .wing-4 {
 	width: $depth;
 	height: $height;
-	-webkit-mask: url(../images/crane/wing-d.svg) no-repeat;
-	-webkit-transform-origin: bottom right;
-	-webkit-transform: translate3d(-1px, -22px, -34px) rotateY(-6deg) rotateX(9deg);
+        transform: rotateY(  90deg ) translateZ( $width/2 );
   }
   .wing-5 {
 	width: $width;
 	height: $depth;
-	-webkit-mask: url(../images/crane/wing-a.svg) no-repeat;
-	-webkit-transform-origin: bottom right;
-	-webkit-transform: translate3d(-131px, -346px, 60px) rotateX(-50deg) rotateY(-10deg);
+        transform: rotateX(  90deg ) translateZ( $height/2 );
   }
   .wing-6 {
 	width: $width;
 	height: $depth;
-	-webkit-mask: url(../images/crane/wing-b.svg) no-repeat;
-	-webkit-transform-origin: bottom left;
-	-webkit-transform: translate3d(0, -346px, 60px) rotateX(-50deg) rotateY(10deg);
+        transform: rotateX( -90deg ) translateZ( $height/2 );
   }
 }
 
