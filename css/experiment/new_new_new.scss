@@ -102,20 +102,20 @@ div {
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
 	
-  .front { background:transparent;
+  .front { background:yellow;
 	/*-webkit-transform: rotateY(   0deg ) translateZ( $depth/2 ); */
 	-webkit-transform: translate3d(0, 0, ( $depth/2 )) rotateY(0deg)
   }
-  .back { background:orange;
+  .back { background:yellow;
 	/* -webkit-transform: rotateX( 180deg ) translateZ(  $depth/2 ); */
   	-webkit-transform: translate3d(0, 0, -($depth/2)) rotateX(180deg);
   }
-  .right {  background:red;
+  .right {  background:yellow;
 	/* -webkit-transform: translate3d(0, 0, ( $width/2 )) rotateY(90deg); */
   	-webkit-transform: translate3d(($width/2), 0, 0) rotateY(90deg) rotateX(0deg);
 
   }
-  .left { background:blue;
+  .left { background:yellow;
 	/*-webkit-transform: translate3d(0, 0, ( $width/2 )) rotateY(-90deg);*/  
   	-webkit-transform: translate3d(-($width/2), 0, 0) rotateY(-90deg) rotateX(0deg);
 
@@ -125,7 +125,7 @@ div {
   	-webkit-transform: translate3d(0, ($height/2), 0) rotateX(90deg) rotateY(0deg);
 
   }
-  .bottom { background:purple;
+  .bottom { background:yellow;
 	/* -webkit-transform: translate3d(0, 0, ( $height/2 )) rotateX(-90deg) */
   	-webkit-transform: translate3d(0, -($height/2), 0) rotateX(-90deg) rotateY(0deg);
 
