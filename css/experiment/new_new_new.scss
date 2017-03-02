@@ -70,18 +70,17 @@ div {
 
 
 
-.cranedddd {
+.crane {
   $width: 28vw;$height: 40vw;$depth: 21vw; /*set dimensions here */ 
   position: absolute;
   top: -90%;
   left: 40%;
   margin-top: 50px;
   -webkit-transform-style: preserve-3d;
-  -webkit-transform: rotate(22deg);
+	-webkit-transform: rotateX(-15deg) rotateY(-42deg);
   .face {
     background:green;
     position: absolute;    
-    display: block;    
     margin: 0;
   }
 	  
@@ -110,7 +109,7 @@ div {
 }
 
 
-.crane {position: absolute;
+.cranedd {position: absolute;
 	top: 50%;
 	left: 50%;
 	margin-top: 50px;
