@@ -1,20 +1,19 @@
 var $body,
 	$demos,
 	$crane,
-    
-        $plane,
-    
+	$map,
+	$mapPanel1,
+	$mapPanel2,
+	$mapPanel3,
+	$mapCover,
 	$coverflow,
 	$toggleBtn,
 	$toggleOn,
 	$toggleOff,
 	crane,
 	craneFaces,
-    
-	plane,
-	planeFaces,  
-    
 	cubeFaces,
+	map,
 	diamondFaces,
 	coverflowFaces,
 	shadeAmount,
@@ -43,9 +42,9 @@ var $body,
 $(document).ready(function() {
 	$body = $('body');
 	$demos = $('.demo');
-	light = new Photon.Light( x =55, y = 55, z = 100 )
-	shadeAmount = 55;
-	tintAmount = 9;
+	light = new Photon.Light();
+	shadeAmount = .5;
+	tintAmount = 0;
 	coverflowFaces = [];
 	cubeFaces = [];
 	diamondFaces = [];
@@ -64,12 +63,13 @@ $(document).ready(function() {
 	setupLightControls();
 	setupCoverflow();
 	setupCrane();
+	setupMap();
 
 	// demo menu
 	$('.example-menu a').bind('click', onDemoNav);
 
 	if(cssTransformProperty === '-webkit-transform' || cssTransformProperty === 'transform') {
-		showPlane();
+		showCrane();
 	} else {
 		$('.map-thumb').click();
 		showMap();
@@ -146,13 +146,21 @@ function onDemoNav(e) {
 	switch(demo) {
 		case 'coverflow':
 			hideCrane();
+			hideMap();
 			showCoverflow();
 			renderCurrent = renderCoverflow;
 			break;
-		case 'plane':
+		case 'crane':
 			hideCoverflow();
-			showPlane();
-			renderCurrent = renderPlane;
+			hideMap();
+			showCrane();
+			renderCurrent = renderCrane;
+			break;
+		case 'map':
+			hideCoverflow();
+			hideCrane();
+			showMap();
+			renderCurrent = renderMap;
 			break;
 	}
 
@@ -178,7 +186,7 @@ function onDemoNav(e) {
 
 function setupCrane() {
 	$crane = $('.crane');
-	crane = new Photon.FaceGroup($('.crane')[0], $('.crane .face'), 1, .1, false);
+	crane = new Photon.FaceGroup($('.crane')[0], $('.crane .face'), .6, .1, true);
 	renderCrane();
 }
 
@@ -206,6 +214,65 @@ function rotateCrane(e) {
 
 
 
+
+
+
+
+
+/*---------------------------------
+
+	Map
+
+---------------------------------*/
+
+function setupMap() {
+	$map = $('.map');
+	$mapPanel1 = $('.panel-1');
+	$mapPanel2 = $('.panel-2');
+	$mapPanel3 = $('.panel-3');
+	$mapCover = $('.map-cover');
+	$map.bind('click', toggleMap);
+
+	map = new Photon.FaceGroup($('.map')[0], $('.map .face'), 1.5, .2, true);
+	renderMap();
+}
+
+function toggleMap() {
+	$map.toggleClass('is-open');
+
+	$map.unbind();
+	$map.bind(transitionEndEvent, stopRenderTimer);
+
+	if(!renderTimer) {
+		renderTimer = setInterval(renderMap, 34);
+	}
+}
+
+function renderMap() {
+	map.render(light, true, true);
+}
+
+function showMap() {
+	$body.bind('mousemove', rotateMap);
+	$map.show();
+}
+
+function hideMap() {
+	$body.unbind('mousemove', rotateMap);
+	$map.hide();
+}
+
+function rotateMap(e) {
+	var xPer = e.pageX / $body.width();
+	var yPer = e.pageY / $body.height();
+
+	$mapPanel1.css(cssTransformProperty, 'rotateY(' + (178 - (138 * xPer)) + 'deg)');
+	$mapCover.css(cssTransformProperty, 'rotateY(' + (178 - (138 * xPer)) + 'deg) translateZ(-2px) rotateY(180deg) translateX(240px)');
+	$mapPanel3.css(cssTransformProperty, 'rotateY(' + (178 - (138 * xPer)) + 'deg)');
+	$map.css(cssTransformProperty, 'rotateX(' + (40 - (yPer * 70)) + 'deg) rotateY(' + (20 - (xPer * 60)) + 'deg) rotateZ(0)');
+
+	renderMap();
+}
 
 
 
@@ -327,5 +394,4 @@ function clamp(val, min, max) {
     if(val < min) return min;
     return val;
 }
-
 
