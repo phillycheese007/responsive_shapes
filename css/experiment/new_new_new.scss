@@ -102,7 +102,7 @@ div {
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
 	
-  .front { background:pink;
+  .front { background:transparent;
 	/*-webkit-transform: rotateY(   0deg ) translateZ( $depth/2 ); */
 	-webkit-transform: translate3d(0, 0, ( $depth/2 )) rotateY(0deg)
   }
@@ -120,7 +120,7 @@ div {
   	-webkit-transform: translate3d(-($width/2), 0, 0) rotateY(-90deg) rotateX(0deg);
 
 	}
-  .top { background:transparent;
+  .top { background:yellow;
 	/*-webkit-transform: translate3d(0, 0, ( $height/2 )) rotateX(90deg); */
   	-webkit-transform: translate3d(0, ($height/2), 0) rotateX(90deg) rotateY(0deg);
 
