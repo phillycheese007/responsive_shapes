@@ -117,7 +117,7 @@ div {
   }
   .bottom { 
 	/* -webkit-transform: translate3d(0, 0, ( $height/2 )) rotateX(-90deg) */
-  	-webkit-transform: translate3d(0, ($height/2), 60px) rotateX(-90deg) rotateY(0deg);
+  	-webkit-transform: translate3d(0, ($height/2), 0) rotateX(-90deg) rotateY(0deg);
 
   }
 }
