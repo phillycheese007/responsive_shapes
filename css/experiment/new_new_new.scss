@@ -115,13 +115,13 @@ div {
 }
 
 #bobby_horse .crane {
-	$width: 28vw;$height: 20vw;$depth: 9vw; /*set dimensions here */ 
+	$width: 38vw;$height: 20vw;$depth: 9vw; /*set dimensions here */ 
 	position: absolute;
 	top: -20%;
-	left: 30%;
+	left: 60%;
 	margin-top: 50px;
 	-webkit-transform-style: preserve-3d;
-        -webkit-transform: rotateX(-25deg) rotateY(-42deg);
+        -webkit-transform: rotateX(-25deg) rotateY(-4deg);
   .face {
 	position: absolute;    margin: 0;
 	background:green;
