@@ -70,71 +70,84 @@ div {
 
 
 
+/*---------------------------------
+
+	Crane
+
+---------------------------------*/
+
 .crane {
-  $width: 28vw;$height: 20vw;$depth: 1vw; /*set dimensions here */ 
-  position: absolute;
-  top: -50%;
-  left: 40%;
-  margin-top: 50px;
-  -webkit-transform-style: preserve-3d;
-  -webkit-transform: rotate(0);
-  .face {
-    position: absolute;    display: block;    margin: 0;
-  .wing-1, .wing-2 { width: $width;height: $height;}
-  .wing-3, .wing-4 { width: $depth; height: $height;left: ($width - $depth)/2 ;}
-  .wing-5, .wing-6 {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
-	  
-  }
-  .wing-1 {	
-    background:lightgreen;
-    width: 20vw;
-    height: 28vw;
-    -webkit-transform: rotateY(0deg) translateZ(7vw);
-  }
-  .wing-2 {	
-    background:lightgreen;
-    width: 20vw;
-    height: 28vw;
-    -webkit-transform: rotateX(180deg) translateZ(7vw);
-  }
-  .wing-3 {	
-    background:blue;
-    width: 14vw;
-    height: 28vw;
-    -webkit-transform: rotateY(90deg) translateZ(12.5vw);
-  }
-  .wing-4 {	
-    background:blue;
-    width: 14vw;
-    height: 28vw;
-    -webkit-transform: rotateY(-90deg) translateZ(12.5vw);
-  }
-  .wing-5 {	
-    background:red;
-    width: 20vw;
-    height: 14vw;
-    -webkit-transform: rotateX(90deg) translateZ(14vw);
-  }
-  .wing-6 {	
-    background:red;
-    width: 20vw;
-    height: 14vw;
-    -webkit-transform: rotateX(-90deg) translateZ(14vw);
-  }
-}
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: 50px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: rotateX(-15deg) rotateY(-42deg);
 
 
-
-
-.crane .wing-1 {
-	width: 280px;
-	height: 200px;
-	-webkit-transform: rotateX(-50deg) rotateY(-10deg);
-}
-.crane .wing-2 {
-	width: 280px;
-	height: 200px;
+  .crane .face {
+	position: absolute;
+ 	background: url(../images/texture-2.png) #ff0;
+  }
+  .crane .wing-1a {
+	width: 132px;
+	height: 346px;
+	-webkit-mask: url(../images/crane/wing-a.svg) no-repeat;
+	-webkit-transform-origin: bottom right;
+	-webkit-transform: translate3d(-131px, -346px, -60px) rotateX(50deg) rotateY(10deg);
+  }
+  .crane .wing-1b {
+	width: 132px;
+	height: 346px;
+	-webkit-mask: url(../images/crane/wing-b.svg) no-repeat;
 	-webkit-transform-origin: bottom left;
-	-webkit-transform: rotateX(-50deg) rotateY(10deg);
+	-webkit-transform: translate3d(0, -346px, -60px) rotateX(50deg) rotateY(-10deg);
+  }
+  .crane .wing-1c {
+	width: 132px;
+	height: 105px;
+	-webkit-mask: url(../images/crane/wing-c.svg) no-repeat;
+	-webkit-transform-origin: bottom left;
+	-webkit-transform: translate3d(-128px, -22px, -34px) rotateY(6deg) rotateX(9deg);
 }
+  .crane .wing-1d {
+	width: 132px;
+	height: 105px;
+	-webkit-mask: url(../images/crane/wing-d.svg) no-repeat;
+	-webkit-transform-origin: bottom right;
+	-webkit-transform: translate3d(-1px, -22px, -34px) rotateY(-6deg) rotateX(9deg);
+  }
+  .crane .wing-2a {
+	width: 132px;
+	height: 346px;
+	-webkit-mask: url(../images/crane/wing-a.svg) no-repeat;
+	-webkit-transform-origin: bottom right;
+	-webkit-transform: translate3d(-131px, -346px, 60px) rotateX(-50deg) rotateY(-10deg);
+  }
+  .crane .wing-2b {
+	width: 132px;
+	height: 346px;
+	-webkit-mask: url(../images/crane/wing-b.svg) no-repeat;
+	-webkit-transform-origin: bottom left;
+	-webkit-transform: translate3d(0, -346px, 60px) rotateX(-50deg) rotateY(10deg);
+  }
+  .crane .wing-2c {
+	width: 132px;
+	height: 105px;
+	-webkit-mask: url(../images/crane/wing-c.svg) no-repeat;
+	-webkit-transform-origin: bottom left;
+	-webkit-transform: translate3d(-128px, -22px, 34px) rotateY(-6deg) rotateX(-9deg);
+  }
+  .crane .wing-2d {
+	width: 132px;
+	height: 105px;
+	-webkit-mask: url(../images/crane/wing-d.svg) no-repeat;
+	-webkit-transform-origin: bottom right;
+	-webkit-transform: translate3d(-1px, -22px, 34px) rotateY(6deg) rotateX(-9deg);
+  }
+}
+
+
+
+
 
