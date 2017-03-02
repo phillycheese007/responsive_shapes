@@ -91,7 +91,7 @@ div {
 .crane .wing-2 {
 	width: 28vw;
 	height: 20vw;
-	-webkit-transform-origin: bottom left;
+	/* -webkit-transform-origin: bottom left; */
 	-webkit-transform: rotateX(180deg) translateZ(.5vw);
 }
   
