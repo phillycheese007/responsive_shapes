@@ -150,8 +150,8 @@ $slab_color: yellow;
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
   }
   .back:before{ 
-    width:600px;
-    height: 800x;
+    width: $width;
+    height: $height;
     background:red;
     border:4px solid green;
     position: absolute;
