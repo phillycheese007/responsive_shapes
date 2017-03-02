@@ -71,7 +71,6 @@ div {
 
 
 .crane {
-  background:green;
   $width: 28vw;$height: 40vw;$depth: 21vw; /*set dimensions here */ 
   position: absolute;
   top: -70%;
@@ -80,6 +79,7 @@ div {
   -webkit-transform-style: preserve-3d;
   -webkit-transform: rotate(0);
   .face {
+    background:green;
     position: absolute;    
     display: block;    
     margin: 0;
