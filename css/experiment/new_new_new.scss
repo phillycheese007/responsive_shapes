@@ -70,7 +70,7 @@ div {
 
 
 
-.crane {
+.cranedddd {
   $width: 28vw;$height: 40vw;$depth: 21vw; /*set dimensions here */ 
   position: absolute;
   top: -90%;
@@ -107,5 +107,28 @@ div {
   .wing-6 {	
     -webkit-transform: rotateX(-90deg) translateZ( $height/2 );
   }
+}
+
+
+.crane {position: absolute;animation: infinite-spinning 20s linear;
+	top: 50%;
+	left: 50%;
+	margin-top: 50px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transform: rotateX(-15deg) rotateY(-42deg);
+}
+.crane .face {position: absolute;
+	background:lightgreen;
+}
+.crane .wing-1 {
+	width: 280px;
+	height: 200px;
+	-webkit-transform: rotateX(-50deg) rotateY(-10deg);
+}
+.crane .wing-2 {
+	width: 280px;
+	height: 200px;
+	-webkit-transform-origin: bottom left;
+	-webkit-transform: rotateX(-50deg) rotateY(10deg);
 }
 
