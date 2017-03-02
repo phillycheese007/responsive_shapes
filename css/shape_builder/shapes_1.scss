@@ -78,7 +78,7 @@ $slab_color: yellow;
   }
 }
 
-.w_pnt5_h_pnt5_d_8 {
+.w_pnt5_h_pnt5_d_8_box_shadow {
   $width: .5vw;$height: .5vw;$depth: 8vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .front, .back { width: $width;height: $height;}
