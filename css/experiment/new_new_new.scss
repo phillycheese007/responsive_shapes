@@ -110,7 +110,7 @@ div {
 	/* -webkit-transform: rotateX( 180deg ) translateZ(  $depth/2 ); */
   	-webkit-transform: translate3d(0, 0, ($depth/2)) rotateX(180deg);
   }
-  .right {  
+  .right {  background:red;
 	/* -webkit-transform: translate3d(0, 0, ( $width/2 )) rotateY(90deg); */
   	-webkit-transform: translate3d(0, ($width/2), 0) rotateY(90deg) rotateX(0deg);
 
