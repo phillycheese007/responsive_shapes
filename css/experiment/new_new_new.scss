@@ -94,27 +94,27 @@ div {
   .wing-2 {
 	width: $width;
 	height: $height;
-        transform: rotateX( 180deg ) translateZ(  $depth/2 );
+	-webkit-transform: rotateX( 180deg ) translateZ(  $depth/2 );
   }
   .wing-3 {
 	width: $depth;
 	height: $height;
-        transform: rotateY(  90deg ) translateZ( $width/2 );
+	-webkit-transform: rotateY(  90deg ) translateZ( $width/2 );
   }
   .wing-4 {
 	width: $depth;
 	height: $height;
-        transform: rotateY(  -90deg ) translateZ( $width/2 );
+	-webkit-transform: rotateY(  -90deg ) translateZ( $width/2 );
   }
   .wing-5 {
 	width: $width;
 	height: $depth;
-        transform: rotateX(  90deg ) translateZ( $height/2 );
+	-webkit-transform: rotateX(  90deg ) translateZ( $height/2 );
   }
   .wing-6 {
 	width: $width;
 	height: $depth;
-        transform: rotateX( -90deg ) translateZ( $height/2 );
+	-webkit-transform: rotateX( -90deg ) translateZ( $height/2 );
   }
 }
 
