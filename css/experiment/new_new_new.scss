@@ -107,6 +107,10 @@ div {
 	-webkit-transform: translate3d(0, 0, ( $depth/2 )) rotateY(0deg)
   }
   .back { background:yellow;
+    -webkit-box-shadow: -1px -2px 109px 35px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -2px 109px 35px rgba(0,0,0,0.75);
+    box-shadow: -1px -2px 109px 35px rgba(0,0,0,0.75);
+    transform: rotateX( 180deg ) translateZ(  $depth/2 );
 	/* -webkit-transform: rotateX( 180deg ) translateZ(  $depth/2 ); */
   	-webkit-transform: translate3d(0, 0, -($depth/2)) rotateX(180deg);
   }
@@ -158,7 +162,7 @@ div {
 	
   .front { background:yellow;
 	/*-webkit-transform: rotateY(   0deg ) translateZ( $depth/2 ); */
-	-webkit-transform: translate3d(0, 0, ( $depth/2 )) rotateY(0deg)
+	-webkit-transform: translate3d(33px, 99px, ( $depth/2 )) rotateY(0deg)
   }
   .back { background:yellow;
 	/* -webkit-transform: rotateX( 180deg ) translateZ(  $depth/2 ); */
