@@ -72,7 +72,7 @@ div {
 	Crane
 ---------------------------------*/
 
-.crane 1 {
+#hobby_horse .crane {
 	$width: 28vw;$height: 20vw;$depth: 9vw; /*set dimensions here */ 
 	position: absolute;
 	top: -40%;
@@ -113,5 +113,48 @@ div {
 	-webkit-transform: translate3d(0, 0, ( $height/2 )) rotateX(-90deg)
   }
 }
+
+#bobby_horse .crane {
+	$width: 28vw;$height: 20vw;$depth: 9vw; /*set dimensions here */ 
+	position: absolute;
+	top: -40%;
+	left: 40%;
+	margin-top: 50px;
+	-webkit-transform-style: preserve-3d;
+        -webkit-transform: rotateX(-25deg) rotateY(-42deg);
+  .face {
+	position: absolute;    margin: 0;
+	background:green;
+  }  
+  .place {
+    position: absolute;    margin: 0;
+    background:green;
+  } 
+  .front, .back { width: $width;height: $height;}
+  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+	
+  .front {
+	/*-webkit-transform: rotateY(   0deg ) translateZ( $depth/2 ); */
+	-webkit-transform: translate3d(0, 0, ( $depth/2 )) rotateY(0deg)
+  }
+  .back {
+	/* -webkit-transform: rotateX( 180deg ) translateZ(  $depth/2 ); */
+	-webkit-transform: translate3d(0, 0, ( $depth/2 )) rotateX(180deg)
+  }
+  .right {
+	-webkit-transform: translate3d(0, 0, ( $width/2 )) rotateY(90deg)
+  }
+  .left {
+	-webkit-transform: translate3d(0, 0, ( $width/2 )) rotateY(-90deg)
+  }
+  .top {
+	-webkit-transform: translate3d(0, 0, ( $height/2 )) rotateX(90deg)
+  }
+  .bottom {
+	-webkit-transform: translate3d(0, 0, ( $height/2 )) rotateX(-90deg)
+  }
+}
+
 
 
