@@ -53,10 +53,6 @@ div {
 
 .w_28_h_20_d_1 {
   $width: 28vw;$height: 20vw;$depth: 4vw; /*set dimensions here */ 
-  transform:translateZ($depth/2);
-  -webkit-box-shadow: -1px -2px 109px 35px rgba(0,0,0,0.75);
-  -moz-box-shadow: -1px -2px 109px 35px rgba(0,0,0,0.75);
-   box-shadow: -1px -2px 109px 35px rgba(0,0,0,0.75);
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
@@ -66,7 +62,12 @@ div {
   .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
   .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
+  .bottom { 
+    -webkit-box-shadow: -1px -2px 109px 35px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -2px 109px 35px rgba(0,0,0,0.75);
+    box-shadow: -1px -2px 109px 35px rgba(0,0,0,0.75);
+    transform: rotateX( -90deg ) translateZ( $height/2 );
+  }
 }
 
 
