@@ -96,7 +96,7 @@ div {
 	/*-webkit-transform: rotateY(   0deg ) translateZ( $depth/2 ); */
 	-webkit-transform: translate3d(0, 0, ( $depth/2 )) rotateY(0deg)
   }
-  .back { background:red;
+  .back { background:lightblue;
 	/* -webkit-transform: rotateX( 180deg ) translateZ(  $depth/2 ); */
 	-webkit-transform: translate3d(0, ( $depth/2 ), 0) rotateX(180deg)
   }
