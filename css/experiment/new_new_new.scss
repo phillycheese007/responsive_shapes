@@ -115,7 +115,7 @@ div {
   	-webkit-transform: translate3d(($width/2), 0, 0) rotateY(90deg) rotateX(0deg);
 
   }
-  .left {
+  .left { background:blue;
 	/*-webkit-transform: translate3d(0, 0, ( $width/2 )) rotateY(-90deg);*/  
   	-webkit-transform: translate3d(($width/2), 0, 0) rotateY(-90deg) rotateX(0deg);
 
