@@ -57,6 +57,7 @@ div {
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+	
   .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
   .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
   .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
@@ -81,15 +82,17 @@ div {
 .crane .face {position: absolute;
 	background:lightgreen;
 }
-.crane .wing-1 {width: 132px;
-	height: 346px;
+.crane .wing-1 {
+	width: 28vw;
+	height: 20vw;
 
-	-webkit-transform: rotateX(-50deg) rotateY(-10deg);
+	-webkit-transform: rotateY(0deg) translateZ(.5vw);
 }
-.crane .wing-2 {width: 132px;
-	height: 346px;
+.crane .wing-2 {
+	width: 28vw;
+	height: 20vw;
 	-webkit-transform-origin: bottom left;
-	-webkit-transform: rotateX(-50deg) rotateY(10deg);
+	-webkit-transform: rotateX(180deg) translateZ(.5vw);
 }
   
 	     
