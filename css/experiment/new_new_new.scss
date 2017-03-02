@@ -74,7 +74,7 @@ div {
 	-webkit-transform-style: preserve-3d;
 	-webkit-transform: rotate(0);
 }
-.crane .face {position: absolute;    display: block;
+.crane .face {position: absolute;    display: block;    margin: 0;
 	background:lightgreen;
 }
 .crane .wing-1 {width: 20vw;
@@ -84,13 +84,11 @@ div {
 .crane .wing-2 {width: 20vw;
 	height: 28vw;
 	-webkit-transform: rotateX(180deg) translateZ(7vw);
-
 }
 .crane .wing-3 {width: 14vw;
 	height: 28vw;
 	-webkit-transform: rotateY(90deg) translateZ(10vw);
 }
-
 .crane .wing-4 {width: 14vw;
 	height: 28vw;
 	-webkit-transform: rotateY(-90deg) translateZ(10vw);
