@@ -179,7 +179,7 @@ function onDemoNav(e) {
 
 function setupCrane() {
 	$crane = $('.crane');
-	crane = new Photon.FaceGroup($('.crane')[0], $('.crane .face'), .6, .1, true);
+	crane = new Photon.FaceGroup($('.crane')[0], $('.crane .face'), 1, .1, true);
 	renderCrane();
 }
 
@@ -216,7 +216,7 @@ function rotateCrane(e) {
 
 function setupPlane() {
 	$plane = $('.plane');
-	plane = new Photon.FaceGroup($('.plane')[0], $('.plane .face'), .6, .1, true);
+	plane = new Photon.FaceGroup($('.plane')[0], $('.plane .face'), .9, .1, true);
 	renderPlane();
 }
 
