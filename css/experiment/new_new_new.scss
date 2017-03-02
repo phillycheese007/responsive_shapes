@@ -95,7 +95,12 @@ div {
 	-webkit-transform: rotateX(180deg) translateZ(.5vw);
 }
   
-	     
+.crane .wing-3 {
+	width: 1vw;
+	height: 20vw;
+	/* -webkit-transform-origin: bottom left; */
+	-webkit-transform: rotateY(90deg) translateZ(14vw);
+}	     
 
 
 
