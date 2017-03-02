@@ -125,7 +125,7 @@ div {
   	-webkit-transform: translate3d(0, ($height/2), 0) rotateX(90deg) rotateY(0deg);
 
   }
-  .bottom { background:yellow;
+  .bottom { background:transparent;
 	/* -webkit-transform: translate3d(0, 0, ( $height/2 )) rotateX(-90deg) */
   	-webkit-transform: translate3d(0, ($height/2), 0) rotateX(-90deg) rotateY(0deg);
 
