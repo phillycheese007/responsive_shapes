@@ -97,15 +97,9 @@ $slab_color: yellow;
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
   }
   .right  { 
-   -webkit-box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
-   -moz-box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
-    box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
     transform: rotateY(  90deg ) translateZ( $width/2 );
   }
   .left   { 
-   -webkit-box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
-   -moz-box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
-    box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
     transform: rotateY( -90deg ) translateZ( $width/2 );
   }
   .top    { 
