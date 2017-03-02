@@ -149,6 +149,9 @@ $slab_color: yellow;
     box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
   }
+  .back:before{ width: $width;height: $height;background:red;border:4px solid green;}
+  
+  
   .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
   .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
