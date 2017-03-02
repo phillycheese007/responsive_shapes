@@ -87,6 +87,10 @@ div {
 	-webkit-transform-origin: bottom left;
 	-webkit-transform: rotateX(-50deg) rotateY(10deg);
 }
-
+.crane .wing-2 {width: 14vw;
+	height: 28vw;
+	-webkit-transform-origin: bottom left;
+	-webkit-transform: rotateY(-90deg) translateZ(0);
+}
 @keyframes infinite-spinning { from { transform: rotate(0deg); }
   to { transform: rotate(360deg); } }
