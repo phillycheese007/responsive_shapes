@@ -121,7 +121,7 @@ div {
 #bobby_horse .crane {
 	$width: 28vw;$height: 20vw;$depth: 1vw; /*set dimensions here */ 
 	position: absolute;
-	top: 50%;
+	top: -50%;
 	left: 50%;
 	margin-top: 50px;
 	-webkit-transform-style: preserve-3d;
