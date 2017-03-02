@@ -44,8 +44,8 @@ $(document).ready(function() {
 	$body = $('body');
 	$demos = $('.demo');
 	light = new Photon.Light();
-	shadeAmount = .9;
-	tintAmount = 2;
+	shadeAmount = .2;
+	tintAmount = 0;
 	coverflowFaces = [];
 	cubeFaces = [];
 	diamondFaces = [];
