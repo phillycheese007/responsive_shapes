@@ -92,13 +92,13 @@ div {
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
 	
-  .front { background:lightblue;
+  .front {
 	/*-webkit-transform: rotateY(   0deg ) translateZ( $depth/2 ); */
 	-webkit-transform: translate3d(0, 0, ( $depth/2 )) rotateY(0deg)
   }
   .back { background:red;
 	/* -webkit-transform: rotateX( 180deg ) translateZ(  $depth/2 ); */
-	-webkit-transform: translate3d(0, ( $depth/2 ), 0) rotateX(180deg)
+	-webkit-transform: translate3d(0, 0, ( $depth/2 )) rotateX(180deg)
   }
   .right {  background:blue;
 	/* -webkit-transform: translate3d(0, 0, ( $width/2 )) rotateY(90deg); */
@@ -115,9 +115,9 @@ div {
   	-webkit-transform: translate3d(-131px, -346px, 60px) rotateX(-50deg) rotateY(-90deg);
 
   }
-  .bottom { background:lightblue;
+  .bottom { background:pink;
 	/* -webkit-transform: translate3d(0, 0, ( $height/2 )) rotateX(-90deg) */
-  	-webkit-transform: translate3d(0, ( $height/2 ), 60px) rotateX(-90deg) rotateY(10deg);
+  	-webkit-transform: translate3d(0, -346px, 60px) rotateX(-50deg) rotateY(10deg);
 
   }
 }
