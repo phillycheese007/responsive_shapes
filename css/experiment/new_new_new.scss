@@ -73,7 +73,7 @@ div {
 .crane {
   $width: 28vw;$height: 20vw;$depth: 1vw; /*set dimensions here */ 
   position: absolute;
-  top: -70%;
+  top: -50%;
   left: 40%;
   margin-top: 50px;
   -webkit-transform-style: preserve-3d;
@@ -125,7 +125,7 @@ div {
 
 
 .crane {position: absolute;
-	top: 50%;
+	top: -50%;
 	left: 50%;
 	margin-top: 50px;
 	-webkit-transform-style: preserve-3d;
