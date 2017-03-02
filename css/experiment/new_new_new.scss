@@ -104,7 +104,7 @@ div {
   .wing-4 {
 	width: $depth;
 	height: $height;
-        transform: rotateY(  90deg ) translateZ( $width/2 );
+        transform: rotateY(  -90deg ) translateZ( $width/2 );
   }
   .wing-5 {
 	width: $width;
