@@ -72,52 +72,29 @@ div {
 	Crane
 ---------------------------------*/
 
-.crane {position: absolute; animation: infinite-spinning 20s linear;
-	top: 2vw;
-	left: 20vw;
+/*---------------------------------
+	Crane
+---------------------------------*/
+
+.crane {position: absolute;
+	top: 50%;
+	left: 50%;
 	margin-top: 50px;
 	-webkit-transform-style: preserve-3d;
-	-webkit-transform: rotate(-15deg);
+	-webkit-transform: rotateX(-15deg) rotateY(-42deg);
 }
 .crane .face {position: absolute;
 	background:lightgreen;
 }
-.crane .wing-1 {
-	width: 28vw;
-	height: 20vw;
+.crane .wing-1 {width: 132px;
+	height: 346px;
 
-	-webkit-transform: rotateY(0deg) translateZ(.5vw);
+	-webkit-transform: rotateX(-50deg) rotateY(-10deg);
 }
-.crane .wing-2 {
-	width: 28vw;
-	height: 20vw;
-	/* -webkit-transform-origin: bottom left; */
-	-webkit-transform: rotateX(180deg) translateZ(.5vw);
-}
-  
-.crane .wing-3 {
-	width: 1vw;
-	height: 20vw;
-	/* -webkit-transform-origin: bottom left; */
-	-webkit-transform: rotateY(90deg) translateZ(14vw);
-}	     
-.crane .wing-4 {
-	width: 1vw;
-	height: 20vw;
-	/* -webkit-transform-origin: bottom left; */
-	-webkit-transform: rotateY(-90deg) translateZ(14vw);
-}
-.crane .wing-5 {
-	width: 28vw;
-	height: 1vw;
-	/* -webkit-transform-origin: bottom left; */
-	-webkit-transform: rotateX(90deg) translateZ(10vw);
-}
-.crane .wing-6 {
-	width: 28vw;
-	height: 1vw;
-	/* -webkit-transform-origin: bottom left; */
-	-webkit-transform: rotateX(-90deg) translateZ(10vw);
+.crane .wing-2 {width: 132px;
+	height: 346px;
+	-webkit-transform-origin: bottom left;
+	-webkit-transform: rotateX(-50deg) rotateY(10deg);
 }
 
 @keyframes infinite-spinning { from { transform: rotate(0deg); }
