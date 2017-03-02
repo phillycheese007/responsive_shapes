@@ -315,7 +315,7 @@ h2:after {
 }
 
 
-.crane .wing-1a {
+.crane .wing-1a { background:purple;
 	width: 132px;
 	height: 346px;
 	-webkit-mask: url(../images/crane/wing-a.svg) no-repeat;
@@ -339,7 +339,7 @@ h2:after {
 	-webkit-transform: translate3d(-128px, -22px, -34px) rotateY(6deg) rotateX(9deg);
 }
 
-.crane .wing-1d {
+.crane .wing-1d { background:pink;
 	width: 132px;
 	height: 105px;
 	-webkit-mask: url(../images/crane/wing-d.svg) no-repeat;
@@ -347,7 +347,7 @@ h2:after {
 	-webkit-transform: translate3d(-1px, -22px, -34px) rotateY(-6deg) rotateX(9deg);
 }
 
-.crane .wing-2a {
+.crane .wing-2a { 
 	width: 132px;
 	height: 346px;
 	-webkit-mask: url(../images/crane/wing-a.svg) no-repeat;
