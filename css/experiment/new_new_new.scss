@@ -112,7 +112,7 @@ div {
   }
   .right {  background:red;
 	/* -webkit-transform: translate3d(0, 0, ( $width/2 )) rotateY(90deg); */
-  	-webkit-transform: translate3d(0, ($width/2), 0) rotateY(90deg) rotateX(0deg);
+  	-webkit-transform: translate3d(0, 0, ($width/2)) rotateY(90deg) rotateX(0deg);
 
   }
   .left {
