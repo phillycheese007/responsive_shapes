@@ -93,10 +93,14 @@ div {
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
 	
   .front {
-	-webkit-transform: rotateY(   0deg ) translateZ( $depth/2 );
+	/*-webkit-transform: rotateY(   0deg ) translateZ( $depth/2 ); */
+	-webkit-transform-origin: bottom right;
+	-webkit-transform: translate3d(-131px, -346px, -60px) rotateX(50deg)
   }
   .back {
-	-webkit-transform: rotateX( 180deg ) translateZ(  $depth/2 );
+	/* -webkit-transform: rotateX( 180deg ) translateZ(  $depth/2 ); */
+	-webkit-transform-origin: bottom left;
+	-webkit-transform: translate3d(0, -346px, -60px) rotateX(50deg) rotateY(-10deg);
   }
   .right {
 	  	-webkit-transform-origin: bottom left;
