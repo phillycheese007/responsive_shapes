@@ -101,9 +101,24 @@ div {
 	/* -webkit-transform-origin: bottom left; */
 	-webkit-transform: rotateY(90deg) translateZ(14vw);
 }	     
-
-
-
+.crane .wing-4 {
+	width: 1vw;
+	height: 20vw;
+	/* -webkit-transform-origin: bottom left; */
+	-webkit-transform: rotateY(-90deg) translateZ(14vw);
+}
+.crane .wing-5 {
+	width: 28vw;
+	height: 1vw;
+	/* -webkit-transform-origin: bottom left; */
+	-webkit-transform: rotateX(90deg) translateZ(10vw);
+}
+.crane .wing-6 {
+	width: 28vw;
+	height: 1vw;
+	/* -webkit-transform-origin: bottom left; */
+	-webkit-transform: rotateX(-90deg) translateZ(10vw);
+}
 
 @keyframes infinite-spinning { from { transform: rotate(0deg); }
   to { transform: rotate(360deg); } }
