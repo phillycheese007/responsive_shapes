@@ -72,8 +72,8 @@ div {
 	Crane
 ---------------------------------*/
 
-.crane {position: absolute;
-	top: 12vw;
+.crane {position: absolute; animation: infinite-spinning 20s linear;
+	top: 2vw;
 	left: 20vw;
 	margin-top: 50px;
 	-webkit-transform-style: preserve-3d;
@@ -100,3 +100,5 @@ div {
 
 
 
+@keyframes infinite-spinning { from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); } }
