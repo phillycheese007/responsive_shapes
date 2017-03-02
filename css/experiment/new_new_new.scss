@@ -72,7 +72,7 @@ div {
 	Crane
 ---------------------------------*/
 
-.crane {position: absolute;animation: infinite-spinning 20s linear;
+.crane {position: absolute;
 	top: 50%;
 	left: 50%;
 	margin-top: 50px;
@@ -82,14 +82,13 @@ div {
 .crane .face {position: absolute;
 	background:lightgreen;
 }
-.crane .wing-1 {
-	width: 280px;
-	height: 200px;
+.crane .wing-1 {width: 132px;
+	height: 346px;
+
 	-webkit-transform: rotateX(-50deg) rotateY(-10deg);
 }
-.crane .wing-2 {
-	width: 280px;
-	height: 200px;
+.crane .wing-2 {width: 132px;
+	height: 346px;
 	-webkit-transform-origin: bottom left;
 	-webkit-transform: rotateX(-50deg) rotateY(10deg);
 }
