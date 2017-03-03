@@ -60,7 +60,7 @@
       transform:translateZ(12vw) rotateY($no_rotation);
     }
     .horizontal_shadow_2 {
-      transform: rotateX(45deg) translateZ(($height/2) - $table_top_depth);
+      transform: rotateX(45deg) translateZ(($base_height/2) - $table_top_depth);
 
     }
   }
