@@ -20,7 +20,7 @@ figure {
   left:18vw;top:6vw;
   transform: rotate(43deg) rotateY(43deg);
   animation: infinite-spinning 20s linear; 
-  animation-fill-mode:none;
+  animation-fill-mode:fill;
 }
 
 #chair_1_shadow {
@@ -28,7 +28,7 @@ figure {
   left:19vw;top:6vw;
   transform: rotateY(43deg);
   animation: infinite-spinning 20s linear; 
-  animation-fill-mode:none;
+  animation-fill-mode:fill;
 }
 
  .my_slab figure {
@@ -58,10 +58,10 @@ border:1px solid black;
 
 @keyframes infinite-spinning {
   from {
-    transform: rotate(0deg);
+    transform: rotate(43deg) rotateY(43deg) rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform:rotate(43deg) rotateY(43deg) rotate(360deg);
   }
 }
 
