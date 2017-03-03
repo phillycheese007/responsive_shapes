@@ -48,7 +48,7 @@
   .chair_back{
     $back_rotation:-45deg;
     $no_rotation:0deg;
-    .vertical_1{transform:translateZ(12vw) rotateX($back_rotation);}
+    .vertical_1{transform:translateZ($basewidth * 2) rotateX($back_rotation);}
     .rung_1{
       left:$rung_indent_size;
       top:$rung_indent_size;
