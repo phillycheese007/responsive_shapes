@@ -54,8 +54,8 @@ $slab_color: yellow;
   transform:translateZ($depth);
   .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );background:green;}
-  }
 }
+
 
 
 
