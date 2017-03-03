@@ -46,7 +46,7 @@
     .horizontal_1{transform:translateZ($horizontal_1_height_from_base)}
   }
   .chair_back{
-    $back_rotation:-45deg;
+    $back_rotation:0deg;
     $no_rotation:0deg;
     .vertical_1{transform:translateZ($base_width * 2) rotateX($back_rotation);}
     .rung_1{
