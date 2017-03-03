@@ -64,12 +64,13 @@ $slab_color: yellow;
   }
 }
 
-.w_pnt5_h_pnt5_d_8_for_shadows {
-  $width: .5vw;$height: .5vw;$depth: 8vw; /*set dimensions here */ 
+.w_8_h_8_d_pnt5_for_shadows {
+  $width: 8vw;$height: .5vw;$depth: .5vw; /*set dimensions here */ 
   transform:translateZ($depth);
   .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );background:green;}
 }
+
     /*------------------------------------*/
 
 
