@@ -40,7 +40,7 @@
   .four_leg_base{
     .leg_1{left:$leg_indent_size;top:$leg_indent_size;}
     .leg_2{left:($base_width) - ($leg_width + $leg_indent_size);top:$leg_indent_size;}
-    .leg_3{left:3vw;top:($base_height) - ($leg_width + $leg_indent_size);}
+    .leg_3{left:$leg_indent_size;top:($base_height) - ($leg_width + $leg_indent_size);}
     .leg_4{left:($base_width) - ($leg_width + $leg_indent_size);top:($base_height) - ($leg_width + $leg_indent_size);}
   }
   .chair_seat{
@@ -102,7 +102,7 @@
     }
     .leg_3{
       left:4vw;
-      transform:translateZ(3vw);
+      transform:translateZ(4vw);
     }
     .leg_4{
       left:0vw;
