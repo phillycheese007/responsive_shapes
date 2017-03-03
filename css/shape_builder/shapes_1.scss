@@ -151,7 +151,7 @@ $slab_color: yellow;
     width: $width;
     height: $height;
     background:red;
-    transform: rotateX( 180deg ) translateZ(  ($height) - 1 vw );
+    transform: rotateX( 180deg ) translateZ(  ($height) - 1 );
    -webkit-box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
    -moz-box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
     box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
