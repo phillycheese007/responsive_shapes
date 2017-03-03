@@ -46,9 +46,11 @@
     .horizontal_1{transform:translateZ($horizontal_1_height_from_base)}
   }
   .chair_back{
-    $back_rotation:0deg;
+    $master_back_rotation:0deg;
+    $back_rotation_1:90deg;
+
     $no_rotation:0deg;
-    .vertical_1{transform:translateZ($base_width * 2) rotateX($back_rotation);}
+    .vertical_1{transform:translateZ($base_width * 2) rotateX($master_back_rotation);}
     .rung_1{
       left:$rung_indent_size;
       top:$rung_indent_size;
@@ -60,7 +62,7 @@
       transform:translateZ(12vw) rotateY($no_rotation);
     }
     .horizontal_shadow_2 {
-      transform: rotateX($back_rotation) translateZ(-(($base_height/2) + $seat_slab_depth));
+      transform: rotateX($back_rotation_1) translateZ(-(($base_height/2) + $seat_slab_depth));
 
     }
   }
