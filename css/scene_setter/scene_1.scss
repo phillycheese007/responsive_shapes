@@ -12,14 +12,14 @@ figure {
 #table_2 {
   position:absolute;
   left:35vw;top:3vw;
-  transform: rotate(115deg);
+  transform: skewY(115deg);
   animation: infinite-spinning 20s linear; 
 }
 #chair_1 {
   position:absolute;
   left:18vw;top:6vw;
   transform: rotate(43deg);
-  animation: infinite-spinning 20s linear; 
+/*  animation: infinite-spinning 20s linear; */
   animation-fill-mode:fill;
 }
 
@@ -27,7 +27,7 @@ figure {
   position:absolute;
   left:19vw;top:6vw;
   transform: rotateY(43deg);
-  animation: infinite-spinning-with-rotation 20s linear; 
+ /* animation: infinite-spinning-with-rotation 20s linear; */
   animation-fill-mode:fill;
 }
 
