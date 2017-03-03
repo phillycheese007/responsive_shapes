@@ -94,7 +94,7 @@
   transform-style:preserve-3d;
 
   .leg_1{top:8vw;left:$leg_indent_size;}
-  .leg_2{top:0;left:0;transform:translateZ( ($base_depth/2) );}
+  .leg_2{top:0;left:0;transform:translateZ( $base_depth );}
   .leg_3{left:0vw;transform:translateZ(($base_height/2));}
   .leg_4{left:0vw;transform:translateZ(($base_height/2));}
   }
