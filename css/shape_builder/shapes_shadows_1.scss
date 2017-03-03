@@ -75,7 +75,7 @@ $slab_color: yellow;
   .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );background:green;}
   .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
 }
 
     /*------------------------------------*/
