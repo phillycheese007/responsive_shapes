@@ -19,14 +19,16 @@ figure {
   position:absolute;
   left:18vw;top:6vw;
   transform: rotate(43deg) rotateY(43deg);
-    animation: infinite-spinning 20s linear; 
+  animation: infinite-spinning 20s linear; 
+  animation-fill-mode:inherit;
 }
 
 #chair_1_shadow {
   position:absolute;
   left:19vw;top:6vw;
   transform: rotateY(43deg);
-    animation: infinite-spinning 20s linear; 
+  animation: infinite-spinning 20s linear; 
+  animation-fill-mode:inherit;
 }
 
  .my_slab figure {
