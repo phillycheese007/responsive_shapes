@@ -148,9 +148,9 @@ $slab_color: yellow;
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
   }
   .horizontal_shadow_1{ 
-    width: 50vw;height: 50vw;
-    background:yellow;
-    border:4px solid blue;
+    width: $width;
+    height: $height;
+    background:red;
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
    -webkit-box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
    -moz-box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
