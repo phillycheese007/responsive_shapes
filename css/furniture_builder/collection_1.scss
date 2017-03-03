@@ -65,9 +65,11 @@
       left:$base_width - ($rung_width + $rung_indent_size); 
       transform:translateZ(12vw) rotateY($no_rotation);
     }
+    .horizontal_shadow_1{
+      transform: rotateX( 180deg ) translateZ(($height/2));
+    }
     .horizontal_shadow_2 {
       transform: rotateX($back_rotation_1) translateZ(-(($base_height/2) + $seat_slab_depth));
-
     }
   }
 }
