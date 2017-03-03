@@ -27,7 +27,7 @@ figure {
   position:absolute;
   left:19vw;top:6vw;
   transform: rotateY(43deg);
-  animation: infinite-spinning 20s linear; 
+  animation: infinite-spinning-with-rotation 20s linear; 
   animation-fill-mode:fill;
 }
 
@@ -38,22 +38,14 @@ border:1px solid black;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@keyframes infinite-spinning-with-rotation {
+  from {
+    transform: rotate(43deg) rotateY(43deg) rotate(0deg);
+  }
+  to {
+    transform:rotate(43deg) rotateY(43deg) rotate(360deg);
+  }
+}
 
 
 @keyframes infinite-spinning {
@@ -64,4 +56,19 @@ border:1px solid black;
     transform:rotate(43deg) rotateY(43deg) rotate(360deg);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
