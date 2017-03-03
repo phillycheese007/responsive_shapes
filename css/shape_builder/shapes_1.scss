@@ -148,7 +148,7 @@ $slab_color: yellow;
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
   }
   .horizontal_shadow_2{ 
-    background:green;
+    background:green;border:10px solid blue;
     transform:translateY(3vw);left:4vw;
     width: 1px;
     height: 1px;
