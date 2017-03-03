@@ -156,8 +156,8 @@ $slab_color: yellow;
     .horizontal_shadow_1{ 
     background:none;
     border:none;
-    left:$width/2;
-    top:$height/2;
+    left:($width/2) -1;
+    top:($height/2) -1;
     width:1px;
     height:1px;
     background:none;opacity:.74;
