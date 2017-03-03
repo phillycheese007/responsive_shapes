@@ -66,7 +66,7 @@ $slab_color: yellow;
 
 .w_8_h_8_d_pnt5_for_shadows {
   $width: 8vw;$height: 8vw;$depth: .5vw; /*set dimensions here */ 
-  transform:translateZ($depth/2);
+  transform:translateZ($depth);
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
