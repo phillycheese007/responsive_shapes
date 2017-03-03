@@ -147,7 +147,7 @@ $slab_color: yellow;
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
   }
   .back:before{ 
-    transform: translateX(  2vw );
+    transform: translateZ(  2vw );
     width: $width;
     height: $height;
     background:red;
