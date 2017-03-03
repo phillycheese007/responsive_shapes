@@ -137,8 +137,8 @@ $slab_color: yellow;
 
 
 
-.w_4_h_10_d_pnt5_box_shadow {
-  $width: 4vw;$height: 10vw;$depth: .5vw; /*set dimensions here */ 
+.w_10_h_4_d_pnt5_box_shadow {
+  $width: 10vw;$height: 4vw;$depth: .5vw; /*set dimensions here */ 
   $chair_base_depth:8vw; /* manual set for now*/
   transform:translateZ($depth/2);
   .front, .back { width: $width;height: $height;}
