@@ -22,6 +22,12 @@ figure {
     animation: infinite-spinning 20s linear; 
 }
 
+#chair_1_shadow {
+  position:absolute;
+  left:19vw;top:6vw;
+  transform: rotate(43deg);
+    animation: infinite-spinning 20s linear; 
+}
 
  .my_slab figure {
 border:1px solid black;
