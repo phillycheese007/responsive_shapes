@@ -20,12 +20,12 @@ figure {
 #table_2 {
   position:absolute;
   left:35vw;top:3vw;
-  transform: rotate(43deg)
+  transform: rotate(0deg)
 }
 #chair_1 {
   position:absolute;
   left:18vw;top:6vw;
-  transform: rotate(43deg)
+  transform: rotate(0deg)
 /*  animation: infinite-spinning 20s linear; */
 
 }
@@ -33,7 +33,7 @@ figure {
 #chair_1_shadow {
   position:absolute;
   left:18vw;top:6vw;
-  transform: rotate(43deg);
+  transform: rotate(0deg);
  /* animation: infinite-spinning-with-rotation 20s linear; */
   animation-fill-mode:fill;
 }
