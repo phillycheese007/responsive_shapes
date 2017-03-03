@@ -150,6 +150,7 @@ $slab_color: yellow;
   
   /* begin shadows */
     .horizontal_shadow_1{ 
+      transform: rotateX( 180deg ) translateZ(4vw);
       left:($width/2);
       top:($height/2);
       width:1px;
@@ -163,7 +164,7 @@ $slab_color: yellow;
       background:none;
       border:none;
       left:($width/2);
-      top:(2vw);
+      top:($height/2);
       width:1px;
       height:1px;
       background:none;opacity:.74;
