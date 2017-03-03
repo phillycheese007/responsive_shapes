@@ -29,6 +29,7 @@
   $base_width:4vw; /* X cordinate */
   $base_height:10vw; /* Y cordinate */
   $base_depth:7vw; /* Z cordinate */
+  $table_top_depth:.5vw; /*at the moment this variable must be updated manually */
   $leg_width:.5vw; /*at the moment this variable must be updated manually */
   $leg_indent_size:.5vw;
   $rung_width:.5vw; /*at the moment this variable must be updated manually */
@@ -59,7 +60,7 @@
       transform:translateZ(12vw) rotateY($no_rotation);
     }
     .horizontal_shadow_2 {
-      transform: rotateX(45deg) translateZ(-6vw);
+      transform: rotateX(45deg) translateZ(($height/2)- $table_top_depth);
 
     }
   }
