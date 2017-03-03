@@ -10,7 +10,7 @@
   $base_depth:9vw; /* Z cordinate */
   $leg_indent_size:1vw;
   $leg_width:.5vw; /*at the moment this variable must be updated manually */
-  $horizontal_1_height_from_base: ($base_depth / 2) + 1;
+  $horizontal_1_height_from_base: ($base_depth / 2) ;
   $horizontal_2_height_from_base: ($base_depth);
   .four_leg_base{
   .leg_1{left:$leg_indent_size;top:$leg_indent_size;}
