@@ -38,10 +38,11 @@
   $horizontal_1_height_from_base: $base_depth;
   $horizontal_2_height_from_base: ($base_depth);
   .four_leg_base{
-  .leg_1{left:$leg_indent_size;top:$leg_indent_size;}
-  .leg_2{left:($base_width) - ($leg_width + $leg_indent_size);top:$leg_indent_size;}
-  .leg_3{left:$leg_indent_size;top:($base_height) - ($leg_width + $leg_indent_size);}
-  .leg_4{left:($base_width) - ($leg_width + $leg_indent_size);top:($base_height) - ($leg_width + $leg_indent_size);}
+    transform:rotateY(90deg)
+    .leg_1{left:$leg_indent_size;top:$leg_indent_size;}
+    .leg_2{left:($base_width) - ($leg_width + $leg_indent_size);top:$leg_indent_size;}
+    .leg_3{left:$leg_indent_size;top:($base_height) - ($leg_width + $leg_indent_size);}
+    .leg_4{left:($base_width) - ($leg_width + $leg_indent_size);top:($base_height) - ($leg_width + $leg_indent_size);}
   }
   .chair_seat{
     .horizontal_1{transform:translateZ($horizontal_1_height_from_base)}
