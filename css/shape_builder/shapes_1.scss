@@ -151,13 +151,12 @@ $slab_color: yellow;
     width: 1px;
     height: 1px;
     background:rgba(0,0,0,0.75);opacity:.9;
-
   }
     .horizontal_shadow_1{ 
     background:none;
     border:none;
-    left:($width/2) -1;
-    top:($height/2) -1;
+    left:($width/2);
+    top:($height/2);
     width:1px;
     height:1px;
     background:none;opacity:.74;
@@ -166,7 +165,6 @@ $slab_color: yellow;
     -moz-box-shadow: 0px 0px 17px ($width/2) rgba(0,0,0,.7);
     box-shadow: 0px 0px 17px ($width/2) rgba(0,0,0,.7);
   }
-  
   .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
   .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
