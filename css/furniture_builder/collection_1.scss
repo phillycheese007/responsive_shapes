@@ -59,7 +59,7 @@
       transform:translateZ(12vw) rotateY($no_rotation);
     }
     .horizontal_shadow_2 {
-      transform:translateY(-12vw) rotateX(45deg);
+      transform: rotateX(45deg) translateY(-12vw);
 
     }
   }
