@@ -34,7 +34,7 @@
   $leg_indent_size:.5vw;
   $rung_width:.5vw; /*at the moment this variable must be updated manually */
   $rung_indent_size:.5vw;
-  $horizontal_1_height_from_base: ($base_depth / 2) + 1;
+  $horizontal_1_height_from_base: $base_depth;
   $horizontal_2_height_from_base: ($base_depth);
   .four_leg_base{
   .leg_1{left:$leg_indent_size;top:$leg_indent_size;}
