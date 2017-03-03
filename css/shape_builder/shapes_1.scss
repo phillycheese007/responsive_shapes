@@ -150,7 +150,7 @@ $slab_color: yellow;
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
   }
   .back:before{ 
-    transform: translateZ( $height );
+    transform: translateZ( 20vw );
     width: $width;
     height: $height;
     background:red;
