@@ -147,13 +147,13 @@ $slab_color: yellow;
   .back   { 
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
   }
-  .horizontal_shadow_1{ 
+  .horizontal_shadow_2{ 
     width: $width;
     height: $height;
     background:rgba(0,0,0,0.75);opacity:.9;
 
   }
-    .horizontal_shadow_2{ 
+    .horizontal_shadow_1{ 
     width: $width;
     height: $height;
     background:none;opacity:.74;
