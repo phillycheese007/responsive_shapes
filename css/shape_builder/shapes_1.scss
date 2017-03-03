@@ -144,13 +144,10 @@ $slab_color: yellow;
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
   .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
   .back   { 
-   -webkit-box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
-   -moz-box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
-    box-shadow: 29px 33px 49px 1px rgba(0,0,0,0.75);
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
   }
   .back:before{ 
-    transform: translateY( 20vw );
+    transform: rotateX( 180deg ) translateZ(  $depth/2 );
     width: $width;
     height: $height;
     background:red;
