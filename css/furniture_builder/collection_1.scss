@@ -91,6 +91,7 @@
   $horizontal_2_height_from_base: ($base_depth);
   .four_leg_base{
   transform:rotateX(90deg);
+  transform-style:preserve-3d;
 
   .leg_1{left:$leg_indent_size;top:$leg_indent_size;}
   .leg_2{left:($base_width) - ($leg_width + $leg_indent_size);top:$leg_indent_size;}
