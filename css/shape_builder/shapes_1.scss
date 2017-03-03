@@ -151,7 +151,7 @@ $slab_color: yellow;
   }
   .back:before{ 
     transform: translateZ( 20vw );
-    width: $width;
+    width: $width;top:10vw;
     height: $height;
     background:red;
     border:4px solid green;
