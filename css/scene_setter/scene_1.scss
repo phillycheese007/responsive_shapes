@@ -18,7 +18,7 @@ figure {
 #chair_1 {
   position:absolute;
   left:18vw;top:6vw;
-  transform: rotate(43deg) rotateY(43deg);
+  transform: rotate(43deg);
   animation: infinite-spinning 20s linear; 
   animation-fill-mode:fill;
 }
@@ -50,10 +50,10 @@ border:1px solid black;
 
 @keyframes infinite-spinning {
   from {
-    transform: rotate(43deg) rotateY(43deg) rotate(0deg);
+    transform: rotate(43deg);
   }
   to {
-    transform:rotate(43deg) rotateY(43deg) rotate(360deg);
+    transform: rotate(403deg);
   }
 }
 
