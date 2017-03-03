@@ -92,11 +92,22 @@
   .four_leg_base{
   transform:rotateY(90deg);
   transform-style:preserve-3d;
-
-  .leg_1{left:0vw;transform:translateZ(($base_height/2));}
-  .leg_2{left:0vw;transform:translateZ(12vw);}
-  .leg_3{left:4vw;transform:translateZ(($base_height/2));}
-  .leg_4{left:0vw;transform:translateZ(($base_height/2));}
+    .leg_1{
+      left:0vw;
+      transform:translateZ(($base_height/2));
+    }
+    .leg_2{
+      left:0vw;
+      transform:translateZ(12vw);
+    }
+    .leg_3{
+      left:4vw;
+      transform:translateZ(3vw);
+    }
+    .leg_4{
+      left:0vw;
+      transform:translateZ(($base_height/2));
+    }
   }
   
   figure{background:blue;}
