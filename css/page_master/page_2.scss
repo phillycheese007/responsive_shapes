@@ -57,16 +57,15 @@
     }
  }
 
-.left_wall {  
-  position:absolute;background:none;
+.relfloorbox {  
+  background:none;
   width:100%;
   height:70%;
   bottom:0vw;
   position:absolute;
   margin:0 auto; z-index:1;
     .me{
-      transform:rotateY(90deg);
-      background:red;
+      background:brown;
       width:100%;left:0;
       height:160%;
       opacity:1;z-index:9;
