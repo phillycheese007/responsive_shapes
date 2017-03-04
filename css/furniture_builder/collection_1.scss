@@ -122,7 +122,7 @@
     .vertical_1{
       top:$base_depth * 2;
       left:-($rung_width);
-      transform:translateZ(0vw) rotateY(13deg) skewY(-30deg);
+      transform:translateZ(0vw) rotate(13deg) skewY(-30deg);
     }
     .rung_1{
       left:$rung_indent_size * 2;
