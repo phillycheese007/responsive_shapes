@@ -73,6 +73,7 @@ $slab_color: white;
     width: $depth;
     height: $height;
     background:blue;
+    opacity:.5;
   }
 
 }
@@ -104,6 +105,7 @@ $slab_color: white;
     height:$height;
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
     background:blue;
+    opacity:.5;
   }
 
 }
@@ -142,6 +144,7 @@ $slab_color: white;
     height:$height;
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
     background:blue;
+    opacity:.5;
 
   }
 }
