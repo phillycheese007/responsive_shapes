@@ -102,7 +102,7 @@ $slab_color: radial-gradient(red, yellow, rgb(30, 144, 255));
   .back   { 
     
     top:($height/2);
-    height:1px;
+    height:$height;
     
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
     background:orange;
