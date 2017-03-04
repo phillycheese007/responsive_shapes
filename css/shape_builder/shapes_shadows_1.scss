@@ -67,8 +67,8 @@ $slab_color: yellow;
 .w_8_h_8_d_pnt5_shadow {
   $width: 8vw;$height: 8vw;$depth: .5vw; /*set dimensions here */ 
   transform:translateZ($depth);
-  .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
-  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );background:green;}
+
+  
   .back   { transform: rotateX( 180deg ) translateZ(  $depth /2 );left:-($depth);}
   .back { width: $depth;height: $height;}
 
