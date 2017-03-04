@@ -67,10 +67,15 @@ $slab_color: yellow;
 .w_8_h_8_d_pnt5_shadow {
   $width: 8vw;$height: 8vw;$depth: .5vw; /*set dimensions here */ 
   transform:translateZ($depth);
-
   
   .back   { transform: rotateX( 180deg ) translateZ(  $depth /2 );left:-($depth);}
-  .back { width: $depth;height: $height;}
+  .back { 
+    width: $depth;
+    height: $height;
+    -webkit-box-shadow: 0px 0px 17px ($height/2) rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 0px 17px ($height/2) rgba(0,0,0,.7);
+    box-shadow: 0px 0px 17px ($height/2) rgba(0,0,0,.7);
+  }
 
 }
     /*------end-chair leg and shadows---w_pnt5_h_pnt5_d_8 ------------*/
