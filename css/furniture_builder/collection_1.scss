@@ -91,7 +91,7 @@
   $horizontal_2_height_from_base: ($base_depth);
   
   $shadow_rotation:30deg;
-  
+  transform: rotate:(34deg);
   .four_leg_base .my_slab {
     transform: rotate($shadow_rotation);
   }
