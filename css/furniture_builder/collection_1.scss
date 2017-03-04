@@ -107,7 +107,7 @@
   .chair_seat{
     .horizontal_1{
       transform:translateZ(0);
-      top:$base_depth;
+      top:($base_depth)-1;
       left:-4vw;
     } 
   }
@@ -117,6 +117,7 @@
     $back_rotation_1:90deg;
     $chair_back_height:10vw; /*at the moment this variable must be updated manually */
     $no_rotation:0deg;
+    transform: rotate(30deg);
     .vertical_1{
       top:$base_depth * 3;
       left:-($rung_width);
