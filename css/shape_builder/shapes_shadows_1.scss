@@ -121,7 +121,7 @@ $slab_color: yellow;
   $chair_base_depth:8vw; /* manual set for now*/
   transform:translateZ($depth/2);
   .back { width: $width;height: $height;}
-  .back   { top:7vw;transform: rotateX( 180deg ) translateZ(  $depth/2 );background:red;}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );background:red;}
 }
     /*--------end----chair seat--&---shadow .w_10_h_10_d_pnt5_shadow ---------*/
 
