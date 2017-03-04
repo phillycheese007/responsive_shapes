@@ -103,7 +103,7 @@ $slab_color: yellow;
   .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );background:green;}
   .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
 }
 
     /*--------end-----chair back--&---shadow .w_10_h_4_d_pnt5__shadow ---------*/
