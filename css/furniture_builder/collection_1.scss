@@ -112,7 +112,7 @@
     $no_rotation:0deg;
     .vertical_1{
       top:4vw;
-      transform:translateZ(3vw) rotateX($master_back_rotation);
+      transform:translateZ(7vw) rotateX($master_back_rotation);
     }
     .rung_1{
       left:$rung_indent_size;
