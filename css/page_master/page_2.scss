@@ -79,7 +79,7 @@
   perspective: 41em;
 }
 
-.relfloorbox .me, .billybox .me, .left_wall{
+.relfloorbox .me, .billybox .me, .left_wall .me{
   transform:rotateX(70deg);
 }
 .left_wall{
