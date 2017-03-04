@@ -119,17 +119,17 @@
     $no_rotation:0deg;
     transform: rotate(30deg);
     .vertical_1{
-      top:$base_depth * 3;
+      top:$base_depth * 2;
       left:-($rung_width);
       transform:translateZ(0vw) rotateX(0);
     }
     .rung_1{
       left:$rung_indent_size;
-      top:$base_depth * 2;
+      top:$base_depth * 1;
       transform:translateZ(0);
     }
     .rung_2{
-      top:$base_depth * 2;
+      top:$base_depth * 1;
       left:$base_width - ($rung_width + $rung_indent_size); 
       transform:translateZ(0) rotateY($no_rotation);
     }
