@@ -117,7 +117,7 @@
     .rung_1{
       left:$rung_indent_size;
       top:$base_width * 2;
-      transform:translateZ(0) rotateY(30deg);
+      transform:translateZ(0);
     }
     .rung_2{
       top:$base_width * 2;
