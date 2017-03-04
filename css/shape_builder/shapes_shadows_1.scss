@@ -70,7 +70,7 @@ $slab_color: yellow;
   .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );background:green;}
   .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
-  .back { width: $width;height: $height;}
+  .back { width: $depth;height: $height;}
 
 }
     /*------end-chair leg and shadows---w_pnt5_h_pnt5_d_8 ------------*/
