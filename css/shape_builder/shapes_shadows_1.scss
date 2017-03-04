@@ -120,7 +120,7 @@ $slab_color: yellow;
 .w_10_h_10_d_pnt5_shadow {
   $width: 10vw;$height: 10vw;$depth: .5vw; /*set dimensions here */ 
   $chair_base_depth:8vw; /* manual set for now*/
-  transform:translateZ($depth);
+  transform:translateZ($height);
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
