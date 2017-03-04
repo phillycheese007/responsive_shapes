@@ -98,10 +98,7 @@ $slab_color: yellow;
   .back { width: $width;height: $height;}
   .back   { 
     
-    left:($width/2);
     top:($height/2);
-
-    
     height:1px;
     
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
