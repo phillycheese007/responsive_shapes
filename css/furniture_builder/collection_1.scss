@@ -89,8 +89,10 @@
   $rung_indent_size:.5vw;
   $horizontal_1_height_from_base: $base_depth;
   $horizontal_2_height_from_base: ($base_depth);
-  .four_leg_base{
+  .four_leg_base .my_slab {
     transform: rotate(30deg);
+  }
+  .four_leg_base{
     .leg_1{left:($leg_width * 2);top:$leg_indent_size;}
     .leg_2{left:($base_width) - $leg_width ;top:$leg_indent_size;}
     .leg_3{left:($leg_width * 2);top:($base_height) - ($leg_width + $leg_indent_size);}
