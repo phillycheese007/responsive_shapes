@@ -1,7 +1,7 @@
 ---
 #slabs
 ---
-$slab_color: yellow;
+$slab_color: radial-gradient(red, yellow, rgb(30, 144, 255));
 
 
 /* --begin constants --*/
@@ -131,7 +131,6 @@ $slab_color: yellow;
   .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
   .top    { transform: rotateX(  90deg ) translateZ( $height/2 );
-    background: radial-gradient(red, yellow, rgb(30, 144, 255));
   }
   .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
 }
