@@ -111,7 +111,7 @@
     $chair_back_height:10vw; /*at the moment this variable must be updated manually */
     $no_rotation:0deg;
     .vertical_1{
-      top:$base_depth * 2;
+      top:$base_depth * 3;
       transform:translateZ(0vw) rotateX(0);
     }
     .rung_1{
@@ -120,7 +120,7 @@
       transform:translateZ(0);
     }
     .rung_2{
-      top:$base_width * 3;
+      top:$base_width * 2;
       left:$base_width - ($rung_width + $rung_indent_size); 
       transform:translateZ(0) rotateY($no_rotation);
     }
