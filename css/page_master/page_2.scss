@@ -66,9 +66,10 @@
   left:0;
     .me{
       transform:rotateY(90deg);
-      background:pink;
+      background:red;
       width:100%;left:0;
-      height:160%;
+      height:100%;
+      width:160%;
       opacity:1;z-index:9;
       transform-style: preserve-3d; 
       position: absolute;z-index:1;
