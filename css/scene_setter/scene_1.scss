@@ -22,20 +22,12 @@ figure {
   left:35vw;top:3vw;
   transform: rotate(0deg)
 }
-#chair_1 {
+
+
+#chair_1, #chair_1_shadow {
   position:absolute;
   left:38vw;top:-5vw;
-  transform: rotate(12deg)
-/*  animation: infinite-spinning 20s linear; */
-
-}
-
-#chair_1_shadow {
-  position:absolute;
-  left:38vw;top:-5vw;
-  transform: rotate(0deg);
- /* animation: infinite-spinning-with-rotation 20s linear; */
-  animation-fill-mode:fill;
+  transform: rotate(12deg);
 }
 
  .my_slab figure {
