@@ -100,7 +100,8 @@ $slab_color: yellow;
     
     left:($width/2);
     top:($height/2);
-    width:1px;
+
+    
     height:1px;
     
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
