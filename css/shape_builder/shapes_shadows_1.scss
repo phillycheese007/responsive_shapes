@@ -69,8 +69,8 @@ $slab_color: yellow;
   transform:translateZ($depth);
   .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );background:green;}
-  .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;}
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
+  .back { width: $width;height: $height;}
 
 }
     /*------end-chair leg and shadows---w_pnt5_h_pnt5_d_8 ------------*/
