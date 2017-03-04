@@ -99,7 +99,10 @@
   figure{background:blue;}
   
   .chair_seat{
-    .horizontal_1{transform:translateZ(0)}
+    .horizontal_1{
+      transform:translateZ(0);
+      top:3vw;
+    }
     
   }
   .chair_back{
