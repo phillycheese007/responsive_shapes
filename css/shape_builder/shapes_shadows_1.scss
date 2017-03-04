@@ -70,11 +70,9 @@ $slab_color: radial-gradient(red, yellow, rgb(30, 144, 255));
   
   .back   { transform: rotateX( 180deg ) translateZ(  $depth /2 );left:-($depth);}
   .back { 
-    width: 0;
+    width: $width;
     height: $height;
-    -webkit-box-shadow: 0px 0px 49px -1px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 0px 49px -1px rgba(0,0,0,1);
-    box-shadow: 0px 0px 49px -1px rgba(0,0,0,1);
+    background:blue;
   }
 
 }
