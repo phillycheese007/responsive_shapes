@@ -78,12 +78,14 @@
  }
 
 
-.bigbox, .billybox, .relfloorbox, .left_wall{
+.bigbox, .billybox, .relfloorbox{
   perspective: 41em;
 }
 
 .relfloorbox .me, .billybox .me{
   transform:rotateX(70deg);
 }
-
+.left_wall{
+  perspective: 51em;
+}
 
