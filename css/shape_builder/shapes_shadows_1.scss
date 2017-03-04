@@ -126,6 +126,12 @@ $slab_color: yellow;
   transform:translateZ($depth/2);
   .back { width: $width;height: $height;}
   .back   { 
+    left:($width/2);
+    top:($height/2);
+    width:1px;
+    height:1px;
+    
+    
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
     background:red;
     -webkit-box-shadow: 0px 0px 17px ($width/2) rgba(0,0,0,.7);
@@ -134,8 +140,6 @@ $slab_color: yellow;
   }
 }
     /*--------end----chair seat--&---shadow .w_10_h_10_d_pnt5_shadow ---------*/
-
-
 
 
 
