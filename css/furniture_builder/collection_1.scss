@@ -99,7 +99,7 @@
   figure{background:blue;}
   
   .chair_seat{
-    .horizontal_1{transform:translateZ($horizontal_1_height_from_base)}
+    .horizontal_1{transform:translateZ(3vw)}
   }
   .chair_back{
     $master_back_rotation:90deg;
