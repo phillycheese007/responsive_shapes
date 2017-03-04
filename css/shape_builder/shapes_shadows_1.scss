@@ -67,15 +67,8 @@ $slab_color: yellow;
 .w_8_h_8_d_pnt5_for_shadows {
   $width: 8vw;$height: 8vw;$depth: .5vw; /*set dimensions here */ 
   transform:translateZ($depth);
-  .front, .back { width: $width;height: $height;}
-  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
-  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
-  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
-  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
-  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
+  .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );background:green;}
-  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
 }
 
     /*------------------------------------*/
@@ -236,6 +229,8 @@ $slab_color: yellow;
   .back   { 
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
   }
+  
+  
   
   /* begin shadows */
     .horizontal_shadow_1{ 
