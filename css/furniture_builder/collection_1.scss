@@ -130,7 +130,7 @@
     }
     .rung_2{
       top:$base_depth * 1;
-      left:$base_width - ($rung_width + $rung_indent_size); 
+      left:1vw; 
       transform:translateZ(0) rotateY($no_rotation);
     }
   }
