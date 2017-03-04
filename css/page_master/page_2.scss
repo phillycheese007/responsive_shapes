@@ -40,7 +40,6 @@
   transform-style: preserve-3d; 
   position: absolute;z-index:9999;}
 
-
 .relfloorbox {  
   background:none;
   width:100%;
@@ -50,23 +49,11 @@
   margin:0 auto; z-index:1;
  }
 
-
 .relfloorbox .me{
   background:pink;
-  background-image: url("/responsive_shapes/images/floor.jpg");
   width:100%;left:0;
   height:160%;
   opacity:1;z-index:9;
-  transform-style: preserve-3d; 
-  position: absolute;z-index:1;
-}
-
-.relfloorbox .me2{
-  background:pink;
-  width:100%;left:0;
-  height:160%;
-  opacity:1;z-index:9;
-  transform:rotate(90deg);
   transform-style: preserve-3d; 
   position: absolute;z-index:1;
 }
