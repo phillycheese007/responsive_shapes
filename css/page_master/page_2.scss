@@ -36,7 +36,7 @@
 .billybox .me{
   background:transparent;
   width:100%;
-  height:160%;
+  height:150%;
   transform-style: preserve-3d; 
   position: absolute;z-index:9999;}
 
@@ -50,7 +50,7 @@
     .me{
       background:pink;
       width:100%;left:0;
-      height:160%;
+      height:150%;
       opacity:1;z-index:9;
       transform-style: preserve-3d; 
       position: absolute;
@@ -74,7 +74,7 @@
 }
 
 .relfloorbox .me, .billybox .me,{
-  transform:rotateX(90deg);
+  transform:rotateX(70deg);
 }
 
 
