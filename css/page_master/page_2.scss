@@ -59,7 +59,7 @@
 
 .left_wall {  
   background:blue;
-  width:20%;
+  width:50%;
   height:100%;
   bottom:0vw;
   position:absolute;
@@ -70,7 +70,7 @@
       height:100%;
       opacity:1;z-index:9;
       transform-style: preserve-3d; 
-      position: absolute;
+      position: absolute;left:-20%;
     }
  }
 
