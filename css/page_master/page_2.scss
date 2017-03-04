@@ -59,11 +59,11 @@
 
 .left_wall {  
   position:absolute;background:blue;
-  height:70%;
   width:100%;
-  top:0;
-  bottom:0;
-  left:0;
+  height:70%;
+  bottom:0vw;
+  position:absolute;
+  margin:0 auto; z-index:1;
     .me{
       transform:rotateY(90deg);
       background:red;
