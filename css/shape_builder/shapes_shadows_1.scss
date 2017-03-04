@@ -130,7 +130,9 @@ $slab_color: yellow;
   .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
   .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
-  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );
+    background: radial-gradient(red, yellow, rgb(30, 144, 255));
+  }
   .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
 }
 
