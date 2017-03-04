@@ -106,7 +106,7 @@
   
   .chair_seat{
     .horizontal_1{
-      transform:translateZ(0) rotate(-($shadow_rotation));
+      transform:translateZ(0) rotate(-20deg);
       top:$base_depth;left:-($rung_width * 2);
     } 
   }
