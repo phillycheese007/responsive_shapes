@@ -89,8 +89,11 @@
   $rung_indent_size:.5vw;
   $horizontal_1_height_from_base: $base_depth;
   $horizontal_2_height_from_base: ($base_depth);
+  
+  $shadow_rotation:30deg;
+  
   .four_leg_base .my_slab {
-    transform: rotate(30deg);
+    transform: rotate($shadow_rotation);
   }
   .four_leg_base{
     .leg_1{left:($leg_width * 2);top:$leg_indent_size;}
@@ -103,7 +106,7 @@
   
   .chair_seat{
     .horizontal_1{
-      transform:translateZ(0);
+      transform:translateZ(0) rotate($shadow_rotation);
       top:$base_depth;left:-($rung_width * 2);
     } 
   }
