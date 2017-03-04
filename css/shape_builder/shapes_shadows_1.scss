@@ -105,9 +105,9 @@ $slab_color: yellow;
     
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
     background:orange;
-    -webkit-box-shadow: 0px 0px 17px ($width/2) rgba(0,0,0,.7);
-    -moz-box-shadow: 0px 0px 17px ($width/2) rgba(0,0,0,.7);
-    box-shadow: 0px 0px 17px ($width/2) rgba(0,0,0,.7);
+    -webkit-box-shadow: 0px 0px 17px ($height/2) rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 0px 17px ($height/2) rgba(0,0,0,.7);
+    box-shadow: 0px 0px 17px ($height/2) rgba(0,0,0,.7);
   }
 
 }
