@@ -70,7 +70,7 @@ $slab_color: yellow;
   
   .back   { transform: rotateX( 180deg ) translateZ(  $depth /2 );left:-($depth);}
   .back { 
-    width: .5px;
+    width: 0;
     height: $height;
     -webkit-box-shadow: 0px 0px 17px ($depth * 2) rgba(0,0,0,.7);
     -moz-box-shadow: 0px 0px 17px ($depth * 2) rgba(0,0,0,.7);
