@@ -101,7 +101,7 @@
   .chair_seat{
     .horizontal_1{
       transform:translateZ(0);
-      top:$base_depth;left:-($rung_width);
+      top:$base_depth;left:-($rung_width * 2);
     } 
   }
   
