@@ -93,7 +93,7 @@
     .leg_1{left:($leg_width * 2);top:$leg_indent_size;}
     .leg_2{left:($base_width) - $leg_width ;top:$leg_indent_size;}
     .leg_3{left:($leg_width * 2);top:($base_height) - ($leg_width + $leg_indent_size);}
-    .leg_4{left:($base_width) - ($leg_width + $leg_indent_size);top:($base_height) - ($leg_width + $leg_indent_size);}
+    .leg_4{left:($base_width) - $leg_width ;top:($base_height) - ($leg_width + $leg_indent_size);}
   }
 
   figure{background:blue;}
