@@ -64,7 +64,7 @@ $slab_color: yellow;
   }
 }
 
-.w_8_h_8_d_pnt5_for_shadows {
+.w_8_h_8_d_pnt5_shadow {
   $width: 8vw;$height: 8vw;$depth: .5vw; /*set dimensions here */ 
   transform:translateZ($depth);
   .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
@@ -75,7 +75,7 @@ $slab_color: yellow;
 
     /*--------begin-----chair back-----shadow .w_10_h_4_d_pnt5_box_shadow -------*/
 
-.w_10_h_4_d_pnt5_box_shadow {
+.w_10_h_4_d_pnt5_shadow {
   $width: 10vw;$height: 4vw;$depth: .5vw; /*set dimensions here */ 
   $chair_base_depth:8vw; /* manual set for now*/
   transform:translateZ($depth/2);
@@ -95,7 +95,7 @@ $slab_color: yellow;
     /*--------begin----chair back-----shadow .w_10_h_10_d_pnt5_box_shadow ---------*/
 
 
-.w_10_h_10_d_pnt5_box_shadow {
+.w_10_h_10_d_pnt5_shadow {
   $width: 10vw;$height: 10vw;$depth: .5vw; /*set dimensions here */ 
   $chair_base_depth:8vw; /* manual set for now*/
   transform:translateZ($depth/2);
@@ -116,7 +116,7 @@ $slab_color: yellow;
 
 
 
-.w_pnt5_h_pnt5_d_8_box_shadow {
+.w_pnt5_h_pnt5_d_8_shadow {
   $width: .5vw;$height: .5vw;$depth: 8vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .front, .back { width: $width;height: $height;}
