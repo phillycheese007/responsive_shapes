@@ -112,7 +112,7 @@
     $no_rotation:0deg;
     .vertical_1{
       top:$base_depth * 3;
-      left:-($rung_width * 2);
+      left:-($rung_width);
       transform:translateZ(0vw) rotateX(0);
     }
     .rung_1{
