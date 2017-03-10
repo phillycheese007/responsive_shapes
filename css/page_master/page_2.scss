@@ -5,11 +5,12 @@
 
 #foz{
   background:white;
+  border:2px solid green;
   height:60vh;min-height:300px;
   position:absolute;
   z-index:9999;
   width:90%;
-  left:5%;
+  left:calc(5% - 2px);
   margin:0 auto;
 }
 
