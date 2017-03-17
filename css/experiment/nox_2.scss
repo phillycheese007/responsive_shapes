@@ -1,7 +1,10 @@
 ---
 #eee
 ---
-body{    
+.big_bub{  
+  background:pink;
+  width:70%;
+  margin:0 auto;
   -webkit-perspective: 150px; /* Chrome, Safari, Opera  */
   perspective: 150px;
 }
