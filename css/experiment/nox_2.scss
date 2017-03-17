@@ -1,83 +1,57 @@
 ---
-#slabs
+#eee
 ---
-$slab_color: brown;
+body{    -webkit-perspective: 150px; /* Chrome, Safari, Opera  */
+    perspective: 150px;
+    }
+#div1 {
+    position: relative;
 
-/* --begin controllers --*/
+   /* height: 150px; */
+    width: 150px;
 
-@mixin backface_visibility ($arguments) {
-  -webkit-backface-visibility: $arguments;
-     -moz-backface-visibility: $arguments;
-      -ms-backface-visibility: $arguments;
-       -o-backface-visibility: $arguments;
-          backface-visibility: $arguments;
+transform:rotateY(12deg);
+    border: 1px solid black;  transform-style: preserve-3d;
+
+
 }
 
-@mixin preserve_3d ($arguments) {
-  -webkit-transform-style: $arguments;
-  -moz-transform-style: $arguments;
-  -o-transform-style: $arguments;
-  transform-style: $arguments;
+#div2 {
+    padding: 40px;
+    position: relative;
+    border: 1px solid black;
+    background-color: red;
+    -webkit-transform: rotateX(-40deg); /* Chrome, Safari, Opera  */
+    transform: rotateX(-40deg);
+    transform: skewX(-40deg);
+
 }
-/* --end controllers --*/
-
-
-/*begin general shapebuilding rules --*/
-
- .slab_test .panels-backface-invisible figure { @include backface_visibility(hidden)}
-
- .slab_test { 
-   @include preserve_3d(preserve-3d);
-   width: 100%;
-   height: 100%; 
-   position:absolute;
+#div3 {
+    padding: 40px;
+    position: relative;
+    border: 1px solid black;
+    background-color: blue;
+    -webkit-transform: rotateX(40deg); /* Chrome, Safari, Opera  */
+    transform: rotateX(40deg);
+    transform: skewX(40deg);
 }
-     
-   
- .slab_test figure {
-    display: block;
-    margin: 0;
-    position: absolute;
-    border: 1px solid #000;
-    opacity: .7; 
-  }
+#div4 {
+    padding: 40px;
+    position: relative;
+    border: 1px solid black;
+    background-color: red;
+    -webkit-transform: rotateX(-40deg); /* Chrome, Safari, Opera  */
+    transform: rotateX(-40deg);
+    transform: skewX(-40deg);
 
-/*end general shapebuilding rules --*/
+}
+#div5 {
+    padding: 40px;
+    position: relative;
+    border: 1px solid black;
+    background-color: blue;
+    -webkit-transform: rotateX(40deg); /* Chrome, Safari, Opera  */
+    transform: rotateX(40deg);
+    transform: skewX(40deg);
 
-
-/*begin building Individual Shapes --*/
-
-
-
-#chair_3 .slab_test {
-  $width: 10vw;$height: 5vw;$depth: 14vw; /*set dimensions here */ 
-  
-  .front, .back { width: $width;height: $height;}
-  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
-  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
-  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );  }
-  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 ); }
-  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );  }
-  .left   { transform: rotateY( -90deg ) translateZ( $width/2 ); }
-  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );  }
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );  }
-} /*--end .slab_test --*/
-
-
-#chair_4 .slab_test {
-  $width: 10vw;$height: 5vw;$depth: 14vw; /*set dimensions here */ 
-  
-  .front, .back { width: $width;height: $height;}
-  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
-  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
-  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );  }
-  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );  }
-  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );  }
-  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );  }
-  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );  }
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 ); }
-} /*--end .slab_test --*/
-
-
-
-/*end building Individual Shapes --*/
+}
