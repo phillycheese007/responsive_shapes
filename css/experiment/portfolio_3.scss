@@ -8,7 +8,7 @@
   margin-top:100px;
   -webkit-perspective: 450px; /* Chrome, Safari, Opera  */
   perspective: 450px;
-  perspective-origin: 10% 50%;
+
 
 }
 #div1 {
@@ -31,31 +31,34 @@
 
 }
 #div3 {
-    height:50px;width:150px;
-    position: relative;
-    border: 1px solid black;
-    background-color: blue;
-    -webkit-transform: rotateX(40deg); /* Chrome, Safari, Opera  */
-    transform: rotateX(40deg);
-    transform: skewX(40deg);
+  height:100vh;
+  width:150px;
+  position: relative;
+  border: 1px solid black;
+  background-color: blue;
+  -webkit-transform: rotateX(40deg); /* Chrome, Safari, Opera  */
+  transform: rotateX(40deg);
+  transform: skewX(40deg);
 }
+
 #div4 {
-    height:50px;width:150px;
-    position: relative;
-    border: 1px solid black;
-    background-color: red;
-    -webkit-transform: rotateX(-40deg); /* Chrome, Safari, Opera  */
-    transform: rotateX(-40deg);
-    transform: skewX(-40deg);
-
+  height:100vh;
+  width:150px;
+  position: relative;
+  border: 1px solid black;
+  background-color: red;
+  -webkit-transform: rotateX(-40deg); /* Chrome, Safari, Opera  */
+  transform: rotateX(-40deg);
+  transform: skewX(-40deg);
 }
-#div5 {
-    height:50px;width:150px;
-    position: relative;
-    border: 1px solid black;
-    background-color: blue;
-    -webkit-transform: rotateX(40deg); /* Chrome, Safari, Opera  */
-    transform: rotateX(40deg);
-    transform: skewX(40deg);
 
+#div5 {
+  height:100vh;
+  width:150px;
+  position: relative;
+  border: 1px solid black;
+  background-color: blue;
+  -webkit-transform: rotateX(40deg); /* Chrome, Safari, Opera  */
+  transform: rotateX(40deg);
+  transform: skewX(40deg);
 }
