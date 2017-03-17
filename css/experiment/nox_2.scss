@@ -1,19 +1,16 @@
 ---
 #eee
 ---
-body{    -webkit-perspective: 150px; /* Chrome, Safari, Opera  */
-    perspective: 150px;
-    }
+body{    
+  -webkit-perspective: 150px; /* Chrome, Safari, Opera  */
+  perspective: 150px;
+}
 #div1 {
-    position: relative;
-
-   /* height: 150px; */
-    width: 150px;
-
-transform:rotateY(12deg);
-    border: 1px solid black;  transform-style: preserve-3d;
-
-
+  position: relative;
+  width: 150px;
+  transform:rotateY(12deg);
+  border: 1px solid black;
+  transform-style: preserve-3d;
 }
 
 #div2 {
@@ -24,8 +21,8 @@ transform:rotateY(12deg);
     -webkit-transform: rotateX(-40deg); /* Chrome, Safari, Opera  */
     transform: rotateX(-40deg);
     transform: skewX(-40deg);
-
 }
+
 #div3 {
     padding: 40px;
     position: relative;
