@@ -5,43 +5,50 @@
 <style>
 
 .container {
-  background:yellow;
-  position:fixed;
-  top:0;bottom:0;left:0;right:0;
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 200px;
+  position: relative;
   perspective: 1000px;
 }
 
-#cube {
-  background:green;
+#box {
   width: 100%;
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
 }
 
-#cube figure {
+#box figure {
   margin: 0;
-  width: 196px;
-  height: 196px;
   display: block;
   position: absolute;
-  border: 2px solid black;
 }
-#cube .front  { transform: rotateY(   0deg ); }
-#cube .back   { transform: rotateX( 180deg ); }
-#cube .right  { transform: rotateY(  90deg ); }
-#cube .left   { transform: rotateY( -90deg ); }
-#cube .top    { transform: rotateX(  90deg ); }
-#cube .bottom { transform: rotateX( -90deg ); }
-  
-#cube .front  { transform: rotateY(   0deg ) translateZ( 100px ); }
-#cube .back   { transform: rotateX( 180deg ) translateZ( 100px ); }
-#cube .right  { transform: rotateY(  90deg ) translateZ( 100px ); }
-#cube .left   { transform: rotateY( -90deg ) translateZ( 100px ); }
-#cube .top    { transform: rotateX(  90deg ) translateZ( 100px ); }
-#cube .bottom { transform: rotateX( -90deg ) translateZ( 100px ); }
+
+#box .front,
+#box .back {  background:green;
+  width: 300px;
+  height: 200px;
+}
+
+#box .right,
+#box .left {  background:blue;
+  width: 100px;
+  height: 200px;
+  left: 100px;
+}
+
+#box .top,
+#box .bottom {  background:red;
+  width: 300px;
+  height: 100px;
+  top: 50px;
+}
+#box .front  { transform: rotateY(   0deg ) translateZ(  50px ); }
+#box .back   { transform: rotateX( 180deg ) translateZ(  50px ); }
+#box .right  { transform: rotateY(  90deg ) translateZ( 150px ); }
+#box .left   { transform: rotateY( -90deg ) translateZ( 150px ); }
+#box .top    { transform: rotateX(  90deg ) translateZ( 100px ); }
+#box .bottom { transform: rotateX( -90deg ) translateZ( 100px ); }
 </style>
 </head>
 <body>
