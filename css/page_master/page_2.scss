@@ -12,15 +12,17 @@
 }
 
 #div_left {
-    margin:0;left:0;top:0;  transform-style: preserve-3d;   transform:rotateY(70deg);
-    position: fixed;
-    height:100%;width:30%;
-    background-color: red;
-    -webkit-transform: rotateY(45deg) translateZ(-5%); /* Chrome, Safari, Opera  */
-    transform: rotateY(45deg) translateZ(-5%);
-    .window{
-      height:10%;width:10%;background:white;positon:absolute;top:0;left:5%;
-    }   
+  transform:rotateY(70deg);
+  margin:0;
+  left:0;top:0;  transform-style: preserve-3d;   t
+  position: fixed;
+  height:100%;width:30%;
+  background-color: red;
+  -webkit-transform: rotateY(45deg) translateZ(-5%); /* Chrome, Safari, Opera  */
+  transform: rotateY(45deg) translateZ(-5%);
+  .window{
+     height:10%;width:10%;background:white;positon:absolute;top:0;left:5%;
+  }   
 }
 
 .bigbox{
