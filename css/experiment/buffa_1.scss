@@ -48,11 +48,11 @@ $slab_color: yellow;
 .torw {
   $width: 50vw;$height: 10vw;$depth: 5vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
-  .front, .back { width: $width;height: $height;background:blue;}
+  .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;background:red;}
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
   .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
-  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );background:blue;}
   .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
   .top    { transform: rotateX(  90deg ) translateZ( $height/2 );background:brown;}
