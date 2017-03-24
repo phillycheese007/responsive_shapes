@@ -1,61 +1,126 @@
 
-<html>
+
+
+<!doctype html>
+<html lang="en">
 <head>
-<TITLE>Your Title Here</TITLE>
-<style>
-
-.container {
-  width: 300px;
-  height: 200px;
-  position: relative;
-  perspective: 1000px;
-}
-
-#box {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-}
-
-#box figure {
-  margin: 0;
-  display: block;
-  position: absolute;
-}
-
-#box .front,
-#box .back {  background:green;
-  width: 300px;
-  height: 200px;
-}
-
-#box .right,
-#box .left {  background:blue;
-  width: 100px;
-  height: 200px;
-  left: 100px;
-}
-
-#box .top,
-#box .bottom {  background:red;
-  width: 300px;
-  height: 100px;
-  top: 50px;
-}
-#box .front  { transform: rotateY(   0deg ) translateZ(  50px ); }
-#box .back   { transform: rotateX( 180deg ) translateZ(  50px ); }
-#box .right  { transform: rotateY(  90deg ) translateZ( 150px ); }
-#box .left   { transform: rotateY( -90deg ) translateZ( 150px ); }
-#box .top    { transform: rotateX(  90deg ) translateZ( 100px ); }
-#box .bottom { transform: rotateX( -90deg ) translateZ( 100px ); }
+  <meta charset="utf-8" />
   
-#box.show-front  { transform: translateZ(  -50px ) rotateY(    0deg ); }
-#box.show-back   { transform: translateZ(  -50px ) rotateX( -180deg ); }
-#box.show-right  { transform: translateZ( -150px ) rotateY(  -90deg ); }
-#box.show-left   { transform: translateZ( -150px ) rotateY(   90deg ); }
-#box.show-top    { transform: translateZ( -100px ) rotateX(  -90deg ); }
-#box.show-bottom { transform: translateZ( -100px ) rotateX(   90deg ); }  
+  <!-- disable zooming -->
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=0" />
+  
+  <title>Box 1 - steps &middot; Intro to CSS 3D transforms &rsaquo; Examples</title>
+  
+  <link rel="stylesheet" href="../css/style.css" media="screen" />
+
+
+    <style media="screen">
+    .container {
+      width: 300px;
+      height: 200px;
+      position: relative;
+      margin: 0 auto 40px;
+      border: 1px solid #CCC;
+      -webkit-perspective: 1000px;
+         -moz-perspective: 1000px;
+           -o-perspective: 1000px;
+              perspective: 1000px;
+    }
+
+    #box {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+    }
+
+    #box figure {
+      display: block;
+      position: absolute;
+      border: 2px solid black;
+      line-height: 196px;
+      font-size: 90px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+    }
+
+    #box,
+    #box figure {
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+    }
+
+    #box .front,
+    #box .back {
+      width: 296px;
+      height: 196px;
+    }
+
+    #box .right,
+    #box .left {
+      width: 96px;
+      height: 196px;
+      left: 100px;
+    }
+
+    #box .top,
+    #box .bottom {
+      width: 296px;
+      height: 96px;
+      top: 50px;
+      line-height: 96px;
+    }
+
+    #box .front  { background: hsla( 000, 100%, 50%, 0.5 ); }
+    #box .back   { background: hsla( 060, 100%, 50%, 0.5 ); }
+    #box .right  { background: hsla( 120, 100%, 50%, 0.5 ); }
+    #box .left   { background: hsla( 180, 100%, 50%, 0.5 ); }
+    #box .top    { background: hsla( 240, 100%, 50%, 0.5 ); }
+    #box .bottom { background: hsla( 300, 100%, 50%, 0.5 ); }
+
+    .step2 #box .front  {
+      -webkit-transform: rotateY(   0deg );
+         -moz-transform: rotateY(   0deg );
+           -o-transform: rotateY(   0deg );
+              transform: rotateY(   0deg );
+    }
+    .step2 #box .back {
+      -webkit-transform: rotateX( 180deg );
+         -moz-transform: rotateX( 180deg );
+           -o-transform: rotateX( 180deg );
+              transform: rotateX( 180deg );
+    }
+    .step2 #box .right {
+      -webkit-transform: rotateY(  90deg );
+         -moz-transform: rotateY(  90deg );
+           -o-transform: rotateY(  90deg );
+              transform: rotateY(  90deg );
+    }
+    .step2 #box .left {
+      -webkit-transform: rotateY( -90deg );
+         -moz-transform: rotateY( -90deg );
+           -o-transform: rotateY( -90deg );
+              transform: rotateY( -90deg );
+    }
+    .step2 #box .top {
+      -webkit-transform: rotateX(  90deg );
+         -moz-transform: rotateX(  90deg );
+           -o-transform: rotateX(  90deg );
+              transform: rotateX(  90deg );
+    }
+    .step2 #box .bottom {
+      -webkit-transform: rotateX( -90deg );
+         -moz-transform: rotateX( -90deg );
+           -o-transform: rotateX( -90deg );
+              transform: rotateX( -90deg );
+    }
+
     .step3 #box .front,
     .step4 #box .front {
       -webkit-transform: rotateY(   0deg ) translateZ( 50px );
@@ -105,12 +170,15 @@
            -o-transform: translateZ( -50px );
               transform: translateZ( -50px );
     }
-</style>
+
+  </style>
+
 </head>
 <body>
 
+  <h1>Box 1 - steps</h1>
 
-  <section class="container step4">
+  <section class="container step1">
     <div id="box">
       <figure class="front">1</figure>
       <figure class="back">2</figure>
@@ -121,8 +189,28 @@
     </div>
   </section>
 
+  <section id="options">
+    <p>
+      <button class="step1">1. No transforms</button>
+      <button class="step2">2. Rotate faces</button>
+      <button class="step3">3. Translate faces</button>
+      <button class="step4">4. Translate object</button>
+    </p>
+  </section>
+
+  <script src="../js/utils.js"></script>
+  <script src="../js/switch-steps.js"></script>
+
+
+  <p id="disclaimer">Sorry, your browser does not support CSS 3D transforms. This example may be broken.</p>
+
+  <footer>
+  <p><a href="../">Intro to CSS 3D transforms</a> by David DeSandro</p>
+  <p>Article content licensed <a href="http://creativecommons.org/licenses/by/2.0/">CC-BY</a>.
+      All example code licensed <a href="http://desandro.mit-license.org/">MIT</a>.</p>
+  <p><a href="https://github.com/desandro/3dtransforms/issues/">Help improve these docs. Open an issue or pull request.</a></p>
+</footer>
 
 
 </body>
 </html>
- 
