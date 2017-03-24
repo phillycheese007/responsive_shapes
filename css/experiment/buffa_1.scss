@@ -33,12 +33,12 @@ $slab_color: yellow;
    position:absolute;
 }   
  .my_slab figure {
-    background:$slab_color;
+
     display: block;
     margin: 0;
     position: absolute;
     border: 1px solid black;
-    opacity: 1; 
+    opacity: .5; 
   }
   
   
@@ -48,9 +48,9 @@ $slab_color: yellow;
 .w_28_h_20_d_1 {
   $width: 100vw;$height: 100vw;$depth: 100vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
-  .front, .back { width: $width;height: $height;}
-  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
-  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .front, .back { width: $width;height: $height;background:blue;}
+  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;background:red;}
+  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;background:brown;} 
   .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
   .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
   .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
