@@ -56,13 +56,61 @@
 #box.show-left   { transform: translateZ( -150px ) rotateY(   90deg ); }
 #box.show-top    { transform: translateZ( -100px ) rotateX(  -90deg ); }
 #box.show-bottom { transform: translateZ( -100px ) rotateX(   90deg ); }  
-  
+    .step3 #box .front,
+    .step4 #box .front {
+      -webkit-transform: rotateY(   0deg ) translateZ( 50px );
+         -moz-transform: rotateY(   0deg ) translateZ( 50px );
+           -o-transform: rotateY(   0deg ) translateZ( 50px );
+              transform: rotateY(   0deg ) translateZ( 50px );
+    }
+    .step3 #box .back,
+    .step4 #box .back {
+      -webkit-transform: rotateX( 180deg ) translateZ( 50px );
+         -moz-transform: rotateX( 180deg ) translateZ( 50px );
+           -o-transform: rotateX( 180deg ) translateZ( 50px );
+              transform: rotateX( 180deg ) translateZ( 50px );
+    }
+    .step3 #box .right,
+    .step4 #box .right {
+      -webkit-transform: rotateY(  90deg ) translateZ( 150px );
+         -moz-transform: rotateY(  90deg ) translateZ( 150px );
+           -o-transform: rotateY(  90deg ) translateZ( 150px );
+              transform: rotateY(  90deg ) translateZ( 150px );
+    }
+    .step3 #box .left,
+    .step4 #box .left {
+      -webkit-transform: rotateY( -90deg ) translateZ( 150px );
+         -moz-transform: rotateY( -90deg ) translateZ( 150px );
+           -o-transform: rotateY( -90deg ) translateZ( 150px );
+              transform: rotateY( -90deg ) translateZ( 150px );
+    }
+    .step3 #box .top,
+    .step4 #box .top {
+      -webkit-transform: rotateX(  90deg ) translateZ( 100px );
+         -moz-transform: rotateX(  90deg ) translateZ( 100px );
+           -o-transform: rotateX(  90deg ) translateZ( 100px );
+              transform: rotateX(  90deg ) translateZ( 100px );
+    }
+    .step3 #box .bottom,
+    .step4 #box .bottom {
+      -webkit-transform: rotateX( -90deg ) translateZ( 100px );
+         -moz-transform: rotateX( -90deg ) translateZ( 100px );
+           -o-transform: rotateX( -90deg ) translateZ( 100px );
+              transform: rotateX( -90deg ) translateZ( 100px );
+    }
+
+    .step4 #box {
+      -webkit-transform: translateZ( -50px );
+         -moz-transform: translateZ( -50px );
+           -o-transform: translateZ( -50px );
+              transform: translateZ( -50px );
+    }
 </style>
 </head>
 <body>
 
 
-  <section class="container step1">
+  <section class="container step4">
     <div id="box">
       <figure class="front">1</figure>
       <figure class="back">2</figure>
