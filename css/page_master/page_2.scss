@@ -18,8 +18,8 @@
   position: fixed;
   height:100%;width:50%;
   background-color: red;
-  -webkit-transform: rotateY(45deg) translateZ(-5%); /* Chrome, Safari, Opera  */
-  transform: rotateY(45deg) translateZ(-5%);
+  -webkit-transform: rotateY(45deg); /* Chrome, Safari, Opera  */
+  transform: rotateY(45deg);
   .window{
      transform-style: preserve-3d;
      height:10%;width:10%;background:white;positon:absolute;top:0;left:5%;
