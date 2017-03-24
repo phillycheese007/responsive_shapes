@@ -15,8 +15,8 @@
     position: fixed;
     height:100%;width:30%;
     background-color: red;
-    -webkit-transform: rotateY(45deg); /* Chrome, Safari, Opera  */
-    transform: rotateY(45deg);
+    -webkit-transform: rotateY(45deg) translateZ(10%); /* Chrome, Safari, Opera  */
+    transform: rotateY(45deg) translateZ(10%);
 }
 .bigbox{
   width:100%;
