@@ -4,14 +4,11 @@
 
 
 #foz{
-  background:white;
-  border:2px solid green;
-  height:60vh;min-height:300px;
-  position:absolute;
+  position:fixed;
+  top:0;bottom:0;left:0;right:0;
   z-index:9999;
-  width:90%;
-  left:calc(5% - 2px);
-  margin:0 auto;
+  height:100%;
+  width:100%;
 }
 
 .bigbox{
