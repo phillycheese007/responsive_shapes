@@ -10,7 +10,14 @@
   height:100%;
   width:100%;
 }
-
+#div_left {
+    margin:0;left:0;
+    position: fixed;
+    height:150px;
+    background-color: red;
+    -webkit-transform: rotateY(45deg); /* Chrome, Safari, Opera  */
+    transform: rotateY(45deg);
+}
 .bigbox{
   width:100%;
   margin:0 auto;
