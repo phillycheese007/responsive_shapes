@@ -46,7 +46,7 @@ $slab_color: yellow;
 
 
 .w_28_h_20_d_1 {
-  $width: 100vw;$height: 100vw;$depth: 100vw; /*set dimensions here */ 
+  $width: 50vw;$height: 50vw;$depth: 20vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .front, .back { width: $width;height: $height;background:blue;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;background:red;}
