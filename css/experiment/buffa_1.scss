@@ -36,7 +36,7 @@ figure {
 #chair_1{
   position:absolute;
   transform-style: preserve-3d;
-  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translateZ(7vw); top:10vw;
+  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translateZ(7vw); top:-10vw;
  /*  animation:infinite-spinning-with-rotation 10s linear ; */
   animation-fill-mode: forwards;
 }
@@ -82,8 +82,6 @@ border:none;
 
 
 
-
-
         /*--------------------------------------*/
         /*--------------------------------------*/
 .my_slaber figure, figure {
@@ -115,7 +113,7 @@ border:none;
   position:absolute;
 }
 
-.big_three_d_box {  left:14vw;top:4vw;
+.big_three_d_box {  left:13vw;top:4vw;
   $width: 70vw;$height: 30vw;$depth: 20vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .fronter, .backer { width: $width;height: $height;}
