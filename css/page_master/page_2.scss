@@ -66,9 +66,9 @@
     }
       .me2{
       background:blue;
-      width:100%;left:100%;
+      width:100%;left:0;
       height:160%;
-      opacity:1;z-index:9;
+      opacity:1;z-index:10;
       transform-style: preserve-3d; 
       position: absolute;
     }
