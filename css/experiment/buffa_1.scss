@@ -36,7 +36,7 @@ figure {
 #chair_1{
   position:absolute;
   transform-style: preserve-3d;
-  transform: rotate(13deg);
+  transform: /*rotate(13deg);*/rotateY(90deg);
  /*  animation:infinite-spinning-with-rotation 10s linear ; */
   animation-fill-mode: forwards;
 }
@@ -105,15 +105,6 @@ border:none;
   height: 100%; 
   position:absolute;
 }  
-
-.my_slaberr figure {
-  display: block;
-  margin: 0;
-  position: absolute;
-  border: 1px solid black;
-  opacity: .5; 
-}
-
 
 .my_slaberr .panels-backface-invisible figure { @include backface_visibility(hidden)}
 
