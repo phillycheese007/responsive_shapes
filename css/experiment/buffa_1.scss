@@ -32,9 +32,7 @@ $slab_color: yellow;
   .preserve3d{
   @include preserve_3d(preserve-3d);
 }
-/* --end constants --*/
 
-/*begin general shapebuilding rules --*/
 
  .my_slaber .panels-backface-invisible figure { @include backface_visibility(hidden)}
  .my_slaber { 
@@ -43,9 +41,31 @@ $slab_color: yellow;
    height: 100%; 
    position:absolute;
 }  
-  
 
 
+
+
+
+ .my_slaberr figure {
+
+    display: block;
+    margin: 0;
+    position: absolute;
+    border: 1px solid black;
+    opacity: .5; 
+  }
+  .preserve3d{
+  @include preserve_3d(preserve-3d);
+}
+
+
+ .my_slaberr .panels-backface-invisible figure { @include backface_visibility(hidden)}
+ .my_slaberr { 
+   @include preserve_3d(preserve-3d);
+   width: 100%;
+   height: 100%; 
+   position:absolute;
+}
 
 .torw {   
 
