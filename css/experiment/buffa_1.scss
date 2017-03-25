@@ -26,32 +26,17 @@ $slab_color: yellow;
         /*--------------------------------------*/
 
 
-@mixin preserve_3d ($arguments) {
-  -webkit-transform-style: $arguments;
-  -moz-transform-style: $arguments;
-  -o-transform-style: $arguments;
-  transform-style: $arguments;
-}
+
 
 figure {
   /* border:1px solid black; */
 }
-#table_1 {
-  position:absolute;
-  left:25vw;top:-4vw;
-  transform: rotate(7deg);
-}
-#table_2 {
-  position:absolute;
-  left:35vw;top:3vw;
-  transform: rotate(0deg)
-}
 
 
-#chair_1, #chair_1_shadow {
+#chair_1{
   position:absolute;
-  left:57vw;top:27vw;
-  transform: rotate(153deg);
+
+  transform: rotate(13deg);
  /*  animation:infinite-spinning-with-rotation 10s linear ; */
   animation-fill-mode: forwards;
 }
