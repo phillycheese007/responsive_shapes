@@ -84,7 +84,7 @@ $slab_color: yellow;
 }
 
 
-.w_5_h_5_d_10 { left:30vw;
+.w_5_h_5_d_10 { left:10vw;
   $width: 5vw;$height: 5vw;$depth: 10vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .front, .back { width: $width;height: $height;}
@@ -100,7 +100,7 @@ $slab_color: yellow;
 }
 
 
-.w_10_h_5_d_5 { left:10vw;top:30vw;transform:translateZ(30vw);
+.w_10_h_5_d_5 { left:10vw;top:10vw;
   $width: 10vw;$height: 5vw;$depth: 5vw; /*set dimensions here */ 
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
