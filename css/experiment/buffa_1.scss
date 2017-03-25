@@ -36,7 +36,7 @@ figure {
 #chair_1{
   position:absolute;
   transform-style: preserve-3d;
-  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translateX(-2vw); top:7vw;
+  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-4vw /*X*/, 3vw /*Y*/, 0 /*Z*/); top:27vw;
  /*  animation:infinite-spinning-with-rotation 10s linear ; */
   animation-fill-mode: forwards;
 }
