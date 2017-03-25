@@ -85,7 +85,8 @@
   transform:rotateX(70deg);
 }
 .relfloorbox .me2, {
-  transform:rotateX(90deg);
+  transform:rotateX(90deg);      transform-style: none; 
+
 }
 
 
