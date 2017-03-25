@@ -24,7 +24,11 @@ $slab_color: yellow;
 }
         /*--------------------------------------*/
         /*--------------------------------------*/
+#table_1 { position: absolute; left: 25vw; top: -4vw; transform: rotate(7deg); }
 
+#table_2 { position: absolute; left: 35vw; top: 3vw; transform: rotate(0deg); }
+
+#table_1 .my_slab figure { background: brown; }
 
 
 
