@@ -45,7 +45,7 @@ $slab_color: yellow;
 
 .my_slaber { 
   @include preserve_3d(preserve-3d);
-  width: 50%;margin:auto;background:green;
+  width: 100%;background:green;
   height: 100%; 
   position:absolute;
 }  
@@ -71,8 +71,8 @@ $slab_color: yellow;
   position:absolute;
 }
 
-.big_three_d_box {   
-  $width: 60vh;$height: 60vh;$depth: 20vh; /*set dimensions here */ 
+.big_three_d_box {  .bottomer{ 
+  $width: 80vh;$height: 60vh;$depth: 20vh; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .fronter, .backer { width: $width;height: $height;}
   .righter, .lefter { width: $depth; height: $height;left: ($width - $depth)/2 ;}
