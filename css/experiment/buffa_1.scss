@@ -83,8 +83,8 @@ $slab_color: yellow;
 }
 
 
-.w_5_h_5_d_10 { left:50vw;
-  $width: 5vw;$height: 5vw;$depth: 10vw; /*set dimensions here */ 
+.w_5_h_5_d_10 { left:50vh;
+  $width: 5vh;$height: 5vh;$depth: 10vh; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
@@ -99,8 +99,8 @@ $slab_color: yellow;
 }
 
 
-.w_10_h_5_d_5 { left:10vw;
-  $width: 10vw;$height: 5vw;$depth: 5vw; /*set dimensions here */ 
+.w_10_h_5_d_5 { left:10vh;
+  $width: 10vh;$height: 5vh;$depth: 5vh; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
@@ -115,7 +115,7 @@ $slab_color: yellow;
 }
 
 .w_5_h_10_d_5 {
-  $width: 5vw;$height: 10vw;$depth: 5vw; /*set dimensions here */ 
+  $width: 5vh;$height: 10vh;$depth: 5vh; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
