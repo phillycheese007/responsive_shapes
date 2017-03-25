@@ -80,7 +80,7 @@ $slab_color: yellow;
 }
 
 
-.w_5_h_5_d_20 {
+.w_5_h_5_d_20 { left:50vw;
   $width: 5vw;$height: 5vw;$depth: 20vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .front, .back { width: $width;height: $height;}
@@ -96,7 +96,7 @@ $slab_color: yellow;
 }
 
 
-.w_20_h_5_d_5 {
+.w_20_h_5_d_5 { left:10vw;
   $width: 20vw;$height: 5vw;$depth: 5vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .front, .back { width: $width;height: $height;}
