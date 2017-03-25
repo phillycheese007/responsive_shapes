@@ -67,7 +67,7 @@
       .me2{
       background:blue;
       width:126%;left:-13%;
-      height:90%;
+      height:100%;
       opacity:1;z-index:11;
       transform-style: preserve-3d; 
       position: absolute;
@@ -85,7 +85,7 @@
   transform:rotateX(70deg);
 }
 .relfloorbox .me2, {
-  transform:rotateX(-190deg) translateZ(150vh) 
+  transform:rotateX(-190deg) translateZ(160vh) 
 
 }
 
