@@ -84,7 +84,7 @@ $slab_color: yellow;
 }
 
 
-.w_5_h_5_d_10 { left:50vw;
+.w_5_h_5_d_10 { left:30vw;
   $width: 5vw;$height: 5vw;$depth: 10vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .front, .back { width: $width;height: $height;}
