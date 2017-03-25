@@ -68,7 +68,7 @@ $slab_color: yellow;
   position:absolute;
 }
 
-.big_three_d_box {  left:5vw;top:10vw;
+.big_three_d_box {  left:5vw;top:2vw;
   $width: 70vw;$height: 80vw;$depth: 20vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .fronter, .backer { width: $width;height: $height;}
