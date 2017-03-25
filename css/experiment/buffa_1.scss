@@ -66,7 +66,7 @@ $slab_color: yellow;
 
 .torw {   
 
-  $width: 40vh;$height: 40vh;$depth: 15vh; /*set dimensions here */ 
+  $width: 60vh;$height: 60vh;$depth: 20vh; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .fronter, .backer { width: $width;height: $height;}
   .righter, .lefter { width: $depth; height: $height;left: ($width - $depth)/2 ;}
