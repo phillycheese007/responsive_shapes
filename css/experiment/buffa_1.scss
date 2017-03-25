@@ -24,9 +24,7 @@ $slab_color: yellow;
 }
         /*--------------------------------------*/
         /*--------------------------------------*/
----
-#scenesetter
----
+
 
 @mixin preserve_3d ($arguments) {
   -webkit-transform-style: $arguments;
