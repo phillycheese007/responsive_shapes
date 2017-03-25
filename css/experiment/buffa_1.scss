@@ -48,15 +48,15 @@ $slab_color: yellow;
 .torw {
   $width: 40vh;$height: 40vh;$depth: 15vh; /*set dimensions here */ 
   transform:translateZ($depth/2);
-  .front, .back { width: $width;height: $height;}
-  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
-  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
-  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
-  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );background:black;}
-  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );background:lightgreen;}
-  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );background:purple;}
-  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );background:orange;}
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );background:red;}
+  .fronter, .backer { width: $width;height: $height;}
+  .righter, .lefter { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .toper, .bottomer {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .fronter  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
+  .backer   { transform: rotateX( 180deg ) translateZ(  $depth/2 );background:black;}
+  .righter  { transform: rotateY(  90deg ) translateZ( $width/2 );background:lightgreen;}
+  .lefter   { transform: rotateY( -90deg ) translateZ( $width/2 );background:purple;}
+  .toper    { transform: rotateX(  90deg ) translateZ( $height/2 );background:orange;}
+  .bottomer { transform: rotateX( -90deg ) translateZ( $height/2 );background:red;}
 }
 
 
