@@ -35,7 +35,7 @@ figure {
 
 #chair_1{
   position:absolute;
-
+  transform-style: preserve-3d;
   transform: rotate(13deg);
  /*  animation:infinite-spinning-with-rotation 10s linear ; */
   animation-fill-mode: forwards;
