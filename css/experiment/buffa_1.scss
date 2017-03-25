@@ -351,6 +351,7 @@ $slab_color: yellow;
   .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
   .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
 }
+
 .w_28_h_20_d_5 {
   $width: 28vw;$height: 20vw;$depth: 5vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
@@ -363,6 +364,7 @@ $slab_color: yellow;
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
   .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
   .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );}
+}
 
 .w_12_h_17_d_37 {
   $width: 12vw;$height: 17vw;$depth: 37vw; /*set dimensions here */ 
