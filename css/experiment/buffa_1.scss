@@ -140,9 +140,16 @@ border:none;
   .fronter  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
   .backer   { transform: rotateX( 180deg ) translateZ(  $depth/2 );background:black;}
   .righter  { transform: rotateY(  90deg ) translateZ( $width/2 );background:lightgreen;}
-  .lefter   { transform: rotateY( -90deg ) translateZ( $width/2 );background:purple;}
+  .lefter   { transform: rotateY( -90deg ) translateZ( $width/2 );/*background:purple;*/}
   .toper    { transform: rotateX(  90deg ) translateZ( $height/2 );background:orange;}
-  .bottomer { transform: rotateX( -90deg ) translateZ( $height/2 );background:red;   @include preserve_3d(preserve-3d);}
+  .bottomer { 
+    @include preserve_3d(preserve-3d);
+    transform: rotateX( -90deg ) translateZ( $height/2 );
+   /* background:red; */
+    background-image: url("/responsive_shapes/images/tile_fl.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+  }
 }
 
 
