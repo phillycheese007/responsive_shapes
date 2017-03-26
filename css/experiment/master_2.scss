@@ -65,7 +65,7 @@ background-position:fixed center;
 
 
 #table_1 { 
-  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-30vw /*X*/, -5vw /*Y*/, 0vw /*Z*/) rotate(20deg);
+  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-30vw /*X*/, -5vw /*Y*/, 3vw /*Z*/) rotate(20deg);
   top:45vw;
   -webkit-animation: load 5s infinite;
   animation: load 5s infinite;
