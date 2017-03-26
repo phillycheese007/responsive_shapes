@@ -163,19 +163,13 @@ figure {
 <script>
 $(document).ready(function () {
 
-
-        $(".my_slaber").css("background-color, green", 2000).promise().done(function(){
+$( ".big_three_d_box" ).hover(function() {
             $(".my_slaber").find("figure").toggleClass("weirdclass");
-        });      
+            $(".my_slaber").toggleClass("weirdclass");
 
-	      
+});
 
-
-
-
-	
-
-
+	   
     }            
   );	
 	
