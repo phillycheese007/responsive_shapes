@@ -7,7 +7,7 @@
 .mid_century_table_1{
   $base_width:28vw; /* X cordinate */
   $base_height:20vw; /* Y cordinate */
-  $base_depth:9vw; /* Z cordinate */
+  $base_depth:8vw; /* Z cordinate */
   $leg_indent_size:1vw;
   $leg_width:.5vw; /*at the moment this variable must be updated manually */
   $horizontal_1_height_from_base: ($base_depth / 2) ;
