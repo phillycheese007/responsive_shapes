@@ -47,22 +47,7 @@ $slab_color: yellow;
 #table_1 .my_slab figure { background: brown; }
 
 
-#table_1 { 
-  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-9vw /*X*/, -7vw /*Y*/, 0 /*Z*/); top:37vw;
-   -webkit-animation: load 5s infinite;
-   animation: load 5s infinite;
-}
 
-
-#chair_1{ 
-  position:absolute;
-
-  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-9vw /*X*/, -4vw /*Y*/, 0 /*Z*/); top:37vw;
-
-  
-  animation:infinite-spinning-with-rotation 10s linear ; 
-  animation-fill-mode: forwards;
-}
 
 
 #table_1 .my_slab figure  {background:brown;}
