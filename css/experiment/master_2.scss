@@ -149,7 +149,7 @@ border:none;
 }
 
 .big_three_d_box { 
-  left:9vw;top:4vw;
+  left:5vw;top:4vw;
   $width: 60vw;$height: 30vw;$depth: 30vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .fronter, .backer { width: $width;height: $height;}
