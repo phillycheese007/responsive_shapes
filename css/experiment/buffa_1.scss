@@ -26,10 +26,10 @@ $slab_color: yellow;
         /*--------------------------------------*/
 
 .weirdclass{
-  border:20px solid blue;border-radius:20px;height:20vh;opacity:.7;display:inline-block;
+  border:20px solid blue;border-radius:20px;opacity:.7;display:inline-block;
 }
 .weirdclass :hover{
- position:absolute; border:30px solid yellow;border-radius:620px;height:10vh;opacity:.9;display:block;
+ position:absolute; border:30px solid yellow;height:20vh !importantborder-radius:620px;height:10vh;opacity:.9;display:block;
 }
         /*--------------------------------------*/
         /*--------------------------------------*/
