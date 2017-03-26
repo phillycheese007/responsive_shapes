@@ -1,0 +1,205 @@
+
+
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  
+  <!-- disable zooming -->
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=0" />
+  
+  <title>Box 1 - steps &middot; Intro to CSS 3D transforms &rsaquo; Examples</title>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
+  
+  <link href="/responsive_shapes/css/furniture_builder/collection_1.css" rel="stylesheet" />
+    <link href="/responsive_shapes/css/scene_setter/scene_1.css" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="/responsive_shapes/css/experiment/buffa_1.css" media="screen" />
+
+    <style media="screen">
+   
+.buddy{
+  perspective:90vw;
+  width:90%;
+  height:90%;
+  background:pink;  
+  transform-style: preserve-3d;display:block;
+ }
+
+          
+figure {  
+  border:1px solid black;  
+  background:blue; 
+}
+      
+
+@keyframes infinite-spinning-with-rotation {
+  from { 
+
+    transform:translateY(10vw) rotateX(90deg) rotate(0deg);/*transform-origin:50% 50%;*/
+  }
+  to { 
+
+    transform:translateY(20vw) rotateX(90deg) rotate(290deg);/*transform-origin:50% 50%;*/
+  }
+}  
+      
+  </style>
+
+</head>
+<body>
+
+
+ 
+  
+  
+  
+  
+<div class="buddy">
+
+  
+  <!--table_1 -->
+
+
+           <div class="room_w_walls_floors my_slaber big_three_d_box">
+            
+               <figure class="fronter">
+               </figure>
+		   
+	       <figure class="backer">
+	       </figure>
+		   
+	       <figure class="righter">
+               </figure>
+		   
+	       <figure class="lefter">
+	       </figure>
+		   
+	       <figure class="toper">
+	       </figure>
+		   
+               <figure class="bottomer">
+	       </figure>
+             
+           </div>
+       
+<!--table_1 -->      
+  
+           <div class="my_slaber w_5_h_5_d_10">
+               <figure class="front">
+               </figure><figure class="back"></figure><figure class="right">
+               </figure><figure class="left"></figure><figure class="top"></figure>
+               <figure class="bottom"></figure>
+           </div>
+  
+           <div class="my_slaber w_5_h_10_d_5">
+               <figure class="front">
+               </figure><figure class="back"></figure><figure class="right">
+               </figure><figure class="left"></figure><figure class="top"></figure>
+               <figure class="bottom"></figure>
+           </div>
+  
+             <div class="my_slaber w_10_h_5_d_5">
+               <figure class="front">
+               </figure><figure class="back"></figure><figure class="right">
+               </figure><figure class="left"></figure><figure class="top"></figure>
+               <figure class="bottom"></figure>
+            </div>
+
+  
+  
+
+       
+<!--chair_1 -->
+       <section id="chair_1" class="simple_chair_1 preserve3d">
+         <div class="chair_seat">
+           <div class="w_10_h_10_d_pnt5 my_slaber horizontal_1" >
+             <figure class="front "></figure>
+             <figure class="back"></figure>
+             <figure class="horizontal_shadow_1"></figure>
+             <figure class="right"></figure>
+             <figure class="left"></figure>
+             <figure class="top"></figure>
+             <figure class="bottom"></figure>
+           </div>
+         </div>  
+         <div class="chair_back">
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber rung_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber rung_2" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_10_h_4_d_pnt5 my_slaber vertical_1" >
+             <figure class="front "></figure>
+             <figure class="back"></figure>
+             <figure class="right"></figure>
+             <figure class="left"></figure>
+             <figure class="top"></figure>
+             <figure class="bottom"></figure>
+           </div>
+         </div>  
+         <div class="four_leg_base">
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_2" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_3" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_4" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+         </div>  
+       </section>  
+<!--chair_1 -->
+  
+  
+
+  
+  
+  
+ <!--table_1 -->
+       <section id="table_1" class="mid_century_table_1 preserve3d">
+         <div class="table_top">
+           <div class="w_28_h_20_d_1 my_slaber horizontal_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_28_h_20_d_1 my_slaber horizontal_2" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+         </div>  
+         <div class="four_leg_base">
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_2" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_3" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_4" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+         </div>  
+        </section>  
+<!--table_1 -->
+  
+  
+  
+
+  
+</div>  
+  
+<script>
+$(document).ready(function () {
+
+	
+
+	
+	
+$( "figure.front" )
+  .mouseover(function() {
+            $(".my_slaber").toggleClass("weirdclass");
+  })
+  .mouseout(function() {
+            $(".my_slaber").toggleClass("weirdclass");
+  });
+	
+
+
+	   
+    }            
+  );	
+	
+
+
+</script>
+  
+  
+  
+  
+</body>
+</html>
