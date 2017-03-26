@@ -26,7 +26,8 @@ $slab_color: yellow;
         /*--------------------------------------*/
 #table_1 { 
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-9vw /*X*/, -4vw /*Y*/, -3vw /*Z*/); top:37vw;
-
+  animation:infinite-spinning-with-rotation 10s linear ; 
+  animation-fill-mode: forwards;
 }
 
 #table_2 { position: absolute; left: 35vw; top: 3vw; transform: rotate(0deg); }
