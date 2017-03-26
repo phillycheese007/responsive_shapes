@@ -104,14 +104,10 @@ border:none;
 @keyframes inf {
   
   from {  
-    #chair_1{
       transform:translateY(0vw) rotate(0deg);
-    } 
   }
   to {  
-    #chair_1{
       transform:translateY(20vw) rotate(3600deg);
-    }   
   }
   
 }
