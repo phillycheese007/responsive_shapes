@@ -52,7 +52,8 @@
     $chair_back_height:10vw; /*at the moment this variable must be updated manually */
     $no_rotation:0deg;
     .vertical_1{
-      top:$rung_indent_size +  $seat_slab_depth;
+     /* top:$rung_indent_size +  $seat_slab_depth;*/
+      top:3vw;
       transform:translateZ($chair_height) rotateX($master_back_rotation);
     }
     .rung_1{
@@ -64,11 +65,6 @@
       top:$rung_indent_size;
       left:$base_width - ($rung_width + $rung_indent_size); 
       transform:translateZ(12vw) rotateY($no_rotation);
-    }
-    .horizontal_shadow_1{
-    }
-    .horizontal_shadow_2 {
-      transform: rotateX($back_rotation_1) translateZ(-(($base_height/2) + $seat_slab_depth));
     }
   }
 }
