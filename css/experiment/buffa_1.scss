@@ -147,7 +147,7 @@ border:none;
     transform: rotateX( -90deg ) translateZ( $height/2 );
    /* background:red; */
     background-image: url("/responsive_shapes/images/tile_fl.jpg");
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:contain;
   }
 }
