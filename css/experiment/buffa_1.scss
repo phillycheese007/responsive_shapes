@@ -37,6 +37,7 @@ $slab_color: yellow;
 #chair_1{ 
   position:absolute;
   transform-style: preserve-3d;
+  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-9vw /*X*/, -4vw /*Y*/, 0 /*Z*/); top:37vw;
 
   
   animation:infinite-spinning-with-rotation 10s linear ; 
@@ -63,10 +64,12 @@ border:none;
 
 
 @keyframes infinite-spinning {
-  from {
+  from {  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-9vw /*X*/, -4vw /*Y*/, 0 /*Z*/); top:37vw;
+
     transform: rotate(43deg);
   }
-  to {
+  to {  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-9vw /*X*/, -4vw /*Y*/, 0 /*Z*/); top:37vw;
+
     transform: rotate(403deg);
   }
 }
