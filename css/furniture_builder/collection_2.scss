@@ -1,0 +1,142 @@
+---
+#furniture
+---
+
+
+
+.mid_century_table_1{
+  $base_width:28vw; /* X cordinate */
+  $base_height:20vw; /* Y cordinate */
+  $base_depth:9vw; /* Z cordinate */
+  $leg_indent_size:1vw;
+  $leg_width:.5vw; /*at the moment this variable must be updated manually */
+  $horizontal_1_height_from_base: ($base_depth / 2) ;
+  $horizontal_2_height_from_base: ($base_depth);
+  .four_leg_base{
+  .leg_1{left:$leg_indent_size;top:$leg_indent_size;}
+  .leg_2{left:($base_width) - ($leg_width + $leg_indent_size);top:$leg_indent_size;}
+  .leg_3{left:$leg_indent_size;top:($base_height) - ($leg_width + $leg_indent_size);}
+  .leg_4{left:($base_width) - ($leg_width + $leg_indent_size);top:($base_height) - ($leg_width + $leg_indent_size);}
+  }
+  .table_top{
+    .horizontal_1{transform:translateZ($horizontal_1_height_from_base);}
+    .horizontal_2{transform:translateZ($horizontal_2_height_from_base);}
+  }
+}
+  
+
+.simple_chair_1{
+  $chair_height:16vw;
+  $base_width:10vw; /* X cordinate */
+  $base_height:10vw; /* Y cordinate */
+  $base_depth:8vw; /* Z cordinate */
+  $seat_slab_depth:.5vw; /*at the moment this variable must be updated manually */
+  $leg_width:.5vw; /*at the moment this variable must be updated manually */
+  $leg_indent_size:.5vw;
+  $rung_width:.5vw; /*at the moment this variable must be updated manually */
+  $rung_indent_size:.5vw;
+  $horizontal_1_height_from_base: $base_depth;
+  $horizontal_2_height_from_base: ($base_depth);
+  .four_leg_base{
+    .leg_1{left:$leg_indent_size;top:$leg_indent_size;}
+    .leg_2{left:($base_width) - ($leg_width + $leg_indent_size);top:$leg_indent_size;}
+    .leg_3{left:$leg_indent_size;top:($base_height) - ($leg_width + $leg_indent_size);}
+    .leg_4{left:($base_width) - ($leg_width + $leg_indent_size);top:($base_height) - ($leg_width + $leg_indent_size);}
+  }
+  .chair_seat{
+    .horizontal_1{transform:translateZ($horizontal_1_height_from_base)}
+  }
+  .chair_back{
+    $master_back_rotation:90deg;
+    $back_rotation_1:90deg;
+    $chair_back_height:10vw; /*at the moment this variable must be updated manually */
+    $no_rotation:0deg;
+    .vertical_1{
+      top:$rung_indent_size +  $seat_slab_depth;
+      transform:translateZ($chair_height) rotateX($master_back_rotation);
+    }
+    .rung_1{
+      left:$rung_indent_size;
+      top:$rung_indent_size;
+      transform:translateZ(12vw) rotateY($no_rotation);
+    }
+    .rung_2{
+      top:$rung_indent_size;
+      left:$base_width - ($rung_width + $rung_indent_size); 
+      transform:translateZ(12vw) rotateY($no_rotation);
+    }
+    .horizontal_shadow_1{
+    }
+    .horizontal_shadow_2 {
+      transform: rotateX($back_rotation_1) translateZ(-(($base_height/2) + $seat_slab_depth));
+    }
+  }
+}
+    
+
+
+
+
+.simple_chair_1_shadow{
+  $chair_height:16vw;
+  $base_width:10vw; /* X cordinate */
+  $base_height:10vw; /* Y cordinate */
+  $base_depth:8vw; /* Z cordinate */
+  $seat_slab_depth:.5vw; /*at the moment this variable must be updated manually */
+  $leg_width:.5vw; /*at the moment this variable must be updated manually */
+  $leg_indent_size:.5vw;
+  $rung_width:.5vw; /*at the moment this variable must be updated manually */
+  $rung_indent_size:.5vw;
+  $horizontal_1_height_from_base: $base_depth;
+  $horizontal_2_height_from_base: ($base_depth);
+  $shadow_rotation:30deg;
+  
+  transform: rotateY(34deg);
+  
+  .four_leg_base .my_slab {
+    transform: rotate($shadow_rotation);
+  }
+  .four_leg_base{
+    .leg_1{left:($leg_width * 2);top:$leg_indent_size;}
+    .leg_2{left:($base_width) - $leg_width ;top:$leg_indent_size;}
+    .leg_3{left:($leg_width * 2);top:($base_height) - ($leg_width + $leg_indent_size);}
+    .leg_4{left:($base_width) - $leg_width ;top:($base_height) - ($leg_width + $leg_indent_size);}
+  }
+
+  figure{background:blue;}
+  
+  .chair_seat{
+    .horizontal_1{
+      transform:translateZ(0);
+      top:($base_depth)-6;
+      left:-10vw;
+    } 
+  }
+  
+  .chair_back{
+    $master_back_rotation:90deg;
+    $back_rotation_1:90deg;
+    $chair_back_height:10vw; /*at the moment this variable must be updated manually */
+    $no_rotation:0deg;
+    transform: rotate(30deg);
+    .vertical_1{
+      top:$base_depth * 2;
+      left:-($rung_width);
+      transform:translateZ(0vw) rotate(13deg) skewY(-30deg);
+    }
+    .rung_1{
+      left:$rung_indent_size * 2;
+      top:$base_depth * 1;
+      transform:translateZ(0);
+    }
+    .rung_2{
+      top:$base_depth * 1;
+      left:$base_width - ($rung_width + $rung_indent_size); 
+      transform:translateZ(0) rotateY($no_rotation);
+    }
+  }
+  
+}
+  
+
+  
