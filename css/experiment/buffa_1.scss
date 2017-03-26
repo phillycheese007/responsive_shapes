@@ -33,7 +33,8 @@ $slab_color: yellow;
 
 #table_1 .my_slab figure { background: brown; }
 
-#chair_1{
+#chair_1{ animation:infinite-spinning-with-rotation 10s linear ; 
+  animation-fill-mode: forwards;
   position:absolute;
   transform-style: preserve-3d;
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-9vw /*X*/, -4vw /*Y*/, 0 /*Z*/); top:37vw;
