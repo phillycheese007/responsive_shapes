@@ -67,7 +67,7 @@ background-position:fixed center;
 #table_1 { 
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(27deg);
   top:40vw;
-  animation:infinite-spinning-with-rotation 12s linear, inf 10s linear, inf-2 5s linear   ; 
+  animation:infinite-spinning-with-rotation 12s linear  ; 
   animation-delay:0s, 0s, 0s;
   animation-fill-mode: forwards;
 }
@@ -118,10 +118,10 @@ border:none;
 
 @keyframes inf {
   
-  from {    transform-origin: 50% 50%;   
+  from {     
     transform:rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(0deg);/*transform-origin:50% 50%;*/
   }
-  to {    transform-origin: 50% 50%;
+  to {   
     transform:rotateY(90deg) rotateX(90deg) translateX(-34vw) translateY(-20vw) rotate(0deg);/*transform-origin:50% 50%;*/
   }
   
@@ -129,10 +129,10 @@ border:none;
 
 @keyframes inf-2 {
   
-  from {    transform-origin: 50% 50%;
+  from {    
     transform:rotateY(90deg) rotateX(90deg) translateX(-34vw) translateY(-20vw) rotate(0deg);/*transform-origin:50% 50%;*/
   }
-  to {    transform-origin: 50% 50%;
+  to {    
     transform:rotateY(90deg) rotateX(90deg) translateX(-34vw) translateY(-20vw) rotate(1440deg);/*transform-origin:50% 50%;*/
   }
   
