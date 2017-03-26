@@ -102,11 +102,11 @@ border:none;
 @keyframes infinite-spinning-with-rotation {
   from { 
 
-    transform:rotateY(90deg) rotateX(90deg) rotate(0deg);/*transform-origin:50% 50%;*/
+    transform:rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(0deg);/*transform-origin:50% 50%;*/
   }
   to { 
 
-    transform:rotateY(90deg) rotateX(90deg) rotate(360deg);/*transform-origin:50% 50%;*/
+    transform:rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(360deg);/*transform-origin:50% 50%;*/
   }
 }  
  
