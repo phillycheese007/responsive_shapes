@@ -77,8 +77,8 @@ background-position:fixed center;
   top:40vw;
 
   
-  animation:infinite-spinning-with-rotation 5s linear, inf 5s linear, inf-2 5s linear   ; 
-  animation-delay:0s, 5s, 5s;
+  animation:infinite-spinning-with-rotation 5s linear, inf 10s linear, inf-2 5s linear   ; 
+  animation-delay:0s, 5s, 15s;
   animation-fill-mode: forwards;
 }
 
@@ -126,10 +126,10 @@ border:none;
 @keyframes inf-2 {
   
   from {  
-    transform:rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(0deg);/*transform-origin:50% 50%;*/
+    transform:rotateY(90deg) rotateX(90deg) translateX(-34vw) translateY(-20vw) rotate(0deg);/*transform-origin:50% 50%;*/
   }
   to {  
-    transform:rotateY(90deg) rotateX(90deg) translateX(-19vw) translateY(-29vw) rotate(1440deg);/*transform-origin:50% 50%;*/
+    transform:rotateY(90deg) rotateX(90deg) translateX(-34vw) translateY(-20vw) rotate(1440deg);/*transform-origin:50% 50%;*/
   }
   
 }
