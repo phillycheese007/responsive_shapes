@@ -71,8 +71,13 @@ background-position:fixed center;
 
 }	    
 
-.boc_rond{
-	border:20px solid blue;
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1692px, 0, 0);
+  }
 }
   </style>
 
@@ -95,12 +100,12 @@ background-position:fixed center;
 		   
 	       <figure class="backer">
 
-<div class="boc_rond">
+
  <div class="wrapperpo">
   <div class="sliding-background"></div>
   <div class="ron"></div>
 </div>
-</div>	
+
 
 	       </figure>
 		   
