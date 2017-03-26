@@ -85,6 +85,13 @@ background-position:fixed center;
     transform: translate3d(-1692px, 0, 0);
   }
 }
+	
+.tranz_x_30vw{
+  transform:translateX(30vw);
+}
+.rotate_120deg{
+  transform:rotate(120deg);
+}
   </style>
 
 </head>
@@ -214,13 +221,13 @@ background-position:fixed center;
 
   
 </div>  
-  
+
+	
+	
+<!--
 <script>
 $(document).ready(function () {
 
-	
-
-	
 	
 $( "figure.front" )
   .mouseover(function() {
@@ -229,19 +236,30 @@ $( "figure.front" )
   .mouseout(function() {
             $(".my_slaber").toggleClass("weirdclass");
   });
+		   
+    }            
+  );	
 	
 
+</script>
+-->
 
+
+<script>
+$(document).ready(function () {
+	
+  $("#chair_1").delay(2000).toggleClass("tranz_x_30vw").promise().done(function(){
+    $(this).toggleClass("rotate_120deg");
+  }); 
+	
+	
 	   
     }            
   );	
 	
 
-
 </script>
-  
-  
-  
+
   
 </body>
 </html>
