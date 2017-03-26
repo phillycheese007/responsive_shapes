@@ -24,25 +24,30 @@ $slab_color: yellow;
 }
         /*--------------------------------------*/
         /*--------------------------------------*/
+
+#table_1 .my_slab figure { background: brown; }
+
+
 #table_1 { 
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-9vw /*X*/, -4vw /*Y*/, -3vw /*Z*/); top:37vw;
+  
   animation:infinite-spinning-with-rotation 10s linear ; 
   animation-fill-mode: forwards;
 }
 
-#table_2 { position: absolute; left: 35vw; top: 3vw; transform: rotate(0deg); }
 
-#table_1 .my_slab figure { background: brown; }
-
-#chair_1{ animation:infinite-spinning-with-rotation 10s linear ; 
-  animation-fill-mode: forwards;
+#chair_1{ 
   position:absolute;
   transform-style: preserve-3d;
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-9vw /*X*/, -4vw /*Y*/, 0 /*Z*/); top:37vw;
- /*  animation:infinite-spinning-with-rotation 10s linear ; */
+  
+  animation:infinite-spinning-with-rotation 10s linear ; 
   animation-fill-mode: forwards;
 }
-
+.room_w_walls_floors{
+  animation:infinite-spinning-with-rotation 10s linear ; 
+  animation-fill-mode: forwards;
+}
 
 #table_1 .my_slab figure  {background:brown;}
 #chair_1 .my_slab figure, #table_1 .my_slab figure  {
@@ -108,7 +113,8 @@ border:none;
   position:absolute;
 }
 
-.big_three_d_box {  left:14vw;top:4vw;
+.big_three_d_box { 
+  left:14vw;top:4vw;
   $width: 74vw;$height: 30vw;$depth: 20vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .fronter, .backer { width: $width;height: $height;}
