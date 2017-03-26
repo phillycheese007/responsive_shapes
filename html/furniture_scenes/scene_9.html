@@ -167,16 +167,7 @@ body {
   background: black;
 }
 
-.center {
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 50%;
-  top: 50%;
-  perspective: 1000px;
-  perspective-origin: 0% 0%;
-}
+
 
 #ground,
 #shadow {
@@ -210,82 +201,9 @@ body {
   animation: shadowAnimation 8s infinite;
 }
 
-#cube {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  transform-origin: 50% 50%;
-  transform: translateX(-50%) translateY(-50%) rotateY(45deg);
-  transform-style: preserve-3d;
-  animation: rotCube 12s infinite;
-}
 
-#cube figure {
-  box-sizing: content-box;
-  padding: 0;
-  margin: 0;
-  width: 200px;
-  height: 200px;
-  transform-style: preserve-3d;
-  background: rgba(0, 0, 0, .5);
-  display: block;
-  position: absolute;
-  box-shadow-blend-mode: color-dodge;
-  blend-mode: screen;
-}
 
-figure div {
-  box-sizing: content-box;
-  position: absolute;
-  display: block;
-  width: 200px;
-  height: 200px;
-  transform-origin: 50% 50%;
-  display: block;
-  position: absolute;
-  background: rgba(0, 0, 0, .2);
-  transform: scale(.8);
-  box-shadow: 0px 0px 5px rgba(255, 255, 255, .5), inset 0px 0px 50px rgba(0, 0, 0, .4);
-  box-shadow-blend-mode: color-dodge;
-}
-
-#cube .front {
-  background: #888;
-  transform: rotateY( 0deg) translateZ( 100px);
-  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
-  background-size: 300% 300%;
-  animation: frontAnimation 8s infinite;
-}
-
-#cube .back {
-  background: #000;
-  transform: rotateX( 180deg) translateZ( 100px);
-}
-
-#cube .right {
-  background: #000;
-  transform: rotateY( 90deg) translateZ( 100px);
-}
-
-#cube .left {
-  background: #333;
-  transform: rotateY( -90deg) translateZ( 100px);
-  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(255, 0, 0, 1) 80%);
-  background-size: 300% 300%;
-  animation: leftAnimation 8s infinite;
-}
-
-#cube .top {
-  background: #ddd;
-  transform: rotateX(90deg) translateZ( 100px);
-  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
-  background-size: 300% 300%;
-  animation: topAnimation 8s infinite;
-}
-
-#cube .bottom {
-  transform: rotateX( -90deg) translateZ( 100px);
-}	
+	
 	
   </style>
 
@@ -302,6 +220,10 @@ figure div {
 
 
            <div class="room_w_walls_floors my_slaber big_three_d_box">
+		   
+	    <div id="shadow"></div>
+    <div id="ground"></div>
+		   
             
                <figure class="fronter">
                </figure>
@@ -327,8 +249,6 @@ figure div {
   <div class="ron"></div>
 </div>  
 
-    <div id="shadow"></div>
-    <div id="ground"></div>   
 		       
 	       </figure>
 		   
@@ -342,10 +262,7 @@ figure div {
 
 	
 	
-	    <div id="shadow"></div>
-    <div id="ground"></div>
-	
-	
+
 <!--shapes -->      
            <div class="my_slaber w_5_h_5_d_10">
                <figure class="front">
