@@ -32,7 +32,8 @@ figure {
   border:1px solid black;  
   background:blue; 
 }
-
+      
+/*
 @keyframes infinite-spinning-with-rotation {
   from {
     transform:  rotate(0deg);
@@ -40,7 +41,16 @@ figure {
   to {
     transform: rotate(290deg);
   }
-}  
+}  */
+      
+@keyframes infinite-spinning-with-rotation {
+  from {
+  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-vw /*X*/, -4vw /*Y*/, 0 /*Z*/); top:37vw;
+  }
+  to {
+  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) rotate(360deg) translate3d(-vw /*X*/, -4vw /*Y*/, 0 /*Z*/); top:37vw;
+  }
+}   
   </style>
 
 </head>
