@@ -11,6 +11,9 @@
   
   <title>Box 1 - steps &middot; Intro to CSS 3D transforms &rsaquo; Examples</title>
   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
+  
   <link href="/responsive_shapes/css/furniture_builder/collection_1.css" rel="stylesheet" />
     <link href="/responsive_shapes/css/scene_setter/scene_1.css" rel="stylesheet" />
   
@@ -153,14 +156,21 @@ figure {
   
   
   
-  
-  
-  
-  
-  
-  
+
   
 </div>  
+  
+ <script>
+(function($){
+    (function fadeNext(collection){
+        collection.eq(0).fadeIn(1000, function(){
+            (collection=collection.slice(1)).length 
+            && fadeNext(collection)
+        });
+    })($('.e'))
+})(jQuery)
+</script>
+  
   
   
   
