@@ -28,33 +28,7 @@ $slab_color: yellow;
 
         /*--------------------------------------*/
         /*--------------------------------------*/
-.e {
-  width:100%;
-  height:30px;
-   -webkit-animation: load 5s infinite;
-   animation: load 5s infinite;
-    display:none;
-}
 
-.one {
-  background:red;
-}
-
-.two {
-  background:green;
-}
-
-.three {
-  background:yellow;
-}
-
-.four { 
-  background:pink;
-}
-
-.five {
-  background:purple;
-}
         /*--------------------------------------*/
         /*--------------------------------------*/
 
@@ -69,7 +43,8 @@ $slab_color: yellow;
 
 #table_1 { 
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-9vw /*X*/, -4vw /*Y*/, -3vw /*Z*/); top:37vw;
-
+   -webkit-animation: load 5s infinite;
+   animation: load 5s infinite;
 }
 
 
