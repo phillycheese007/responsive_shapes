@@ -164,22 +164,15 @@ figure {
 $(document).ready(function () {
 
 	
-  $("#table_1").toggleClass("weirdclass").delay(3000).toggleClass("weirdclass").promise().done(function(){
-      $("#chair_1").toggleClass("weirdclass").delay(3000).toggleClass("weirdclass").promise().done(function(){
+  $("#table_1").find(".table_top").find(".my_slaber").toggleClass("weirdclass").delay(3000).toggleClass("weirdclass").promise().done(function(){
+      $("#chair_1").find(".table_top").find(".my_slaber").toggleClass("weirdclass").delay(3000).toggleClass("weirdclass").promise().done(function(){
           $("div").hide().delay(300).show().delay(500).hide().show()
       });   
   });     	
 	
 	
 	
-$( "#table_1" ).hover(function() {
-            $(".my_slaber").find("figure").toggleClass("weirdclass");
-            $(".my_slaber").toggleClass("weirdclass");
-   
-	
-	
 
-});
 
 	   
     }            
