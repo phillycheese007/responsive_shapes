@@ -99,6 +99,17 @@ border:none;
 
 
 
+@keyframes infinite-spinning-with-rotation {
+  from { 
+
+    transform:translateY(-10vw) rotateX(90deg);/*transform-origin:50% 50%;*/
+  }
+  to { 
+
+    transform:translateY(-20vw);/*transform-origin:50% 50%;*/
+  }
+}  
+ 
 
 
 @keyframes inf {
