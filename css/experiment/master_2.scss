@@ -132,8 +132,8 @@ border:none;
 }
 
 .big_three_d_box { 
-  left:9vw;top:4vw;
-  $width: 70vw;$height: 30vw;$depth: 30vw; /*set dimensions here */ 
+  left:10vw;top:4vw;
+  $width: 69vw;$height: 30vw;$depth: 30vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .fronter, .backer { width: $width;height: $height;}
   .righter, .lefter { width: $depth; height: $height;left: ($width - $depth)/2 ;}
@@ -141,10 +141,10 @@ border:none;
   .fronter  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
   .backer   { 
     transform: rotateX( 180deg ) translateZ(  $depth/2 );
-    background:black;
+   /* background:black; */
   }
   .righter  { transform: rotateY(  90deg ) translateZ( $width/2 );/*background:lightgreen;*/}
-  .lefter   { transform: rotateY( -90deg ) translateZ( $width/2 );background:purple;}
+  .lefter   { transform: rotateY( -90deg ) translateZ( $width/2 );/*background:purple;*/}
   .toper    { transform: rotateX(  90deg ) translateZ( $height/2 );background:orange;}
   .bottomer { 
     @include preserve_3d(preserve-3d);
