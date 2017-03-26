@@ -49,6 +49,25 @@ figure {
 </head>
 <body>
 
+  <div class="e one"></div>
+  <div class="e two"></div>
+  <div class="e three"></div>
+  <div class="e four"></div>
+  <div class="e five"></div>
+<script>
+(function($){
+    (function fadeNext(collection){
+        collection.eq(0).fadeIn(1000, function(){
+            (collection=collection.slice(1)).length 
+            && fadeNext(collection)
+        });
+    })($('.e'))
+})(jQuery)
+</script>
+ 
+  
+  
+  
   
 <div class="buddy">
 
