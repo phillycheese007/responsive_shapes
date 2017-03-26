@@ -25,6 +25,45 @@ $slab_color: yellow;
         /*--------------------------------------*/
         /*--------------------------------------*/
 
+
+        /*--------------------------------------*/
+        /*--------------------------------------*/
+.e {
+  width:100%;
+  height:30px;
+   -webkit-animation: load 5s infinite;
+   animation: load 5s infinite;
+    display:none;
+}
+
+.one {
+  background:red;
+}
+
+.two {
+  background:green;
+}
+
+.three {
+  background:yellow;
+}
+
+.four { 
+  background:pink;
+}
+
+.five {
+  background:purple;
+}
+        /*--------------------------------------*/
+        /*--------------------------------------*/
+
+
+
+
+
+        /*--------------------------------------*/
+        /*--------------------------------------*/
 #table_1 .my_slab figure { background: brown; }
 
 
