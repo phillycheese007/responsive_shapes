@@ -48,7 +48,7 @@ $slab_color: yellow;
 
 
 #table_1 { 
-  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-9vw /*X*/, -4vw /*Y*/, -3vw /*Z*/); top:37vw;
+  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-9vw /*X*/, 0 /*Y*/, 0 /*Z*/); top:37vw;
    -webkit-animation: load 5s infinite;
    animation: load 5s infinite;
 }
