@@ -19,15 +19,23 @@
     <style media="screen">
    
 .buddy{
+ animation:infinite-spinning-with-rotation 10s linear ; 
+  animation-fill-mode: forwards;
   perspective:90vw;
   width:90%;
   height:90%;
-  background:pink;  transform-style: preserve-3d;transform:rotateY(30deg);margin-left:-10vw;
-     animation:infinite-spinning-with-rotation 10s linear ; 
-  animation-fill-mode: forwards;
+  background:pink;  
+ /* transform-style: preserve-3d;transform:rotateY(30deg);margin-left:-10vw;*/
+
+  
+  
+  
+  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) rotate(360deg) translate3d(-vw /*X*/, -4vw /*Y*/, 0 /*Z*/); top:37vw;
 
  }
 
+      
+      
 figure {  
   border:1px solid black;  
   background:blue; 
