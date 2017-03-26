@@ -165,14 +165,15 @@ $(document).ready(function () {
 
 	
 
-            $(".my_slaber").find("figure").toggleClass("weirdclass");
+	
+	
+$( "div.room_w_walls_floors" )
+  .mouseover(function() {
             $(".my_slaber").toggleClass("weirdclass");
-   
-	
-	
-
-
-	
+  })
+  .mouseout(function() {
+            $(".my_slaber").toggleClass("weirdclass");
+  });
 	
 
 
