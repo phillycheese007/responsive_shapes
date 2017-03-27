@@ -36,6 +36,24 @@
 }
 
 
+
+
+.window_1_slab {
+  $width: 28vw;$height: 20vw;$depth: 33vw; /*set dimensions here */ 
+  transform:translateZ($depth/2);
+  .front, .back { width: $width;height: $height;}
+  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
+  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
+  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );
+  }
+}
+
+
 .w_5_h_5_d_10 { left:10vw;transform:translateZ(30vw);
   $width: 5vw;$height: 5vw;$depth: 10vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
