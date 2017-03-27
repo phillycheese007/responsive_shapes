@@ -51,10 +51,14 @@ body,html{
         /*--------------------------------------*/
 
 #window_box_1 { 
-  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(27deg);
+  position:absolute;
+
+  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-14vw /*X*/, -19vw /*Y*/, 0 /*Z*/) rotate(57deg);
   top:40vw;
-  animation:infinite-spinning-with-rotation 12s linear  ; 
-  animation-delay:0s, 0s, 0s;
+
+  
+  animation:infinite-spinning-with-rotation 5s linear, inf 10s linear, inf-2 5s linear   ; 
+  animation-delay:0s, 5s, 15s;
   animation-fill-mode: forwards;
 }
 
