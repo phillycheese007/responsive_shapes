@@ -1,0 +1,21 @@
+//my mixins parital #1
+
+
+// generic transform
+@mixin transform($transforms) {
+  -moz-transform: $transforms;
+  -o-transform: $transforms;
+  -ms-transform: $transforms;
+  -webkit-transform: $transforms;
+  transform: $transforms;
+}
+
+// generic transform
+
+@mixin transitions ($transition) {
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -ms-transition: $transition;
+  -webkit-transition: $transition;
+  transition: $transition;
+}
