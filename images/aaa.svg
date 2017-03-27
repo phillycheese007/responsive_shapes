@@ -8,7 +8,6 @@ xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:xlink="http://www.w
             <stop offset="0%" stop-color="#ff8806"></stop>
             <stop offset="100%" stop-color="#d9574a"></stop>
      
-            <animate attributeName="x2" dur="2000ms" from="90%" to="0%" dur="3s" fill="freeze" />
             <animate attributeName="y1" dur="2000ms" from="90%" to="0%" repeatCount="indefinite" />
 
     </linearGradient>
