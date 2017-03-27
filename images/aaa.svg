@@ -5,10 +5,13 @@ xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:xlink="http://www.w
  viewBox="0 0 3561.6185 1844.2602">
   <defs>
     <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%"   stop-color="#05a"/>
+          <stop offset="100%" stop-color="#79c98c">
+          <animate attributeName="stop-color" values="#79c98c; #0b2d13" dur="3s" fill="freeze" />
+          </stop>
       <stop offset="100%" stop-color="#0a5"/>
-            <animate attributeName="x2" dur="2000ms" from="90%" to="0%" repeatCount="indefinite" />
+            <animate attributeName="x2" dur="2000ms" from="90%" to="0%" dur="3s" fill="freeze" />
             <animate attributeName="y1" dur="2000ms" from="90%" to="0%" repeatCount="indefinite" />
+            <animate attributeName="x2" dur="2000ms" from="90%" to="0%" dur="3s" fill="freeze" />
 
     </linearGradient>
   </defs>
