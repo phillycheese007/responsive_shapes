@@ -1,7 +1,8 @@
 ---
 #staticshade1
 ---
-
+$left_right_color_1:lightyellow;
+$left_right_color_2:lightblue;
 
 
 
@@ -105,7 +106,6 @@
 /*-------EE---- .top  ,  .bottom -----------*/
 /*-------EE---- .top  ,  .bottom -----------*/
 
-$pmoney:lightblue;
 
 /*-------BB---- .left  ,  .right -----------*/
 /*-------BB---- .left  ,  .right -----------*/
@@ -119,13 +119,13 @@ $pmoney:lightblue;
     @keyframes left-right-animation {
       0%,
       100% {
-        background: green;
+        background: $left_right_color_1;
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 400% 400%;
         background-position: 50% 0;
       }
       50% {
-	      background: $pmoney;  
+	      background: $left_right_color_2;  
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 300% 300%;
         background-position: 100% 50%;
