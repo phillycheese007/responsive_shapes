@@ -163,7 +163,7 @@ border:none;
   position:absolute;
 }
 
-.big_three_d_box { 
+.big_three_d_box { display:none;
   /*left:9vw;*/ top:5vw;
   $width: 55vw;$height: 35vw;$depth: 40vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
