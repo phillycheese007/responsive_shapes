@@ -183,10 +183,10 @@ border:none;
   .backer   { transform: rotateX( 180deg ) translateZ(  $depth/2 );/*background:black;*/}
   .righter  { 
     transform: rotateY(  90deg ) translateZ( $width/2 );
-    background:grey;
+   /* background:grey;
     background: url("/responsive_shapes/images/painting.jpg");
     background-repeat:repeat;
-    background-size:contain;
+    background-size:contain;*/
   }
   .lefter   { transform: rotateY( -90deg ) translateZ( $width/2 );/*background:purple;*/}
   .toper    { transform: rotateX(  90deg ) translateZ( $height/2 );background:orange;}
