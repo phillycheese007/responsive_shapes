@@ -72,6 +72,13 @@ background-size:cover;background-repeat:no-repeat;
 background-position:fixed center;
 }	    
 
+.new_ron{
+left:0;right:0;
+position:fixed;z-index:999;
+background-size:cover;background-repeat:no-repeat;
+background-position:fixed center;
+}
+	
 .sliding-background {
   background: url("/responsive_shapes/images/clouds_blue_sky.jpg") no-repeat;
   position:absolute;bottom:0 !important;top:0;height:100%;
@@ -163,8 +170,11 @@ background-position:fixed center;
 	       <figure class="lefter">
 		       
  <div class="sliding_background_wrapper">
-  <div class="sliding-background"></div>
-  <div class="ron move_sky_from_wall"></div>
+  <div class="new_ron move_sky_from_wall">
+    <div class="sliding-background"></div>
+  </div>
+  <div class="ron">
+  </div>
 </div>  
 
 		       
