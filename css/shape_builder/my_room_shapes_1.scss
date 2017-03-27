@@ -39,7 +39,7 @@
 
 
 .window_1_slab {
-  $width: 20vw;$height: 2vw;$depth: 20vw; /*set dimensions here */ 
+  $width: 15vw;$height: 2vw;$depth: 20vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
@@ -48,8 +48,8 @@
   .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );background:lightblue;}
   .right  { transform: rotateY(  90deg ) translateZ( $width/2 );background:red;}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );background:blue;}
-  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );background:green;}
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );background:lightgreen;    opacity:.2;}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );background:green;  opacity:.5;}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );background:lightgreen;    opacity:.5;}
 }
 
 
