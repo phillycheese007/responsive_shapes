@@ -1,0 +1,544 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<!-- disable zooming -->
+<meta name="viewport" content="initial-scale=1.0, user-scalable=0" />
+<title>Css_scene_9</title>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
+<link href="/responsive_shapes/css/furniture_builder/collection_2.css" rel="stylesheet" />
+<link href="/responsive_shapes/css/scene_setter/scene_1.css" rel="stylesheet" />
+  
+<link rel="stylesheet" href="/responsive_shapes/css/experiment/master_2.css" media="screen" />
+
+<style media="screen">
+.weirdclass{
+  border:20px solid blue;border-radius:20px;opacity:.7;display:inline-block;
+}
+.weirdclass :hover{
+ position:absolute; border:30px solid yellow;height:20vh !important;border-radius:620px;height:10vh;opacity:.9;display:block;
+}
+	
+.buddy{
+  perspective:90vw;
+ /* width:50%;
+  left:10%;
+  top:5%;
+  height:90%; */
+ /* 
+  left:20vw;height:100vh;width:60vw;
+  background:green; 
+  height:30vw;
+  background:green;
+overflow:hidden;
+ */
+  position:absolute;
+  left:21.75%;width:55%;height:calc(25vw + 300px);
+  top:5%;
+  transform-style: preserve-3d;display:block;	
+ }
+
+
+#chair_1 figure{background:green;}
+
+	
+#window_box_1 figure{
+  background:blue;
+}	
+	
+.sliding_background_wrapper {
+  overflow: hidden;border:none;width:100%;margin:0;position:fixed;top:0;bottom:0;left:0;
+}
+	
+.ron{
+    background:url("/responsive_shapes/images/aaa.svg");width:100%;top:0;bottom:0! important;
+left:0;right:0;
+position:fixed;z-index:999;
+background-size:cover;background-repeat:no-repeat;
+background-position:fixed center;
+}	    
+
+.sliding-background {
+  background: url("/responsive_shapes/images/clouds_blue_sky.jpg") no-repeat;
+  position:absolute;bottom:0 !important;top:0;height:100%;
+  width: 5076px;
+  animation: slide 90s linear infinite;border:none;background-size:cover;
+}	    
+
+
+.pic1{
+    background:url("/responsive_shapes/images/painting.jpg");width:100%;top:0;bottom:0! important;
+left:0;right:0;
+position:fixed;z-index:999;
+background-size:cover;background-repeat:no-repeat;
+background-position:fixed center;
+}	    
+
+.pic2 {
+  background: url("/responsive_shapes/images/clouds_shadow_2.png") no-repeat;
+  position:absolute;z-index:9999;bottom:0 !important;top:0;height:100%;
+	opacity:.4;
+  width: 5076px;
+  animation: slide 90s linear infinite;border:none;background-size:cover;
+}
+	
+	
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+	
+.tranz_x_30vw{
+  transition:all 10s;
+  transform:rotate(157deg);
+}
+.rotate_120deg{
+  transition:all 3s;border:4px solid blue !important;
+  transform:rotate(120deg);
+}
+	
+	
+	
+
+	
+	
+@keyframes rotCube {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotateX(-35deg) rotateY(60deg) rotateZ(0deg);
+    animation-timing-function: linear;
+  }
+  50% {
+    transform: translateX(-50%) translateY(-50%) rotateX(-35deg) rotateY(30deg) rotateZ(0);
+  }
+}
+
+@keyframes groundAnimation {
+  0%,
+  100% {
+    background-position: 50% 0;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes topAnimation {
+  0%,
+  100% {
+    background: #c68c53;
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
+    background-size: 400% 400%;
+    background-position: 50% 0;
+  }
+  50% {
+    background: #996633;  
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
+    background-size: 400% 400%;
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes leftAnimation {
+  0%,
+  100% {
+    background: #663300;
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 200%);
+    background-size: 200% 200%;
+    background-position: -100% 100%;
+  }
+  50% {
+    background: #d9b38c;  
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 200%);
+    background-size: 200% 200%;
+    background-position: 100% 100%;
+  }
+}
+@keyframes wallAnimation {
+  0%,
+  100% {
+    background: #888;
+   /* background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 200%);*/
+    background-position: 50% 0%;
+  }
+  50% {
+    background: #111;  
+   /* background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 200%);*/
+    background-position: 100% 50%;
+  }
+}
+@keyframes shadowAnimation {
+  0%,
+  100% {
+    box-shadow: 0px -100px 100px rgba(0, 0, 0, 1), 0px -20px 20px rgba(0, 0, 0, 1), 0px 0px 5px rgba(0, 0, 0, 1);
+  }
+  50% {
+    box-shadow: 100px 0px 100px rgba(0, 0, 0, 1), 20px 0px 20px rgba(0, 0, 0, 1), 0px 0px 5px rgba(0, 0, 0, 1);
+  }
+}
+
+@keyframes frontAnimation {
+  0%,
+  100% {
+    background: #d2a679;
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
+    background-size: 400% 400%;
+    background-position: 50% 0;
+  }
+  50% {
+    background: #d9b38c;  
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
+    background-size: 300% 300%;
+    background-position: 100% 50%;
+  }
+}
+
+body {
+  background: black;
+}
+
+.center {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  perspective: 1000px;
+  perspective-origin: 0% 0%;
+}
+
+#ground,
+#shadow {
+  background: red;
+  box-sizing: content-box;
+  padding: 0;
+  margin: 0;
+  width: 1000px;
+  height: 1000px;
+  transform-style: preserve-3d;
+  background: rgba(55, 55, 55, 1);
+  transform-origin: 50% 50%;
+  display: block;
+  position: absolute;
+  transform: translateX( -400px) translateY( -400px) rotateX( 90deg) translateZ( -100px);
+}
+
+#ground {
+  background-image: radial-gradient(ellipse at center, rgba(255, 255, 255, .7) 0%, rgba(0, 0, 0, 1) 50%);
+  background-size: 200% 200%;
+  animation: groundAnimation 8s infinite;
+}
+
+#shadow {
+  background: rgba(0, 0, 0, .2);
+  width: 200px;
+  height: 200px;
+  transform: rotateX( 90deg) translateZ(-98px);
+  box-shadow: -20px 0px 100px rgba(0, 0, 0, 1), 0px 0px 20px rgba(0, 0, 0, 1), 0px 0px 5px rgba(0, 0, 0, 1);
+  box-shadow-blend-mode: color-dodge;
+  animation: shadowAnimation 8s infinite;
+}
+
+
+#table_1 figure {
+  box-sizing: content-box;
+  transform-style: preserve-3d;
+  /* background: rgba(0, 0, 0, .5); */
+  box-shadow-blend-mode: color-dodge;
+  blend-mode: screen;
+}
+
+#table_1 figure div {
+  background: /* rgba(0, 0, 0, .2); */ brown;
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, .5), inset 0px 0px 50px rgba(0, 0, 0, .4);
+  box-shadow-blend-mode: color-dodge;
+}
+
+#table_1 figure.front {
+  background: #ecd9c6;
+  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 40%);
+  background-size: 300% 300%;
+  animation: frontAnimation 8s;
+  animation-fill-mode:forwards;	
+}
+
+#table_1 figure.back {
+  background: /* #888; */ brown;
+  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 40%);
+  background-size: 300% 300%;
+  animation: frontAnimation 8s;
+  animation-fill-mode:forwards;
+}
+
+#table_1 figure.right {
+  background: /* #888; */ brown;
+  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 70%);
+  background-size: 300% 300%;
+  animation: leftAnimation 8s;
+  animation-fill-mode:forwards;
+}
+
+#table_1 figure.left {
+  background: /* #888; */ brown;
+  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+  background-size: 300% 300%;
+  animation: leftAnimation 8s linear;
+  animation-fill-mode:forwards;
+
+}
+
+#table_1 figure.top {
+  background: /* #888; */ #d2a679;
+  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 30%);
+  background-size: 400% 400%;
+  animation: topAnimation 8s linear;
+  animation-fill-mode:forwards;	
+}
+	
+#table_1 figure.bottom {
+  background: /* #888; */ brown;
+  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+  background-size: 300% 300%;
+  animation: topAnimation 8s linear;
+  animation-fill-mode:forwards;
+}
+	
+.big_three_d_box figure.toper, .big_three_d_box figure.lefter {
+  background:  #888; 
+  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+  background-size: 300% 300%;
+  animation: wallAnimation 8s linear;
+  animation-fill-mode:forwards;
+}
+
+.big_three_d_box figure.righter { 
+
+	
+}
+
+
+
+
+	
+	
+  </style>
+
+</head>
+<body>
+
+
+ 
+
+  
+<div class="buddy">
+
+  <!--table_1 -->
+
+
+           <div class="room_w_walls_floors my_slaber big_three_d_box">
+		   
+
+		        
+               <figure class="fronter">
+               </figure>
+		   
+	       <figure class="backer">
+
+
+ <div class="sliding_background_wrapper">
+  <div class="sliding-background"></div>
+  <div class="ron"></div>
+</div>
+
+
+	       </figure>
+		   
+	       <figure class="righter">
+
+ <div class="sliding_background_wrapper">
+  <div class="pic1"></div>
+  <div class="pic2"></div>
+</div>  	       
+		       
+               </figure>
+		   
+	       <figure class="lefter">
+		       
+ <div class="sliding_background_wrapper">
+  <div class="sliding-background"></div>
+  <div class="ron"></div>
+</div>  
+
+		       
+	       </figure>
+		   
+	       <figure class="toper">
+	       </figure>
+		   
+               <figure class="bottomer">
+	       </figure>
+             
+           </div>
+
+	
+	
+
+<!--shapes -->      
+           <div class="my_slaber w_5_h_5_d_10">
+               <figure class="front">
+               </figure><figure class="back"></figure><figure class="right">
+               </figure><figure class="left"></figure><figure class="top"></figure>
+               <figure class="bottom"></figure>
+           </div>
+  
+           <div class="my_slaber w_5_h_10_d_5">
+               <figure class="front">
+               </figure><figure class="back"></figure><figure class="right">
+               </figure><figure class="left"></figure><figure class="top"></figure>
+               <figure class="bottom"></figure>
+           </div>
+	
+       <section id="window_box_1" class="simple_chair_1 preserve3d">
+         <div class="chair_seat">
+           <div class="w_10_h_10_d_pnt5 my_slaber horizontal_1" >
+             <figure class="front "></figure>
+             <figure class="back"></figure>
+             <figure class="horizontal_shadow_1"></figure>
+             <figure class="right"></figure>
+             <figure class="left"></figure>
+             <figure class="top"></figure>
+             <figure class="bottom"></figure>
+           </div>
+         </div>  
+         <div class="chair_back">
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber rung_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber rung_2" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_10_h_4_d_pnt5 my_slaber vertical_1" >
+             <figure class="front "></figure>
+             <figure class="back"></figure>
+             <figure class="right"></figure>
+             <figure class="left"></figure>
+             <figure class="top"></figure>
+             <figure class="bottom"></figure>
+           </div>
+         </div>  
+         <div class="four_leg_base">
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_2" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_3" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_4" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+         </div>  
+       </section>  
+
+<!--shapes -->   
+  
+  
+
+       
+<!--chair_1 -->
+       <section id="chair_1" class="simple_chair_1 preserve3d">
+         <div class="chair_seat">
+           <div class="w_10_h_10_d_pnt5 my_slaber horizontal_1" >
+             <figure class="front "></figure>
+             <figure class="back"></figure>
+             <figure class="horizontal_shadow_1"></figure>
+             <figure class="right"></figure>
+             <figure class="left"></figure>
+             <figure class="top"></figure>
+             <figure class="bottom"></figure>
+           </div>
+         </div>  
+         <div class="chair_back">
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber rung_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber rung_2" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_10_h_4_d_pnt5 my_slaber vertical_1" >
+             <figure class="front "></figure>
+             <figure class="back"></figure>
+             <figure class="right"></figure>
+             <figure class="left"></figure>
+             <figure class="top"></figure>
+             <figure class="bottom"></figure>
+           </div>
+         </div>  
+         <div class="four_leg_base">
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_2" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_3" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_4" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+         </div>  
+       </section>  
+<!--chair_1 -->
+  
+  
+
+  
+  
+  
+ <!--table_1 -->
+       <section id="table_1" class="mid_century_table_1 preserve3d">
+         <div class="table_top">
+           <div class="w_28_h_20_d_1 my_slaber horizontal_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_28_h_20_d_1 my_slaber horizontal_2" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+         </div>  
+         <div class="four_leg_base">
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_2" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_3" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_4" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+         </div>  
+        </section>  
+<!--table_1 -->
+  
+  
+  
+
+  
+</div>  
+
+	
+	
+<!--
+<script>
+$(document).ready(function () {
+
+	
+$( "figure.front" )
+  .mouseover(function() {
+            $(".my_slaber").toggleClass("weirdclass");
+  })
+  .mouseout(function() {
+            $(".my_slaber").toggleClass("weirdclass");
+  });
+		   
+    }            
+  );	
+	
+
+</script>
+-->
+
+
+<script>
+$(document).ready(function () {
+	
+
+	
+	
+	   
+    }            
+  );	
+	
+
+</script>
+
+  
+</body>
+</html>
