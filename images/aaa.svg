@@ -7,7 +7,7 @@ xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:xlink="http://www.w
     <linearGradient id="linear" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%"   stop-color="#05a"/>
       <stop offset="100%" stop-color="#0a5"/>
-            <animate attributeName="x2" dur="2000ms" from="90%" to="0%" repeatCount="indefinite" />
+            <animate attributeName="x2, y1" dur="2000ms" from="90%" to="0%" repeatCount="indefinite" />
 
     </linearGradient>
   </defs>
