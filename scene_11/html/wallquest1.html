@@ -8,31 +8,35 @@
 	
 .twister{
   border:10px solid red;
- height:100%;width:100%;
-transform:rotateY(10deg);
+ height:100%;width:70%;
+transform:rotateY(20deg);
 transform-style:preserve-3d;
   }
 
 
 
 .sliding_background_wrapper {
-  overflow: hidden;border:none;width:100%;margin:0;position:fixed;top:0;bottom:0;left:0;
 transform-style:preserve-3d;
-
+overflow: hidden;border:none;width:100%;margin:0;position:fixed;top:0;bottom:0;left:0;
 }
 	
 .sliding-background {
-  background: url("https://phillycheese007.github.io/responsive_shapes/images/clouds_blue_sky.jpg") no-repeat;
-  position:absolute;bottom:0 !important;top:0;height:100%;
-  width: 5076px;
-  animation: slide 90s linear infinite;border:none;background-size:cover;transform-style:preserve-3d;
-}	
+transform-style:preserve-3d;
+background: url("https://phillycheese007.github.io/responsive_shapes/images/clouds_blue_sky.jpg") no-repeat;
+position:absolute;bottom:0 !important;top:0;height:100%;
+width: 5076px;
+animation: slide 90s linear infinite;border:none;background-size:cover;
+}
+	
 .wall_svg_holding_div{
+transform-style:preserve-3d;
 background:url("https://phillycheese007.github.io/responsive_shapes/images/aaa.svg");width:100%;top:0;bottom:0! important;
 left:0;right:0;
 position:fixed;z-index:999;
 background-size:cover;background-repeat:no-repeat;
-background-position:fixed center;transform-style:preserve-3d;
+background-position:fixed center;
+	
+transform:translateZ(7vw);
 }
 
 </style>
