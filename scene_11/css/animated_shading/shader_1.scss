@@ -125,7 +125,7 @@ $pmoney:lightblue;
         background-position: 50% 0;
       }
       50% {
-	      background: #{$pmoney};  
+	      background: $pmoney;  
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 300% 300%;
         background-position: 100% 50%;
