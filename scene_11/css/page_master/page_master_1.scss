@@ -171,4 +171,15 @@ border:none;
   width: 100%;
   height: 100%; 
   position:absolute;
+  animation: hop 2s ease-in-out infinite, 
+             move 6s ease-out forwards;
+
+  @at-root {
+    @keyframes hop { 
+      50%  { transform: translateY(40px); }
+    }
+    @keyframes move { 
+      100% { left: 400px; }
+    }
+  }
 }
