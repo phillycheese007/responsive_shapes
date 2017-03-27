@@ -50,6 +50,13 @@ body,html{
         /*--------------------------------------*/
         /*--------------------------------------*/
 
+#window_box_1 { 
+  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(27deg);
+  top:40vw;
+  animation:infinite-spinning-with-rotation 12s linear  ; 
+  animation-delay:0s, 0s, 0s;
+  animation-fill-mode: forwards;
+}
 
 #table_1 { 
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(27deg);
