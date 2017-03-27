@@ -185,11 +185,4 @@
   }
 }
 
-  @at-root {
-    @keyframes hop { 
-      50%  { transform: translateY(40px); }
-    }
-    @keyframes move { 
-      100% { left: 400px; }
-    }
-  }
+
