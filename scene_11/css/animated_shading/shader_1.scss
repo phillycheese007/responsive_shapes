@@ -98,9 +98,9 @@ $table_top_bottom_color_2:pink;
     background:  #888; 
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
     background-size: 300% 300%;
-    animation: top-bottom-animation 8s linear;
+    animation: top-bottom-animation-table 8s linear;
     animation-fill-mode:forwards;
-    @keyframes top-bottom-animation {
+    @keyframes top-bottom-animation-table {
       0%,
       100% {
         background:$table_top_bottom_color_1;
@@ -127,9 +127,9 @@ $table_top_bottom_color_2:pink;
     background:  #888; 
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
     background-size: 300% 300%;
-    animation: left-right-animation 8s linear;
+    animation: left-right-animation-table 8s linear;
     animation-fill-mode:forwards;
-    @keyframes left-right-animation {
+    @keyframes left-right-animation-table {
       0%,
       100% {
         background:$table_left_right_color_1;
@@ -156,9 +156,9 @@ $table_top_bottom_color_2:pink;
     background:  #888; 
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
     background-size: 300% 300%;
-    animation: front-back-animation 8s linear;
+    animation: front-back-animation-table 8s linear;
     animation-fill-mode:forwards;
-    @keyframes front-back-animation {
+    @keyframes front-back-animation-table {
       0%,
       100% {
         background:$table_front_back_color_1;
@@ -187,9 +187,9 @@ $table_top_bottom_color_2:pink;
   figure.top, figure.bottom {
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
     background-size: 300% 300%;
-    animation: top-bottom-animation 8s linear;
+    animation: top-bottom-animation-chair 8s linear;
     animation-fill-mode:forwards;
-    @keyframes top-bottom-animation {
+    @keyframes top-bottom-animation-chair {
       0%,
       100% {
         background:$chair_top_bottom_color_1;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 400% 400%;background-position: 50% 0;
@@ -209,9 +209,9 @@ $table_top_bottom_color_2:pink;
   figure.left, figure.right {
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
     background-size: 300% 300%;
-    animation: left-right-animation 8s linear;
+    animation: left-right-animation-chair 8s linear;
     animation-fill-mode:forwards;
-    @keyframes left-right-animation {
+    @keyframes left-right-animation-chair {
       0%,
       100% {
         background:$chair_left_right_color_1;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 400% 400%;background-position: 50% 0;
@@ -230,9 +230,9 @@ $table_top_bottom_color_2:pink;
   figure.front, figure.back {
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
     background-size: 300% 300%;
-    animation: front-back-animation 8s linear;
+    animation: front-back-animation-chair 8s linear;
     animation-fill-mode:forwards;
-    @keyframes front-back-animation {
+    @keyframes front-back-animation-chair {
       0%,
       100% {
         background: $chair_front_back_color_1;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 400% 400%;background-position: 50% 0;
