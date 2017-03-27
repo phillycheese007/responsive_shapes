@@ -20,39 +20,16 @@
 }
 
 
+$table_left_right_figure_bac_color_1:orange;
+$table_left_right_figure_bac_color_2:green;
 
-#table_1 figure.right {
-  background: /* #888; */ brown;
-  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 70%);
-  background-size: 300% 300%;
-  animation: leftAnimation 8s;
-  animation-fill-mode:forwards;
-}
+$table_top_bottom_figure_bac_color_1:blue;
+$table_top_bottom_figure_bac_color_2:red;
 
-#table_1 figure.left {
-  background: /* #888; */ brown;
-  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
-  background-size: 300% 300%;
-  animation: leftAnimation 8s linear;
-  animation-fill-mode:forwards;
+$table_front_back_figure_bac_color_1:red;
+$table_front_back_figure_bac_color_2:yellow;
 
-}
 
-#table_1 figure.top {
-  background: /* #888; */ #d2a679;
-  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 30%);
-  background-size: 400% 400%;
-  animation: topAnimation 8s linear;
-  animation-fill-mode:forwards;	
-}
-	
-#table_1 figure.bottom {
-  background: /* #888; */ brown;
-  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
-  background-size: 300% 300%;
-  animation: topAnimation 8s linear;
-  animation-fill-mode:forwards;
-}
 	
 .big_three_d_box figure.toper, .big_three_d_box figure.lefter {
   background:  #888; 
@@ -84,37 +61,7 @@
   }
 }
 
-@keyframes topAnimation {
-  0%,
-  100% {
-    background: #c68c53;
-    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
-    background-size: 400% 400%;
-    background-position: 50% 0;
-  }
-  50% {
-    background: #996633;  
-    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
-    background-size: 400% 400%;
-    background-position: 100% 50%;
-  }
-}
 
-@keyframes leftAnimation {
-  0%,
-  100% {
-    background: #663300;
-    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 200%);
-    background-size: 200% 200%;
-    background-position: -100% 100%;
-  }
-  50% {
-    background: #d9b38c;  
-    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 200%);
-    background-size: 200% 200%;
-    background-position: 100% 100%;
-  }
-}
 @keyframes wallAnimation {
   0%,
   100% {
@@ -143,7 +90,7 @@
 /*-------BB---- .top  ,  .bottom -----------*/
 /*-------BB---- .top  ,  .bottom -----------*/
 #table_1{
-  figure.left, figure.right {
+  figure.top, figure.bottom {
     background:  #888; 
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
     background-size: 300% 300%;
@@ -152,13 +99,13 @@
     @keyframes backAnimation {
       0%,
       100% {
-        background: #d2a679;
+        background: $table_top_bottom_figure_bac_color_1;
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 400% 400%;
         background-position: 50% 0;
       }
       50% {
-        background: #d9b38c;  
+        background: $table_right_top_bottom_bac_color_2;  
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 300% 300%;
         background-position: 100% 50%;
@@ -183,12 +130,16 @@
     @keyframes backAnimation {
       0%,
       100% {
-        background: red;
-
+        background: $table_left_right_figure_bac_color_1;
+        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
+        background-size: 400% 400%;
+        background-position: 50% 0;
       }
       50% {
-        background: blue;  
-
+        background: $table_left_right_figure_bac_color_2;  
+        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
+        background-size: 300% 300%;
+        background-position: 100% 50%;
       }
     }
   }	  
@@ -197,21 +148,7 @@
 /*-------EE---- .left  ,  .right -----------*/
 
 
-    @keyframes backAnimation {
-      0%,
-      100% {
-        /*background: #d2a679;*/
-        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
-        background-size: 400% 400%;
-        background-position: 50% 0;
-      }
-      50% {
-       /* background: #d9b38c; */ 
-        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
-        background-size: 300% 300%;
-        background-position: 100% 50%;
-      }
-    }
+
 
 
 /*-------BB---- .front  ,  .back -----------*/
@@ -226,13 +163,13 @@
     @keyframes backAnimation {
       0%,
       100% {
-        background: #d2a679;
+        background: $table_front_back_figure_bac_color_1;
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 400% 400%;
         background-position: 50% 0;
       }
       50% {
-        background: #d9b38c;  
+        background: $table_front_back_figure_bac_color_2;  
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 300% 300%;
         background-position: 100% 50%;
