@@ -8,9 +8,9 @@ xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:xlink="http://www.w
             <stop offset="0%" stop-color="#ff8806"></stop>
             <stop offset="100%" stop-color="#d9574a"></stop>
      
-            <animate attributeName="x1" dur="12s" from="90%" to="0%" repeatCount="1" />
-            <animate attributeName="y1" dur="12s" from="90%" to="0%" repeatCount="1" />
-            <animate attributeName="y2" dur="12s" from="90%" to="0%" repeatCount="1" />
+            <animate attributeName="x1" dur="5s" from="90%" to="0%" repeatCount="1" fill="freeze" />
+            <animate attributeName="y1" dur="5s" from="90%" to="0%" repeatCount="1" fill="freeze" />
+            <animate attributeName="y2" dur="5s" from="90%" to="0%" repeatCount="1" fill="freeze" />
 
     </linearGradient>
   </defs>
