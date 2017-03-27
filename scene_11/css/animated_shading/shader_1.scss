@@ -6,6 +6,20 @@ $left_right_color_2:lightblue;
 
 
 
+$chair_front_back_color_1:orange;
+$chair_front_back_color_2:lightgreen;
+$chair_left_right_color_1:black;
+$chair_left_right_color_2:lightyellow;
+$chair_top_bottom_color_1:grey;
+$chair_top_bottom_color_2:pink;
+
+$table_front_back_color_1:black;
+$table_front_back_color_2:pink;
+$table_left_right_color_1:green;
+$table_left_right_color_2:yellow;
+$table_top_bottom_color_1:purple;
+$table_top_bottom_color_2:orange;
+
 #table_1 figure {
   box-sizing: content-box;
   transform-style: preserve-3d;
@@ -77,8 +91,8 @@ $left_right_color_2:lightblue;
 
 
 
-/*-------BB---- .top  ,  .bottom -----------*/
-/*-------BB---- .top  ,  .bottom -----------*/
+/*--------EE----table 1 -----------*/
+ 
 #table_1{
   figure.top, figure.bottom {
     background:  #888; 
@@ -89,13 +103,13 @@ $left_right_color_2:lightblue;
     @keyframes top-bottom-animation {
       0%,
       100% {
-        background: red;
+        background:$table_top_bottom_color_1;
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 400% 400%;
         background-position: 50% 0;
       }
       50% {
-        background: blue;  
+        background:$table_top_bottom_color_2;  
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 300% 300%;
         background-position: 100% 50%;
@@ -103,12 +117,11 @@ $left_right_color_2:lightblue;
     }
   }	  
 }
-/*-------EE---- .top  ,  .bottom -----------*/
-/*-------EE---- .top  ,  .bottom -----------*/
 
 
-/*-------BB---- .left  ,  .right -----------*/
-/*-------BB---- .left  ,  .right -----------*/
+/*------- -----------*/
+
+
 #table_1{
   figure.left, figure.right {
     background:  #888; 
@@ -119,13 +132,13 @@ $left_right_color_2:lightblue;
     @keyframes left-right-animation {
       0%,
       100% {
-        background: $left_right_color_1;
+        background:$table_left_right_color_1;
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 400% 400%;
         background-position: 50% 0;
       }
       50% {
-	      background: $left_right_color_2;  
+	background:$table_left_right_color_2;  
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 300% 300%;
         background-position: 100% 50%;
@@ -133,15 +146,11 @@ $left_right_color_2:lightblue;
     }
   }	  
 }
-/*-------EE---- .left  ,  .right -----------*/
-/*-------EE---- .left  ,  .right -----------*/
 
 
+/*------- -----------*/
 
 
-
-/*-------BB---- .front  ,  .back -----------*/
-/*-------BB---- .front  ,  .back -----------*/
 #table_1{
   figure.front, figure.back {
     background:  #888; 
@@ -152,13 +161,13 @@ $left_right_color_2:lightblue;
     @keyframes front-back-animation {
       0%,
       100% {
-        background: pink;
+        background:$table_front_back_color_1;
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 400% 400%;
         background-position: 50% 0;
       }
       50% {
-        background: purple;  
+        background:$table_front_back_color_2;  
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 300% 300%;
         background-position: 100% 50%;
@@ -166,18 +175,16 @@ $left_right_color_2:lightblue;
     }
   }
 }
-/*-------EE---- .front  ,  .back -----------*/
-/*-------EE---- .front  ,  .back -----------*/
+
+/*--------EE----table 1 -----------*/
 
 
 
 
+/*-------EE---- chair 1 -----------*/
 
-/*-------BB---- .top  ,  .bottom -----------*/
-/*-------BB---- .top  ,  .bottom -----------*/
 #chair_1{
   figure.top, figure.bottom {
-    background:  #888; 
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
     background-size: 300% 300%;
     animation: top-bottom-animation 8s linear;
@@ -185,29 +192,21 @@ $left_right_color_2:lightblue;
     @keyframes top-bottom-animation {
       0%,
       100% {
-        background: red;
-        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
-        background-size: 400% 400%;
-        background-position: 50% 0;
+        background:$chair_top_bottom_color_1;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 400% 400%;background-position: 50% 0;
       }
       50% {
-        background: blue;  
-        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
-        background-size: 300% 300%;
-        background-position: 100% 50%;
+        background:$chair_top_bottom_color_2;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 300% 300%;background-position: 100% 50%;
       }
     }
   }	  
 }
-/*-------EE---- .top  ,  .bottom -----------*/
-/*-------EE---- .top  ,  .bottom -----------*/
 
 
-/*-------BB---- .left  ,  .right -----------*/
-/*-------BB---- .left  ,  .right -----------*/
+/*------- -----------*/
+
+
 #chair_1{
   figure.left, figure.right {
-    background:  #888; 
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
     background-size: 300% 300%;
     animation: left-right-animation 8s linear;
@@ -215,32 +214,20 @@ $left_right_color_2:lightblue;
     @keyframes left-right-animation {
       0%,
       100% {
-        background: $left_right_color_1;
-        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
-        background-size: 400% 400%;
-        background-position: 50% 0;
+        background:$chair_left_right_color_1;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 400% 400%;background-position: 50% 0;
       }
       50% {
-	      background: $left_right_color_2;  
-        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
-        background-size: 300% 300%;
-        background-position: 100% 50%;
+	      background:$chair_left_right_color_2;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 300% 300%;background-position: 100% 50%;
       }
     }
   }	  
 }
-/*-------EE---- .left  ,  .right -----------*/
-/*-------EE---- .left  ,  .right -----------*/
 
 
+/*------- -----------*/
 
-
-
-/*-------BB---- .front  ,  .back -----------*/
-/*-------BB---- .front  ,  .back -----------*/
 #chair_1{
   figure.front, figure.back {
-    background:  #888; 
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
     background-size: 300% 300%;
     animation: front-back-animation 8s linear;
@@ -248,21 +235,15 @@ $left_right_color_2:lightblue;
     @keyframes front-back-animation {
       0%,
       100% {
-        background: pink;
-        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
-        background-size: 400% 400%;
-        background-position: 50% 0;
+        background: $chair_front_back_color_1;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 400% 400%;background-position: 50% 0;
       }
       50% {
-        background: purple;  
-        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
-        background-size: 300% 300%;
-        background-position: 100% 50%;
+        background: $chair_front_back_color_2;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 300% 300%;background-position: 100% 50%;
       }
     }
   }
 }
-/*-------EE---- .front  ,  .back -----------*/
-/*-------EE---- .front  ,  .back -----------*/
+
+/*-------EE---- chair 1 -----------*/
 
 
