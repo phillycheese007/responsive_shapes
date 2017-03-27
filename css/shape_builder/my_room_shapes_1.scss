@@ -39,7 +39,7 @@
 
 
 .window_1_slab {
-  $width: 28vw;$height: 20vw;$depth: 3vw; /*set dimensions here */ 
+  $width: 28vw;$height: 2vw;$depth: 20vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
