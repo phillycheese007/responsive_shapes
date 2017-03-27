@@ -35,12 +35,16 @@ $table_top_bottom_color_2:pink;
 }
 
 
-.big_three_d_box figure.toper, .big_three_d_box figure.lefter {
+.big_three_d_box figure.toper {
   background:  #888; 
   background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
   background-size: 300% 300%;
   animation: wallAnimation 8s linear;
   animation-fill-mode:forwards;
+}
+
+.big_three_d_box figure.lefter {
+
 }
 
 .big_three_d_box figure.righter { 
