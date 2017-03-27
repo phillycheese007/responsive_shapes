@@ -18,11 +18,11 @@
     background-repeat:repeat;
     background-size:contain;*/
   }
-  .lefter   { transform: rotateY( -90deg ) translateZ( $width/2 );
-    
+  .lefter{ 
+    transform: rotateY( -90deg ) translateZ( $width/2 ); 
   }
-  .lefter_2   { transform: rotateY( -90deg ) translateZ( $width/2 );
-    margin-left:50px;
+  .lefter_2{ 
+    transform: rotateY( -90deg ) translateZ( $width/2 );
   }
   .toper    { transform: rotateX(  90deg ) translateZ( $height/2 );background:orange;}
   .bottomer { 
