@@ -29,11 +29,7 @@
   transform: translateX( -400px) translateY( -400px) rotateX( 90deg) translateZ( -100px);
 }
 
-#ground {
-  background-image: radial-gradient(ellipse at center, rgba(255, 255, 255, .7) 0%, rgba(0, 0, 0, 1) 50%);
-  background-size: 200% 200%;
-  animation: groundAnimation 8s infinite;
-}
+
 
 #shadow {
   background: rgba(0, 0, 0, .2);
