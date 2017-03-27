@@ -49,8 +49,7 @@
   .right  { transform: rotateY(  90deg ) translateZ( $width/2 );background:red;}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );background:blue;}
   .top    { transform: rotateX(  90deg ) translateZ( $height/2 );background:green;}
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 )background:lightgreen;
-  }
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );background:lightgreen;}
 }
 
 
