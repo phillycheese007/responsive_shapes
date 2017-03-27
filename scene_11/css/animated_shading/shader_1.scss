@@ -87,9 +87,9 @@
     background:  #888; 
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
     background-size: 300% 300%;
-    animation: backAnimation 8s linear;
+    animation: top-bottom-animation 8s linear;
     animation-fill-mode:forwards;
-    @keyframes backAnimation {
+    @keyframes top-bottom-animation {
       0%,
       100% {
         background: red;
@@ -118,9 +118,9 @@
     background:  #888; 
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
     background-size: 300% 300%;
-    animation: backAnimation 8s linear;
+    animation: left-right-animation 8s linear;
     animation-fill-mode:forwards;
-    @keyframes backAnimation {
+    @keyframes left-right-animation {
       0%,
       100% {
         background: green;
@@ -151,9 +151,9 @@
     background:  #888; 
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
     background-size: 300% 300%;
-    animation: backAnimation 8s linear;
+    animation: front-back-animation 8s linear;
     animation-fill-mode:forwards;
-    @keyframes backAnimation {
+    @keyframes front-back-animation {
       0%,
       100% {
         background: pink;
