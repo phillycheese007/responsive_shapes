@@ -9,7 +9,7 @@
 $slab_color: yellow;
 
 
- --begin constants --
+/* --begin constants --*/
 
 @mixin backface_visibility ($arguments) {
   -webkit-backface-visibility: $arguments;
