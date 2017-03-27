@@ -26,61 +26,45 @@ $slab_color: yellow;
         /*--------------------------------------*/
         /*--------------------------------------*/
 
-.weirdclass{
-  border:20px solid blue;border-radius:20px;opacity:.7;display:inline-block;
-}
-.weirdclass :hover{
- position:absolute; border:30px solid yellow;height:20vh !important;border-radius:620px;height:10vh;opacity:.9;display:block;
-}
-        /*--------------------------------------*/
-        /*--------------------------------------*/
 body,html{
   background:white;
 }
         /*--------------------------------------*/
         /*--------------------------------------*/
 
-        /*--------------------------------------*/
-        /*--------------------------------------*/
 
 
 
-
-
-        /*--------------------------------------*/
-        /*--------------------------------------*/
+        /*--------------BB Furniture Positions---------------*/
+        /*--------------BB Furniture Positions---------------*/
 
 #window_box_1 { 
   position:absolute;
-
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-7vw /*X*/, -7vw /*Y*/, 0 /*Z*/) rotate(57deg);
-  top:40vw;
-
-  
+  top:40vw; 
 }
 
 #table_1 { 
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(27deg);
   top:40vw;
-  animation:infinite-spinning-with-rotation 12s linear  ; 
-  animation-delay:0s, 0s, 0s;
-  animation-fill-mode: forwards;
 }
-
 
 #chair_1{ 
   position:absolute;
-
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-14vw /*X*/, -19vw /*Y*/, 0 /*Z*/) rotate(57deg);
-  top:40vw;
-
-  
-  animation:infinite-spinning-with-rotation 5s linear, inf 10s linear, inf-2 5s linear   ; 
-  animation-delay:0s, 5s, 15s;
-  animation-fill-mode: forwards;
+  top:40vw; 
 }
 
+        /*--------------EE Furniture Positions---------------*/
+        /*--------------EE Furniture Positions---------------*/
 
+
+
+
+
+
+        /*--------------BB Furniture Colors/Materials/Textures---------------*/
+        /*--------------BB Furniture Colors/Materials/Textures---------------*/
 #chair_1 .my_slab figure {
 border:none;
   } 
@@ -90,7 +74,28 @@ border:none;
 #chair_1_shadow .my_slab figure {
 border:none;
   }
+        /*--------------EE Furniture Colors/Materials/Textures---------------*/
+        /*--------------EE Furniture Colors/Materials/Textures---------------*/
 
+
+
+
+
+
+
+        /*--------------BB Furniture Animations---------------*/
+        /*--------------BB Furniture Animations---------------*/
+#chair_1{  
+  animation:infinite-spinning-with-rotation 5s linear, inf 10s linear, inf-2 5s linear   ; 
+  animation-delay:0s, 5s, 15s;
+  animation-fill-mode: forwards;
+}
+
+#table_1 { 
+  animation:infinite-spinning-with-rotation 12s linear  ; 
+  animation-delay:0s, 0s, 0s;
+  animation-fill-mode: forwards;
+}
 
 
 @keyframes infinite-spinning-with-rotation {
