@@ -7,7 +7,7 @@
   $width: 55vw;$height: 35vw;$depth: 40vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .fronter, .backer { width: $width;height: $height;}
-  .righter, .lefter { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .righter, .lefter, .lefter_2 { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .toper, .bottomer {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
   .fronter  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
   .backer   { transform: rotateX( 180deg ) translateZ(  $depth/2 );/*background:black;*/}
@@ -19,6 +19,9 @@
     background-size:contain;*/
   }
   .lefter   { transform: rotateY( -90deg ) translateZ( $width/2 );
+    margin:50px;
+  }
+  .lefter_2   { transform: rotateY( -90deg ) translateZ( $width/2 );
     margin:50px;
   }
   .toper    { transform: rotateX(  90deg ) translateZ( $height/2 );background:orange;}
