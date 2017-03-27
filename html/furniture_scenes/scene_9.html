@@ -36,9 +36,17 @@ overflow:hidden;
  }
 
 
-	#chair_1 figure{background:green;}
-    
-	    	    
+#chair_1 figure{background:green;}
+
+.window_box_1{
+  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translateX(-31vw) translateY(-20vw) rotate(27deg);
+  top:30vw;
+}
+	
+.window_box_1 figure{
+  background:blue;
+}	
+	
 .sliding_background_wrapper {
   overflow: hidden;border:none;width:100%;margin:0;position:fixed;top:0;bottom:0;left:0;
 }
@@ -395,6 +403,7 @@ body {
                </figure><figure class="left"></figure><figure class="top"></figure>
                <figure class="bottom"></figure>
            </div>
+	
        <section id="window_box_1">
 	       <div class="my_slaber w_10_h_5_d_5">
                <figure class="front">
