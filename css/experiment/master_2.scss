@@ -176,7 +176,11 @@ border:none;
   .toper, .bottomer {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
   .fronter  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
   .backer   { transform: rotateX( 180deg ) translateZ(  $depth/2 );/*background:black;*/}
-  .righter  { transform: rotateY(  90deg ) translateZ( $width/2 );background:grey;}
+  .righter  { 
+    transform: rotateY(  90deg ) translateZ( $width/2 );
+    background:grey;
+    background: url("/my_threejs/apasta/examples/workshop/btr.jpg") repeat-x;
+  }
   .lefter   { transform: rotateY( -90deg ) translateZ( $width/2 );/*background:purple;*/}
   .toper    { transform: rotateX(  90deg ) translateZ( $height/2 );background:orange;}
   .bottomer { 
