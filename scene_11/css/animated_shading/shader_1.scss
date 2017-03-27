@@ -1,7 +1,14 @@
 ---
 #staticshade1
 ---
+$table_left_right_figure_bac_color_1:orange;
+$table_left_right_figure_bac_color_2:green;
 
+$table_top_bottom_figure_bac_color_1:blue;
+$table_top_bottom_figure_bac_color_2:red;
+
+$table_front_back_figure_bac_color_1:red;
+$table_front_back_figure_bac_color_2:yellow;
 
 
 
@@ -20,14 +27,7 @@
 }
 
 
-$table_left_right_figure_bac_color_1:orange;
-$table_left_right_figure_bac_color_2:green;
 
-$table_top_bottom_figure_bac_color_1:blue;
-$table_top_bottom_figure_bac_color_2:red;
-
-$table_front_back_figure_bac_color_1:red;
-$table_front_back_figure_bac_color_2:yellow;
 
 
 	
@@ -105,7 +105,7 @@ $table_front_back_figure_bac_color_2:yellow;
         background-position: 50% 0;
       }
       50% {
-        background: $table_right_top_bottom_bac_color_2;  
+        background: $table_top_bottom_bac_color_2;  
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 300% 300%;
         background-position: 100% 50%;
