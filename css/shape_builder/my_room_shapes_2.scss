@@ -49,7 +49,7 @@
   .right  { transform: rotateY(  90deg ) translateZ( $width/2 );background:red;}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );background:blue;}
   .top    { transform: rotateX(  90deg ) translateZ( $height/2 - .35vw);background:white;  opacity:.15;}
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 - .5vw );background:lightyellow;    opacity:.15;}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 - .3vw );background:lightyellow;    opacity:.15;}
 }
 
 .window_2_slab {
@@ -63,7 +63,7 @@
   .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
   .top    { transform: rotateX(  90deg ) translateZ( $height/2 - .35vw);/*background:white;  opacity:.15;*/}
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 - .5vw );/*background:lightyellow;    opacity:.15;*/}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 - .3vw );/*background:lightyellow;    opacity:.15;*/}
 }
 
 .w_5_h_5_d_10 { left:10vw;transform:translateZ(30vw);
