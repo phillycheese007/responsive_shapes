@@ -78,7 +78,10 @@ body,html{
 
 #table_1 { 
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(27deg);
-  top:40vw;height:10vw;width:10vw; transform-origin:50% 50%; 
+  top:40vw;
+  height:20vw;width:28vw; /*----needs height and width for transform origin 50% 50% to work --*/
+  transform-origin:50% 50%; 
+  background:red;
 }
 
 #chair_1{ 
