@@ -88,6 +88,7 @@ body,html{
   height:$circ1;
   width: $circ1;
   left: 30vw;top:5vw;
+  transform-style:preserve-3d;
   transform: translateX(-17vw) translateY(-12vw) translateZ(-45deg);
 
   background: radial-gradient(circle at $circ1 $circ1, #5cabff, #000);
