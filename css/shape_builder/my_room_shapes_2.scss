@@ -9,8 +9,8 @@
   .fronter, .backer { width: $width;height: $height;}
   .righter, .lefter, .lefter_2 { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .toper, .bottomer {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
-  .fronter  { transform: rotateY(   0deg ) translateZ( $depth/2 );display:none}
-  .backer   { transform: rotateX( 180deg ) translateZ(  $depth/2 );/*background:black;*/}
+  .fronter  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
+  .backer   { transform: rotateX( 180deg ) translateZ(  $depth/2 );/*background:black;*/display:none}
   .righter  { 
     transform: rotateY(  90deg ) translateZ( $width/2 );
    /* background:grey;
