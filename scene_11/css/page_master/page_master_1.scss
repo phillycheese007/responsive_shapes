@@ -46,7 +46,7 @@ body,html{
         /*--------------BB Furniture Positions---------------*/
 
 #window_box_1 { 
-  position:absolute;z-index:4;
+  position:absolute;/*z-index:4;*/
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-25vw /*X*/, -1.85vw /*Y*/, 0 /*Z*/) rotate(0deg);
   top:31.95vw; 
 }
