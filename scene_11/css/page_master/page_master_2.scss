@@ -47,12 +47,12 @@ body,html{
 
 /*-----------------------------------------BB window styles -----------------------------------*/
 .window_style_1{
-  .front{background:orange;}
-  .back{background:orange;}
-  .left{background:orange;}
-  .right{background:orange;}
-  .top{background:white;opacity:.15;}
-  .botom{background:lightyellow;opacity:.15;}
+  figure.front{background:orange;}
+  figure.back{background:orange;}
+  figure.left{background:orange;}
+  figure.right{background:orange;}
+  figure.top{background:white;opacity:.15;}
+  figure.botom{background:lightyellow;opacity:.15;}
 }
 
 #window_box_1 { 
