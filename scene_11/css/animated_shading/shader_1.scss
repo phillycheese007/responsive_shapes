@@ -6,21 +6,21 @@ $left_right_color_2:lightblue;
 
 
 
-$chair_front_back_color_1:orange;
-$chair_front_back_color_2:lightgreen;
-$chair_left_right_color_1:black;
-$chair_left_right_color_2:lightyellow;
-$chair_top_bottom_color_1:grey;
-$chair_top_bottom_color_2:pink;
+$chair_front_back_color_1:#1aff66;
+$chair_front_back_color_2:#66ff99;
+$chair_left_right_color_1:#00e64d;
+$chair_left_right_color_2:#009933;
+$chair_top_bottom_color_1:#00ff55;
+$chair_top_bottom_color_2:#66ff99;
 
 $table_front_back_color_1:#cc9966;
-$table_front_back_color_2:#d9b38c;
-$table_front_back_color_3:red;
+$table_front_back_color_2:#e6ccb3;
 
-$table_left_right_color_1:#cc9966;
+$table_left_right_color_1:#e6ccb3;
 $table_left_right_color_2:#d9b38c;
+
 $table_top_bottom_color_1:#cc9966;
-$table_top_bottom_color_2:#d9b38c;
+$table_top_bottom_color_2:#e6ccb3;
 
 
 
@@ -175,13 +175,13 @@ $table_top_bottom_color_2:#d9b38c;
     @keyframes front-back-animation-table {
       0%,
       100% {
-        background:$table_front_back_color_2;
+        background:$table_front_back_color_1;
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 400% 400%;
         background-position: 50% 0;
       }
       50% {
-        background:$table_front_back_color_3;  
+        background:$table_front_back_color_2;  
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 300% 300%;
         background-position: 100% 50%;
