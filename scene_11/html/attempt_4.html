@@ -1,0 +1,324 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<!-- disable zooming -->
+<meta name="viewport" content="initial-scale=1.0, user-scalable=0" />
+<title>Css_scene_9</title>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  
+<link href="/responsive_shapes/css/furniture_builder/collection_2.css" rel="stylesheet" media="screen"/>
+<link href="/responsive_shapes/scene_11/css/shape_mover/shape_mover_1.css" rel="stylesheet" media="screen"/>
+
+<link rel="stylesheet" href="/responsive_shapes/css/shape_builder/my_room_shapes_2.css" media="screen" />
+
+	
+<link rel="stylesheet" href="/responsive_shapes/scene_11/css/page_master/page_master_3.css" media="screen" />
+
+
+<link rel="stylesheet" href="/responsive_shapes/scene_11/css/animated_shading/shader_1.css" media="screen" />
+
+<style media="screen">
+.weirdclass{
+  border:20px solid blue;border-radius:20px;opacity:.7;display:inline-block;
+}
+.weirdclass :hover{
+ position:absolute; border:30px solid yellow;height:20vh !important;border-radius:620px;height:10vh;opacity:.9;display:block;
+}
+	
+.buddy{
+  perspective:90vw;
+  position:absolute;
+  left:21.75%;width:55%;height:calc(25vw + 300px);
+  top:5%;
+  transform-style: preserve-3d;display:block;	
+ }
+	
+#chair_1 figure{background:green;}
+	
+	
+
+	
+
+
+	
+/* --------------BB  window wall gap and sky animation ---------*/
+.big_three_d_box figure.lefter {
+   margin-left:-3vw;
+}
+
+.big_three_d_box figure.lefter_2 {
+
+}
+
+.big_three_d_box figure.backer {
+  transform:translateZ(-23vw);	
+}
+
+.big_three_d_box figure.backer_2 {
+	
+}
+	
+	
+
+	
+
+
+
+.sliding_background_wrapper {
+/*transform-style:preserve-3d;*/
+  overflow: hidden;border:none;width:100%;margin:0;position:fixed;top:0;bottom:0;left:0;
+}
+	
+
+.sliding-background {
+  background: url("/responsive_shapes/images/clouds_blue_sky.jpg") no-repeat;
+  position:absolute;bottom:0 !important;top:0;height:100%;
+  width: 5076px;
+  animation: slide 90s linear infinite;border:none;background-size:cover;
+}	
+
+.wall_svg_holding_div_1{
+background:url("/responsive_shapes/images/aaa.svg");width:100%;top:0;bottom:0! important;
+left:0;right:0;
+position:fixed;
+background-size:cover;background-repeat:no-repeat;
+background-position:center center;
+}
+
+.wall_svg_holding_div_2{
+background:url("/responsive_shapes/images/aaa.svg");width:100%;top:0;bottom:0! important;
+left:0;right:0;
+position:fixed;
+background-size:cover;background-repeat:no-repeat;
+/*background-position:fixed left;*/
+background-position:left center;
+        background-position: 0% 20%; 
+    background-attachment: fixed;
+
+}	
+/* --------------EE  window wall gap and sky animation ---------*/	 	
+/* --------------EE  window wall gap and sky animation ---------*/
+
+	
+	    
+
+
+.pic1{
+    background:url("/responsive_shapes/images/painting.jpg");width:100%;top:0;bottom:0! important;
+left:0;right:0;
+position:fixed;z-index:999;
+background-size:cover;background-repeat:no-repeat;
+background-position:right center;
+}	    
+
+.pic2 {
+  background: url("/responsive_shapes/images/clouds_shadow_2.png") no-repeat;
+  position:absolute;z-index:9999;bottom:0 !important;top:0;height:100%;
+	opacity:.4;
+  width: 5076px;
+  animation: slide 90s linear infinite;border:none;background-size:cover;
+}
+	
+	
+@keyframes slide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+	
+.tranz_x_30vw{
+  transition:all 10s;
+  transform:rotate(157deg);
+}
+.rotate_120deg{
+  transition:all 3s;border:4px solid blue !important;
+  transform:rotate(120deg);
+}
+	
+	
+
+	
+	
+</style>
+
+</head>
+<body>
+<div class="buddy">
+
+
+  <div class="room_w_walls_floors my_slaber big_three_d_box">
+		   
+    <figure class="fronter">
+    </figure>
+
+	  
+    <figure class="backer">
+      <div class="sliding_background_wrapper">
+        <div class="sliding-background">  
+        </div>	
+      </div>
+    </figure>	  
+	  
+    <figure class="backer_2">
+        <div class="wall_svg_holding_div_1">
+        </div>	    
+    </figure>
+
+	  
+		  
+    <figure class="righter">
+      <div class="sliding_background_wrapper">
+        <div class="pic1"></div>
+        <div class="pic2"></div>
+      </div>  	       
+    </figure>
+		   
+    <figure class="lefter">
+     <!-- <div class="sliding-background"></div>-->  
+      <div class="sliding_background_wrapper">
+        <div class="sliding-background">  
+        </div>	
+      </div>	    
+      <!--<div class="sliding_background_wrapper">
+      </div>-->
+      <!--<div class="wall_svg_holding_div">	   
+      </div>-->
+    </figure>
+		   
+    <figure class="lefter_2">
+      <div class="sliding_background_wrapper">
+      </div>
+      <div class="wall_svg_holding_div_2">	   
+      </div>
+    </figure>
+		   
+    <figure class="toper">
+    </figure>
+		   
+    <figure class="bottomer">
+    </figure>
+             
+  </div>
+
+	
+	
+
+<!--BB window_box__1 -->
+  <section id="window_box_1" class="simple_chair_1 preserve3d">  
+    <div class="window_1_slab my_slaber window_style_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>  
+  </section>  
+<!--EE window_box__1 -->
+ 
+<!--BB window_box__2 -->
+  <section id="window_box_2" class="simple_chair_1 preserve3d">  
+    <div class="window_2_slab my_slaber window_style_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>  
+  </section>  
+<!--EE window_box__2 -->
+
+<!--BB window_box__3 -->
+  <section id="window_box_3" class="simple_chair_1 preserve3d">  
+    <div class="window_2_slab my_slaber window_style_1"><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>  
+  </section>  
+<!--EE window_box__3 -->
+
+       
+<!--chair_1 -->
+       <section id="chair_1" class="simple_chair_1 preserve3d">
+         <div class="chair_seat">
+           <div class="w_10_h_10_d_pnt5 my_slaber horizontal_1" >
+             <figure class="front "></figure>
+             <figure class="back"></figure>
+             <figure class="horizontal_shadow_1"></figure>
+             <figure class="right"></figure>
+             <figure class="left"></figure>
+             <figure class="top"></figure>
+             <figure class="bottom"></figure>
+           </div>
+         </div>  
+         <div class="chair_back">
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber rung_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber rung_2" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_10_h_4_d_pnt5 my_slaber vertical_1" >
+             <figure class="front "></figure>
+             <figure class="back"></figure>
+             <figure class="right"></figure>
+             <figure class="left"></figure>
+             <figure class="top"></figure>
+             <figure class="bottom"></figure>
+           </div>
+         </div>  
+         <div class="four_leg_base">
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_2" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_3" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_4" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+         </div>  
+       </section>  
+<!--chair_1 -->
+  
+  
+
+  
+  
+  
+ <!--table_1 -->
+       <section id="table_1" class="mid_century_table_1 preserve3d">
+         <div class="table_top">
+           <div class="w_28_h_20_d_1 my_slaber horizontal_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_28_h_20_d_1 my_slaber horizontal_2" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+         </div>  
+         <div class="four_leg_base">
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_1" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_2" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_3" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+           <div class="w_pnt5_h_pnt5_d_8 my_slaber leg_4" ><figure class="front "></figure><figure class="back"></figure><figure class="right"></figure><figure class="left"></figure><figure class="top"></figure><figure class="bottom"></figure></div>
+         </div>  
+        </section>  
+<!--table_1 -->
+  
+  
+  
+
+  
+</div>  
+	
+	
+<!--
+<script>
+$(document).ready(function () {
+
+	
+$( "figure.front" )
+  .mouseover(function() {
+            $(".my_slaber").toggleClass("weirdclass");
+  })
+  .mouseout(function() {
+            $(".my_slaber").toggleClass("weirdclass");
+  });
+		   
+    }            
+  );	
+	
+
+</script>
+-->
+
+<script>
+$(document).ready(function () {
+	
+
+	
+	   
+    }            
+  );	
+</script>
+  
+</body>
+</html>
