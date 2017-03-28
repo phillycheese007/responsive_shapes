@@ -51,6 +51,12 @@ body,html{
   top:31.95vw; 
 }
 
+#window_box_2 { 
+  position:absolute;/*z-index:4;*/
+  transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-25vw /*X*/, -1.85vw /*Y*/, 0 /*Z*/) rotate(0deg);
+  top:31.95vw; 
+}
+
 #table_1 { 
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(27deg);
   top:40vw;
