@@ -58,12 +58,12 @@
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
-  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );background:orange;}
-  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );background:lightblue;}
-  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );background:red;}
-  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );background:blue;}
-  .top    { transform: rotateX(  90deg ) translateZ( $height/2 - .35vw);background:white;  opacity:.15;}
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 - .5vw );background:lightyellow;    opacity:.15;}
+  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
+  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
+  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 - .35vw);/*background:white;  opacity:.15;*/}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 - .5vw );/*background:lightyellow;    opacity:.15;*/}
 }
 
 .w_5_h_5_d_10 { left:10vw;transform:translateZ(30vw);
