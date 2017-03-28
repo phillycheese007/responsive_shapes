@@ -19,7 +19,7 @@ $table_left_right_color_1:#cc9966;
 $table_left_right_color_2:#d9b38c;
 $table_top_bottom_color_1:#cc9966;
 $table_top_bottom_color_2:#d9b38c;
-
+$table_top_bottom_color_3:red;
 #table_1 figure {
   box-sizing: content-box;
   transform-style: preserve-3d;
@@ -113,13 +113,13 @@ $table_top_bottom_color_2:#d9b38c;
     @keyframes top-bottom-animation-table {
       0%,
       100% {
-        background:$table_top_bottom_color_1;
+	background:$table_top_bottom_color_2;
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 400% 400%;
         background-position: 50% 0;
       }
       50% {
-        background:$table_top_bottom_color_2;  
+        background:$table_top_bottom_color_3;  
         background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
         background-size: 300% 300%;
         background-position: 100% 50%;
