@@ -45,6 +45,16 @@ body,html{
         /*--------------BB Furniture Positions---------------*/
         /*--------------BB Furniture Positions---------------*/
 
+/*-----------------------------------------BB window styles -----------------------------------*/
+.window_style_1{
+  .front{background:orange;}
+  .back{background:orange;}
+  .left{background:orange;}
+  .right{background:orange;}
+  .top{background:white;opacity:.15;}
+  .botom{background:lightyellow;opacity:.15;}
+}
+
 #window_box_1 { 
   position:absolute;/*z-index:4;*/
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-25vw /*X*/, -1.85vw /*Y*/, 0 /*Z*/) rotate(0deg);
@@ -62,6 +72,9 @@ body,html{
   transform: /*rotate(13deg);*/rotateY(180deg) rotateX(90deg) translate3d(-10.25vw /*X*/, -1vw /*Y*/, 0 /*Z*/) rotate(0deg);
   top:33.15vw; 
 }
+/*-----------------------------------------EE window styles -----------------------------------*/
+
+
 
 #table_1 { 
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(27deg);
