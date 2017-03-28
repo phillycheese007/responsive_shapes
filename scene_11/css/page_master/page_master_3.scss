@@ -42,9 +42,7 @@ body,html{
 
 /*-----------------------------------------BB window styles -----------------------------------*/
 .window_style_1{
-
   /*figure.left,figure.right,figure.back,figure.front{background:orange;}*/
-
   figure.top{background:white;opacity:.15;}
   figure.botom{background:lightyellow;/*opacity:.15;*/}
 }
@@ -164,11 +162,11 @@ border:none;
   animation-fill-mode: forwards;
 }
 
-#table_1 { 
+/*#table_1 { 
   animation:infinite-spinning-with-rotation 12s linear  ; 
   animation-delay:0s, 0s, 0s;
   animation-fill-mode: forwards;
-}
+}*/
 
 
 @keyframes infinite-spinning-with-rotation {
