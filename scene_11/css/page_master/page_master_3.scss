@@ -83,10 +83,10 @@ body,html{
   display: block;
   background: black;
   border-radius: 100%;
-  height: 300px;
-  width: 300px;
+  height: 700px;
+  width: 700px;
   margin: 0;
-  transform:rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(27deg);
+  transform:rotateY(90deg) rotateX(90deg) translateX(-25vw) translateY(-20vw) rotate(27deg);
 
   background: radial-gradient(circle at 100px 100px, #5cabff, #000);
 }
