@@ -80,13 +80,14 @@ body,html{
 /*-----------------------------------------EE window styles -----------------------------------*/
 
 .circle {
+  position:absolute;
   $circ1:20vw;
   display: block;
   background: black;
   border-radius: 100%;
   height:$circ1;
   width: $circ1;
-  margin: 0;
+  left: 50vw;top:10vw;
   transform: translateX(-17vw) translateY(-12vw) translateZ(-75deg);
 
   background: radial-gradient(circle at $circ1 $circ1, #5cabff, #000);
