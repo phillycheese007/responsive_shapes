@@ -42,10 +42,9 @@ body,html{
 
 /*-----------------------------------------BB window styles -----------------------------------*/
 .window_style_1{
-  figure.front{background:orange;}
-  figure.back{background:orange;}
-  figure.left{background:orange;}
-  figure.right{background:orange;}
+
+  /*figure.left,figure.right,figure.back,figure.front{background:orange;}*/
+
   figure.top{background:white;opacity:.15;}
   figure.botom{background:lightyellow;/*opacity:.15;*/}
 }
