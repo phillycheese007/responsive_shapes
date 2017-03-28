@@ -248,6 +248,45 @@ $table_top_bottom_color_2:#d9b38c;
   }
 }
 
-/*-------EE---- chair 1 -----------*/
+
+/*-------BB---- window_style_1 -----------*/
+
+.window_style_1{
+  figure.front, figure.back {
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+    background-size: 300% 300%;
+    animation: front-back-animation-window1 8s linear;
+    animation-fill-mode:forwards;
+    @keyframes front-back-animation-window1 {
+      0%,
+      100% {
+        background: grey;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 400% 400%;background-position: 50% 0;
+      }
+      50% {
+        background: red;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 300% 300%;background-position: 100% 50%;
+      }
+    }
+  }
+}
 
 
+
+.window_style_1{
+  figure.left, figure.right {
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+    background-size: 300% 300%;
+    animation: front-back-animation-window1 8s linear;
+    animation-fill-mode:forwards;
+    @keyframes front-back-animation-window1 {
+      0%,
+      100% {
+        background: grey;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 400% 400%;background-position: 50% 0;
+      }
+      50% {
+        background: red;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 300% 300%;background-position: 100% 50%;
+      }
+    }
+  }
+}
+
+/*-------EE---- window_style_1 -----------*/
