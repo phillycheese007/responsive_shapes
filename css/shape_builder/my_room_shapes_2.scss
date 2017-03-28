@@ -6,11 +6,11 @@
   /*left:9vw;*/ top:5vw;
   $width: 55vw;$height: 35vw;$depth: 40vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
-  .fronter, .backer { width: $width;height: $height;}
+  .fronter, .backer, .backer_2 { width: $width;height: $height;}
   .righter, .lefter, .lefter_2 { width: $depth; height: $height;left: ($width - $depth)/2 ;}
   .toper, .bottomer {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
   .fronter  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
-  .backer   { transform: rotateX( 180deg ) translateZ(  $depth/2 );/*background:black;*/display:none}
+  .backer, .backer_2   { transform: rotateX( 180deg ) translateZ(  $depth/2 );/*background:black;*/display:none}
   .righter  { 
     transform: rotateY(  90deg ) translateZ( $width/2 );
    /* background:grey;
