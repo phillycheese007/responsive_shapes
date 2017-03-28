@@ -86,9 +86,9 @@ body,html{
   height: 700px;
   width: 700px;
   margin: 0;
-  transform:rotateY(90deg) rotateX(90deg) translateX(-25vw) translateY(-20vw) rotate(27deg);
+  transform: translateX(-25vw) translateY(-20vw) ;
 
-  background: radial-gradient(circle at 100px 100px, #5cabff, #000);
+  background: radial-gradient(circle at 700px 700px, #5cabff, #000);
 }
 
 #table_1 { 
