@@ -50,6 +50,13 @@
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );background:blue;}
   .top    { transform: rotateX(  90deg ) translateZ( $height/2 - .35vw);border:1px solid grey;background:white;  opacity:.15;}
   .bottom { transform: rotateX( -90deg ) translateZ( $height/2 - .8vw );border:1px solid grey; background:lightyellow;    opacity:.15;}
+
+  .light_pane_1{ width: 20vw;
+    height: $height;
+    left: ($width - $depth)/2 ;
+    transform: rotateY( -90deg ) translateZ( $width/2 );
+    background:blue;
+  }
 }
 
 .window_2_slab {
