@@ -52,8 +52,8 @@
   .bottom { transform: rotateX( -90deg ) translateZ( $height/2 - .8vw );border:1px solid grey; background:lightyellow;    opacity:.15;}
 
   .light_pane_1{ 
-    width: $depth;
-    height: 89vw;
+    width: ($depth - .25);
+    height: 90vw;
     left: ($width - $depth) / 2 ; 
 
     top:-43.25vw;
