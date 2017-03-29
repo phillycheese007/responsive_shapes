@@ -160,7 +160,7 @@
 }
 
 .w_14_h_10_d_1 {
-  $width: 28vw;$height: 20vw;$depth: 1vw; /*set dimensions here */ 
+  $width: 14vw;$height: 10vw;$depth: 1vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .front, .back { width: $width;height: $height;}
   .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
