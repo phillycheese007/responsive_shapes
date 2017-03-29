@@ -53,7 +53,7 @@
 
   .light_pane_1{ 
     width: $depth;
-    height: 90vw;
+    height: 89.75vw;
     left: ($width - $depth) / 2 ; 
 
     top:-43.5vw;
@@ -69,7 +69,7 @@
   ----*/
   .light_pane_2{ 
     width: ($width - .25);
-    height: 89.75vw;
+    height: 90vw;
    /* transform: rotateX(-45deg)rotateY(0deg) translateZ(-25vw) translateY(5vw) translateX(.25vw) ;*/
     transform: rotateY( 0deg ) translateZ( ($width/2)  ) rotateX(-45deg)translateX(.5vw) ;
     top:-39.75vw;
