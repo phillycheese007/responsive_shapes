@@ -90,8 +90,6 @@ body,html{
   background: radial-gradient(circle at $circ1 $circ1, #5cabff, #000);
 }
 .circle_1:before {
-
-
   content: "";
   position: absolute;
   background: radial-gradient(circle at 50% 120%,  rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
