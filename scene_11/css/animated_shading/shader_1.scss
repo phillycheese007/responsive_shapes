@@ -29,15 +29,17 @@ $table_top_bottom_color_2:#e6ccb3;
 
 
 
-#table_1 figure {
+#table_1.animated_shader #chair_1.animated_shader {
+  figure {
   box-sizing: content-box;
   transform-style: preserve-3d;
   /* background: rgba(0, 0, 0, .5); */
   box-shadow-blend-mode: color-dodge;
   blend-mode: screen;
+	}  
 }
 
-#table_1 figure div {
+#table_1.animated_shader figure div {
   background: /* rgba(0, 0, 0, .2); */ brown;
   box-shadow: 0px 0px 5px rgba(255, 255, 255, .5), inset 0px 0px 50px rgba(0, 0, 0, .4);
   box-shadow-blend-mode: color-dodge;
