@@ -118,7 +118,7 @@ background-position:left center;
   top:0;
   */
   transform:rotate(33deg);
-  animation: slide 90s linear infinite;border:none;background-size:cover;
+  animation: slide2 90s linear infinite;border:none;background-size:cover;
   transform-style: preserve-3d;
 }	    
 
@@ -146,6 +146,15 @@ background-position:right center;
   }
   100% {
     transform: translate3d(-1692px, 0, 0);
+  }
+}
+
+	@keyframes slide2 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -1692px, 0);
   }
 }
 	
