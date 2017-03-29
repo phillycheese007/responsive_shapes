@@ -56,7 +56,7 @@
     height: 100vw;
     left: ($width - $depth)/2 ; 
     top:-50vw;
-    transform: rotateY( -90deg ) translateZ( 11vw ) skewX(-45deg) ;
+    transform: rotateY( -90deg ) translateZ( $width/2 ) translateX(10vw) skewX(-45deg) ;
     background:blue;
     /*overflow:hidden;*/
   }
