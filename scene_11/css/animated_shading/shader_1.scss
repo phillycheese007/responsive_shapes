@@ -112,7 +112,7 @@ $table_top_bottom_color_2:#e6ccb3;
 
 /*--------EE----table 1 -----------*/
  
-#table_1{
+.table_1_animated_shading {
   figure.top, figure.bottom {
     background:  #888; 
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
@@ -141,7 +141,7 @@ $table_top_bottom_color_2:#e6ccb3;
 /*------- -----------*/
 
 
-#table_1{
+.table_1_animated_shading {
   figure.left, figure.right {
     background:  #888; 
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
@@ -170,7 +170,7 @@ $table_top_bottom_color_2:#e6ccb3;
 /*------- -----------*/
 
 
-#table_1{
+.table_1_animated_shading {
   figure.front, figure.back {
     background:  #888; 
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
@@ -202,7 +202,7 @@ $table_top_bottom_color_2:#e6ccb3;
 
 /*-------EE---- chair 1 -----------*/
 
-#chair_1{
+.chair_1_animated_shading {
   figure.top, figure.bottom {
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
     background-size: 300% 300%;
@@ -224,7 +224,7 @@ $table_top_bottom_color_2:#e6ccb3;
 /*------- -----------*/
 
 
-#chair_1{
+.chair_1_animated_shading {
   figure.left, figure.right {
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
     background-size: 300% 300%;
@@ -245,7 +245,7 @@ $table_top_bottom_color_2:#e6ccb3;
 
 /*------- -----------*/
 
-#chair_1{
+.chair_1_animated_shading {
   figure.front, figure.back {
     background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
     background-size: 300% 300%;
