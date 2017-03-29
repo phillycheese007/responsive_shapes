@@ -2,9 +2,9 @@
 #furniture
 ---
 
+.mid_century_table_1, .simple_chair_1{ /* background:red;*/ }
 
-
-.mid_century_table_1{  background:red; 
+.mid_century_table_1{  
   height:14vw;width:20vw; /*----needs height and width for transform origin 50% 50% to work --*/
   $base_width:20vw; /* X cordinate */
   $base_height:14vw; /* Y cordinate */
@@ -29,7 +29,6 @@
 
 
 .simple_chair_1{
-  background:red; 
   $chair_height:16vw;
   $base_width:10vw; /* X cordinate */
   $base_height:10vw; /* Y cordinate */
