@@ -22,6 +22,11 @@
 <link rel="stylesheet" href="/responsive_shapes/scene_11/css/animated_shading/shader_1.css" media="screen" />
 
 <style media="screen">
+.beer{
+ top:20vw;
+}
+.beer figure{background:red !important;}	
+	
 .weirdclass{
   border:20px solid blue;border-radius:20px;opacity:.7;display:inline-block;
 }
@@ -407,7 +412,7 @@ $( "figure.front" )
 $(document).ready(function () {
 	
 
-$( "#table_1" ).clone().appendTo( "#chair_1" );
+$( "#table_1" ).clone().addClass("beer").appendTo( "#chair_1" );
 	
 	   
     }            
