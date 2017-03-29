@@ -48,8 +48,8 @@
   .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );background:lightblue;}
   .right  { transform: rotateY(  90deg ) translateZ( $width/2 );background:red;}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );background:blue;}
-  .top    { transform: rotateX(  90deg ) translateZ( $height/2 - .35vw);background:white;  opacity:.15;}
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 - .8vw );background:lightyellow;    opacity:.15;}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 - .35vw);border:1px solid grey;background:white;  opacity:.15;}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 - .8vw );border:1px solid grey; background:lightyellow;    opacity:.15;}
 }
 
 .window_2_slab {
@@ -62,8 +62,8 @@
   .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
   .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
   .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
-  .top    { transform: rotateX(  90deg ) translateZ( $height/2 - .35vw);/*background:white;  opacity:.15;*/}
-  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 - .8vw );/*background:lightyellow;    opacity:.15;*/}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 - .35vw);border:1px solid grey;/*background:white;  opacity:.15;*/}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 - .8vw );border:1px solid grey;/*background:lightyellow;    opacity:.15;*/}
 }
 
 .w_5_h_5_d_10 { left:10vw;transform:translateZ(30vw);
