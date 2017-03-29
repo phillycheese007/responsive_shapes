@@ -57,7 +57,7 @@
     left: ($width - $depth) / 2 ; 
 
     top:-43.1vw;
-    transform: rotateY( -90deg ) translateZ( ($width/2) - 0 ) skewX(-45deg) ;
+    transform: rotateY( -90deg ) translateZ( ($width/2) - 0 ) skewX(-45deg)  ;
     background:#ffffe6/*lightestyellow*/;opacity:.3;
     overflow:hidden;
   }
@@ -71,7 +71,7 @@
     width: ($width - .25);
     height: 90vw;
    /* transform: rotateX(-45deg)rotateY(0deg) translateZ(-25vw) translateY(5vw) translateX(.25vw) ;*/
-    transform: rotateY( 0deg ) translateZ( ($width/2) ) rotateX(-45deg)translateX(.5vw) ;
+    transform: rotateY( 0deg ) translateZ( ($width/2) ) rotateX(-45deg)translateX(.25vw) ;
     top:-39.65vw;
     background:#ffffe6/*lightestyellow*/;opacity:.3;
     overflow:hidden;
