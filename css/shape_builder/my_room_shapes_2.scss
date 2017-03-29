@@ -55,10 +55,11 @@
     width: $depth;
     height: 20vw;
     left: ($width - $depth)/2 ; 
-    transform: rotateY( -90deg ) translateZ( $width/2 ) skewY(45deg);
+    transform: rotateY( -90deg ) translateZ( $width/2 ) skewX(45deg);
     background:blue;
   }
 }
+
 
 .window_2_slab {
   $width: 13.25vw;$height: 2vw;$depth: 20vw; /*set dimensions here */ 
