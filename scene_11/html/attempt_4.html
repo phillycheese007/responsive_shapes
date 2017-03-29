@@ -106,7 +106,12 @@ background-position:left center;
 /* --------------EE  window wall gap and sky animation ---------*/
 
 	
-	    
+.sliding-background_for_window_light {
+  background: url("/responsive_shapes/images/clouds_blue_sky.jpg") no-repeat;
+  position:absolute;bottom:0 !important;top:0;height:100%;
+  width: 5076px;
+  animation: slide 90s linear infinite;border:none;background-size:cover;
+}	    
 
 
 .pic1{
@@ -229,7 +234,14 @@ background-position:right center;
       <figure class="top"></figure>
       <figure class="bottom"></figure>
 	    
-      <figure class="light_pane_1"></figure>
+      <!--<figure class="light_pane_1"></figure>-->
+	    
+      <figure class="light_pane_1">
+        <div class="sliding-background_for_window_light">  
+        </div>	
+      </figure>
+
+	    
 	    
     </div>  
   </section>  
