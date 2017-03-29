@@ -53,10 +53,10 @@
 
   .light_pane_1{ 
     width: $depth;
-    height: 85.75vw;
+    height: 89.75vw;
     left: ($width - $depth) / 2 ; 
 
-    top:-43.5vw;
+    top:-43.25vw;
     transform: rotateY( -90deg ) translateZ( ($width/2) - .5 ) skewX(-45deg) ;
     background:#ffffe6/*lightestyellow*/;opacity:.3;
     overflow:hidden;
