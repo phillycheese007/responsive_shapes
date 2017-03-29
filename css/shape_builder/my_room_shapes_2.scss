@@ -62,12 +62,16 @@
     /*overflow:hidden;*/
   }
   
-  /*---- .light_pane_2  -- Z = room left right     Y = room height     X = room depth position----*/
+  /*---- .light_pane_2  --
+  Z = room left right (negative=left positive = right)
+  Y = room height     
+  X = room depth position
+  ----*/
   .light_pane_2{ 
     width: $width;
     height: 90vw;
     transform: 
-      rotateX(-45deg)rotateY(0deg) translateZ(-20vw) translateY(-20vw) translateX(0vw) ;
+      rotateX(-45deg)rotateY(0deg) translateZ(-20vw) translateY(-30vw) translateX(0vw) ;
 
     /*top:-23.25vw;*/
     background:blue;
