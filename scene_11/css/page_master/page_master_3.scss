@@ -103,6 +103,7 @@ body,html{
   z-index: 2;
 }
 .circle_1:after {
+  $circ1:10vw;
   height:$circ1;
   width: $circ1;
   content: "";
