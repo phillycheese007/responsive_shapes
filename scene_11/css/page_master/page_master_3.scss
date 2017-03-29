@@ -193,7 +193,7 @@ border:none;
   from {    top:35vw; 
     transform:rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(290deg);/*transform-origin:50% 50%;*/
   }
-  to { top:20vw;
+  to { top:40vw;
     transform:rotateY(110deg) rotateX(230deg) translateX(-11vw) translateY(-20vw) rotate(0deg);/*transform-origin:50% 50%;*/
   }
   
@@ -201,7 +201,7 @@ border:none;
 
 @keyframes inf-2 {
   
-  from {    top:20vw;
+  from {    top:40vw;
     transform:rotateY(110deg) rotateX(230deg) translateX(-11vw) translateY(-20vw) rotate(0deg);
   }
   to {    top:35vw;
