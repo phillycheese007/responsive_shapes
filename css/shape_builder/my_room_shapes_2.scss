@@ -64,7 +64,7 @@
   .light_pane_2{ 
     width: $width;
     height: $height;
-    transform: rotateY(   0deg ) translateZ( ($width/2) - .5 ) rotateX(-45deg);
+    transform: rotateY(   0deg ) translateZ( $depth / 2 ) rotateX(-45deg);
     left: 3vw ; 
 
     top:0;
