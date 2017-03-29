@@ -42,8 +42,8 @@
   $horizontal_1_height_from_base: $base_depth;
   $horizontal_2_height_from_base: ($base_depth);
   
-  height:$chair_height;
-  width:$base_width;
+  height:10vw;
+  width:10vw;
   
   .four_leg_base{
     .leg_1{left:$leg_indent_size;top:$leg_indent_size;}
