@@ -64,11 +64,10 @@
   .light_pane_2{ 
     width: $width;
     height: $height;
-    transform-origin:0 40%;
-    transform: rotateY(   0deg ) translateZ( $depth/2 ) skewX(-25deg);
+    transform: rotateY(   0deg ) translateZ( $depth/2 ) rotateX(-25deg);
 
     top:-43.25vw;
-    background:blue/*lightestyellow*/;opacity:1;
+    background:blue;
     /*overflow:hidden;*/
   }
 }
