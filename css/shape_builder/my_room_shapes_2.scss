@@ -64,8 +64,8 @@
   .light_pane_2{ 
     width: $width;
     height: 90vw;
-    transform: 
-      rotateX(-45deg)rotateY(0deg) translateZ(-10vw)/*Z = room left right*/ translateY(-14vw)/*Y = room height*/  translateX(0vw) /*translateX = room depth position*/ ;
+    transform: /*----Z = room left right     Y = room height     X = room depth position----*/
+      rotateX(-45deg)rotateY(0deg) translateZ(-10vw) translateY(-14vw) translateX(0vw) ;
 
     /*top:-23.25vw;*/
     background:blue;
