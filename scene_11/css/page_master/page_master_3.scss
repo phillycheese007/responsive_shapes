@@ -103,10 +103,10 @@ body,html{
   z-index: 2;
 }
 .circle_1:after {
-  $circ1:10vw;
-  height:$circ1;
-  width: $circ1;
-  left: 30vw;top:17vw;
+  left: 5%;
+  opacity: 0.6;
+  height: 100%;
+  width: 90%;
   content: "";
   position: absolute;
   border-radius: 50%;
