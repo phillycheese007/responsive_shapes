@@ -96,7 +96,7 @@ box-shadow: 10px 10px 225px 75px rgba(255,255,255,1);
 .circle_1:before {
   content: "";
   position: absolute;
-  background: radial-gradient(circle at 50% 120%,  rgba(255, 255, 255, 0.5),rgba(30, 217, 44, 0.9); /*rgba(255, 255, 255, 0) 70%)*/;
+  background: radial-gradient(circle at 50% 120%,  rgba(255, 255, 255, 0.5), rgba(30, 217, 44, 0.9) /*rgba(255, 255, 255, 0)*/ 70%);
   border-radius: 50%;
   bottom: 2.5%;
   left: 5%;
