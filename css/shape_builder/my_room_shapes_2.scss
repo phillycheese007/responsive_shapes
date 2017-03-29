@@ -55,7 +55,7 @@
     width: $depth;
     height: 100vw;
     left: ($width - $depth)/2 ; 
-    top:10vw;
+    top:15vw;
     transform: rotateY( -90deg ) translateZ( $width/2 ) skewX(-45deg) ;
     background:blue;
   }
