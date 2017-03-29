@@ -58,7 +58,7 @@
 
     top:-43.1vw;
     transform: rotateY( -90deg ) translateZ( ($width/2) - 0 ) skewX(-45deg)  ;
-    background:#ffffe6 ; opacity: .3;
+    background: linear-gradient(135deg, rgba(241,231,103,1) 0%, rgba(241,231,103,0.87) 13%, rgba(254,182,69,0.06) 94%, rgba(254,182,69,0) 100%);    opacity: .3;
     overflow:hidden;
   }
   
@@ -73,7 +73,8 @@
    /* transform: rotateX(-45deg)rotateY(0deg) translateZ(-25vw) translateY(5vw) translateX(.25vw) ;*/
     transform: rotateY( 0deg ) translateZ( ($width/2) +.1 ) rotateX(-45deg)translateX(.1vw) ;
     top:-39.65vw;
-    background:#ffffe6 ; opacity: .3;
+    background:#ffffe6 ;
+    opacity: .9;
     overflow:hidden;
   }
 }
