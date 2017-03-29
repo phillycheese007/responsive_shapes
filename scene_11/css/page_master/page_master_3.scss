@@ -89,9 +89,9 @@ body,html{
   transform: translateX(-12vw) translateY(-12vw) translateZ(40vw);
   background: radial-gradient(circle at $circ1 $circ1, #5cabff, #000);
     
-  -webkit-box-shadow: 10px 10px 300px 200px rgba(255,255,255,1);
-  -moz-box-shadow: 10px 10px 300px 200px rgba(255,255,255,1);
-  box-shadow: 10px 10px 300px 200px rgba(255,255,255,1);
+-webkit-box-shadow: 10px 10px 225px 75px rgba(255,255,255,1);
+-moz-box-shadow: 10px 10px 225px 75px rgba(255,255,255,1);
+box-shadow: 10px 10px 225px 75px rgba(255,255,255,1
 }
 .circle_1:before {
   content: "";
