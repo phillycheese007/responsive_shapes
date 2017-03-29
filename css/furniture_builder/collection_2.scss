@@ -65,8 +65,7 @@
       transform:translateZ($chair_height) rotateX($master_back_rotation);*/
       
       
-      top:$rung_indent_size +  ($seat_slab_depth *7);
-      /*top:$rung_indent_size +  ($seat_slab_depth * 7);*/
+      top:$rung_indent_size +  (9vw);
       transform:translateZ($chair_height) rotateX($master_back_rotation);
     }
     .rung_1{
