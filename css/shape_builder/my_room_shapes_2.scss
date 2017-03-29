@@ -61,6 +61,16 @@
     background:#ffffe6/*lightestyellow*/;opacity:.3;
     /*overflow:hidden;*/
   }
+  .light_pane_2{ 
+    width: $width;
+    height: $height;
+    
+    transform: rotateY(   0deg ) translateZ( $depth/2 );background:orange;
+
+    top:-43.25vw;
+    background:blue/*lightestyellow*/;opacity:1;
+    /*overflow:hidden;*/
+  }
 }
 
 
