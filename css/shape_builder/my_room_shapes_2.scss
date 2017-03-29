@@ -65,7 +65,7 @@
     width: $width;
     height: $height;
     
-    transform: rotateY(   0deg ) translateZ( $depth/2 );background:orange;
+    transform: rotateY(   0deg ) translateZ( $depth/2 ) skewX(-45deg);
 
     top:-43.25vw;
     background:blue/*lightestyellow*/;opacity:1;
