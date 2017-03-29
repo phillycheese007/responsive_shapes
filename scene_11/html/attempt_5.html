@@ -408,8 +408,7 @@ $( "figure.front" )
 <script>
 $(document).ready(function () {
 
-$( ".table_top" )
-  .clone().removeClass("table_1_animated_shading").removeClass("table_1_animated_shading").addClass("table_shadow_1").appendTo( ".table_top" );
+$( "table_1" ).clone().attr('id','table_1_my_shadow').addClass('table_shadow_master').appendTo( "#table_1" );
 	
 }            
 );	
