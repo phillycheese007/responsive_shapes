@@ -90,15 +90,16 @@ body,html{
   background: radial-gradient(circle at $circ1 $circ1, #5cabff, #000);
 }
 .circle_1:before {
+  $circ1:10vw;
+  height:$circ1;
+  width: $circ1;
+  left: 30vw;top:17vw;
   content: "";
   position: absolute;
   background: radial-gradient(circle at 50% 120%,  rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
   border-radius: 50%;
   bottom: 2.5%;
-  left: 5%;
   opacity: 0.6;
-  height: 100%;
-  width: 90%;
   -webkit-filter: blur(5px);
   z-index: 2;
 }
@@ -106,9 +107,9 @@ body,html{
   $circ1:10vw;
   height:$circ1;
   width: $circ1;
+  left: 30vw;top:17vw;
   content: "";
   position: absolute;
-  left: 30vw;top:17vw;
   border-radius: 50%;
   background: radial-gradient(circle at 50% 50%,  rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
   -webkit-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
