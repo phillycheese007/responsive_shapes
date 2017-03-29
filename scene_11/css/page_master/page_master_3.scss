@@ -86,8 +86,8 @@ body,html{
   width: $circ1;
   left: 30vw;top:17vw;
   transform-style:preserve-3d;
-  transform: translateX(-12vw) translateY(-10vw) translateZ(45vw);
-  background: radial-gradient(circle at $circ1 $circ1, #ffffe6/*lightest yellow*/, #FFF);
+  transform: translateX(-12vw) translateY(-10vw) translateZ(50vw);
+  background: radial-gradient(circle at $circ1 $circ1, #fff, #ffffe6/*lightest yellow*/);
     
 -webkit-box-shadow: 10px 10px 225px 75px rgba(255,255,255,1);
 -moz-box-shadow: 10px 10px 225px 75px rgba(255,255,255,1);
@@ -96,7 +96,7 @@ box-shadow: 10px 10px 225px 75px rgba(255,255,255,1);
 .circle_1:before {
   content: "";
   position: absolute;
-  background: radial-gradient(circle at 50% 120%,  rgba(255, 255, 255, 0.5), rgba(255, 182, 111, 0.8) /*rgba(255, 255, 255, 0)*/ 70%);
+  background: radial-gradient(circle at 50% 120%,  rgba(255, 255, 255, 0.5), rgba(240, 209, 128, 0.5) /*rgba(255, 255, 255, 0)*/ 70%);
   border-radius: 50%;
   bottom: 2.5%;
   left: 5%;
@@ -106,22 +106,7 @@ box-shadow: 10px 10px 225px 75px rgba(255,255,255,1);
   -webkit-filter: blur(5px);
   z-index: 2;
 }
-.circle_1:after {
-  left: 3vw;top:0vw;
-  opacity: 0.6;
-  height: 100%;
-  width: 90%;
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  background: radial-gradient(circle at 50% 50%,  rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
-  -webkit-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
-  -moz-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
-  -ms-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
-  -o-transform: translateX(-80px) translateY(-90px) skewX(-20deg);
-  transform: translateX(-80px) translateY(-90px) skewX(-20deg);
-  -webkit-filter: blur(10px);
-}
+
 
 
 
