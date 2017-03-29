@@ -65,10 +65,7 @@
     width: $width;
     height: 90vw;
     transform: 
-      rotateX(-45deg)rotateY(0deg) translateZ(-10vw)/*translateZ = room left right position*/ 
-      translateY(-15vw)/*translateY = room height position*/  
-      translateX(0vw) /*translateX = room depth position*/ ;
-    
+      rotateX(-45deg)rotateY(0deg) translateZ(-10vw)/*Z = room left right*/ translateY(-15vw)/*Y = room height*/  translateX(0vw) /*translateX = room depth position*/ ;
 
     /*top:-23.25vw;*/
     background:blue;
