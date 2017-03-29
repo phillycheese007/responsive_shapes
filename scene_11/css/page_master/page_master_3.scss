@@ -78,13 +78,13 @@ body,html{
 
 .circle_1 {
   position:absolute;
-  $circ1:20vw;
+  $circ1:10vw;
   display: block;
   background: yellow;
   border-radius: 100%;
   height:$circ1;
   width: $circ1;
-  left: 30vw;top:17vw;
+  left: 35vw;top:17vw;
   transform-style:preserve-3d;
   transform: translateX(-17vw) translateY(-12vw) translateZ(10vw);
   background: radial-gradient(circle at $circ1 $circ1, #5cabff, #000);
