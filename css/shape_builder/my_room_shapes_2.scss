@@ -58,7 +58,7 @@
     top:-50vw;
     transform: rotateY( -90deg ) translateZ( $width/2 ) skewX(-45deg) ;
     background:blue;
-    overflow:hidden;
+    /*overflow:hidden;*/
   }
 }
 
