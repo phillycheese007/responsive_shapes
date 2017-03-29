@@ -407,13 +407,16 @@ $( "figure.front" )
 
 <script>
 $(document).ready(function () {
-	
 
-$( "#table_1" ).clone().addClass("table_shadow_1").appendTo( "#table_1" );
+$( "#table_1" )
+  .clone()
+  .removeClass("table_1_animated_shading")
+  .removeClass("animated_shader")
+  .addClass("table_shadow_1")
+  .appendTo( "#table_1" );
 	
-	   
-    }            
-  );	
+}            
+);	
 	
 
 </script>
