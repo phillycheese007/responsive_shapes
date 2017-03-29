@@ -73,7 +73,7 @@
    /* transform: rotateX(-45deg)rotateY(0deg) translateZ(-25vw) translateY(5vw) translateX(.25vw) ;*/
     transform: rotateY( 0deg ) translateZ( ($width/2) +.1 ) rotateX(-45deg)translateX(.1vw) ;
     top:-39.65vw;
-   /* background:#ffffe6 lightestyellow;*/opacity: .7;
+    background:#ffffe6 ; opacity: .3;
     overflow:hidden;
   }
 }
