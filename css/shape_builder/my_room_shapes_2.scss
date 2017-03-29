@@ -64,7 +64,7 @@
   .light_pane_2{ 
     width: $width;
     height: 90vw;
-    transform: rotateY(   0deg ) translateZ(-20vw) translateY(-15vw) rotateX(-45deg) translateX(0vw) ;
+    transform: rotateX(-45deg) rotateY(   0deg ) translateZ(-20vw) translateY(-15vw)  translateX(0vw) ;
     
 
     /*top:-23.25vw;*/
