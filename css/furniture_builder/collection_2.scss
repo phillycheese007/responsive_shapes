@@ -29,6 +29,7 @@
 
 
 .simple_chair_1{
+  background:red; 
   $chair_height:16vw;
   $base_width:10vw; /* X cordinate */
   $base_height:10vw; /* Y cordinate */
@@ -40,6 +41,10 @@
   $rung_indent_size:.5vw;
   $horizontal_1_height_from_base: $base_depth;
   $horizontal_2_height_from_base: ($base_depth);
+  
+  height:$chair_height;
+  width:$base_width;
+  
   .four_leg_base{
     .leg_1{left:$leg_indent_size;top:$leg_indent_size;}
     .leg_2{left:($base_width) - ($leg_width + $leg_indent_size);top:$leg_indent_size;}
