@@ -134,15 +134,12 @@ box-shadow: 10px 10px 225px 75px rgba(255,255,255,1);
   transform-origin:50% 50%; 
 }
 
-.table_shadow_1{
+#table_1_my_shadow{
   top:33vw;
   transform:rotateY(90deg) rotateX(90deg)rotateY(20deg);
-}
-
-#table_1_my_shadow{
-    border:30px solid green;background:orange;
+  border:30px solid green;background:orange;
     figure.right, figure.left, figure.top, figure.bottom, figure.front, figure.back{
-      background:blue;
+    background:blue;
     }
 }
 
