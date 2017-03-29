@@ -134,7 +134,6 @@ body,html{
     
   top:30vw;
   transform:rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(27deg);
-  height:20vw;width:28vw; /*----needs height and width for transform origin 50% 50% to work --*/
   transform-origin:50% 50%; 
   background:red;
 }
