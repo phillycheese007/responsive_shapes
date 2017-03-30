@@ -28,8 +28,8 @@ $table_top_bottom_color_1:#cc9966;
 $table_top_bottom_color_2:#e6ccb3;
 
 
-
-#table_1.animated_shader #chair_1.animated_shader {
+/*
+#table_1 {
   figure {
   box-sizing: content-box;
   transform-style: preserve-3d;
@@ -39,11 +39,8 @@ $table_top_bottom_color_2:#e6ccb3;
 	}  
 }
 
-#table_1.animated_shader figure div {
-  background: /* rgba(0, 0, 0, .2); */ brown;
-  box-shadow: 0px 0px 5px rgba(255, 255, 255, .5), inset 0px 0px 50px rgba(0, 0, 0, .4);
-  box-shadow-blend-mode: color-dodge;
-}
+*/
+
 
 
 .big_three_d_box figure.toper {
