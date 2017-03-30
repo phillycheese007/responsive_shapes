@@ -408,37 +408,7 @@ $( "figure.front" )
 <script>
 $(document).ready(function () {
 
-//$( "#table_1" ).clone().appendTo( "#table_1" );
-	
-$( "#table_1" ).clone(function() {
-
-var replacementTag = '#table_2';
-
-// Replace all a tags with the type of replacementTag
-$('#table_1').each(function() {
-    var outer = this.outerHTML;
-    
-    // Replace opening tag
-    var regex = new RegExp('<' + this.tagName, 'i');
-    var newTag = outer.replace(regex, '<' + replacementTag);
-    
-    // Replace closing tag
-    regex = new RegExp('</' + this.tagName, 'i');
-    newTag = newTag.replace(regex, '</' + replacementTag);
-    
-    $(this).replaceWith(newTag);
-});	
-	
-	
-
-});
-	
-	
-
-	
-
-
-	
+$( "#table_1" ).clone().appendTo( "#table_1" );
 	
 	
 } 
