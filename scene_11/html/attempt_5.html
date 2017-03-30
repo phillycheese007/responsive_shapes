@@ -417,7 +417,7 @@ $( "#table_1" ).clone().appendTo( "#table_1" );
 $('#table_1').each(function() {
 
   // Create a new element and assign it attributes from the current element
-  var NewElement = $("div");
+  var NewElement = document.createElement( "div" );
   $.each(this.attributes, function(i, attrib){
     $(NewElement).attr(attrib.name, attrib.value);
   });
