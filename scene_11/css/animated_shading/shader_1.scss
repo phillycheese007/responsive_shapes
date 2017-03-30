@@ -239,13 +239,13 @@ $table_top_bottom_color_2:#e6ccb3;
     @keyframes front-back-animation-table {
       0%,
       100% {
-        background:green;
+        background:black;
         background-image: radial-gradient(ellipse at center, rgba(0, 1, 0, 0) 0%, rgba(0, 0, 0, .8) 200%);
         background-size: 400% 400%;
         background-position: 50% 0;
       }
       50% {
-        background:blue;  
+        background:red;  
         background-image: radial-gradient(ellipse at center, rgba(0, 1, 0, 0) 0%, rgba(0, 0, 0, .8) 200%);
         background-size: 300% 300%;
         background-position: 100% 50%;
