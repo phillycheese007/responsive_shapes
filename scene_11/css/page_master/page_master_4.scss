@@ -159,8 +159,7 @@ box-shadow: 10px 10px 225px 75px rgba(255,255,255,1);
   position:absolute;
   left:57vw;top:27vw;
   transform: rotate(153deg);
-  animation:infinite-spinning-with-rotation 10s linear ; 
-  animation-fill-mode: forwards;   
+
     
     
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-14vw /*X*/, -19vw /*Y*/, 0 /*Z*/) rotate(57deg);
@@ -232,7 +231,7 @@ border:none;
     transform:rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(290deg);/*transform-origin:50% 50%;*/
   }
   to { top:20vw;
-    transform:rotateY(-110deg) rotateX(110deg) translateX(-81vw) translateY(-20vw) rotate(-10deg);/*transform-origin:50% 50%;*/
+    transform:rotateY(-110deg) rotateX(310deg) translateX(-81vw) translateY(-20vw) rotate(-10deg);/*transform-origin:50% 50%;*/
   }
   
 }
@@ -240,7 +239,7 @@ border:none;
 @keyframes inf-2 {
   
   from {    top:20vw;
-    transform:rotateY(-110deg) rotateX(110deg) translateX(-81vw) translateY(-20vw) rotate(-10deg);
+    transform:rotateY(-110deg) rotateX(310deg) translateX(-81vw) translateY(-20vw) rotate(-10deg);
   }
   to {    top:35vw;
        transform:rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(230deg);
