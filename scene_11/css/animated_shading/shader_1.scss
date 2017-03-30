@@ -229,31 +229,31 @@ $table_top_bottom_color_2:#e6ccb3;
 }*/
 
 
-
-.beeky {
-  figure.front, figure.back, figure.left, figure.right, figure.top, figure.bottom {
+.beeky{
+  figure.front, figure.back, figure.bottom, figure.top,  figure.front, figure.left {
     background:  #888; 
-    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(50, 137, 92, 1) 80%);
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
     background-size: 300% 300%;
     animation: front-back-animation-table 8s linear;
     animation-fill-mode:forwards;
     @keyframes front-back-animation-table {
       0%,
       100% {
-        background:red !important;
-        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(50, 137, 92, 0.7) 200%);
+        background:green;
+        background-image: radial-gradient(ellipse at center, rgba(0, 1, 0, 0) 0%, rgba(0, 0, 0, .8) 200%);
         background-size: 400% 400%;
         background-position: 50% 0;
       }
       50% {
-        background:blue !important;  
-        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(50, 137, 92, 0.7) 200%);
+        background:blue;  
+        background-image: radial-gradient(ellipse at center, rgba(0, 1, 0, 0) 0%, rgba(0, 0, 0, .8) 200%);
         background-size: 300% 300%;
         background-position: 100% 50%;
       }
     }
   }
 }
+
 
 
 /*--------EE----table 1 -----------*/
