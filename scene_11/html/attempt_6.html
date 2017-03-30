@@ -24,13 +24,13 @@
 <style media="screen">
 
 	
-.beeky{
+.shadow_shader{
   top:33vw !important;
   transform:rotateY(90deg) rotateX(90deg) translateX(-23vw) translateY(-20vw) translateZ(0vw) rotate(27deg);
   transform-origin:50% 50% !important; 
 }
 
-.beeky figure.front, .beeky figure.back, .beeky figure.right, .beeky figure.top{
+.shadow_shader figure.front, .beeky figure.back, .beeky figure.right, .beeky figure.top{
   background-image:none !important; border:4px solid green !important;/*background:blue !important;*/
 }
 
@@ -422,7 +422,7 @@ $(document).ready(function () {
 
 $( "#table_1" ).clone()
 	//.removeClass("tulip_table_1")
-	.addClass("beeky").appendTo( "#table_1" );
+	.addClass("shadow_shader").appendTo( "#table_1" );
 	
 	
 } 
