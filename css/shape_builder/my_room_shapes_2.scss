@@ -26,6 +26,8 @@
   }
   .toper    { transform: rotateX(  90deg ) translateZ( $height/2 );background:orange;}
   .bottomer { 
+    position:absolute;
+    z-index:9;
     transform-style:preserve-3d;
     transform: rotateX( -90deg ) translateZ( $height/2 );
    /* background:red; */
