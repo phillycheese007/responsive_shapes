@@ -132,17 +132,39 @@ box-shadow: 10px 10px 225px 75px rgba(255,255,255,1);
   top:33vw;
   transform:rotateY(90deg) rotateX(90deg) translateX(-23vw) translateY(-20vw) translateZ(0vw) rotate(27deg);
   transform-origin:50% 50%; 
+    
+    
+  left:25vw;top:-4vw;
+  transform: rotate(7deg);
 }
 
-
-
+/*
+#table_1 {
+  left:25vw;top:-4vw;
+  transform: rotate(7deg);
+}
+*/
 
 #chair_1{ 
   position:absolute;
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-14vw /*X*/, -19vw /*Y*/, 0 /*Z*/) rotate(57deg);
   top:35vw; 
+
+  
+    
+  left:57vw;top:27vw;
+  transform: rotate(153deg);
+  animation:infinite-spinning-with-rotation 10s linear ; 
+  animation-fill-mode: forwards;  
 }
 
+/*
+#chair_1 {
+  left:57vw;top:27vw;
+  transform: rotate(153deg);
+  animation:infinite-spinning-with-rotation 10s linear ; 
+  animation-fill-mode: forwards;
+}*/
         /*--------------EE Furniture Positions---------------*/
         /*--------------EE Furniture Positions---------------*/
 
