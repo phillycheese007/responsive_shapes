@@ -116,12 +116,13 @@ box-shadow: 10px 10px 225px 75px rgba(255,255,255,1);
 #tv_box_object { 
   /*transform:rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(27deg);
   top:40vw;*/
+  transform-origin:50% 50%; 
   background:blue;
   height:14vw;
   width:20vw;
   top:33vw;
-  transform: rotateY(14deg) rotateX(60deg)  translateX(-10vw) translateY(14vw) translateZ(-24vw);
-  transform-origin:50% 50%; 
+  transform: rotateY(14deg) rotateX(60deg)  translateX(-10vw) translateY(7vw) translateZ(-15vw);
+
 }
 
 
