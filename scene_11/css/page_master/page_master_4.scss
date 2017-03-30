@@ -134,21 +134,7 @@ box-shadow: 10px 10px 225px 75px rgba(255,255,255,1);
   transform-origin:50% 50%; 
 }
 
-#table_1_my_shadow{
-  top:31vw;
-  transform:rotateY(90deg) rotateX(90deg) translateX(-23vw) translateY(-20vw) translateZ(0vw) rotate(27deg);
-  transform-origin:50% 50%; 
-  border:30px solid green;background:orange;
-    figure.right, figure.left, figure.top, figure.bottom, figure.front, figure.back{
-    background:blue;
-    }
-}
 
-.table_shadow_master {
-    figure.right, figure.left, figure.top, figure.bottom, figure.front, figure.back{
-      background:red !important;
-    }
-}
 
 
 #chair_1{ 
