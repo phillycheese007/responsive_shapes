@@ -1,0 +1,303 @@
+---
+#shader2
+---
+$left_right_color_1:lightyellow;
+$left_right_color_2:lightblue;
+
+
+
+$chair_front_back_color_1:#1aff66;
+$chair_front_back_color_2:#66ff99;
+
+$chair_left_right_color_1:#00e64d;
+$chair_left_right_color_2:#009933;
+
+$chair_top_bottom_color_1:#00ff55;
+$chair_top_bottom_color_2:#66ff99;
+
+
+
+
+$table_front_back_color_1:#cc9966;
+$table_front_back_color_2:#e6ccb3;
+
+$table_left_right_color_1:#e6ccb3;
+$table_left_right_color_2:#d9b38c;
+
+$table_top_bottom_color_1:#cc9966;
+$table_top_bottom_color_2:#e6ccb3;
+
+
+
+#table_1 .booger /*change booger not real*/ {
+  figure {
+  box-sizing: content-box;
+  transform-style: preserve-3d;
+  /* background: rgba(0, 0, 0, .5); */
+  box-shadow-blend-mode: color-dodge;
+  blend-mode: screen;
+	}  
+}
+
+
+
+
+
+.big_three_d_box figure.toper {
+  background:  #888; 
+  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+  background-size: 300% 300%;
+  animation: wallAnimation 8s linear;
+  animation-fill-mode:forwards;
+}
+
+.big_three_d_box figure.lefter {
+
+}
+
+.big_three_d_box figure.righter { 
+	
+}
+
+
+
+.window_style_1 {
+  figure.left,figure.right,figure.back,figure.front{
+  background:  #888; 
+  background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+  background-size: 300% 300%;
+  animation: wallAnimation 8s linear;
+  animation-fill-mode:forwards;
+  }
+}
+/*---------------------BB keframes----------------------*/
+/*---------------------BB keframes----------------------*/
+
+@keyframes groundAnimation {
+  0%,
+  100% {
+    background-position: 50% 0;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+
+@keyframes wallAnimation {
+  0%,
+  100% {
+    background: #888;
+   /* background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 200%);*/
+    background-position: 50% 0%;
+  }
+  50% {
+    background: #111;  
+   /* background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 200%);*/
+    background-position: 100% 50%;
+  }
+}
+@keyframes shadowAnimation {
+  0%,
+  100% {
+    box-shadow: 0px -100px 100px rgba(0, 0, 0, 1), 0px -20px 20px rgba(0, 0, 0, 1), 0px 0px 5px rgba(0, 0, 0, 1);
+  }
+  50% {
+    box-shadow: 100px 0px 100px rgba(0, 0, 0, 1), 20px 0px 20px rgba(0, 0, 0, 1), 0px 0px 5px rgba(0, 0, 0, 1);
+  }
+}
+
+
+
+
+
+
+ 
+.tulip_table_1 {
+  figure.top, figure.bottom {
+    background:  #888; 
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+    background-size: 300% 300%;
+    animation: top-bottom-animation-table 8s linear;
+    animation-fill-mode:forwards;
+    @keyframes top-bottom-animation-table {
+      0%,
+      100% {
+	background:$table_top_bottom_color_1;
+        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
+        background-size: 400% 400%;
+        background-position: 50% 0;
+      }
+      50% {
+        background:$table_top_bottom_color_2;  
+        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
+        background-size: 300% 300%;
+        background-position: 100% 50%;
+      }
+    }
+  }	  
+}
+
+
+
+
+.tulip_table_1{
+  figure.left, figure.right {
+    background:  #888; 
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+    background-size: 300% 300%;
+    animation: left-right-animation-table 8s linear;
+    animation-fill-mode:forwards;
+    @keyframes left-right-animation-table {
+      0%,
+      100% {
+        background:$table_left_right_color_1;
+        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
+        background-size: 400% 400%;
+        background-position: 50% 0;
+      }
+      50% {
+	background:$table_left_right_color_2;  
+        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
+        background-size: 300% 300%;
+        background-position: 100% 50%;
+      }
+    }
+  }	  
+}
+
+
+
+
+
+.tulip_table_1{
+  figure.front, figure.back {
+    background:  #888; 
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+    background-size: 300% 300%;
+    animation: front-back-animation-table 8s linear;
+    animation-fill-mode:forwards;
+    @keyframes front-back-animation-table {
+      0%,
+      100% {
+        background:$table_front_back_color_1;
+        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
+        background-size: 400% 400%;
+        background-position: 50% 0;
+      }
+      50% {
+        background:$table_front_back_color_2;  
+        background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);
+        background-size: 300% 300%;
+        background-position: 100% 50%;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+.beeky{
+  figure.front, figure.back, figure.bottom, figure.top,  figure.front, figure.left {
+    background:  #888; 
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+    background-size: 300% 300%;
+    animation: special-shadow-animation-table 8s linear;
+    animation-fill-mode:forwards;
+    @keyframes special-shadow-animation-table {
+      0%,
+      100% {
+        background:orange !important;
+        background-image: radial-gradient(ellipse at center, rgba(0, 1, 0, 0) 0%, rgba(0, 0, 0, .8) 200%);
+        background-size: 400% 400%;
+        background-position: 50% 0;
+      }
+      50% {
+        background:green !important;  
+        background-image: radial-gradient(ellipse at center, rgba(0, 1, 0, 0) 0%, rgba(0, 0, 0, .8) 200%);
+        background-size: 300% 300%;
+        background-position: 100% 50%;
+      }
+    }
+  }
+}
+
+
+
+/*--------EE----table 1 -----------*/
+
+
+
+
+/*-------EE---- chair 1 -----------*/
+
+.chair_1_animated_shading {
+  figure.top, figure.bottom {
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+    background-size: 300% 300%;
+    animation: top-bottom-animation-chair 8s linear;
+    animation-fill-mode:forwards;
+    @keyframes top-bottom-animation-chair {
+      0%,
+      100% {
+        background:$chair_top_bottom_color_1;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 400% 400%;background-position: 50% 0;
+      }
+      50% {
+        background:$chair_top_bottom_color_2;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 300% 300%;background-position: 100% 50%;
+      }
+    }
+  }	  
+}
+
+
+/*------- -----------*/
+
+
+.chair_1_animated_shading {
+  figure.left, figure.right {
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+    background-size: 300% 300%;
+    animation: left-right-animation-chair 8s linear;
+    animation-fill-mode:forwards;
+    @keyframes left-right-animation-chair {
+      0%,
+      100% {
+        background:$chair_left_right_color_1;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 400% 400%;background-position: 50% 0;
+      }
+      50% {
+	      background:$chair_left_right_color_2;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 300% 300%;background-position: 100% 50%;
+      }
+    }
+  }	  
+}
+
+
+/*------- -----------*/
+
+.chair_1_animated_shading {
+  figure.front, figure.back {
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+    background-size: 300% 300%;
+    animation: front-back-animation-chair 8s linear;
+    animation-fill-mode:forwards;
+    @keyframes front-back-animation-chair {
+      0%,
+      100% {
+        background: $chair_front_back_color_1;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 400% 400%;background-position: 50% 0;
+      }
+      50% {
+        background: $chair_front_back_color_2;background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .5) 200%);background-size: 300% 300%;background-position: 100% 50%;
+      }
+    }
+  }
+}
+
+
+
+/*-------EE---- window_style_1 -----------*/
