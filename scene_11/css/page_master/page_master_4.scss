@@ -231,7 +231,7 @@ border:none;
     transform:rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(290deg);/*transform-origin:50% 50%;*/
   }
   to { top:20vw;
-    transform:rotateY(-110deg) rotateX(110deg) translateX(-77vw) translateY(-20vw) rotate(10deg);/*transform-origin:50% 50%;*/
+    transform:rotateY(-110deg) rotateX(110deg) translateX(-81vw) translateY(-20vw) rotate(-10deg);/*transform-origin:50% 50%;*/
   }
   
 }
@@ -239,7 +239,7 @@ border:none;
 @keyframes inf-2 {
   
   from {    top:20vw;
-    transform:rotateY(-110deg) rotateX(110deg) translateX(-77vw) translateY(-20vw) rotate(10deg);
+    transform:rotateY(-110deg) rotateX(110deg) translateX(-81vw) translateY(-20vw) rotate(-10deg);
   }
   to {    top:35vw;
        transform:rotateY(90deg) rotateX(90deg) translateX(-27vw) translateY(-20vw) rotate(230deg);
