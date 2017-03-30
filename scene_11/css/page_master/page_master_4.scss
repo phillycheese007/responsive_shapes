@@ -159,7 +159,9 @@ box-shadow: 10px 10px 225px 75px rgba(255,255,255,1);
   position:absolute;
   left:57vw;top:27vw;
   transform: rotate(153deg);
-
+  animation:infinite-spinning-with-rotation 5s linear, inf 10s linear, inf-2 5s linear   ; 
+  animation-delay:0s, 5s, 15s;
+  animation-fill-mode: forwards;
     
     
   transform: /*rotate(13deg);*/rotateY(90deg) rotateX(90deg) translate3d(-14vw /*X*/, -19vw /*Y*/, 0 /*Z*/) rotate(57deg);
