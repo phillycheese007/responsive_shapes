@@ -11,7 +11,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   
 <link href="/responsive_shapes/css/furniture_builder/collection_2.css" rel="stylesheet" media="screen"/>
-<link href="/responsive_shapes/scene_11/css/shape_mover/shape_mover_1.css" rel="stylesheet" media="screen"/>
+/*<link href="/responsive_shapes/scene_11/css/shape_mover/shape_mover_1.css" rel="stylesheet" media="screen"/>*/
 
 <link rel="stylesheet" href="/responsive_shapes/css/shape_builder/my_room_shapes_2.css" media="screen" />
 
@@ -26,9 +26,19 @@
 	
 .shadow_shader{ /* use important for positiong */
   /*
+  position:absolute;
+  left:25vw;top:-4vw;
+  transform: rotate(7deg);  
+  top:33vw;
   transform:rotateY(90deg) rotateX(90deg) translateX(-23vw) translateY(-20vw) translateZ(0vw) rotate(27deg);
-  transform-origin:50% 50%; 
+  transform-origin:50% 50%;   
   */
+  position:absolute !important;
+  left:25vw !important;;
+  top:-4vw !important;;
+  transform: rotate(7deg) !important;; 
+	
+	
   top:33vw !important;
   transform:rotateY(90deg) !important;
   transform:rotateX(90deg) !important;
