@@ -413,7 +413,21 @@ $( "#table_1" ).clone().appendTo( "#table_1" );
 }            
 );	
 	
+// Iterate over each element and replace the tag while maintaining attributes
+$('#table_1').each(function() {
 
+  // Create a new element and assign it attributes from the current element
+  var NewElement = $("<div>");
+  $.each(this.attributes, function(i, attrib){
+    $(NewElement).attr(attrib.name, attrib.value);
+  });
+
+  // Replace the current element with the new one and carry over the contents
+  $(this).replaceWith(function () {
+    return $(NewElement).append($(this).contents());
+  });
+
+});
 </script>
 
   
