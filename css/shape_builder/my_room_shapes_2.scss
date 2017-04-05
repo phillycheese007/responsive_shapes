@@ -2,7 +2,7 @@
 #myroomshapes2
 ---
 
-.big_three_d_box {     position:absolute;z-index:2;
+.big_three_d_box {     position:absolute;z-index:2 !important;
 
   /*left:9vw;*/ top:5vw;
   $width: 55vw;$height: 35vw;$depth: 40vw; /*set dimensions here */ 
