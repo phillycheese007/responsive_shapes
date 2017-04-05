@@ -32,6 +32,8 @@
     background-image: url("/responsive_shapes/images/tile_fl.jpg");
     background-repeat:repeat;
     background-size:contain;
+    
+    position:absolute;z-index:2;
   }
 }
 
