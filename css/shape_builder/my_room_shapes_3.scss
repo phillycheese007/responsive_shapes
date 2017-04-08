@@ -1,0 +1,227 @@
+---
+#myroomshapes2
+---
+
+.big_three_d_box {     position:absolute;z-index:2 ;
+  /*left:9vw;*/ top:5vw;
+  $width: 55vw;$height: 55vw;$depth: 40vw; /*set dimensions here */ 
+  transform:translateZ($depth/2);
+  .fronter, .backer, .backer_2 { width: $width;height: $height;}
+  .righter, .lefter, .lefter_2 { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .toper, .bottomer {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .fronter  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
+  .backer, .backer_2   { transform: rotateX( 180deg ) translateZ(  $depth/2 );/*background:black;*/}
+  .righter  { 
+    transform: rotateY(  90deg ) translateZ( $width/2 );
+   /* background:grey;
+    background: url("/responsive_shapes/images/painting.jpg");
+    background-repeat:repeat;
+    background-size:contain;*/
+  }
+  .lefter{ 
+    transform: rotateY( -90deg ) translateZ( $width/2 ); 
+  }
+  .lefter_2{ 
+    transform: rotateY( -90deg ) translateZ( $width/2 );
+  }
+  .toper    { transform: rotateX(  90deg ) translateZ( $height/2 );background:orange;}
+  .bottomer { 
+    transform-style:preserve-3d;
+    transform: rotateX( -90deg ) translateZ( $height/2 );
+   /* background:red; */
+    background-image: url("/responsive_shapes/images/tile_fl.jpg");
+    background-repeat:repeat;
+    background-size:contain;
+  }
+}
+
+
+
+
+.window_1_slab {
+  $width: 12.5vw;$height: 2vw;$depth: 20vw; /*set dimensions here */ 
+  transform:translateZ($depth/2);
+  .front, .back { width: $width;height: $height;}
+  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );background:orange;}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );background:lightblue;}
+  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );background:red;}
+  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );background:blue;}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 - .35vw);border:1px solid grey;background:white;  opacity:.15;}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 - .8vw );border:1px solid grey; background:lightyellow;    opacity:.15;}
+  
+  .light_pane_1, .light_pane_2{
+    opacity: .3;
+    background: rgba(255,255,230,1);
+    background: -moz-linear-gradient(top, rgba(255,255,230,1) 0%, rgba(255,255,230,0.87) 13%, rgba(254,182,69,0.06) 94%, rgba(254,182,69,0) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,230,1)), color-stop(13%, rgba(255,255,230,0.87)), color-stop(94%, rgba(254,182,69,0.06)), color-stop(100%, rgba(254,182,69,0)));
+    background: -webkit-linear-gradient(top, rgba(255,255,230,1) 0%, rgba(255,255,230,0.87) 13%, rgba(254,182,69,0.06) 94%, rgba(254,182,69,0) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,230,1) 0%, rgba(255,255,230,0.87) 13%, rgba(254,182,69,0.06) 94%, rgba(254,182,69,0) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,230,1) 0%, rgba(255,255,230,0.87) 13%, rgba(254,182,69,0.06) 94%, rgba(254,182,69,0) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,230,1) 0%, rgba(255,255,230,0.87) 13%, rgba(254,182,69,0.06) 94%, rgba(254,182,69,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffe6', endColorstr='#feb645', GradientType=0 );
+  }
+  
+  .light_pane_1{ 
+    width: ($depth - .25);
+    height: 90vw;
+    left: ($width - $depth) / 2 ; 
+
+    top:-43.1vw;
+    transform: rotateY( -90deg ) translateZ( ($width/2) - 0 ) skewX(-45deg)  ;
+    overflow:hidden;
+  }
+  
+  /*---- .light_pane_2  --
+  Z = room left right 
+  Y = room height   
+  X = room depth position 
+  ----*/
+  .light_pane_2{ 
+    width: ($width - .25);
+    height: 90vw;
+   /* transform: rotateX(-45deg)rotateY(0deg) translateZ(-25vw) translateY(5vw) translateX(.25vw) ;*/
+    transform: rotateY( 0deg ) translateZ( ($width/2) +.1 ) rotateX(-45deg)translateX(.1vw) ;
+    top:-39.65vw;
+    overflow:hidden;
+  }
+}
+
+
+.window_2_slab {
+  $width: 13.25vw;$height: 2vw;$depth: 20vw; /*set dimensions here */ 
+  transform:translateZ($depth/2);
+  .front, .back { width: $width;height: $height;}
+  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
+  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
+  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 - .35vw);border:1px solid grey;/*background:white;  opacity:.15;*/}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 - .8vw );border:1px solid grey;/*background:lightyellow;    opacity:.15;*/}
+}
+
+.w_5_h_5_d_10 { left:10vw;transform:translateZ(30vw);
+  $width: 5vw;$height: 5vw;$depth: 10vw; /*set dimensions here */ 
+  transform:translateZ($depth/2);
+  .front, .back { width: $width;height: $height;}
+  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
+  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
+  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );
+  }
+}
+
+
+.w_10_h_5_d_5 { left:10vw;top:10vw;
+  $width: 10vw;$height: 5vw;$depth: 5vw; /*set dimensions here */ 
+  .front, .back { width: $width;height: $height;}
+  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
+  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
+  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );
+  }
+}
+
+.w_5_h_10_d_5 {
+  $width: 5vw;$height: 10vw;$depth: 5vw; /*set dimensions here */ 
+  transform:translateZ($depth/2);
+  .front, .back { width: $width;height: $height;}
+  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
+  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
+  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );
+  }
+}
+
+
+.w_pnt5_h_pnt5_d_8 {
+  $width: .5vw;$height: .5vw;$depth: 8vw; /*set dimensions here */ 
+  transform:translateZ($depth/2);
+  .front, .back { width: $width;height: $height;}
+  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
+  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
+  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );
+  }
+}
+
+
+.w_10_h_4_d_pnt5 {
+  $width: 10vw;$height: 4vw;$depth: .5vw; /*set dimensions here */ 
+  transform:translateZ($depth/2);
+  .front, .back { width: $width;height: $height;}
+  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
+  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
+  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );
+  }
+}
+
+
+.w_10_h_10_d_pnt5 {
+  $width: 10vw;$height: 10vw;$depth: .5vw; /*set dimensions here */ 
+  transform:translateZ($depth/2);
+  .front, .back { width: $width;height: $height;}
+  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
+  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
+  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );
+  }
+}
+
+.w_20_h_14_d_1 {
+  $width: 20vw;$height: 14vw;$depth: 1vw; /*set dimensions here */ 
+  transform:translateZ($depth/2);
+  .front, .back { width: $width;height: $height;}
+  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
+  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
+  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );
+  }
+}
+
+.w_28_h_20_d_1 {
+  $width: 28vw;$height: 20vw;$depth: 1vw; /*set dimensions here */ 
+  transform:translateZ($depth/2);
+  .front, .back { width: $width;height: $height;}
+  .right, .left { width: $depth; height: $height;left: ($width - $depth)/2 ;}
+  .top, .bottom {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .front  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
+  .back   { transform: rotateX( 180deg ) translateZ(  $depth/2 );}
+  .right  { transform: rotateY(  90deg ) translateZ( $width/2 );}
+  .left   { transform: rotateY( -90deg ) translateZ( $width/2 );}
+  .top    { transform: rotateX(  90deg ) translateZ( $height/2 );}
+  .bottom { transform: rotateX( -90deg ) translateZ( $height/2 );
+  }
+}
