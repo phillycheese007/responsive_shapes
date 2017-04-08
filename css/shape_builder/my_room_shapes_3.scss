@@ -3,7 +3,7 @@
 ---
 
 .big_three_d_box {     position:absolute;z-index:2 ;
-  /*left:9vw;*/ top:5vw;
+  /*left:9vw;*/ 
   $width: 55vw;$height: 55vw;$depth: 40vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .fronter, .backer, .backer_2 { width: $width;height: $height;}
