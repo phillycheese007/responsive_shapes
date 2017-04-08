@@ -4,11 +4,11 @@
 
 .big_three_d_box {     position:absolute;z-index:2 ;
   /*left:9vw;*/ 
-  $width: 55vw;$height: 55vw;$depth: 40vw; /*set dimensions here */ 
+  $width: 55vw;$height: 60vh;$depth: 40vw; /*set dimensions here */ 
   transform:translateZ($depth/2);
   .fronter, .backer, .backer_2 { width: $width;height: $height;}
-  .righter, .lefter, .lefter_2 { width: $depth; height: $height;left: ($width - $depth)/2 ;}
-  .toper, .bottomer {width: $width;height: $depth;top: ($height - $depth)/2 ;} 
+  .righter, .lefter, .lefter_2 { width: $depth; height: 60vh;left: ($width - $depth)/2 ;}
+  .toper, .bottomer {width: $width;height: 60vh;top:10vh ;} 
   .fronter  { transform: rotateY(   0deg ) translateZ( $depth/2 );}
   .backer, .backer_2   { transform: rotateX( 180deg ) translateZ(  $depth/2 );/*background:black;*/}
   .righter  { 
