@@ -8,8 +8,8 @@ xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" xmlns:xlink="http://www.w
             <stop offset="0%" stop-color="green"></stop>
             <stop offset="100%" stop-color="yellow"></stop>
      
-            <animate attributeName="x1" dur="5s" from="90%" to="0%" repeatCount="1" />
-            <animate attributeName="y1" dur="5s" from="90%" to="0%" repeatCount="1"  />
+            <animate attributeName="x1" dur="5s" from="70%" to="5%" repeatCount="1" />
+            <animate attributeName="y1" dur="5s" from="20%" to="10%" repeatCount="21"  />
             <animate attributeName="y2" dur="5s" from="90%" to="0%" repeatCount="1"  />
 
     </linearGradient>
